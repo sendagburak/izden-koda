@@ -1,0 +1,137 @@
+{
+  "schema_version": 1,
+  "id": "d2-p2-013",
+  "world": "d2",
+  "act": 2,
+  "order": 13,
+  "type": "toggle_board",
+  "concepts": [
+    "logic",
+    "debug"
+  ],
+  "locale_key": "mission.d2-p2-013",
+  "hints": [
+    "hint.d2-p2-013.1",
+    "hint.d2-p2-013.2",
+    "hint.d2-p2-013.3"
+  ],
+  "layers": {
+    "concrete": {
+      "params": {
+        "initial": [
+          0,
+          0,
+          0
+        ],
+        "goal": [
+          0,
+          1,
+          1
+        ],
+        "wiring": {
+          "S0": [
+            0,
+            1
+          ],
+          "S1": [
+            1,
+            2
+          ],
+          "S2": [
+            2,
+            0
+          ]
+        },
+        "max_steps": 5
+      },
+      "witness": [
+        "S0",
+        "S2"
+      ]
+    },
+    "blocks": {
+      "params": {
+        "initial": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "goal": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "wiring": {
+          "S0": [
+            0,
+            1
+          ],
+          "S1": [
+            1,
+            2
+          ],
+          "S2": [
+            2,
+            3
+          ],
+          "S3": [
+            3,
+            0
+          ]
+        },
+        "max_steps": 5
+      },
+      "witness": [
+        "S0",
+        "S2"
+      ]
+    },
+    "system": {
+      "params": {
+        "initial": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "goal": [
+          1,
+          1,
+          1,
+          1,
+          0
+        ],
+        "wiring": {
+          "S0": [
+            0,
+            1
+          ],
+          "S1": [
+            1,
+            2
+          ],
+          "S2": [
+            2,
+            3
+          ],
+          "S3": [
+            3,
+            4
+          ],
+          "S4": [
+            4,
+            0
+          ]
+        },
+        "max_steps": 5
+      },
+      "witness": [
+        "S0",
+        "S2"
+      ]
+    }
+  }
+}

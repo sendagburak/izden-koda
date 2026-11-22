@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "id": "d1-p1-004",
+  "world": "d1",
+  "act": 1,
+  "order": 4,
+  "type": "signal_pattern",
+  "concepts": [
+    "pattern",
+    "sequence"
+  ],
+  "locale_key": "mission.d1-p1-004",
+  "hints": [
+    "hint.d1-p1-004.1",
+    "hint.d1-p1-004.2",
+    "hint.d1-p1-004.3"
+  ],
+  "layers": {
+    "concrete": {
+      "params": {
+        "target": [
+          "A",
+          "B",
+          "A"
+        ],
+        "alphabet": [
+          "A",
+          "B"
+        ],
+        "max_steps": 5
+      },
+      "witness": [
+        "A",
+        "B",
+        "A"
+      ]
+    },
+    "blocks": {
+      "params": {
+        "target": [
+          "A",
+          "B",
+          "B",
+          "A"
+        ],
+        "alphabet": [
+          "A",
+          "B"
+        ],
+        "max_steps": 6
+      },
+      "witness": [
+        "A",
+        "B",
+        "B",
+        "A"
+      ]
+    },
+    "system": {
+      "params": {
+        "target": [
+          "A",
+          "B",
+          "A",
+          "C",
+          "B",
+          "A"
+        ],
+        "alphabet": [
+          "A",
+          "B",
+          "C"
+        ],
+        "max_steps": 8
+      },
+      "witness": [
+        "A",
+        "B",
+        "A",
+        "C",
+        "B",
+        "A"
+      ]
+    }
+  }
+}

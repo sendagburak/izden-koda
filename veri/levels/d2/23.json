@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "id": "d2-p3-023",
+  "world": "d2",
+  "act": 3,
+  "order": 23,
+  "type": "function_loops",
+  "concepts": [
+    "functions",
+    "loops"
+  ],
+  "locale_key": "mission.d2-p3-023",
+  "hints": [
+    "hint.d2-p3-023.1",
+    "hint.d2-p3-023.2",
+    "hint.d2-p3-023.3"
+  ],
+  "layers": {
+    "concrete": {
+      "params": {
+        "macros": {
+          "A": "ST",
+          "B": "TS",
+          "C": "SS"
+        },
+        "target": "SSSTTS",
+        "alphabet": [
+          "A",
+          "B",
+          "C"
+        ],
+        "max_steps": 3
+      },
+      "witness": [
+        "C",
+        "A",
+        "B"
+      ]
+    },
+    "blocks": {
+      "params": {
+        "macros": {
+          "A": "ST",
+          "B": "TS",
+          "C": "SS"
+        },
+        "target": "STTS",
+        "alphabet": [
+          "A",
+          "B",
+          "C"
+        ],
+        "max_steps": 3
+      },
+      "witness": [
+        "A",
+        "B"
+      ]
+    },
+    "system": {
+      "params": {
+        "macros": {
+          "A": "ST",
+          "B": "TS",
+          "C": "SS"
+        },
+        "target": "SSSTTS",
+        "alphabet": [
+          "A",
+          "B",
+          "C"
+        ],
+        "max_steps": 3
+      },
+      "witness": [
+        "C",
+        "A",
+        "B"
+      ]
+    }
+  }
+}

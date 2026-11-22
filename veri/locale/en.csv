@@ -1,0 +1,2236 @@
+﻿key,value
+hint.d1-p1-001.1,Start from the square holding the light.
+hint.d1-p1-001.2,"When rocks appear, go around them."
+hint.d1-p1-001.3,Try the stones in order from start to destination.
+hint.d1-p1-002.1,You may need to turn before the quay.
+hint.d1-p1-002.2,Is there a clear line beside the rock?
+hint.d1-p1-002.3,Move up from the coast before heading to the mailbox.
+hint.d1-p1-003.1,Look around the long wall.
+hint.d1-p1-003.2,A route goes below the barrier.
+hint.d1-p1-003.3,"Go to the end of the wall, then cross."
+hint.d1-p1-004.1,Study the target pattern above.
+hint.d1-p1-004.2,Read the repeating sequence of lights.
+hint.d1-p1-004.3,Start with the first light in the target pattern.
+hint.d1-p1-005.1,Pressing one switch changes other lamps too.
+hint.d1-p1-005.2,Observe which lights each switch controls.
+hint.d1-p1-005.3,Try switches one at a time and compare with the target.
+hint.d1-p1-006.1,Compare the target with the starting state.
+hint.d1-p1-006.2,"Observe what one move changes, then apply the same rule."
+hint.d1-p1-006.3,"Study the example in the agent notebook, and try another route."
+hint.d1-p1-007.1,Compare the target with the starting state.
+hint.d1-p1-007.2,"Observe what one move changes, then apply the same rule."
+hint.d1-p1-007.3,"Study the example in the agent notebook, and try another route."
+hint.d1-p1-008.1,Compare the target with the starting state.
+hint.d1-p1-008.2,"Observe what one move changes, then apply the same rule."
+hint.d1-p1-008.3,"Study the example in the agent notebook, and try another route."
+hint.d1-p1-009.1,Compare the target with the starting state.
+hint.d1-p1-009.2,"Observe what one move changes, then apply the same rule."
+hint.d1-p1-009.3,"Study the example in the agent notebook, and try another route."
+hint.d1-p1-010.1,Compare the target with the starting state.
+hint.d1-p1-010.2,"Observe what one move changes, then apply the same rule."
+hint.d1-p1-010.3,"Study the example in the agent notebook, and try another route."
+hint.d1-p2-011.1,Compare the target with the starting state.
+hint.d1-p2-011.2,"Observe what one move changes, then apply the same rule."
+hint.d1-p2-011.3,"Study the example in the agent notebook, and try another route."
+hint.d1-p2-012.1,Compare the target with the starting state.
+hint.d1-p2-012.2,"Observe what one move changes, then apply the same rule."
+hint.d1-p2-012.3,"Study the example in the agent notebook, and try another route."
+hint.d1-p2-013.1,Compare the target with the starting state.
+hint.d1-p2-013.2,"Observe what one move changes, then apply the same rule."
+hint.d1-p2-013.3,"Study the example in the agent notebook, and try another route."
+hint.d1-p2-014.1,Compare the target with the starting state.
+hint.d1-p2-014.2,"Observe what one move changes, then apply the same rule."
+hint.d1-p2-014.3,"Study the example in the agent notebook, and try another route."
+hint.d1-p2-015.1,Compare the target with the starting state.
+hint.d1-p2-015.2,"Observe what one move changes, then apply the same rule."
+hint.d1-p2-015.3,"Study the example in the agent notebook, and try another route."
+hint.d1-p2-016.1,Compare the target with the starting state.
+hint.d1-p2-016.2,"Observe what one move changes, then apply the same rule."
+hint.d1-p2-016.3,"Study the example in the agent notebook, and try another route."
+hint.d1-p2-017.1,Compare the target with the starting state.
+hint.d1-p2-017.2,"Observe what one move changes, then apply the same rule."
+hint.d1-p2-017.3,"Study the example in the agent notebook, and try another route."
+hint.d1-p2-018.1,Compare the target with the starting state.
+hint.d1-p2-018.2,"Observe what one move changes, then apply the same rule."
+hint.d1-p2-018.3,"Study the example in the agent notebook, and try another route."
+hint.d1-p2-019.1,Compare the target with the starting state.
+hint.d1-p2-019.2,"Observe what one move changes, then apply the same rule."
+hint.d1-p2-019.3,"Study the example in the agent notebook, and try another route."
+hint.d1-p2-020.1,Compare the target with the starting state.
+hint.d1-p2-020.2,"Observe what one move changes, then apply the same rule."
+hint.d1-p2-020.3,"Study the example in the agent notebook, and try another route."
+hint.d1-p3-021.1,Compare the target with the starting state.
+hint.d1-p3-021.2,"Observe what one move changes, then apply the same rule."
+hint.d1-p3-021.3,"Study the example in the agent notebook, and try another route."
+hint.d1-p3-022.1,Compare the target with the starting state.
+hint.d1-p3-022.2,"Observe what one move changes, then apply the same rule."
+hint.d1-p3-022.3,"Study the example in the agent notebook, and try another route."
+hint.d1-p3-023.1,Compare the target with the starting state.
+hint.d1-p3-023.2,"Observe what one move changes, then apply the same rule."
+hint.d1-p3-023.3,"Study the example in the agent notebook, and try another route."
+hint.d1-p3-024.1,Compare the target with the starting state.
+hint.d1-p3-024.2,"Observe what one move changes, then apply the same rule."
+hint.d1-p3-024.3,"Study the example in the agent notebook, and try another route."
+hint.d1-p3-025.1,Compare the target with the starting state.
+hint.d1-p3-025.2,"Observe what one move changes, then apply the same rule."
+hint.d1-p3-025.3,"Study the example in the agent notebook, and try another route."
+hint.d1-p3-026.1,Compare the target with the starting state.
+hint.d1-p3-026.2,"Observe what one move changes, then apply the same rule."
+hint.d1-p3-026.3,"Study the example in the agent notebook, and try another route."
+hint.d1-p3-027.1,Compare the target with the starting state.
+hint.d1-p3-027.2,"Observe what one move changes, then apply the same rule."
+hint.d1-p3-027.3,"Study the example in the agent notebook, and try another route."
+hint.d1-p3-028.1,Compare the target with the starting state.
+hint.d1-p3-028.2,"Observe what one move changes, then apply the same rule."
+hint.d1-p3-028.3,"Study the example in the agent notebook, and try another route."
+hint.d1-p3-029.1,Compare the target with the starting state.
+hint.d1-p3-029.2,"Observe what one move changes, then apply the same rule."
+hint.d1-p3-029.3,"Study the example in the agent notebook, and try another route."
+hint.d1-p3-030.1,Compare the target with the starting state.
+hint.d1-p3-030.2,"Observe what one move changes, then apply the same rule."
+hint.d1-p3-030.3,"Study the example in the agent notebook, and try another route."
+hint.d1-p4-031.1,Compare the target with the starting state.
+hint.d1-p4-031.2,"Observe what one move changes, then apply the same rule."
+hint.d1-p4-031.3,"Study the example in the agent notebook, and try another route."
+hint.d1-p4-032.1,Compare the target with the starting state.
+hint.d1-p4-032.2,"Observe what one move changes, then apply the same rule."
+hint.d1-p4-032.3,"Study the example in the agent notebook, and try another route."
+hint.d1-p4-033.1,Compare the target with the starting state.
+hint.d1-p4-033.2,"Observe what one move changes, then apply the same rule."
+hint.d1-p4-033.3,"Study the example in the agent notebook, and try another route."
+hint.d1-p4-034.1,Compare the target with the starting state.
+hint.d1-p4-034.2,"Observe what one move changes, then apply the same rule."
+hint.d1-p4-034.3,"Study the example in the agent notebook, and try another route."
+hint.d1-p4-035.1,Compare the target with the starting state.
+hint.d1-p4-035.2,"Observe what one move changes, then apply the same rule."
+hint.d1-p4-035.3,"Study the example in the agent notebook, and try another route."
+hint.d1-p4-036.1,Compare the target with the starting state.
+hint.d1-p4-036.2,"Observe what one move changes, then apply the same rule."
+hint.d1-p4-036.3,"Study the example in the agent notebook, and try another route."
+hint.d1-p4-037.1,Compare the target with the starting state.
+hint.d1-p4-037.2,"Observe what one move changes, then apply the same rule."
+hint.d1-p4-037.3,"Study the example in the agent notebook, and try another route."
+hint.d1-p4-038.1,Compare the target with the starting state.
+hint.d1-p4-038.2,"Observe what one move changes, then apply the same rule."
+hint.d1-p4-038.3,"Study the example in the agent notebook, and try another route."
+hint.d1-p4-039.1,Compare the target with the starting state.
+hint.d1-p4-039.2,"Observe what one move changes, then apply the same rule."
+hint.d1-p4-039.3,"Study the example in the agent notebook, and try another route."
+hint.d1-p4-040.1,Compare the target with the starting state.
+hint.d1-p4-040.2,"Observe what one move changes, then apply the same rule."
+hint.d1-p4-040.3,"Study the example in the agent notebook, and try another route."
+hint.d1-p5-041.1,Compare the target with the starting state.
+hint.d1-p5-041.2,"Observe what one move changes, then apply the same rule."
+hint.d1-p5-041.3,"Study the example in the agent notebook, and try another route."
+hint.d1-p5-042.1,Compare the target with the starting state.
+hint.d1-p5-042.2,"Observe what one move changes, then apply the same rule."
+hint.d1-p5-042.3,"Study the example in the agent notebook, and try another route."
+hint.d1-p5-043.1,Compare the target with the starting state.
+hint.d1-p5-043.2,"Observe what one move changes, then apply the same rule."
+hint.d1-p5-043.3,"Study the example in the agent notebook, and try another route."
+hint.d1-p5-044.1,Compare the target with the starting state.
+hint.d1-p5-044.2,"Observe what one move changes, then apply the same rule."
+hint.d1-p5-044.3,"Study the example in the agent notebook, and try another route."
+hint.d1-p5-045.1,Compare the target with the starting state.
+hint.d1-p5-045.2,"Observe what one move changes, then apply the same rule."
+hint.d1-p5-045.3,"Study the example in the agent notebook, and try another route."
+hint.d1-p5-046.1,Compare the target with the starting state.
+hint.d1-p5-046.2,"Observe what one move changes, then apply the same rule."
+hint.d1-p5-046.3,"Study the example in the agent notebook, and try another route."
+hint.d1-p5-047.1,Compare the target with the starting state.
+hint.d1-p5-047.2,"Observe what one move changes, then apply the same rule."
+hint.d1-p5-047.3,"Study the example in the agent notebook, and try another route."
+hint.d1-p5-048.1,Compare the target with the starting state.
+hint.d1-p5-048.2,"Observe what one move changes, then apply the same rule."
+hint.d1-p5-048.3,"Study the example in the agent notebook, and try another route."
+hint.d1-p5-049.1,Compare the target with the starting state.
+hint.d1-p5-049.2,"Observe what one move changes, then apply the same rule."
+hint.d1-p5-049.3,"Study the example in the agent notebook, and try another route."
+hint.d1-p5-050.1,Compare the target with the starting state.
+hint.d1-p5-050.2,"Observe what one move changes, then apply the same rule."
+hint.d1-p5-050.3,"Study the example in the agent notebook, and try another route."
+hint.d2-p1-001.1,Compare the target with the starting state.
+hint.d2-p1-001.2,"Observe what one move changes, then apply the same rule."
+hint.d2-p1-001.3,"Study the example in the agent notebook, and try another route."
+hint.d2-p1-002.1,Compare the target with the starting state.
+hint.d2-p1-002.2,"Observe what one move changes, then apply the same rule."
+hint.d2-p1-002.3,"Study the example in the agent notebook, and try another route."
+hint.d2-p1-003.1,Compare the target with the starting state.
+hint.d2-p1-003.2,"Observe what one move changes, then apply the same rule."
+hint.d2-p1-003.3,"Study the example in the agent notebook, and try another route."
+hint.d2-p1-004.1,Compare the target with the starting state.
+hint.d2-p1-004.2,"Observe what one move changes, then apply the same rule."
+hint.d2-p1-004.3,"Study the example in the agent notebook, and try another route."
+hint.d2-p1-005.1,Compare the target with the starting state.
+hint.d2-p1-005.2,"Observe what one move changes, then apply the same rule."
+hint.d2-p1-005.3,"Study the example in the agent notebook, and try another route."
+hint.d2-p1-006.1,Compare the target with the starting state.
+hint.d2-p1-006.2,"Observe what one move changes, then apply the same rule."
+hint.d2-p1-006.3,"Study the example in the agent notebook, and try another route."
+hint.d2-p1-007.1,Compare the target with the starting state.
+hint.d2-p1-007.2,"Observe what one move changes, then apply the same rule."
+hint.d2-p1-007.3,"Study the example in the agent notebook, and try another route."
+hint.d2-p1-008.1,Compare the target with the starting state.
+hint.d2-p1-008.2,"Observe what one move changes, then apply the same rule."
+hint.d2-p1-008.3,"Study the example in the agent notebook, and try another route."
+hint.d2-p1-009.1,Compare the target with the starting state.
+hint.d2-p1-009.2,"Observe what one move changes, then apply the same rule."
+hint.d2-p1-009.3,"Study the example in the agent notebook, and try another route."
+hint.d2-p1-010.1,Compare the target with the starting state.
+hint.d2-p1-010.2,"Observe what one move changes, then apply the same rule."
+hint.d2-p1-010.3,"Study the example in the agent notebook, and try another route."
+hint.d2-p2-011.1,Compare the target with the starting state.
+hint.d2-p2-011.2,"Observe what one move changes, then apply the same rule."
+hint.d2-p2-011.3,"Study the example in the agent notebook, and try another route."
+hint.d2-p2-012.1,Compare the target with the starting state.
+hint.d2-p2-012.2,"Observe what one move changes, then apply the same rule."
+hint.d2-p2-012.3,"Study the example in the agent notebook, and try another route."
+hint.d2-p2-013.1,Compare the target with the starting state.
+hint.d2-p2-013.2,"Observe what one move changes, then apply the same rule."
+hint.d2-p2-013.3,"Study the example in the agent notebook, and try another route."
+hint.d2-p2-014.1,Compare the target with the starting state.
+hint.d2-p2-014.2,"Observe what one move changes, then apply the same rule."
+hint.d2-p2-014.3,"Study the example in the agent notebook, and try another route."
+hint.d2-p2-015.1,Compare the target with the starting state.
+hint.d2-p2-015.2,"Observe what one move changes, then apply the same rule."
+hint.d2-p2-015.3,"Study the example in the agent notebook, and try another route."
+hint.d2-p2-016.1,Compare the target with the starting state.
+hint.d2-p2-016.2,"Observe what one move changes, then apply the same rule."
+hint.d2-p2-016.3,"Study the example in the agent notebook, and try another route."
+hint.d2-p2-017.1,Compare the target with the starting state.
+hint.d2-p2-017.2,"Observe what one move changes, then apply the same rule."
+hint.d2-p2-017.3,"Study the example in the agent notebook, and try another route."
+hint.d2-p2-018.1,Compare the target with the starting state.
+hint.d2-p2-018.2,"Observe what one move changes, then apply the same rule."
+hint.d2-p2-018.3,"Study the example in the agent notebook, and try another route."
+hint.d2-p2-019.1,Compare the target with the starting state.
+hint.d2-p2-019.2,"Observe what one move changes, then apply the same rule."
+hint.d2-p2-019.3,"Study the example in the agent notebook, and try another route."
+hint.d2-p2-020.1,Compare the target with the starting state.
+hint.d2-p2-020.2,"Observe what one move changes, then apply the same rule."
+hint.d2-p2-020.3,"Study the example in the agent notebook, and try another route."
+hint.d2-p3-021.1,Compare the target with the starting state.
+hint.d2-p3-021.2,"Observe what one move changes, then apply the same rule."
+hint.d2-p3-021.3,"Study the example in the agent notebook, and try another route."
+hint.d2-p3-022.1,Compare the target with the starting state.
+hint.d2-p3-022.2,"Observe what one move changes, then apply the same rule."
+hint.d2-p3-022.3,"Study the example in the agent notebook, and try another route."
+hint.d2-p3-023.1,Compare the target with the starting state.
+hint.d2-p3-023.2,"Observe what one move changes, then apply the same rule."
+hint.d2-p3-023.3,"Study the example in the agent notebook, and try another route."
+hint.d2-p3-024.1,Compare the target with the starting state.
+hint.d2-p3-024.2,"Observe what one move changes, then apply the same rule."
+hint.d2-p3-024.3,"Study the example in the agent notebook, and try another route."
+hint.d2-p3-025.1,Compare the target with the starting state.
+hint.d2-p3-025.2,"Observe what one move changes, then apply the same rule."
+hint.d2-p3-025.3,"Study the example in the agent notebook, and try another route."
+hint.d2-p3-026.1,Compare the target with the starting state.
+hint.d2-p3-026.2,"Observe what one move changes, then apply the same rule."
+hint.d2-p3-026.3,"Study the example in the agent notebook, and try another route."
+hint.d2-p3-027.1,Compare the target with the starting state.
+hint.d2-p3-027.2,"Observe what one move changes, then apply the same rule."
+hint.d2-p3-027.3,"Study the example in the agent notebook, and try another route."
+hint.d2-p3-028.1,Compare the target with the starting state.
+hint.d2-p3-028.2,"Observe what one move changes, then apply the same rule."
+hint.d2-p3-028.3,"Study the example in the agent notebook, and try another route."
+hint.d2-p3-029.1,Compare the target with the starting state.
+hint.d2-p3-029.2,"Observe what one move changes, then apply the same rule."
+hint.d2-p3-029.3,"Study the example in the agent notebook, and try another route."
+hint.d2-p3-030.1,Compare the target with the starting state.
+hint.d2-p3-030.2,"Observe what one move changes, then apply the same rule."
+hint.d2-p3-030.3,"Study the example in the agent notebook, and try another route."
+hint.d2-p4-031.1,Compare the target with the starting state.
+hint.d2-p4-031.2,"Observe what one move changes, then apply the same rule."
+hint.d2-p4-031.3,"Study the example in the agent notebook, and try another route."
+hint.d2-p4-032.1,Compare the target with the starting state.
+hint.d2-p4-032.2,"Observe what one move changes, then apply the same rule."
+hint.d2-p4-032.3,"Study the example in the agent notebook, and try another route."
+hint.d2-p4-033.1,Compare the target with the starting state.
+hint.d2-p4-033.2,"Observe what one move changes, then apply the same rule."
+hint.d2-p4-033.3,"Study the example in the agent notebook, and try another route."
+hint.d2-p4-034.1,Compare the target with the starting state.
+hint.d2-p4-034.2,"Observe what one move changes, then apply the same rule."
+hint.d2-p4-034.3,"Study the example in the agent notebook, and try another route."
+hint.d2-p4-035.1,Compare the target with the starting state.
+hint.d2-p4-035.2,"Observe what one move changes, then apply the same rule."
+hint.d2-p4-035.3,"Study the example in the agent notebook, and try another route."
+hint.d2-p4-036.1,Compare the target with the starting state.
+hint.d2-p4-036.2,"Observe what one move changes, then apply the same rule."
+hint.d2-p4-036.3,"Study the example in the agent notebook, and try another route."
+hint.d2-p4-037.1,Compare the target with the starting state.
+hint.d2-p4-037.2,"Observe what one move changes, then apply the same rule."
+hint.d2-p4-037.3,"Study the example in the agent notebook, and try another route."
+hint.d2-p4-038.1,Compare the target with the starting state.
+hint.d2-p4-038.2,"Observe what one move changes, then apply the same rule."
+hint.d2-p4-038.3,"Study the example in the agent notebook, and try another route."
+hint.d2-p4-039.1,Compare the target with the starting state.
+hint.d2-p4-039.2,"Observe what one move changes, then apply the same rule."
+hint.d2-p4-039.3,"Study the example in the agent notebook, and try another route."
+hint.d2-p4-040.1,Compare the target with the starting state.
+hint.d2-p4-040.2,"Observe what one move changes, then apply the same rule."
+hint.d2-p4-040.3,"Study the example in the agent notebook, and try another route."
+hint.d2-p5-041.1,Compare the target with the starting state.
+hint.d2-p5-041.2,"Observe what one move changes, then apply the same rule."
+hint.d2-p5-041.3,"Study the example in the agent notebook, and try another route."
+hint.d2-p5-042.1,Compare the target with the starting state.
+hint.d2-p5-042.2,"Observe what one move changes, then apply the same rule."
+hint.d2-p5-042.3,"Study the example in the agent notebook, and try another route."
+hint.d2-p5-043.1,Compare the target with the starting state.
+hint.d2-p5-043.2,"Observe what one move changes, then apply the same rule."
+hint.d2-p5-043.3,"Study the example in the agent notebook, and try another route."
+hint.d2-p5-044.1,Compare the target with the starting state.
+hint.d2-p5-044.2,"Observe what one move changes, then apply the same rule."
+hint.d2-p5-044.3,"Study the example in the agent notebook, and try another route."
+hint.d2-p5-045.1,Compare the target with the starting state.
+hint.d2-p5-045.2,"Observe what one move changes, then apply the same rule."
+hint.d2-p5-045.3,"Study the example in the agent notebook, and try another route."
+hint.d2-p5-046.1,Compare the target with the starting state.
+hint.d2-p5-046.2,"Observe what one move changes, then apply the same rule."
+hint.d2-p5-046.3,"Study the example in the agent notebook, and try another route."
+hint.d2-p5-047.1,Compare the target with the starting state.
+hint.d2-p5-047.2,"Observe what one move changes, then apply the same rule."
+hint.d2-p5-047.3,"Study the example in the agent notebook, and try another route."
+hint.d2-p5-048.1,Compare the target with the starting state.
+hint.d2-p5-048.2,"Observe what one move changes, then apply the same rule."
+hint.d2-p5-048.3,"Study the example in the agent notebook, and try another route."
+hint.d2-p5-049.1,Compare the target with the starting state.
+hint.d2-p5-049.2,"Observe what one move changes, then apply the same rule."
+hint.d2-p5-049.3,"Study the example in the agent notebook, and try another route."
+hint.d2-p5-050.1,Compare the target with the starting state.
+hint.d2-p5-050.2,"Observe what one move changes, then apply the same rule."
+hint.d2-p5-050.3,"Study the example in the agent notebook, and try another route."
+hint.d3-p1-001.1,Compare the target with the starting state.
+hint.d3-p1-001.2,"Observe what one move changes, then apply the same rule."
+hint.d3-p1-001.3,"Study the example in the agent notebook, and try another route."
+hint.d3-p1-002.1,Compare the target with the starting state.
+hint.d3-p1-002.2,"Observe what one move changes, then apply the same rule."
+hint.d3-p1-002.3,"Study the example in the agent notebook, and try another route."
+hint.d3-p1-003.1,Compare the target with the starting state.
+hint.d3-p1-003.2,"Observe what one move changes, then apply the same rule."
+hint.d3-p1-003.3,"Study the example in the agent notebook, and try another route."
+hint.d3-p1-004.1,Compare the target with the starting state.
+hint.d3-p1-004.2,"Observe what one move changes, then apply the same rule."
+hint.d3-p1-004.3,"Study the example in the agent notebook, and try another route."
+hint.d3-p1-005.1,Compare the target with the starting state.
+hint.d3-p1-005.2,"Observe what one move changes, then apply the same rule."
+hint.d3-p1-005.3,"Study the example in the agent notebook, and try another route."
+hint.d3-p1-006.1,Compare the target with the starting state.
+hint.d3-p1-006.2,"Observe what one move changes, then apply the same rule."
+hint.d3-p1-006.3,"Study the example in the agent notebook, and try another route."
+hint.d3-p1-007.1,Compare the target with the starting state.
+hint.d3-p1-007.2,"Observe what one move changes, then apply the same rule."
+hint.d3-p1-007.3,"Study the example in the agent notebook, and try another route."
+hint.d3-p1-008.1,Compare the target with the starting state.
+hint.d3-p1-008.2,"Observe what one move changes, then apply the same rule."
+hint.d3-p1-008.3,"Study the example in the agent notebook, and try another route."
+hint.d3-p1-009.1,Compare the target with the starting state.
+hint.d3-p1-009.2,"Observe what one move changes, then apply the same rule."
+hint.d3-p1-009.3,"Study the example in the agent notebook, and try another route."
+hint.d3-p1-010.1,Compare the target with the starting state.
+hint.d3-p1-010.2,"Observe what one move changes, then apply the same rule."
+hint.d3-p1-010.3,"Study the example in the agent notebook, and try another route."
+hint.d3-p2-011.1,Compare the target with the starting state.
+hint.d3-p2-011.2,"Observe what one move changes, then apply the same rule."
+hint.d3-p2-011.3,"Study the example in the agent notebook, and try another route."
+hint.d3-p2-012.1,Compare the target with the starting state.
+hint.d3-p2-012.2,"Observe what one move changes, then apply the same rule."
+hint.d3-p2-012.3,"Study the example in the agent notebook, and try another route."
+hint.d3-p2-013.1,Compare the target with the starting state.
+hint.d3-p2-013.2,"Observe what one move changes, then apply the same rule."
+hint.d3-p2-013.3,"Study the example in the agent notebook, and try another route."
+hint.d3-p2-014.1,Compare the target with the starting state.
+hint.d3-p2-014.2,"Observe what one move changes, then apply the same rule."
+hint.d3-p2-014.3,"Study the example in the agent notebook, and try another route."
+hint.d3-p2-015.1,Compare the target with the starting state.
+hint.d3-p2-015.2,"Observe what one move changes, then apply the same rule."
+hint.d3-p2-015.3,"Study the example in the agent notebook, and try another route."
+hint.d3-p2-016.1,Compare the target with the starting state.
+hint.d3-p2-016.2,"Observe what one move changes, then apply the same rule."
+hint.d3-p2-016.3,"Study the example in the agent notebook, and try another route."
+hint.d3-p2-017.1,Compare the target with the starting state.
+hint.d3-p2-017.2,"Observe what one move changes, then apply the same rule."
+hint.d3-p2-017.3,"Study the example in the agent notebook, and try another route."
+hint.d3-p2-018.1,Compare the target with the starting state.
+hint.d3-p2-018.2,"Observe what one move changes, then apply the same rule."
+hint.d3-p2-018.3,"Study the example in the agent notebook, and try another route."
+hint.d3-p2-019.1,Compare the target with the starting state.
+hint.d3-p2-019.2,"Observe what one move changes, then apply the same rule."
+hint.d3-p2-019.3,"Study the example in the agent notebook, and try another route."
+hint.d3-p2-020.1,Compare the target with the starting state.
+hint.d3-p2-020.2,"Observe what one move changes, then apply the same rule."
+hint.d3-p2-020.3,"Study the example in the agent notebook, and try another route."
+hint.d3-p3-021.1,Compare the target with the starting state.
+hint.d3-p3-021.2,"Observe what one move changes, then apply the same rule."
+hint.d3-p3-021.3,"Study the example in the agent notebook, and try another route."
+hint.d3-p3-022.1,Compare the target with the starting state.
+hint.d3-p3-022.2,"Observe what one move changes, then apply the same rule."
+hint.d3-p3-022.3,"Study the example in the agent notebook, and try another route."
+hint.d3-p3-023.1,Compare the target with the starting state.
+hint.d3-p3-023.2,"Observe what one move changes, then apply the same rule."
+hint.d3-p3-023.3,"Study the example in the agent notebook, and try another route."
+hint.d3-p3-024.1,Compare the target with the starting state.
+hint.d3-p3-024.2,"Observe what one move changes, then apply the same rule."
+hint.d3-p3-024.3,"Study the example in the agent notebook, and try another route."
+hint.d3-p3-025.1,Compare the target with the starting state.
+hint.d3-p3-025.2,"Observe what one move changes, then apply the same rule."
+hint.d3-p3-025.3,"Study the example in the agent notebook, and try another route."
+hint.d3-p3-026.1,Compare the target with the starting state.
+hint.d3-p3-026.2,"Observe what one move changes, then apply the same rule."
+hint.d3-p3-026.3,"Study the example in the agent notebook, and try another route."
+hint.d3-p3-027.1,Compare the target with the starting state.
+hint.d3-p3-027.2,"Observe what one move changes, then apply the same rule."
+hint.d3-p3-027.3,"Study the example in the agent notebook, and try another route."
+hint.d3-p3-028.1,Compare the target with the starting state.
+hint.d3-p3-028.2,"Observe what one move changes, then apply the same rule."
+hint.d3-p3-028.3,"Study the example in the agent notebook, and try another route."
+hint.d3-p3-029.1,Compare the target with the starting state.
+hint.d3-p3-029.2,"Observe what one move changes, then apply the same rule."
+hint.d3-p3-029.3,"Study the example in the agent notebook, and try another route."
+hint.d3-p3-030.1,Compare the target with the starting state.
+hint.d3-p3-030.2,"Observe what one move changes, then apply the same rule."
+hint.d3-p3-030.3,"Study the example in the agent notebook, and try another route."
+hint.d3-p4-031.1,Compare the target with the starting state.
+hint.d3-p4-031.2,"Observe what one move changes, then apply the same rule."
+hint.d3-p4-031.3,"Study the example in the agent notebook, and try another route."
+hint.d3-p4-032.1,Compare the target with the starting state.
+hint.d3-p4-032.2,"Observe what one move changes, then apply the same rule."
+hint.d3-p4-032.3,"Study the example in the agent notebook, and try another route."
+hint.d3-p4-033.1,Compare the target with the starting state.
+hint.d3-p4-033.2,"Observe what one move changes, then apply the same rule."
+hint.d3-p4-033.3,"Study the example in the agent notebook, and try another route."
+hint.d3-p4-034.1,Compare the target with the starting state.
+hint.d3-p4-034.2,"Observe what one move changes, then apply the same rule."
+hint.d3-p4-034.3,"Study the example in the agent notebook, and try another route."
+hint.d3-p4-035.1,Compare the target with the starting state.
+hint.d3-p4-035.2,"Observe what one move changes, then apply the same rule."
+hint.d3-p4-035.3,"Study the example in the agent notebook, and try another route."
+hint.d3-p4-036.1,Compare the target with the starting state.
+hint.d3-p4-036.2,"Observe what one move changes, then apply the same rule."
+hint.d3-p4-036.3,"Study the example in the agent notebook, and try another route."
+hint.d3-p4-037.1,Compare the target with the starting state.
+hint.d3-p4-037.2,"Observe what one move changes, then apply the same rule."
+hint.d3-p4-037.3,"Study the example in the agent notebook, and try another route."
+hint.d3-p4-038.1,Compare the target with the starting state.
+hint.d3-p4-038.2,"Observe what one move changes, then apply the same rule."
+hint.d3-p4-038.3,"Study the example in the agent notebook, and try another route."
+hint.d3-p4-039.1,Compare the target with the starting state.
+hint.d3-p4-039.2,"Observe what one move changes, then apply the same rule."
+hint.d3-p4-039.3,"Study the example in the agent notebook, and try another route."
+hint.d3-p4-040.1,Compare the target with the starting state.
+hint.d3-p4-040.2,"Observe what one move changes, then apply the same rule."
+hint.d3-p4-040.3,"Study the example in the agent notebook, and try another route."
+hint.d3-p5-041.1,Compare the target with the starting state.
+hint.d3-p5-041.2,"Observe what one move changes, then apply the same rule."
+hint.d3-p5-041.3,"Study the example in the agent notebook, and try another route."
+hint.d3-p5-042.1,Compare the target with the starting state.
+hint.d3-p5-042.2,"Observe what one move changes, then apply the same rule."
+hint.d3-p5-042.3,"Study the example in the agent notebook, and try another route."
+hint.d3-p5-043.1,Compare the target with the starting state.
+hint.d3-p5-043.2,"Observe what one move changes, then apply the same rule."
+hint.d3-p5-043.3,"Study the example in the agent notebook, and try another route."
+hint.d3-p5-044.1,Compare the target with the starting state.
+hint.d3-p5-044.2,"Observe what one move changes, then apply the same rule."
+hint.d3-p5-044.3,"Study the example in the agent notebook, and try another route."
+hint.d3-p5-045.1,Compare the target with the starting state.
+hint.d3-p5-045.2,"Observe what one move changes, then apply the same rule."
+hint.d3-p5-045.3,"Study the example in the agent notebook, and try another route."
+hint.d3-p5-046.1,Compare the target with the starting state.
+hint.d3-p5-046.2,"Observe what one move changes, then apply the same rule."
+hint.d3-p5-046.3,"Study the example in the agent notebook, and try another route."
+hint.d3-p5-047.1,Compare the target with the starting state.
+hint.d3-p5-047.2,"Observe what one move changes, then apply the same rule."
+hint.d3-p5-047.3,"Study the example in the agent notebook, and try another route."
+hint.d3-p5-048.1,Compare the target with the starting state.
+hint.d3-p5-048.2,"Observe what one move changes, then apply the same rule."
+hint.d3-p5-048.3,"Study the example in the agent notebook, and try another route."
+hint.d3-p5-049.1,Compare the target with the starting state.
+hint.d3-p5-049.2,"Observe what one move changes, then apply the same rule."
+hint.d3-p5-049.3,"Study the example in the agent notebook, and try another route."
+hint.d3-p5-050.1,Compare the target with the starting state.
+hint.d3-p5-050.2,"Observe what one move changes, then apply the same rule."
+hint.d3-p5-050.3,"Study the example in the agent notebook, and try another route."
+hint.d4-p1-001.1,Compare the target with the starting state.
+hint.d4-p1-001.2,"Observe what one move changes, then apply the same rule."
+hint.d4-p1-001.3,"Study the example in the agent notebook, and try another route."
+hint.d4-p1-002.1,Compare the target with the starting state.
+hint.d4-p1-002.2,"Observe what one move changes, then apply the same rule."
+hint.d4-p1-002.3,"Study the example in the agent notebook, and try another route."
+hint.d4-p1-003.1,Compare the target with the starting state.
+hint.d4-p1-003.2,"Observe what one move changes, then apply the same rule."
+hint.d4-p1-003.3,"Study the example in the agent notebook, and try another route."
+hint.d4-p1-004.1,Compare the target with the starting state.
+hint.d4-p1-004.2,"Observe what one move changes, then apply the same rule."
+hint.d4-p1-004.3,"Study the example in the agent notebook, and try another route."
+hint.d4-p1-005.1,Compare the target with the starting state.
+hint.d4-p1-005.2,"Observe what one move changes, then apply the same rule."
+hint.d4-p1-005.3,"Study the example in the agent notebook, and try another route."
+hint.d4-p1-006.1,Compare the target with the starting state.
+hint.d4-p1-006.2,"Observe what one move changes, then apply the same rule."
+hint.d4-p1-006.3,"Study the example in the agent notebook, and try another route."
+hint.d4-p1-007.1,Compare the target with the starting state.
+hint.d4-p1-007.2,"Observe what one move changes, then apply the same rule."
+hint.d4-p1-007.3,"Study the example in the agent notebook, and try another route."
+hint.d4-p1-008.1,Compare the target with the starting state.
+hint.d4-p1-008.2,"Observe what one move changes, then apply the same rule."
+hint.d4-p1-008.3,"Study the example in the agent notebook, and try another route."
+hint.d4-p1-009.1,Compare the target with the starting state.
+hint.d4-p1-009.2,"Observe what one move changes, then apply the same rule."
+hint.d4-p1-009.3,"Study the example in the agent notebook, and try another route."
+hint.d4-p1-010.1,Compare the target with the starting state.
+hint.d4-p1-010.2,"Observe what one move changes, then apply the same rule."
+hint.d4-p1-010.3,"Study the example in the agent notebook, and try another route."
+hint.d4-p2-011.1,Compare the target with the starting state.
+hint.d4-p2-011.2,"Observe what one move changes, then apply the same rule."
+hint.d4-p2-011.3,"Study the example in the agent notebook, and try another route."
+hint.d4-p2-012.1,Compare the target with the starting state.
+hint.d4-p2-012.2,"Observe what one move changes, then apply the same rule."
+hint.d4-p2-012.3,"Study the example in the agent notebook, and try another route."
+hint.d4-p2-013.1,Compare the target with the starting state.
+hint.d4-p2-013.2,"Observe what one move changes, then apply the same rule."
+hint.d4-p2-013.3,"Study the example in the agent notebook, and try another route."
+hint.d4-p2-014.1,Compare the target with the starting state.
+hint.d4-p2-014.2,"Observe what one move changes, then apply the same rule."
+hint.d4-p2-014.3,"Study the example in the agent notebook, and try another route."
+hint.d4-p2-015.1,Compare the target with the starting state.
+hint.d4-p2-015.2,"Observe what one move changes, then apply the same rule."
+hint.d4-p2-015.3,"Study the example in the agent notebook, and try another route."
+hint.d4-p2-016.1,Compare the target with the starting state.
+hint.d4-p2-016.2,"Observe what one move changes, then apply the same rule."
+hint.d4-p2-016.3,"Study the example in the agent notebook, and try another route."
+hint.d4-p2-017.1,Compare the target with the starting state.
+hint.d4-p2-017.2,"Observe what one move changes, then apply the same rule."
+hint.d4-p2-017.3,"Study the example in the agent notebook, and try another route."
+hint.d4-p2-018.1,Compare the target with the starting state.
+hint.d4-p2-018.2,"Observe what one move changes, then apply the same rule."
+hint.d4-p2-018.3,"Study the example in the agent notebook, and try another route."
+hint.d4-p2-019.1,Compare the target with the starting state.
+hint.d4-p2-019.2,"Observe what one move changes, then apply the same rule."
+hint.d4-p2-019.3,"Study the example in the agent notebook, and try another route."
+hint.d4-p2-020.1,Compare the target with the starting state.
+hint.d4-p2-020.2,"Observe what one move changes, then apply the same rule."
+hint.d4-p2-020.3,"Study the example in the agent notebook, and try another route."
+hint.d4-p3-021.1,Compare the target with the starting state.
+hint.d4-p3-021.2,"Observe what one move changes, then apply the same rule."
+hint.d4-p3-021.3,"Study the example in the agent notebook, and try another route."
+hint.d4-p3-022.1,Compare the target with the starting state.
+hint.d4-p3-022.2,"Observe what one move changes, then apply the same rule."
+hint.d4-p3-022.3,"Study the example in the agent notebook, and try another route."
+hint.d4-p3-023.1,Compare the target with the starting state.
+hint.d4-p3-023.2,"Observe what one move changes, then apply the same rule."
+hint.d4-p3-023.3,"Study the example in the agent notebook, and try another route."
+hint.d4-p3-024.1,Compare the target with the starting state.
+hint.d4-p3-024.2,"Observe what one move changes, then apply the same rule."
+hint.d4-p3-024.3,"Study the example in the agent notebook, and try another route."
+hint.d4-p3-025.1,Compare the target with the starting state.
+hint.d4-p3-025.2,"Observe what one move changes, then apply the same rule."
+hint.d4-p3-025.3,"Study the example in the agent notebook, and try another route."
+hint.d4-p3-026.1,Compare the target with the starting state.
+hint.d4-p3-026.2,"Observe what one move changes, then apply the same rule."
+hint.d4-p3-026.3,"Study the example in the agent notebook, and try another route."
+hint.d4-p3-027.1,Compare the target with the starting state.
+hint.d4-p3-027.2,"Observe what one move changes, then apply the same rule."
+hint.d4-p3-027.3,"Study the example in the agent notebook, and try another route."
+hint.d4-p3-028.1,Compare the target with the starting state.
+hint.d4-p3-028.2,"Observe what one move changes, then apply the same rule."
+hint.d4-p3-028.3,"Study the example in the agent notebook, and try another route."
+hint.d4-p3-029.1,Compare the target with the starting state.
+hint.d4-p3-029.2,"Observe what one move changes, then apply the same rule."
+hint.d4-p3-029.3,"Study the example in the agent notebook, and try another route."
+hint.d4-p3-030.1,Compare the target with the starting state.
+hint.d4-p3-030.2,"Observe what one move changes, then apply the same rule."
+hint.d4-p3-030.3,"Study the example in the agent notebook, and try another route."
+hint.d4-p4-031.1,Compare the target with the starting state.
+hint.d4-p4-031.2,"Observe what one move changes, then apply the same rule."
+hint.d4-p4-031.3,"Study the example in the agent notebook, and try another route."
+hint.d4-p4-032.1,Compare the target with the starting state.
+hint.d4-p4-032.2,"Observe what one move changes, then apply the same rule."
+hint.d4-p4-032.3,"Study the example in the agent notebook, and try another route."
+hint.d4-p4-033.1,Compare the target with the starting state.
+hint.d4-p4-033.2,"Observe what one move changes, then apply the same rule."
+hint.d4-p4-033.3,"Study the example in the agent notebook, and try another route."
+hint.d4-p4-034.1,Compare the target with the starting state.
+hint.d4-p4-034.2,"Observe what one move changes, then apply the same rule."
+hint.d4-p4-034.3,"Study the example in the agent notebook, and try another route."
+hint.d4-p4-035.1,Compare the target with the starting state.
+hint.d4-p4-035.2,"Observe what one move changes, then apply the same rule."
+hint.d4-p4-035.3,"Study the example in the agent notebook, and try another route."
+hint.d4-p4-036.1,Compare the target with the starting state.
+hint.d4-p4-036.2,"Observe what one move changes, then apply the same rule."
+hint.d4-p4-036.3,"Study the example in the agent notebook, and try another route."
+hint.d4-p4-037.1,Compare the target with the starting state.
+hint.d4-p4-037.2,"Observe what one move changes, then apply the same rule."
+hint.d4-p4-037.3,"Study the example in the agent notebook, and try another route."
+hint.d4-p4-038.1,Compare the target with the starting state.
+hint.d4-p4-038.2,"Observe what one move changes, then apply the same rule."
+hint.d4-p4-038.3,"Study the example in the agent notebook, and try another route."
+hint.d4-p4-039.1,Compare the target with the starting state.
+hint.d4-p4-039.2,"Observe what one move changes, then apply the same rule."
+hint.d4-p4-039.3,"Study the example in the agent notebook, and try another route."
+hint.d4-p4-040.1,Compare the target with the starting state.
+hint.d4-p4-040.2,"Observe what one move changes, then apply the same rule."
+hint.d4-p4-040.3,"Study the example in the agent notebook, and try another route."
+hint.d4-p5-041.1,Compare the target with the starting state.
+hint.d4-p5-041.2,"Observe what one move changes, then apply the same rule."
+hint.d4-p5-041.3,"Study the example in the agent notebook, and try another route."
+hint.d4-p5-042.1,Compare the target with the starting state.
+hint.d4-p5-042.2,"Observe what one move changes, then apply the same rule."
+hint.d4-p5-042.3,"Study the example in the agent notebook, and try another route."
+hint.d4-p5-043.1,Compare the target with the starting state.
+hint.d4-p5-043.2,"Observe what one move changes, then apply the same rule."
+hint.d4-p5-043.3,"Study the example in the agent notebook, and try another route."
+hint.d4-p5-044.1,Compare the target with the starting state.
+hint.d4-p5-044.2,"Observe what one move changes, then apply the same rule."
+hint.d4-p5-044.3,"Study the example in the agent notebook, and try another route."
+hint.d4-p5-045.1,Compare the target with the starting state.
+hint.d4-p5-045.2,"Observe what one move changes, then apply the same rule."
+hint.d4-p5-045.3,"Study the example in the agent notebook, and try another route."
+hint.d4-p5-046.1,Compare the target with the starting state.
+hint.d4-p5-046.2,"Observe what one move changes, then apply the same rule."
+hint.d4-p5-046.3,"Study the example in the agent notebook, and try another route."
+hint.d4-p5-047.1,Compare the target with the starting state.
+hint.d4-p5-047.2,"Observe what one move changes, then apply the same rule."
+hint.d4-p5-047.3,"Study the example in the agent notebook, and try another route."
+hint.d4-p5-048.1,Compare the target with the starting state.
+hint.d4-p5-048.2,"Observe what one move changes, then apply the same rule."
+hint.d4-p5-048.3,"Study the example in the agent notebook, and try another route."
+hint.d4-p5-049.1,Compare the target with the starting state.
+hint.d4-p5-049.2,"Observe what one move changes, then apply the same rule."
+hint.d4-p5-049.3,"Study the example in the agent notebook, and try another route."
+hint.d4-p5-050.1,Compare the target with the starting state.
+hint.d4-p5-050.2,"Observe what one move changes, then apply the same rule."
+hint.d4-p5-050.3,"Study the example in the agent notebook, and try another route."
+hint.d5-p1-001.1,Compare the target with the starting state.
+hint.d5-p1-001.2,"Observe what one move changes, then apply the same rule."
+hint.d5-p1-001.3,"Study the example in the agent notebook, and try another route."
+hint.d5-p1-002.1,Compare the target with the starting state.
+hint.d5-p1-002.2,"Observe what one move changes, then apply the same rule."
+hint.d5-p1-002.3,"Study the example in the agent notebook, and try another route."
+hint.d5-p1-003.1,Compare the target with the starting state.
+hint.d5-p1-003.2,"Observe what one move changes, then apply the same rule."
+hint.d5-p1-003.3,"Study the example in the agent notebook, and try another route."
+hint.d5-p1-004.1,Compare the target with the starting state.
+hint.d5-p1-004.2,"Observe what one move changes, then apply the same rule."
+hint.d5-p1-004.3,"Study the example in the agent notebook, and try another route."
+hint.d5-p1-005.1,Compare the target with the starting state.
+hint.d5-p1-005.2,"Observe what one move changes, then apply the same rule."
+hint.d5-p1-005.3,"Study the example in the agent notebook, and try another route."
+hint.d5-p1-006.1,Compare the target with the starting state.
+hint.d5-p1-006.2,"Observe what one move changes, then apply the same rule."
+hint.d5-p1-006.3,"Study the example in the agent notebook, and try another route."
+hint.d5-p1-007.1,Compare the target with the starting state.
+hint.d5-p1-007.2,"Observe what one move changes, then apply the same rule."
+hint.d5-p1-007.3,"Study the example in the agent notebook, and try another route."
+hint.d5-p1-008.1,Compare the target with the starting state.
+hint.d5-p1-008.2,"Observe what one move changes, then apply the same rule."
+hint.d5-p1-008.3,"Study the example in the agent notebook, and try another route."
+hint.d5-p1-009.1,Compare the target with the starting state.
+hint.d5-p1-009.2,"Observe what one move changes, then apply the same rule."
+hint.d5-p1-009.3,"Study the example in the agent notebook, and try another route."
+hint.d5-p1-010.1,Compare the target with the starting state.
+hint.d5-p1-010.2,"Observe what one move changes, then apply the same rule."
+hint.d5-p1-010.3,"Study the example in the agent notebook, and try another route."
+hint.d5-p2-011.1,Compare the target with the starting state.
+hint.d5-p2-011.2,"Observe what one move changes, then apply the same rule."
+hint.d5-p2-011.3,"Study the example in the agent notebook, and try another route."
+hint.d5-p2-012.1,Compare the target with the starting state.
+hint.d5-p2-012.2,"Observe what one move changes, then apply the same rule."
+hint.d5-p2-012.3,"Study the example in the agent notebook, and try another route."
+hint.d5-p2-013.1,Compare the target with the starting state.
+hint.d5-p2-013.2,"Observe what one move changes, then apply the same rule."
+hint.d5-p2-013.3,"Study the example in the agent notebook, and try another route."
+hint.d5-p2-014.1,Compare the target with the starting state.
+hint.d5-p2-014.2,"Observe what one move changes, then apply the same rule."
+hint.d5-p2-014.3,"Study the example in the agent notebook, and try another route."
+hint.d5-p2-015.1,Compare the target with the starting state.
+hint.d5-p2-015.2,"Observe what one move changes, then apply the same rule."
+hint.d5-p2-015.3,"Study the example in the agent notebook, and try another route."
+hint.d5-p2-016.1,Compare the target with the starting state.
+hint.d5-p2-016.2,"Observe what one move changes, then apply the same rule."
+hint.d5-p2-016.3,"Study the example in the agent notebook, and try another route."
+hint.d5-p2-017.1,Compare the target with the starting state.
+hint.d5-p2-017.2,"Observe what one move changes, then apply the same rule."
+hint.d5-p2-017.3,"Study the example in the agent notebook, and try another route."
+hint.d5-p2-018.1,Compare the target with the starting state.
+hint.d5-p2-018.2,"Observe what one move changes, then apply the same rule."
+hint.d5-p2-018.3,"Study the example in the agent notebook, and try another route."
+hint.d5-p2-019.1,Compare the target with the starting state.
+hint.d5-p2-019.2,"Observe what one move changes, then apply the same rule."
+hint.d5-p2-019.3,"Study the example in the agent notebook, and try another route."
+hint.d5-p2-020.1,Compare the target with the starting state.
+hint.d5-p2-020.2,"Observe what one move changes, then apply the same rule."
+hint.d5-p2-020.3,"Study the example in the agent notebook, and try another route."
+hint.d5-p3-021.1,Compare the target with the starting state.
+hint.d5-p3-021.2,"Observe what one move changes, then apply the same rule."
+hint.d5-p3-021.3,"Study the example in the agent notebook, and try another route."
+hint.d5-p3-022.1,Compare the target with the starting state.
+hint.d5-p3-022.2,"Observe what one move changes, then apply the same rule."
+hint.d5-p3-022.3,"Study the example in the agent notebook, and try another route."
+hint.d5-p3-023.1,Compare the target with the starting state.
+hint.d5-p3-023.2,"Observe what one move changes, then apply the same rule."
+hint.d5-p3-023.3,"Study the example in the agent notebook, and try another route."
+hint.d5-p3-024.1,Compare the target with the starting state.
+hint.d5-p3-024.2,"Observe what one move changes, then apply the same rule."
+hint.d5-p3-024.3,"Study the example in the agent notebook, and try another route."
+hint.d5-p3-025.1,Compare the target with the starting state.
+hint.d5-p3-025.2,"Observe what one move changes, then apply the same rule."
+hint.d5-p3-025.3,"Study the example in the agent notebook, and try another route."
+hint.d5-p3-026.1,Compare the target with the starting state.
+hint.d5-p3-026.2,"Observe what one move changes, then apply the same rule."
+hint.d5-p3-026.3,"Study the example in the agent notebook, and try another route."
+hint.d5-p3-027.1,Compare the target with the starting state.
+hint.d5-p3-027.2,"Observe what one move changes, then apply the same rule."
+hint.d5-p3-027.3,"Study the example in the agent notebook, and try another route."
+hint.d5-p3-028.1,Compare the target with the starting state.
+hint.d5-p3-028.2,"Observe what one move changes, then apply the same rule."
+hint.d5-p3-028.3,"Study the example in the agent notebook, and try another route."
+hint.d5-p3-029.1,Compare the target with the starting state.
+hint.d5-p3-029.2,"Observe what one move changes, then apply the same rule."
+hint.d5-p3-029.3,"Study the example in the agent notebook, and try another route."
+hint.d5-p3-030.1,Compare the target with the starting state.
+hint.d5-p3-030.2,"Observe what one move changes, then apply the same rule."
+hint.d5-p3-030.3,"Study the example in the agent notebook, and try another route."
+hint.d5-p4-031.1,Compare the target with the starting state.
+hint.d5-p4-031.2,"Observe what one move changes, then apply the same rule."
+hint.d5-p4-031.3,"Study the example in the agent notebook, and try another route."
+hint.d5-p4-032.1,Compare the target with the starting state.
+hint.d5-p4-032.2,"Observe what one move changes, then apply the same rule."
+hint.d5-p4-032.3,"Study the example in the agent notebook, and try another route."
+hint.d5-p4-033.1,Compare the target with the starting state.
+hint.d5-p4-033.2,"Observe what one move changes, then apply the same rule."
+hint.d5-p4-033.3,"Study the example in the agent notebook, and try another route."
+hint.d5-p4-034.1,Compare the target with the starting state.
+hint.d5-p4-034.2,"Observe what one move changes, then apply the same rule."
+hint.d5-p4-034.3,"Study the example in the agent notebook, and try another route."
+hint.d5-p4-035.1,Compare the target with the starting state.
+hint.d5-p4-035.2,"Observe what one move changes, then apply the same rule."
+hint.d5-p4-035.3,"Study the example in the agent notebook, and try another route."
+hint.d5-p4-036.1,Compare the target with the starting state.
+hint.d5-p4-036.2,"Observe what one move changes, then apply the same rule."
+hint.d5-p4-036.3,"Study the example in the agent notebook, and try another route."
+hint.d5-p4-037.1,Compare the target with the starting state.
+hint.d5-p4-037.2,"Observe what one move changes, then apply the same rule."
+hint.d5-p4-037.3,"Study the example in the agent notebook, and try another route."
+hint.d5-p4-038.1,Compare the target with the starting state.
+hint.d5-p4-038.2,"Observe what one move changes, then apply the same rule."
+hint.d5-p4-038.3,"Study the example in the agent notebook, and try another route."
+hint.d5-p4-039.1,Compare the target with the starting state.
+hint.d5-p4-039.2,"Observe what one move changes, then apply the same rule."
+hint.d5-p4-039.3,"Study the example in the agent notebook, and try another route."
+hint.d5-p4-040.1,Compare the target with the starting state.
+hint.d5-p4-040.2,"Observe what one move changes, then apply the same rule."
+hint.d5-p4-040.3,"Study the example in the agent notebook, and try another route."
+hint.d5-p5-041.1,Compare the target with the starting state.
+hint.d5-p5-041.2,"Observe what one move changes, then apply the same rule."
+hint.d5-p5-041.3,"Study the example in the agent notebook, and try another route."
+hint.d5-p5-042.1,Compare the target with the starting state.
+hint.d5-p5-042.2,"Observe what one move changes, then apply the same rule."
+hint.d5-p5-042.3,"Study the example in the agent notebook, and try another route."
+hint.d5-p5-043.1,Compare the target with the starting state.
+hint.d5-p5-043.2,"Observe what one move changes, then apply the same rule."
+hint.d5-p5-043.3,"Study the example in the agent notebook, and try another route."
+hint.d5-p5-044.1,Compare the target with the starting state.
+hint.d5-p5-044.2,"Observe what one move changes, then apply the same rule."
+hint.d5-p5-044.3,"Study the example in the agent notebook, and try another route."
+hint.d5-p5-045.1,Compare the target with the starting state.
+hint.d5-p5-045.2,"Observe what one move changes, then apply the same rule."
+hint.d5-p5-045.3,"Study the example in the agent notebook, and try another route."
+hint.d5-p5-046.1,Compare the target with the starting state.
+hint.d5-p5-046.2,"Observe what one move changes, then apply the same rule."
+hint.d5-p5-046.3,"Study the example in the agent notebook, and try another route."
+hint.d5-p5-047.1,Compare the target with the starting state.
+hint.d5-p5-047.2,"Observe what one move changes, then apply the same rule."
+hint.d5-p5-047.3,"Study the example in the agent notebook, and try another route."
+hint.d5-p5-048.1,Compare the target with the starting state.
+hint.d5-p5-048.2,"Observe what one move changes, then apply the same rule."
+hint.d5-p5-048.3,"Study the example in the agent notebook, and try another route."
+hint.d5-p5-049.1,Compare the target with the starting state.
+hint.d5-p5-049.2,"Observe what one move changes, then apply the same rule."
+hint.d5-p5-049.3,"Study the example in the agent notebook, and try another route."
+hint.d5-p5-050.1,Compare the target with the starting state.
+hint.d5-p5-050.2,"Observe what one move changes, then apply the same rule."
+hint.d5-p5-050.3,"Study the example in the agent notebook, and try another route."
+hint.d6-p1-001.1,Compare the target with the starting state.
+hint.d6-p1-001.2,"Observe what one move changes, then apply the same rule."
+hint.d6-p1-001.3,"Study the example in the agent notebook, and try another route."
+hint.d6-p1-002.1,Compare the target with the starting state.
+hint.d6-p1-002.2,"Observe what one move changes, then apply the same rule."
+hint.d6-p1-002.3,"Study the example in the agent notebook, and try another route."
+hint.d6-p1-003.1,Compare the target with the starting state.
+hint.d6-p1-003.2,"Observe what one move changes, then apply the same rule."
+hint.d6-p1-003.3,"Study the example in the agent notebook, and try another route."
+hint.d6-p1-004.1,Compare the target with the starting state.
+hint.d6-p1-004.2,"Observe what one move changes, then apply the same rule."
+hint.d6-p1-004.3,"Study the example in the agent notebook, and try another route."
+hint.d6-p1-005.1,Compare the target with the starting state.
+hint.d6-p1-005.2,"Observe what one move changes, then apply the same rule."
+hint.d6-p1-005.3,"Study the example in the agent notebook, and try another route."
+hint.d6-p1-006.1,Compare the target with the starting state.
+hint.d6-p1-006.2,"Observe what one move changes, then apply the same rule."
+hint.d6-p1-006.3,"Study the example in the agent notebook, and try another route."
+hint.d6-p1-007.1,Compare the target with the starting state.
+hint.d6-p1-007.2,"Observe what one move changes, then apply the same rule."
+hint.d6-p1-007.3,"Study the example in the agent notebook, and try another route."
+hint.d6-p1-008.1,Compare the target with the starting state.
+hint.d6-p1-008.2,"Observe what one move changes, then apply the same rule."
+hint.d6-p1-008.3,"Study the example in the agent notebook, and try another route."
+hint.d6-p1-009.1,Compare the target with the starting state.
+hint.d6-p1-009.2,"Observe what one move changes, then apply the same rule."
+hint.d6-p1-009.3,"Study the example in the agent notebook, and try another route."
+hint.d6-p1-010.1,Compare the target with the starting state.
+hint.d6-p1-010.2,"Observe what one move changes, then apply the same rule."
+hint.d6-p1-010.3,"Study the example in the agent notebook, and try another route."
+hint.d6-p2-011.1,Compare the target with the starting state.
+hint.d6-p2-011.2,"Observe what one move changes, then apply the same rule."
+hint.d6-p2-011.3,"Study the example in the agent notebook, and try another route."
+hint.d6-p2-012.1,Compare the target with the starting state.
+hint.d6-p2-012.2,"Observe what one move changes, then apply the same rule."
+hint.d6-p2-012.3,"Study the example in the agent notebook, and try another route."
+hint.d6-p2-013.1,Compare the target with the starting state.
+hint.d6-p2-013.2,"Observe what one move changes, then apply the same rule."
+hint.d6-p2-013.3,"Study the example in the agent notebook, and try another route."
+hint.d6-p2-014.1,Compare the target with the starting state.
+hint.d6-p2-014.2,"Observe what one move changes, then apply the same rule."
+hint.d6-p2-014.3,"Study the example in the agent notebook, and try another route."
+hint.d6-p2-015.1,Compare the target with the starting state.
+hint.d6-p2-015.2,"Observe what one move changes, then apply the same rule."
+hint.d6-p2-015.3,"Study the example in the agent notebook, and try another route."
+hint.d6-p2-016.1,Compare the target with the starting state.
+hint.d6-p2-016.2,"Observe what one move changes, then apply the same rule."
+hint.d6-p2-016.3,"Study the example in the agent notebook, and try another route."
+hint.d6-p2-017.1,Compare the target with the starting state.
+hint.d6-p2-017.2,"Observe what one move changes, then apply the same rule."
+hint.d6-p2-017.3,"Study the example in the agent notebook, and try another route."
+hint.d6-p2-018.1,Compare the target with the starting state.
+hint.d6-p2-018.2,"Observe what one move changes, then apply the same rule."
+hint.d6-p2-018.3,"Study the example in the agent notebook, and try another route."
+hint.d6-p2-019.1,Compare the target with the starting state.
+hint.d6-p2-019.2,"Observe what one move changes, then apply the same rule."
+hint.d6-p2-019.3,"Study the example in the agent notebook, and try another route."
+hint.d6-p2-020.1,Compare the target with the starting state.
+hint.d6-p2-020.2,"Observe what one move changes, then apply the same rule."
+hint.d6-p2-020.3,"Study the example in the agent notebook, and try another route."
+hint.d6-p3-021.1,Compare the target with the starting state.
+hint.d6-p3-021.2,"Observe what one move changes, then apply the same rule."
+hint.d6-p3-021.3,"Study the example in the agent notebook, and try another route."
+hint.d6-p3-022.1,Compare the target with the starting state.
+hint.d6-p3-022.2,"Observe what one move changes, then apply the same rule."
+hint.d6-p3-022.3,"Study the example in the agent notebook, and try another route."
+hint.d6-p3-023.1,Compare the target with the starting state.
+hint.d6-p3-023.2,"Observe what one move changes, then apply the same rule."
+hint.d6-p3-023.3,"Study the example in the agent notebook, and try another route."
+hint.d6-p3-024.1,Compare the target with the starting state.
+hint.d6-p3-024.2,"Observe what one move changes, then apply the same rule."
+hint.d6-p3-024.3,"Study the example in the agent notebook, and try another route."
+hint.d6-p3-025.1,Compare the target with the starting state.
+hint.d6-p3-025.2,"Observe what one move changes, then apply the same rule."
+hint.d6-p3-025.3,"Study the example in the agent notebook, and try another route."
+hint.d6-p3-026.1,Compare the target with the starting state.
+hint.d6-p3-026.2,"Observe what one move changes, then apply the same rule."
+hint.d6-p3-026.3,"Study the example in the agent notebook, and try another route."
+hint.d6-p3-027.1,Compare the target with the starting state.
+hint.d6-p3-027.2,"Observe what one move changes, then apply the same rule."
+hint.d6-p3-027.3,"Study the example in the agent notebook, and try another route."
+hint.d6-p3-028.1,Compare the target with the starting state.
+hint.d6-p3-028.2,"Observe what one move changes, then apply the same rule."
+hint.d6-p3-028.3,"Study the example in the agent notebook, and try another route."
+hint.d6-p3-029.1,Compare the target with the starting state.
+hint.d6-p3-029.2,"Observe what one move changes, then apply the same rule."
+hint.d6-p3-029.3,"Study the example in the agent notebook, and try another route."
+hint.d6-p3-030.1,Compare the target with the starting state.
+hint.d6-p3-030.2,"Observe what one move changes, then apply the same rule."
+hint.d6-p3-030.3,"Study the example in the agent notebook, and try another route."
+hint.d6-p4-031.1,Compare the target with the starting state.
+hint.d6-p4-031.2,"Observe what one move changes, then apply the same rule."
+hint.d6-p4-031.3,"Study the example in the agent notebook, and try another route."
+hint.d6-p4-032.1,Compare the target with the starting state.
+hint.d6-p4-032.2,"Observe what one move changes, then apply the same rule."
+hint.d6-p4-032.3,"Study the example in the agent notebook, and try another route."
+hint.d6-p4-033.1,Compare the target with the starting state.
+hint.d6-p4-033.2,"Observe what one move changes, then apply the same rule."
+hint.d6-p4-033.3,"Study the example in the agent notebook, and try another route."
+hint.d6-p4-034.1,Compare the target with the starting state.
+hint.d6-p4-034.2,"Observe what one move changes, then apply the same rule."
+hint.d6-p4-034.3,"Study the example in the agent notebook, and try another route."
+hint.d6-p4-035.1,Compare the target with the starting state.
+hint.d6-p4-035.2,"Observe what one move changes, then apply the same rule."
+hint.d6-p4-035.3,"Study the example in the agent notebook, and try another route."
+hint.d6-p4-036.1,Compare the target with the starting state.
+hint.d6-p4-036.2,"Observe what one move changes, then apply the same rule."
+hint.d6-p4-036.3,"Study the example in the agent notebook, and try another route."
+hint.d6-p4-037.1,Compare the target with the starting state.
+hint.d6-p4-037.2,"Observe what one move changes, then apply the same rule."
+hint.d6-p4-037.3,"Study the example in the agent notebook, and try another route."
+hint.d6-p4-038.1,Compare the target with the starting state.
+hint.d6-p4-038.2,"Observe what one move changes, then apply the same rule."
+hint.d6-p4-038.3,"Study the example in the agent notebook, and try another route."
+hint.d6-p4-039.1,Compare the target with the starting state.
+hint.d6-p4-039.2,"Observe what one move changes, then apply the same rule."
+hint.d6-p4-039.3,"Study the example in the agent notebook, and try another route."
+hint.d6-p4-040.1,Compare the target with the starting state.
+hint.d6-p4-040.2,"Observe what one move changes, then apply the same rule."
+hint.d6-p4-040.3,"Study the example in the agent notebook, and try another route."
+hint.d6-p5-041.1,Compare the target with the starting state.
+hint.d6-p5-041.2,"Observe what one move changes, then apply the same rule."
+hint.d6-p5-041.3,"Study the example in the agent notebook, and try another route."
+hint.d6-p5-042.1,Compare the target with the starting state.
+hint.d6-p5-042.2,"Observe what one move changes, then apply the same rule."
+hint.d6-p5-042.3,"Study the example in the agent notebook, and try another route."
+hint.d6-p5-043.1,Compare the target with the starting state.
+hint.d6-p5-043.2,"Observe what one move changes, then apply the same rule."
+hint.d6-p5-043.3,"Study the example in the agent notebook, and try another route."
+hint.d6-p5-044.1,Compare the target with the starting state.
+hint.d6-p5-044.2,"Observe what one move changes, then apply the same rule."
+hint.d6-p5-044.3,"Study the example in the agent notebook, and try another route."
+hint.d6-p5-045.1,Compare the target with the starting state.
+hint.d6-p5-045.2,"Observe what one move changes, then apply the same rule."
+hint.d6-p5-045.3,"Study the example in the agent notebook, and try another route."
+hint.d6-p5-046.1,Compare the target with the starting state.
+hint.d6-p5-046.2,"Observe what one move changes, then apply the same rule."
+hint.d6-p5-046.3,"Study the example in the agent notebook, and try another route."
+hint.d6-p5-047.1,Compare the target with the starting state.
+hint.d6-p5-047.2,"Observe what one move changes, then apply the same rule."
+hint.d6-p5-047.3,"Study the example in the agent notebook, and try another route."
+hint.d6-p5-048.1,Compare the target with the starting state.
+hint.d6-p5-048.2,"Observe what one move changes, then apply the same rule."
+hint.d6-p5-048.3,"Study the example in the agent notebook, and try another route."
+hint.d6-p5-049.1,Compare the target with the starting state.
+hint.d6-p5-049.2,"Observe what one move changes, then apply the same rule."
+hint.d6-p5-049.3,"Study the example in the agent notebook, and try another route."
+hint.d6-p5-050.1,Compare the target with the starting state.
+hint.d6-p5-050.2,"Observe what one move changes, then apply the same rule."
+hint.d6-p5-050.3,"Study the example in the agent notebook, and try another route."
+hint.d7-p1-001.1,Compare the target with the starting state.
+hint.d7-p1-001.2,"Observe what one move changes, then apply the same rule."
+hint.d7-p1-001.3,"Study the example in the agent notebook, and try another route."
+hint.d7-p1-002.1,Compare the target with the starting state.
+hint.d7-p1-002.2,"Observe what one move changes, then apply the same rule."
+hint.d7-p1-002.3,"Study the example in the agent notebook, and try another route."
+hint.d7-p1-003.1,Compare the target with the starting state.
+hint.d7-p1-003.2,"Observe what one move changes, then apply the same rule."
+hint.d7-p1-003.3,"Study the example in the agent notebook, and try another route."
+hint.d7-p1-004.1,Compare the target with the starting state.
+hint.d7-p1-004.2,"Observe what one move changes, then apply the same rule."
+hint.d7-p1-004.3,"Study the example in the agent notebook, and try another route."
+hint.d7-p1-005.1,Compare the target with the starting state.
+hint.d7-p1-005.2,"Observe what one move changes, then apply the same rule."
+hint.d7-p1-005.3,"Study the example in the agent notebook, and try another route."
+hint.d7-p1-006.1,Compare the target with the starting state.
+hint.d7-p1-006.2,"Observe what one move changes, then apply the same rule."
+hint.d7-p1-006.3,"Study the example in the agent notebook, and try another route."
+hint.d7-p1-007.1,Compare the target with the starting state.
+hint.d7-p1-007.2,"Observe what one move changes, then apply the same rule."
+hint.d7-p1-007.3,"Study the example in the agent notebook, and try another route."
+hint.d7-p1-008.1,Compare the target with the starting state.
+hint.d7-p1-008.2,"Observe what one move changes, then apply the same rule."
+hint.d7-p1-008.3,"Study the example in the agent notebook, and try another route."
+hint.d7-p1-009.1,Compare the target with the starting state.
+hint.d7-p1-009.2,"Observe what one move changes, then apply the same rule."
+hint.d7-p1-009.3,"Study the example in the agent notebook, and try another route."
+hint.d7-p1-010.1,Compare the target with the starting state.
+hint.d7-p1-010.2,"Observe what one move changes, then apply the same rule."
+hint.d7-p1-010.3,"Study the example in the agent notebook, and try another route."
+hint.d7-p2-011.1,Compare the target with the starting state.
+hint.d7-p2-011.2,"Observe what one move changes, then apply the same rule."
+hint.d7-p2-011.3,"Study the example in the agent notebook, and try another route."
+hint.d7-p2-012.1,Compare the target with the starting state.
+hint.d7-p2-012.2,"Observe what one move changes, then apply the same rule."
+hint.d7-p2-012.3,"Study the example in the agent notebook, and try another route."
+hint.d7-p2-013.1,Compare the target with the starting state.
+hint.d7-p2-013.2,"Observe what one move changes, then apply the same rule."
+hint.d7-p2-013.3,"Study the example in the agent notebook, and try another route."
+hint.d7-p2-014.1,Compare the target with the starting state.
+hint.d7-p2-014.2,"Observe what one move changes, then apply the same rule."
+hint.d7-p2-014.3,"Study the example in the agent notebook, and try another route."
+hint.d7-p2-015.1,Compare the target with the starting state.
+hint.d7-p2-015.2,"Observe what one move changes, then apply the same rule."
+hint.d7-p2-015.3,"Study the example in the agent notebook, and try another route."
+hint.d7-p2-016.1,Compare the target with the starting state.
+hint.d7-p2-016.2,"Observe what one move changes, then apply the same rule."
+hint.d7-p2-016.3,"Study the example in the agent notebook, and try another route."
+hint.d7-p2-017.1,Compare the target with the starting state.
+hint.d7-p2-017.2,"Observe what one move changes, then apply the same rule."
+hint.d7-p2-017.3,"Study the example in the agent notebook, and try another route."
+hint.d7-p2-018.1,Compare the target with the starting state.
+hint.d7-p2-018.2,"Observe what one move changes, then apply the same rule."
+hint.d7-p2-018.3,"Study the example in the agent notebook, and try another route."
+hint.d7-p2-019.1,Compare the target with the starting state.
+hint.d7-p2-019.2,"Observe what one move changes, then apply the same rule."
+hint.d7-p2-019.3,"Study the example in the agent notebook, and try another route."
+hint.d7-p2-020.1,Compare the target with the starting state.
+hint.d7-p2-020.2,"Observe what one move changes, then apply the same rule."
+hint.d7-p2-020.3,"Study the example in the agent notebook, and try another route."
+hint.d7-p3-021.1,Compare the target with the starting state.
+hint.d7-p3-021.2,"Observe what one move changes, then apply the same rule."
+hint.d7-p3-021.3,"Study the example in the agent notebook, and try another route."
+hint.d7-p3-022.1,Compare the target with the starting state.
+hint.d7-p3-022.2,"Observe what one move changes, then apply the same rule."
+hint.d7-p3-022.3,"Study the example in the agent notebook, and try another route."
+hint.d7-p3-023.1,Compare the target with the starting state.
+hint.d7-p3-023.2,"Observe what one move changes, then apply the same rule."
+hint.d7-p3-023.3,"Study the example in the agent notebook, and try another route."
+hint.d7-p3-024.1,Compare the target with the starting state.
+hint.d7-p3-024.2,"Observe what one move changes, then apply the same rule."
+hint.d7-p3-024.3,"Study the example in the agent notebook, and try another route."
+hint.d7-p3-025.1,Compare the target with the starting state.
+hint.d7-p3-025.2,"Observe what one move changes, then apply the same rule."
+hint.d7-p3-025.3,"Study the example in the agent notebook, and try another route."
+hint.d7-p3-026.1,Compare the target with the starting state.
+hint.d7-p3-026.2,"Observe what one move changes, then apply the same rule."
+hint.d7-p3-026.3,"Study the example in the agent notebook, and try another route."
+hint.d7-p3-027.1,Compare the target with the starting state.
+hint.d7-p3-027.2,"Observe what one move changes, then apply the same rule."
+hint.d7-p3-027.3,"Study the example in the agent notebook, and try another route."
+hint.d7-p3-028.1,Compare the target with the starting state.
+hint.d7-p3-028.2,"Observe what one move changes, then apply the same rule."
+hint.d7-p3-028.3,"Study the example in the agent notebook, and try another route."
+hint.d7-p3-029.1,Compare the target with the starting state.
+hint.d7-p3-029.2,"Observe what one move changes, then apply the same rule."
+hint.d7-p3-029.3,"Study the example in the agent notebook, and try another route."
+hint.d7-p3-030.1,Compare the target with the starting state.
+hint.d7-p3-030.2,"Observe what one move changes, then apply the same rule."
+hint.d7-p3-030.3,"Study the example in the agent notebook, and try another route."
+hint.d7-p4-031.1,Compare the target with the starting state.
+hint.d7-p4-031.2,"Observe what one move changes, then apply the same rule."
+hint.d7-p4-031.3,"Study the example in the agent notebook, and try another route."
+hint.d7-p4-032.1,Compare the target with the starting state.
+hint.d7-p4-032.2,"Observe what one move changes, then apply the same rule."
+hint.d7-p4-032.3,"Study the example in the agent notebook, and try another route."
+hint.d7-p4-033.1,Compare the target with the starting state.
+hint.d7-p4-033.2,"Observe what one move changes, then apply the same rule."
+hint.d7-p4-033.3,"Study the example in the agent notebook, and try another route."
+hint.d7-p4-034.1,Compare the target with the starting state.
+hint.d7-p4-034.2,"Observe what one move changes, then apply the same rule."
+hint.d7-p4-034.3,"Study the example in the agent notebook, and try another route."
+hint.d7-p4-035.1,Compare the target with the starting state.
+hint.d7-p4-035.2,"Observe what one move changes, then apply the same rule."
+hint.d7-p4-035.3,"Study the example in the agent notebook, and try another route."
+hint.d7-p4-036.1,Compare the target with the starting state.
+hint.d7-p4-036.2,"Observe what one move changes, then apply the same rule."
+hint.d7-p4-036.3,"Study the example in the agent notebook, and try another route."
+hint.d7-p4-037.1,Compare the target with the starting state.
+hint.d7-p4-037.2,"Observe what one move changes, then apply the same rule."
+hint.d7-p4-037.3,"Study the example in the agent notebook, and try another route."
+hint.d7-p4-038.1,Compare the target with the starting state.
+hint.d7-p4-038.2,"Observe what one move changes, then apply the same rule."
+hint.d7-p4-038.3,"Study the example in the agent notebook, and try another route."
+hint.d7-p4-039.1,Compare the target with the starting state.
+hint.d7-p4-039.2,"Observe what one move changes, then apply the same rule."
+hint.d7-p4-039.3,"Study the example in the agent notebook, and try another route."
+hint.d7-p4-040.1,Compare the target with the starting state.
+hint.d7-p4-040.2,"Observe what one move changes, then apply the same rule."
+hint.d7-p4-040.3,"Study the example in the agent notebook, and try another route."
+hint.d7-p5-041.1,Compare the target with the starting state.
+hint.d7-p5-041.2,"Observe what one move changes, then apply the same rule."
+hint.d7-p5-041.3,"Study the example in the agent notebook, and try another route."
+hint.d7-p5-042.1,Compare the target with the starting state.
+hint.d7-p5-042.2,"Observe what one move changes, then apply the same rule."
+hint.d7-p5-042.3,"Study the example in the agent notebook, and try another route."
+hint.d7-p5-043.1,Compare the target with the starting state.
+hint.d7-p5-043.2,"Observe what one move changes, then apply the same rule."
+hint.d7-p5-043.3,"Study the example in the agent notebook, and try another route."
+hint.d7-p5-044.1,Compare the target with the starting state.
+hint.d7-p5-044.2,"Observe what one move changes, then apply the same rule."
+hint.d7-p5-044.3,"Study the example in the agent notebook, and try another route."
+hint.d7-p5-045.1,Compare the target with the starting state.
+hint.d7-p5-045.2,"Observe what one move changes, then apply the same rule."
+hint.d7-p5-045.3,"Study the example in the agent notebook, and try another route."
+hint.d7-p5-046.1,Compare the target with the starting state.
+hint.d7-p5-046.2,"Observe what one move changes, then apply the same rule."
+hint.d7-p5-046.3,"Study the example in the agent notebook, and try another route."
+hint.d7-p5-047.1,Compare the target with the starting state.
+hint.d7-p5-047.2,"Observe what one move changes, then apply the same rule."
+hint.d7-p5-047.3,"Study the example in the agent notebook, and try another route."
+hint.d7-p5-048.1,Compare the target with the starting state.
+hint.d7-p5-048.2,"Observe what one move changes, then apply the same rule."
+hint.d7-p5-048.3,"Study the example in the agent notebook, and try another route."
+hint.d7-p5-049.1,Compare the target with the starting state.
+hint.d7-p5-049.2,"Observe what one move changes, then apply the same rule."
+hint.d7-p5-049.3,"Study the example in the agent notebook, and try another route."
+hint.d7-p5-050.1,Compare the target with the starting state.
+hint.d7-p5-050.2,"Observe what one move changes, then apply the same rule."
+hint.d7-p5-050.3,"Study the example in the agent notebook, and try another route."
+mission.d1-p1-001,The first light
+mission.d1-p1-002,Misty quay mail
+mission.d1-p1-003,The hidden crossing
+mission.d1-p1-004,Three-signal code
+mission.d1-p1-005,The talking panels
+mission.d1-p1-006,First Beacons: Tide
+mission.d1-p1-007,First Beacons: Tower
+mission.d1-p1-008,First Beacons: Map
+mission.d1-p1-009,First Beacons: Post
+mission.d1-p1-010,First Beacons: Bell
+mission.d1-p2-011,Island Post: Pier
+mission.d1-p2-012,Island Post: Shore
+mission.d1-p2-013,Island Post: Beacon
+mission.d1-p2-014,Island Post: Buoy
+mission.d1-p2-015,Island Post: Bay
+mission.d1-p2-016,Island Post: Tide
+mission.d1-p2-017,Island Post: Tower
+mission.d1-p2-018,Island Post: Map
+mission.d1-p2-019,Island Post: Post
+mission.d1-p2-020,Island Post: Bell
+mission.d1-p3-021,Repeating Signals: Pier
+mission.d1-p3-022,Repeating Signals: Shore
+mission.d1-p3-023,Repeating Signals: Beacon
+mission.d1-p3-024,Repeating Signals: Buoy
+mission.d1-p3-025,Repeating Signals: Bay
+mission.d1-p3-026,Repeating Signals: Tide
+mission.d1-p3-027,Repeating Signals: Tower
+mission.d1-p3-028,Repeating Signals: Map
+mission.d1-p3-029,Repeating Signals: Post
+mission.d1-p3-030,Repeating Signals: Bell
+mission.d1-p4-031,Misty Routes: Pier
+mission.d1-p4-032,Misty Routes: Shore
+mission.d1-p4-033,Misty Routes: Beacon
+mission.d1-p4-034,Misty Routes: Buoy
+mission.d1-p4-035,Misty Routes: Bay
+mission.d1-p4-036,Misty Routes: Tide
+mission.d1-p4-037,Misty Routes: Tower
+mission.d1-p4-038,Misty Routes: Map
+mission.d1-p4-039,Misty Routes: Post
+mission.d1-p4-040,Misty Routes: Bell
+mission.d1-p5-041,Beacons Together: Pier
+mission.d1-p5-042,Beacons Together: Shore
+mission.d1-p5-043,Beacons Together: Beacon
+mission.d1-p5-044,Beacons Together: Buoy
+mission.d1-p5-045,Beacons Together: Bay
+mission.d1-p5-046,Beacons Together: Tide
+mission.d1-p5-047,Beacons Together: Tower
+mission.d1-p5-048,Beacons Together: Map
+mission.d1-p5-049,Beacons Together: Post
+mission.d1-p5-050,Beacons Together: Bell
+mission.d2-p1-001,Steady Tick: Gear
+mission.d2-p1-002,Steady Tick: Window
+mission.d2-p1-003,Steady Tick: Bell
+mission.d2-p1-004,Steady Tick: Shuttle
+mission.d2-p1-005,Steady Tick: Spring
+mission.d2-p1-006,Steady Tick: Pendulum
+mission.d2-p1-007,Steady Tick: Pane
+mission.d2-p1-008,Steady Tick: Calendar
+mission.d2-p1-009,Steady Tick: Hand
+mission.d2-p1-010,Steady Tick: Workshop
+mission.d2-p2-011,Two Gears: Gear
+mission.d2-p2-012,Two Gears: Window
+mission.d2-p2-013,Two Gears: Bell
+mission.d2-p2-014,Two Gears: Shuttle
+mission.d2-p2-015,Two Gears: Spring
+mission.d2-p2-016,Two Gears: Pendulum
+mission.d2-p2-017,Two Gears: Pane
+mission.d2-p2-018,Two Gears: Calendar
+mission.d2-p2-019,Two Gears: Hand
+mission.d2-p2-020,Two Gears: Workshop
+mission.d2-p3-021,When The Door Opens: Gear
+mission.d2-p3-022,When The Door Opens: Window
+mission.d2-p3-023,When The Door Opens: Bell
+mission.d2-p3-024,When The Door Opens: Shuttle
+mission.d2-p3-025,When The Door Opens: Spring
+mission.d2-p3-026,When The Door Opens: Pendulum
+mission.d2-p3-027,When The Door Opens: Pane
+mission.d2-p3-028,When The Door Opens: Calendar
+mission.d2-p3-029,When The Door Opens: Hand
+mission.d2-p3-030,When The Door Opens: Workshop
+mission.d2-p4-031,Misplaced Gear: Gear
+mission.d2-p4-032,Misplaced Gear: Window
+mission.d2-p4-033,Misplaced Gear: Bell
+mission.d2-p4-034,Misplaced Gear: Shuttle
+mission.d2-p4-035,Misplaced Gear: Spring
+mission.d2-p4-036,Misplaced Gear: Pendulum
+mission.d2-p4-037,Misplaced Gear: Pane
+mission.d2-p4-038,Misplaced Gear: Calendar
+mission.d2-p4-039,Misplaced Gear: Hand
+mission.d2-p4-040,Misplaced Gear: Workshop
+mission.d2-p5-041,Street Orchestra: Gear
+mission.d2-p5-042,Street Orchestra: Window
+mission.d2-p5-043,Street Orchestra: Bell
+mission.d2-p5-044,Street Orchestra: Shuttle
+mission.d2-p5-045,Street Orchestra: Spring
+mission.d2-p5-046,Street Orchestra: Pendulum
+mission.d2-p5-047,Street Orchestra: Pane
+mission.d2-p5-048,Street Orchestra: Calendar
+mission.d2-p5-049,Street Orchestra: Hand
+mission.d2-p5-050,Street Orchestra: Workshop
+mission.d3-p1-001,First Seeds: Seedling
+mission.d3-p1-002,First Seeds: Pot
+mission.d3-p1-003,First Seeds: Canal
+mission.d3-p1-004,First Seeds: Soil
+mission.d3-p1-005,First Seeds: Sensor
+mission.d3-p1-006,First Seeds: Greenhouse
+mission.d3-p1-007,First Seeds: Seed
+mission.d3-p1-008,First Seeds: Leaf
+mission.d3-p1-009,First Seeds: Moisture
+mission.d3-p1-010,First Seeds: Dome
+mission.d3-p2-011,When To Water: Seedling
+mission.d3-p2-012,When To Water: Pot
+mission.d3-p2-013,When To Water: Canal
+mission.d3-p2-014,When To Water: Soil
+mission.d3-p2-015,When To Water: Sensor
+mission.d3-p2-016,When To Water: Greenhouse
+mission.d3-p2-017,When To Water: Seed
+mission.d3-p2-018,When To Water: Leaf
+mission.d3-p2-019,When To Water: Moisture
+mission.d3-p2-020,When To Water: Dome
+mission.d3-p3-021,Balance Log: Seedling
+mission.d3-p3-022,Balance Log: Pot
+mission.d3-p3-023,Balance Log: Canal
+mission.d3-p3-024,Balance Log: Soil
+mission.d3-p3-025,Balance Log: Sensor
+mission.d3-p3-026,Balance Log: Greenhouse
+mission.d3-p3-027,Balance Log: Seed
+mission.d3-p3-028,Balance Log: Leaf
+mission.d3-p3-029,Balance Log: Moisture
+mission.d3-p3-030,Balance Log: Dome
+mission.d3-p4-031,A Day Model: Seedling
+mission.d3-p4-032,A Day Model: Pot
+mission.d3-p4-033,A Day Model: Canal
+mission.d3-p4-034,A Day Model: Soil
+mission.d3-p4-035,A Day Model: Sensor
+mission.d3-p4-036,A Day Model: Greenhouse
+mission.d3-p4-037,A Day Model: Seed
+mission.d3-p4-038,A Day Model: Leaf
+mission.d3-p4-039,A Day Model: Moisture
+mission.d3-p4-040,A Day Model: Dome
+mission.d3-p5-041,Station Heartbeat: Seedling
+mission.d3-p5-042,Station Heartbeat: Pot
+mission.d3-p5-043,Station Heartbeat: Canal
+mission.d3-p5-044,Station Heartbeat: Soil
+mission.d3-p5-045,Station Heartbeat: Sensor
+mission.d3-p5-046,Station Heartbeat: Greenhouse
+mission.d3-p5-047,Station Heartbeat: Seed
+mission.d3-p5-048,Station Heartbeat: Leaf
+mission.d3-p5-049,Station Heartbeat: Moisture
+mission.d3-p5-050,Station Heartbeat: Dome
+mission.d4-p1-001,Lost Labels: File
+mission.d4-p1-002,Lost Labels: Shelf
+mission.d4-p1-003,Lost Labels: Book
+mission.d4-p1-004,Lost Labels: Chest
+mission.d4-p1-005,Lost Labels: Record
+mission.d4-p1-006,Lost Labels: Seal
+mission.d4-p1-007,Lost Labels: Card
+mission.d4-p1-008,Lost Labels: Index
+mission.d4-p1-009,Lost Labels: Key
+mission.d4-p1-010,Lost Labels: Scroll
+mission.d4-p2-011,Coded Records: File
+mission.d4-p2-012,Coded Records: Shelf
+mission.d4-p2-013,Coded Records: Book
+mission.d4-p2-014,Coded Records: Chest
+mission.d4-p2-015,Coded Records: Record
+mission.d4-p2-016,Coded Records: Seal
+mission.d4-p2-017,Coded Records: Card
+mission.d4-p2-018,Coded Records: Index
+mission.d4-p2-019,Coded Records: Key
+mission.d4-p2-020,Coded Records: Scroll
+mission.d4-p3-021,The Index: File
+mission.d4-p3-022,The Index: Shelf
+mission.d4-p3-023,The Index: Book
+mission.d4-p3-024,The Index: Chest
+mission.d4-p3-025,The Index: Record
+mission.d4-p3-026,The Index: Seal
+mission.d4-p3-027,The Index: Card
+mission.d4-p3-028,The Index: Index
+mission.d4-p3-029,The Index: Key
+mission.d4-p3-030,The Index: Scroll
+mission.d4-p4-031,Cipher Drawer: File
+mission.d4-p4-032,Cipher Drawer: Shelf
+mission.d4-p4-033,Cipher Drawer: Book
+mission.d4-p4-034,Cipher Drawer: Chest
+mission.d4-p4-035,Cipher Drawer: Record
+mission.d4-p4-036,Cipher Drawer: Seal
+mission.d4-p4-037,Cipher Drawer: Card
+mission.d4-p4-038,Cipher Drawer: Index
+mission.d4-p4-039,Cipher Drawer: Key
+mission.d4-p4-040,Cipher Drawer: Scroll
+mission.d4-p5-041,Archive Opens: File
+mission.d4-p5-042,Archive Opens: Shelf
+mission.d4-p5-043,Archive Opens: Book
+mission.d4-p5-044,Archive Opens: Chest
+mission.d4-p5-045,Archive Opens: Record
+mission.d4-p5-046,Archive Opens: Seal
+mission.d4-p5-047,Archive Opens: Card
+mission.d4-p5-048,Archive Opens: Index
+mission.d4-p5-049,Archive Opens: Key
+mission.d4-p5-050,Archive Opens: Scroll
+mission.d5-p1-001,Little Junctions: Bridge
+mission.d5-p1-002,Little Junctions: Footpath
+mission.d5-p1-003,Little Junctions: Tram
+mission.d5-p1-004,Little Junctions: Tunnel
+mission.d5-p1-005,Little Junctions: River
+mission.d5-p1-006,Little Junctions: Stop
+mission.d5-p1-007,Little Junctions: Crossing
+mission.d5-p1-008,Little Junctions: Trail
+mission.d5-p1-009,Little Junctions: Station
+mission.d5-p1-010,Little Junctions: Valley
+mission.d5-p2-011,Bridges: Bridge
+mission.d5-p2-012,Bridges: Footpath
+mission.d5-p2-013,Bridges: Tram
+mission.d5-p2-014,Bridges: Tunnel
+mission.d5-p2-015,Bridges: River
+mission.d5-p2-016,Bridges: Stop
+mission.d5-p2-017,Bridges: Crossing
+mission.d5-p2-018,Bridges: Trail
+mission.d5-p2-019,Bridges: Station
+mission.d5-p2-020,Bridges: Valley
+mission.d5-p3-021,Route Cost: Bridge
+mission.d5-p3-022,Route Cost: Footpath
+mission.d5-p3-023,Route Cost: Tram
+mission.d5-p3-024,Route Cost: Tunnel
+mission.d5-p3-025,Route Cost: River
+mission.d5-p3-026,Route Cost: Stop
+mission.d5-p3-027,Route Cost: Crossing
+mission.d5-p3-028,Route Cost: Trail
+mission.d5-p3-029,Route Cost: Station
+mission.d5-p3-030,Route Cost: Valley
+mission.d5-p4-031,Two Routes: Bridge
+mission.d5-p4-032,Two Routes: Footpath
+mission.d5-p4-033,Two Routes: Tram
+mission.d5-p4-034,Two Routes: Tunnel
+mission.d5-p4-035,Two Routes: River
+mission.d5-p4-036,Two Routes: Stop
+mission.d5-p4-037,Two Routes: Crossing
+mission.d5-p4-038,Two Routes: Trail
+mission.d5-p4-039,Two Routes: Station
+mission.d5-p4-040,Two Routes: Valley
+mission.d5-p5-041,Valley Map: Bridge
+mission.d5-p5-042,Valley Map: Footpath
+mission.d5-p5-043,Valley Map: Tram
+mission.d5-p5-044,Valley Map: Tunnel
+mission.d5-p5-045,Valley Map: River
+mission.d5-p5-046,Valley Map: Stop
+mission.d5-p5-047,Valley Map: Crossing
+mission.d5-p5-048,Valley Map: Trail
+mission.d5-p5-049,Valley Map: Station
+mission.d5-p5-050,Valley Map: Valley
+mission.d6-p1-001,First Pattern: Rhythm
+mission.d6-p1-002,First Pattern: Drum
+mission.d6-p1-003,First Pattern: Texture
+mission.d6-p1-004,First Pattern: Tile
+mission.d6-p1-005,First Pattern: Note
+mission.d6-p1-006,First Pattern: Print
+mission.d6-p1-007,First Pattern: Stage
+mission.d6-p1-008,First Pattern: Line
+mission.d6-p1-009,First Pattern: Pattern
+mission.d6-p1-010,First Pattern: Weave
+mission.d6-p2-011,Steady Beat: Rhythm
+mission.d6-p2-012,Steady Beat: Drum
+mission.d6-p2-013,Steady Beat: Texture
+mission.d6-p2-014,Steady Beat: Tile
+mission.d6-p2-015,Steady Beat: Note
+mission.d6-p2-016,Steady Beat: Print
+mission.d6-p2-017,Steady Beat: Stage
+mission.d6-p2-018,Steady Beat: Line
+mission.d6-p2-019,Steady Beat: Pattern
+mission.d6-p2-020,Steady Beat: Weave
+mission.d6-p3-021,A Tiny Function: Rhythm
+mission.d6-p3-022,A Tiny Function: Drum
+mission.d6-p3-023,A Tiny Function: Texture
+mission.d6-p3-024,A Tiny Function: Tile
+mission.d6-p3-025,A Tiny Function: Note
+mission.d6-p3-026,A Tiny Function: Print
+mission.d6-p3-027,A Tiny Function: Stage
+mission.d6-p3-028,A Tiny Function: Line
+mission.d6-p3-029,A Tiny Function: Pattern
+mission.d6-p3-030,A Tiny Function: Weave
+mission.d6-p4-031,Big Composition: Rhythm
+mission.d6-p4-032,Big Composition: Drum
+mission.d6-p4-033,Big Composition: Texture
+mission.d6-p4-034,Big Composition: Tile
+mission.d6-p4-035,Big Composition: Note
+mission.d6-p4-036,Big Composition: Print
+mission.d6-p4-037,Big Composition: Stage
+mission.d6-p4-038,Big Composition: Line
+mission.d6-p4-039,Big Composition: Pattern
+mission.d6-p4-040,Big Composition: Weave
+mission.d6-p5-041,Workshop Show: Rhythm
+mission.d6-p5-042,Workshop Show: Drum
+mission.d6-p5-043,Workshop Show: Texture
+mission.d6-p5-044,Workshop Show: Tile
+mission.d6-p5-045,Workshop Show: Note
+mission.d6-p5-046,Workshop Show: Print
+mission.d6-p5-047,Workshop Show: Stage
+mission.d6-p5-048,Workshop Show: Line
+mission.d6-p5-049,Workshop Show: Pattern
+mission.d6-p5-050,Workshop Show: Weave
+mission.d7-p1-001,Draft Plan: Square
+mission.d7-p1-002,Draft Plan: Line
+mission.d7-p1-003,Draft Plan: Park
+mission.d7-p1-004,Draft Plan: Lighting
+mission.d7-p1-005,Draft Plan: Library
+mission.d7-p1-006,Draft Plan: Crossing
+mission.d7-p1-007,Draft Plan: Workshop
+mission.d7-p1-008,Draft Plan: Station
+mission.d7-p1-009,Draft Plan: Orchard
+mission.d7-p1-010,Draft Plan: School
+mission.d7-p2-011,First Test: Square
+mission.d7-p2-012,First Test: Line
+mission.d7-p2-013,First Test: Park
+mission.d7-p2-014,First Test: Lighting
+mission.d7-p2-015,First Test: Library
+mission.d7-p2-016,First Test: Crossing
+mission.d7-p2-017,First Test: Workshop
+mission.d7-p2-018,First Test: Station
+mission.d7-p2-019,First Test: Orchard
+mission.d7-p2-020,First Test: School
+mission.d7-p3-021,Systems Together: Square
+mission.d7-p3-022,Systems Together: Line
+mission.d7-p3-023,Systems Together: Park
+mission.d7-p3-024,Systems Together: Lighting
+mission.d7-p3-025,Systems Together: Library
+mission.d7-p3-026,Systems Together: Crossing
+mission.d7-p3-027,Systems Together: Workshop
+mission.d7-p3-028,Systems Together: Station
+mission.d7-p3-029,Systems Together: Orchard
+mission.d7-p3-030,Systems Together: School
+mission.d7-p4-031,Test Area: Square
+mission.d7-p4-032,Test Area: Line
+mission.d7-p4-033,Test Area: Park
+mission.d7-p4-034,Test Area: Lighting
+mission.d7-p4-035,Test Area: Library
+mission.d7-p4-036,Test Area: Crossing
+mission.d7-p4-037,Test Area: Workshop
+mission.d7-p4-038,Test Area: Station
+mission.d7-p4-039,Test Area: Orchard
+mission.d7-p4-040,Test Area: School
+mission.d7-p5-041,New Day: Square
+mission.d7-p5-042,New Day: Line
+mission.d7-p5-043,New Day: Park
+mission.d7-p5-044,New Day: Lighting
+mission.d7-p5-045,New Day: Library
+mission.d7-p5-046,New Day: Crossing
+mission.d7-p5-047,New Day: Workshop
+mission.d7-p5-048,New Day: Station
+mission.d7-p5-049,New Day: Orchard
+mission.d7-p5-050,New Day: School
+mission.desc.d1-p1-001,Arrange the direction stones and guide the light to the shore beacon.
+mission.desc.d1-p1-002,Rocks block the mailbox. Draw a different route.
+mission.desc.d1-p1-003,Mina says the shortest path is not always straight. Let’s test that.
+mission.desc.d1-p1-004,Rebuild the islands’ light pattern: which signal comes next?
+mission.desc.d1-p1-005,One switch may affect more than one lamp. Match the target layout.
+mission.desc.d1-p1-006,The Lost Lighthouse · Tide mission. Place the flow steps in their logical order.
+mission.desc.d1-p1-007,The Lost Lighthouse · Tower mission. Inspect the lights and reproduce the exact sequence.
+mission.desc.d1-p1-008,The Lost Lighthouse · Map mission. Use the number machine operations to reach the target.
+mission.desc.d1-p1-009,The Lost Lighthouse · Post mission. Guide the marker to its destination; move order matters.
+mission.desc.d1-p1-010,The Lost Lighthouse · Bell mission. Find out which switches change which lamps; restore the target.
+mission.desc.d1-p2-011,The Lost Lighthouse · Pier mission. Inspect the lights and reproduce the exact sequence.
+mission.desc.d1-p2-012,The Lost Lighthouse · Shore mission. Find out which switches change which lamps; restore the target.
+mission.desc.d1-p2-013,The Lost Lighthouse · Beacon mission. Guide the marker to its destination; move order matters.
+mission.desc.d1-p2-014,The Lost Lighthouse · Buoy mission. Place the flow steps in their logical order.
+mission.desc.d1-p2-015,The Lost Lighthouse · Bay mission. Inspect the lights and reproduce the exact sequence.
+mission.desc.d1-p2-016,The Lost Lighthouse · Tide mission. Use the number machine operations to reach the target.
+mission.desc.d1-p2-017,The Lost Lighthouse · Tower mission. Guide the marker to its destination; move order matters.
+mission.desc.d1-p2-018,The Lost Lighthouse · Map mission. Find out which switches change which lamps; restore the target.
+mission.desc.d1-p2-019,The Lost Lighthouse · Post mission. Guide the marker to its destination; move order matters.
+mission.desc.d1-p2-020,The Lost Lighthouse · Bell mission. Guide the marker to its destination; move order matters.
+mission.desc.d1-p3-021,The Lost Lighthouse · Pier mission. Guide the marker to its destination; move order matters.
+mission.desc.d1-p3-022,The Lost Lighthouse · Shore mission. Place the flow steps in their logical order.
+mission.desc.d1-p3-023,The Lost Lighthouse · Beacon mission. Inspect the lights and reproduce the exact sequence.
+mission.desc.d1-p3-024,The Lost Lighthouse · Buoy mission. Use the number machine operations to reach the target.
+mission.desc.d1-p3-025,The Lost Lighthouse · Bay mission. Guide the marker to its destination; move order matters.
+mission.desc.d1-p3-026,The Lost Lighthouse · Tide mission. Find out which switches change which lamps; restore the target.
+mission.desc.d1-p3-027,The Lost Lighthouse · Tower mission. Guide the marker to its destination; move order matters.
+mission.desc.d1-p3-028,The Lost Lighthouse · Map mission. Guide the marker to its destination; move order matters.
+mission.desc.d1-p3-029,The Lost Lighthouse · Post mission. Inspect the lights and reproduce the exact sequence.
+mission.desc.d1-p3-030,The Lost Lighthouse · Bell mission. Find out which switches change which lamps; restore the target.
+mission.desc.d1-p4-031,The Lost Lighthouse · Pier mission. Inspect the lights and reproduce the exact sequence.
+mission.desc.d1-p4-032,The Lost Lighthouse · Shore mission. Use the number machine operations to reach the target.
+mission.desc.d1-p4-033,The Lost Lighthouse · Beacon mission. Guide the marker to its destination; move order matters.
+mission.desc.d1-p4-034,The Lost Lighthouse · Buoy mission. Find out which switches change which lamps; restore the target.
+mission.desc.d1-p4-035,The Lost Lighthouse · Bay mission. Guide the marker to its destination; move order matters.
+mission.desc.d1-p4-036,The Lost Lighthouse · Tide mission. Guide the marker to its destination; move order matters.
+mission.desc.d1-p4-037,The Lost Lighthouse · Tower mission. Inspect the lights and reproduce the exact sequence.
+mission.desc.d1-p4-038,The Lost Lighthouse · Map mission. Find out which switches change which lamps; restore the target.
+mission.desc.d1-p4-039,The Lost Lighthouse · Post mission. Guide the marker to its destination; move order matters.
+mission.desc.d1-p4-040,The Lost Lighthouse · Bell mission. Place the flow steps in their logical order.
+mission.desc.d1-p5-041,The Lost Lighthouse · Pier mission. Guide the marker to its destination; move order matters.
+mission.desc.d1-p5-042,The Lost Lighthouse · Shore mission. Find out which switches change which lamps; restore the target.
+mission.desc.d1-p5-043,The Lost Lighthouse · Beacon mission. Guide the marker to its destination; move order matters.
+mission.desc.d1-p5-044,The Lost Lighthouse · Buoy mission. Guide the marker to its destination; move order matters.
+mission.desc.d1-p5-045,The Lost Lighthouse · Bay mission. Inspect the lights and reproduce the exact sequence.
+mission.desc.d1-p5-046,The Lost Lighthouse · Tide mission. Find out which switches change which lamps; restore the target.
+mission.desc.d1-p5-047,The Lost Lighthouse · Tower mission. Guide the marker to its destination; move order matters.
+mission.desc.d1-p5-048,The Lost Lighthouse · Map mission. Place the flow steps in their logical order.
+mission.desc.d1-p5-049,The Lost Lighthouse · Post mission. Inspect the lights and reproduce the exact sequence.
+mission.desc.d1-p5-050,The Lost Lighthouse · Bell mission. Use the number machine operations to reach the target.
+mission.desc.d2-p1-001,Clockmakers Alley · Gear mission. Inspect the lights and reproduce the exact sequence.
+mission.desc.d2-p1-002,Clockmakers Alley · Window mission. Use procedures to build a long pattern with a short program.
+mission.desc.d2-p1-003,Clockmakers Alley · Bell mission. Trigger events in order to reach the target state.
+mission.desc.d2-p1-004,Clockmakers Alley · Shuttle mission. Set the gate inputs to produce the required output.
+mission.desc.d2-p1-005,Clockmakers Alley · Spring mission. Find out which switches change which lamps; restore the target.
+mission.desc.d2-p1-006,Clockmakers Alley · Pendulum mission. Place the flow steps in their logical order.
+mission.desc.d2-p1-007,Clockmakers Alley · Pane mission. Use procedures to build a long pattern with a short program.
+mission.desc.d2-p1-008,Clockmakers Alley · Calendar mission. Set the gate inputs to produce the required output.
+mission.desc.d2-p1-009,Clockmakers Alley · Hand mission. Trigger events in order to reach the target state.
+mission.desc.d2-p1-010,Clockmakers Alley · Workshop mission. Inspect the lights and reproduce the exact sequence.
+mission.desc.d2-p2-011,Clockmakers Alley · Gear mission. Trigger events in order to reach the target state.
+mission.desc.d2-p2-012,Clockmakers Alley · Window mission. Set the gate inputs to produce the required output.
+mission.desc.d2-p2-013,Clockmakers Alley · Bell mission. Find out which switches change which lamps; restore the target.
+mission.desc.d2-p2-014,Clockmakers Alley · Shuttle mission. Place the flow steps in their logical order.
+mission.desc.d2-p2-015,Clockmakers Alley · Spring mission. Use procedures to build a long pattern with a short program.
+mission.desc.d2-p2-016,Clockmakers Alley · Pendulum mission. Set the gate inputs to produce the required output.
+mission.desc.d2-p2-017,Clockmakers Alley · Pane mission. Trigger events in order to reach the target state.
+mission.desc.d2-p2-018,Clockmakers Alley · Calendar mission. Inspect the lights and reproduce the exact sequence.
+mission.desc.d2-p2-019,Clockmakers Alley · Hand mission. Inspect the lights and reproduce the exact sequence.
+mission.desc.d2-p2-020,Clockmakers Alley · Workshop mission. Use procedures to build a long pattern with a short program.
+mission.desc.d2-p3-021,Clockmakers Alley · Gear mission. Find out which switches change which lamps; restore the target.
+mission.desc.d2-p3-022,Clockmakers Alley · Window mission. Place the flow steps in their logical order.
+mission.desc.d2-p3-023,Clockmakers Alley · Bell mission. Use procedures to build a long pattern with a short program.
+mission.desc.d2-p3-024,Clockmakers Alley · Shuttle mission. Set the gate inputs to produce the required output.
+mission.desc.d2-p3-025,Clockmakers Alley · Spring mission. Trigger events in order to reach the target state.
+mission.desc.d2-p3-026,Clockmakers Alley · Pendulum mission. Inspect the lights and reproduce the exact sequence.
+mission.desc.d2-p3-027,Clockmakers Alley · Pane mission. Inspect the lights and reproduce the exact sequence.
+mission.desc.d2-p3-028,Clockmakers Alley · Calendar mission. Use procedures to build a long pattern with a short program.
+mission.desc.d2-p3-029,Clockmakers Alley · Hand mission. Trigger events in order to reach the target state.
+mission.desc.d2-p3-030,Clockmakers Alley · Workshop mission. Set the gate inputs to produce the required output.
+mission.desc.d2-p4-031,Clockmakers Alley · Gear mission. Use procedures to build a long pattern with a short program.
+mission.desc.d2-p4-032,Clockmakers Alley · Window mission. Set the gate inputs to produce the required output.
+mission.desc.d2-p4-033,Clockmakers Alley · Bell mission. Trigger events in order to reach the target state.
+mission.desc.d2-p4-034,Clockmakers Alley · Shuttle mission. Inspect the lights and reproduce the exact sequence.
+mission.desc.d2-p4-035,Clockmakers Alley · Spring mission. Inspect the lights and reproduce the exact sequence.
+mission.desc.d2-p4-036,Clockmakers Alley · Pendulum mission. Use procedures to build a long pattern with a short program.
+mission.desc.d2-p4-037,Clockmakers Alley · Pane mission. Trigger events in order to reach the target state.
+mission.desc.d2-p4-038,Clockmakers Alley · Calendar mission. Set the gate inputs to produce the required output.
+mission.desc.d2-p4-039,Clockmakers Alley · Hand mission. Find out which switches change which lamps; restore the target.
+mission.desc.d2-p4-040,Clockmakers Alley · Workshop mission. Place the flow steps in their logical order.
+mission.desc.d2-p5-041,Clockmakers Alley · Gear mission. Trigger events in order to reach the target state.
+mission.desc.d2-p5-042,Clockmakers Alley · Window mission. Inspect the lights and reproduce the exact sequence.
+mission.desc.d2-p5-043,Clockmakers Alley · Bell mission. Inspect the lights and reproduce the exact sequence.
+mission.desc.d2-p5-044,Clockmakers Alley · Shuttle mission. Use procedures to build a long pattern with a short program.
+mission.desc.d2-p5-045,Clockmakers Alley · Spring mission. Trigger events in order to reach the target state.
+mission.desc.d2-p5-046,Clockmakers Alley · Pendulum mission. Set the gate inputs to produce the required output.
+mission.desc.d2-p5-047,Clockmakers Alley · Pane mission. Find out which switches change which lamps; restore the target.
+mission.desc.d2-p5-048,Clockmakers Alley · Calendar mission. Place the flow steps in their logical order.
+mission.desc.d2-p5-049,Clockmakers Alley · Hand mission. Use procedures to build a long pattern with a short program.
+mission.desc.d2-p5-050,Clockmakers Alley · Workshop mission. Set the gate inputs to produce the required output.
+mission.desc.d3-p1-001,Living Station · Seedling mission. Set the sensor threshold and enable automatic control.
+mission.desc.d3-p1-002,Living Station · Pot mission. Choose materials to meet the need without exceeding the budget.
+mission.desc.d3-p1-003,Living Station · Canal mission. Select all measurements that satisfy the rule.
+mission.desc.d3-p1-004,Living Station · Soil mission. Set the gate inputs to produce the required output.
+mission.desc.d3-p1-005,Living Station · Sensor mission. Use the number machine operations to reach the target.
+mission.desc.d3-p1-006,"Living Station · Greenhouse mission. Scan the area first, then guide the robot along a safe route."
+mission.desc.d3-p1-007,Living Station · Seed mission. Set the sensor threshold and enable automatic control.
+mission.desc.d3-p1-008,Living Station · Leaf mission. Select all measurements that satisfy the rule.
+mission.desc.d3-p1-009,Living Station · Moisture mission. Choose materials to meet the need without exceeding the budget.
+mission.desc.d3-p1-010,"Living Station · Dome mission. Scan the area first, then guide the robot along a safe route."
+mission.desc.d3-p2-011,Living Station · Seedling mission. Select all measurements that satisfy the rule.
+mission.desc.d3-p2-012,Living Station · Pot mission. Set the gate inputs to produce the required output.
+mission.desc.d3-p2-013,Living Station · Canal mission. Use the number machine operations to reach the target.
+mission.desc.d3-p2-014,"Living Station · Soil mission. Scan the area first, then guide the robot along a safe route."
+mission.desc.d3-p2-015,Living Station · Sensor mission. Set the sensor threshold and enable automatic control.
+mission.desc.d3-p2-016,Living Station · Greenhouse mission. Select all measurements that satisfy the rule.
+mission.desc.d3-p2-017,Living Station · Seed mission. Choose materials to meet the need without exceeding the budget.
+mission.desc.d3-p2-018,"Living Station · Leaf mission. Scan the area first, then guide the robot along a safe route."
+mission.desc.d3-p2-019,Living Station · Moisture mission. Set the sensor threshold and enable automatic control.
+mission.desc.d3-p2-020,Living Station · Dome mission. Choose materials to meet the need without exceeding the budget.
+mission.desc.d3-p3-021,Living Station · Seedling mission. Use the number machine operations to reach the target.
+mission.desc.d3-p3-022,"Living Station · Pot mission. Scan the area first, then guide the robot along a safe route."
+mission.desc.d3-p3-023,Living Station · Canal mission. Set the sensor threshold and enable automatic control.
+mission.desc.d3-p3-024,Living Station · Soil mission. Select all measurements that satisfy the rule.
+mission.desc.d3-p3-025,Living Station · Sensor mission. Choose materials to meet the need without exceeding the budget.
+mission.desc.d3-p3-026,"Living Station · Greenhouse mission. Scan the area first, then guide the robot along a safe route."
+mission.desc.d3-p3-027,Living Station · Seed mission. Set the sensor threshold and enable automatic control.
+mission.desc.d3-p3-028,Living Station · Leaf mission. Choose materials to meet the need without exceeding the budget.
+mission.desc.d3-p3-029,Living Station · Moisture mission. Select all measurements that satisfy the rule.
+mission.desc.d3-p3-030,Living Station · Dome mission. Set the gate inputs to produce the required output.
+mission.desc.d3-p4-031,Living Station · Seedling mission. Set the sensor threshold and enable automatic control.
+mission.desc.d3-p4-032,Living Station · Pot mission. Select all measurements that satisfy the rule.
+mission.desc.d3-p4-033,Living Station · Canal mission. Choose materials to meet the need without exceeding the budget.
+mission.desc.d3-p4-034,"Living Station · Soil mission. Scan the area first, then guide the robot along a safe route."
+mission.desc.d3-p4-035,Living Station · Sensor mission. Set the sensor threshold and enable automatic control.
+mission.desc.d3-p4-036,Living Station · Greenhouse mission. Choose materials to meet the need without exceeding the budget.
+mission.desc.d3-p4-037,Living Station · Seed mission. Select all measurements that satisfy the rule.
+mission.desc.d3-p4-038,Living Station · Leaf mission. Set the gate inputs to produce the required output.
+mission.desc.d3-p4-039,Living Station · Moisture mission. Use the number machine operations to reach the target.
+mission.desc.d3-p4-040,"Living Station · Dome mission. Scan the area first, then guide the robot along a safe route."
+mission.desc.d3-p5-041,Living Station · Seedling mission. Choose materials to meet the need without exceeding the budget.
+mission.desc.d3-p5-042,"Living Station · Pot mission. Scan the area first, then guide the robot along a safe route."
+mission.desc.d3-p5-043,Living Station · Canal mission. Set the sensor threshold and enable automatic control.
+mission.desc.d3-p5-044,Living Station · Soil mission. Choose materials to meet the need without exceeding the budget.
+mission.desc.d3-p5-045,Living Station · Sensor mission. Select all measurements that satisfy the rule.
+mission.desc.d3-p5-046,Living Station · Greenhouse mission. Set the gate inputs to produce the required output.
+mission.desc.d3-p5-047,Living Station · Seed mission. Use the number machine operations to reach the target.
+mission.desc.d3-p5-048,"Living Station · Leaf mission. Scan the area first, then guide the robot along a safe route."
+mission.desc.d3-p5-049,Living Station · Moisture mission. Set the sensor threshold and enable automatic control.
+mission.desc.d3-p5-050,Living Station · Dome mission. Select all measurements that satisfy the rule.
+mission.desc.d4-p1-001,Silent Archive · File mission. Switch the right bits on the binary light panel.
+mission.desc.d4-p1-002,Silent Archive · Shelf mission. Rotate the cipher wheel to its marked key.
+mission.desc.d4-p1-003,Silent Archive · Book mission. Order the wagons using only adjacent swaps.
+mission.desc.d4-p1-004,Silent Archive · Chest mission. Select all measurements that satisfy the rule.
+mission.desc.d4-p1-005,Silent Archive · Record mission. Place the flow steps in their logical order.
+mission.desc.d4-p1-006,Silent Archive · Seal mission. Switch the right bits on the binary light panel.
+mission.desc.d4-p1-007,Silent Archive · Card mission. Order the wagons using only adjacent swaps.
+mission.desc.d4-p1-008,Silent Archive · Index mission. Rotate the cipher wheel to its marked key.
+mission.desc.d4-p1-009,Silent Archive · Key mission. Select all measurements that satisfy the rule.
+mission.desc.d4-p1-010,Silent Archive · Scroll mission. Place the flow steps in their logical order.
+mission.desc.d4-p2-011,Silent Archive · File mission. Order the wagons using only adjacent swaps.
+mission.desc.d4-p2-012,Silent Archive · Shelf mission. Select all measurements that satisfy the rule.
+mission.desc.d4-p2-013,Silent Archive · Book mission. Place the flow steps in their logical order.
+mission.desc.d4-p2-014,Silent Archive · Chest mission. Switch the right bits on the binary light panel.
+mission.desc.d4-p2-015,Silent Archive · Record mission. Order the wagons using only adjacent swaps.
+mission.desc.d4-p2-016,Silent Archive · Seal mission. Rotate the cipher wheel to its marked key.
+mission.desc.d4-p2-017,Silent Archive · Card mission. Select all measurements that satisfy the rule.
+mission.desc.d4-p2-018,Silent Archive · Index mission. Place the flow steps in their logical order.
+mission.desc.d4-p2-019,Silent Archive · Key mission. Switch the right bits on the binary light panel.
+mission.desc.d4-p2-020,Silent Archive · Scroll mission. Rotate the cipher wheel to its marked key.
+mission.desc.d4-p3-021,Silent Archive · File mission. Place the flow steps in their logical order.
+mission.desc.d4-p3-022,Silent Archive · Shelf mission. Switch the right bits on the binary light panel.
+mission.desc.d4-p3-023,Silent Archive · Book mission. Order the wagons using only adjacent swaps.
+mission.desc.d4-p3-024,Silent Archive · Chest mission. Rotate the cipher wheel to its marked key.
+mission.desc.d4-p3-025,Silent Archive · Record mission. Select all measurements that satisfy the rule.
+mission.desc.d4-p3-026,Silent Archive · Seal mission. Place the flow steps in their logical order.
+mission.desc.d4-p3-027,Silent Archive · Card mission. Switch the right bits on the binary light panel.
+mission.desc.d4-p3-028,Silent Archive · Index mission. Rotate the cipher wheel to its marked key.
+mission.desc.d4-p3-029,Silent Archive · Key mission. Order the wagons using only adjacent swaps.
+mission.desc.d4-p3-030,Silent Archive · Scroll mission. Select all measurements that satisfy the rule.
+mission.desc.d4-p4-031,Silent Archive · File mission. Order the wagons using only adjacent swaps.
+mission.desc.d4-p4-032,Silent Archive · Shelf mission. Rotate the cipher wheel to its marked key.
+mission.desc.d4-p4-033,Silent Archive · Book mission. Select all measurements that satisfy the rule.
+mission.desc.d4-p4-034,Silent Archive · Chest mission. Place the flow steps in their logical order.
+mission.desc.d4-p4-035,Silent Archive · Record mission. Switch the right bits on the binary light panel.
+mission.desc.d4-p4-036,Silent Archive · Seal mission. Rotate the cipher wheel to its marked key.
+mission.desc.d4-p4-037,Silent Archive · Card mission. Order the wagons using only adjacent swaps.
+mission.desc.d4-p4-038,Silent Archive · Index mission. Select all measurements that satisfy the rule.
+mission.desc.d4-p4-039,Silent Archive · Key mission. Place the flow steps in their logical order.
+mission.desc.d4-p4-040,Silent Archive · Scroll mission. Switch the right bits on the binary light panel.
+mission.desc.d4-p5-041,Silent Archive · File mission. Select all measurements that satisfy the rule.
+mission.desc.d4-p5-042,Silent Archive · Shelf mission. Place the flow steps in their logical order.
+mission.desc.d4-p5-043,Silent Archive · Book mission. Switch the right bits on the binary light panel.
+mission.desc.d4-p5-044,Silent Archive · Chest mission. Rotate the cipher wheel to its marked key.
+mission.desc.d4-p5-045,Silent Archive · Record mission. Order the wagons using only adjacent swaps.
+mission.desc.d4-p5-046,Silent Archive · Seal mission. Select all measurements that satisfy the rule.
+mission.desc.d4-p5-047,Silent Archive · Card mission. Place the flow steps in their logical order.
+mission.desc.d4-p5-048,Silent Archive · Index mission. Switch the right bits on the binary light panel.
+mission.desc.d4-p5-049,Silent Archive · Key mission. Order the wagons using only adjacent swaps.
+mission.desc.d4-p5-050,Silent Archive · Scroll mission. Rotate the cipher wheel to its marked key.
+mission.desc.d5-p1-001,Crossroads Valley · Bridge mission. Navigate connected stops to find an efficient route.
+mission.desc.d5-p1-002,Crossroads Valley · Footpath mission. Guide the marker to its destination; move order matters.
+mission.desc.d5-p1-003,Crossroads Valley · Tram mission. Choose materials to meet the need without exceeding the budget.
+mission.desc.d5-p1-004,"Crossroads Valley · Tunnel mission. Scan the area first, then guide the robot along a safe route."
+mission.desc.d5-p1-005,Crossroads Valley · River mission. Order the wagons using only adjacent swaps.
+mission.desc.d5-p1-006,Crossroads Valley · Stop mission. Navigate connected stops to find an efficient route.
+mission.desc.d5-p1-007,Crossroads Valley · Crossing mission. Choose materials to meet the need without exceeding the budget.
+mission.desc.d5-p1-008,Crossroads Valley · Trail mission. Guide the marker to its destination; move order matters.
+mission.desc.d5-p1-009,Crossroads Valley · Station mission. Navigate connected stops to find an efficient route.
+mission.desc.d5-p1-010,"Crossroads Valley · Valley mission. Scan the area first, then guide the robot along a safe route."
+mission.desc.d5-p2-011,Crossroads Valley · Bridge mission. Choose materials to meet the need without exceeding the budget.
+mission.desc.d5-p2-012,"Crossroads Valley · Footpath mission. Scan the area first, then guide the robot along a safe route."
+mission.desc.d5-p2-013,Crossroads Valley · Tram mission. Order the wagons using only adjacent swaps.
+mission.desc.d5-p2-014,Crossroads Valley · Tunnel mission. Navigate connected stops to find an efficient route.
+mission.desc.d5-p2-015,Crossroads Valley · River mission. Choose materials to meet the need without exceeding the budget.
+mission.desc.d5-p2-016,Crossroads Valley · Stop mission. Guide the marker to its destination; move order matters.
+mission.desc.d5-p2-017,Crossroads Valley · Crossing mission. Navigate connected stops to find an efficient route.
+mission.desc.d5-p2-018,"Crossroads Valley · Trail mission. Scan the area first, then guide the robot along a safe route."
+mission.desc.d5-p2-019,Crossroads Valley · Station mission. Navigate connected stops to find an efficient route.
+mission.desc.d5-p2-020,Crossroads Valley · Valley mission. Guide the marker to its destination; move order matters.
+mission.desc.d5-p3-021,Crossroads Valley · Bridge mission. Order the wagons using only adjacent swaps.
+mission.desc.d5-p3-022,Crossroads Valley · Footpath mission. Navigate connected stops to find an efficient route.
+mission.desc.d5-p3-023,Crossroads Valley · Tram mission. Choose materials to meet the need without exceeding the budget.
+mission.desc.d5-p3-024,Crossroads Valley · Tunnel mission. Guide the marker to its destination; move order matters.
+mission.desc.d5-p3-025,Crossroads Valley · River mission. Navigate connected stops to find an efficient route.
+mission.desc.d5-p3-026,"Crossroads Valley · Stop mission. Scan the area first, then guide the robot along a safe route."
+mission.desc.d5-p3-027,Crossroads Valley · Crossing mission. Navigate connected stops to find an efficient route.
+mission.desc.d5-p3-028,Crossroads Valley · Trail mission. Guide the marker to its destination; move order matters.
+mission.desc.d5-p3-029,Crossroads Valley · Station mission. Choose materials to meet the need without exceeding the budget.
+mission.desc.d5-p3-030,"Crossroads Valley · Valley mission. Scan the area first, then guide the robot along a safe route."
+mission.desc.d5-p4-031,Crossroads Valley · Bridge mission. Choose materials to meet the need without exceeding the budget.
+mission.desc.d5-p4-032,Crossroads Valley · Footpath mission. Guide the marker to its destination; move order matters.
+mission.desc.d5-p4-033,Crossroads Valley · Tram mission. Navigate connected stops to find an efficient route.
+mission.desc.d5-p4-034,"Crossroads Valley · Tunnel mission. Scan the area first, then guide the robot along a safe route."
+mission.desc.d5-p4-035,Crossroads Valley · River mission. Navigate connected stops to find an efficient route.
+mission.desc.d5-p4-036,Crossroads Valley · Stop mission. Guide the marker to its destination; move order matters.
+mission.desc.d5-p4-037,Crossroads Valley · Crossing mission. Choose materials to meet the need without exceeding the budget.
+mission.desc.d5-p4-038,"Crossroads Valley · Trail mission. Scan the area first, then guide the robot along a safe route."
+mission.desc.d5-p4-039,Crossroads Valley · Station mission. Order the wagons using only adjacent swaps.
+mission.desc.d5-p4-040,Crossroads Valley · Valley mission. Navigate connected stops to find an efficient route.
+mission.desc.d5-p5-041,Crossroads Valley · Bridge mission. Navigate connected stops to find an efficient route.
+mission.desc.d5-p5-042,"Crossroads Valley · Footpath mission. Scan the area first, then guide the robot along a safe route."
+mission.desc.d5-p5-043,Crossroads Valley · Tram mission. Navigate connected stops to find an efficient route.
+mission.desc.d5-p5-044,Crossroads Valley · Tunnel mission. Guide the marker to its destination; move order matters.
+mission.desc.d5-p5-045,Crossroads Valley · River mission. Choose materials to meet the need without exceeding the budget.
+mission.desc.d5-p5-046,"Crossroads Valley · Stop mission. Scan the area first, then guide the robot along a safe route."
+mission.desc.d5-p5-047,Crossroads Valley · Crossing mission. Order the wagons using only adjacent swaps.
+mission.desc.d5-p5-048,Crossroads Valley · Trail mission. Navigate connected stops to find an efficient route.
+mission.desc.d5-p5-049,Crossroads Valley · Station mission. Choose materials to meet the need without exceeding the budget.
+mission.desc.d5-p5-050,Crossroads Valley · Valley mission. Guide the marker to its destination; move order matters.
+mission.desc.d6-p1-001,Pattern Workshop · Rhythm mission. Use procedures to build a long pattern with a short program.
+mission.desc.d6-p1-002,Pattern Workshop · Drum mission. Use the number machine operations to reach the target.
+mission.desc.d6-p1-003,Pattern Workshop · Texture mission. Inspect the lights and reproduce the exact sequence.
+mission.desc.d6-p1-004,Pattern Workshop · Tile mission. Place the flow steps in their logical order.
+mission.desc.d6-p1-005,Pattern Workshop · Note mission. Switch the right bits on the binary light panel.
+mission.desc.d6-p1-006,Pattern Workshop · Print mission. Use procedures to build a long pattern with a short program.
+mission.desc.d6-p1-007,Pattern Workshop · Stage mission. Use the number machine operations to reach the target.
+mission.desc.d6-p1-008,Pattern Workshop · Line mission. Place the flow steps in their logical order.
+mission.desc.d6-p1-009,Pattern Workshop · Pattern mission. Use procedures to build a long pattern with a short program.
+mission.desc.d6-p1-010,Pattern Workshop · Weave mission. Inspect the lights and reproduce the exact sequence.
+mission.desc.d6-p2-011,Pattern Workshop · Rhythm mission. Inspect the lights and reproduce the exact sequence.
+mission.desc.d6-p2-012,Pattern Workshop · Drum mission. Place the flow steps in their logical order.
+mission.desc.d6-p2-013,Pattern Workshop · Texture mission. Switch the right bits on the binary light panel.
+mission.desc.d6-p2-014,Pattern Workshop · Tile mission. Use procedures to build a long pattern with a short program.
+mission.desc.d6-p2-015,Pattern Workshop · Note mission. Use the number machine operations to reach the target.
+mission.desc.d6-p2-016,Pattern Workshop · Print mission. Place the flow steps in their logical order.
+mission.desc.d6-p2-017,Pattern Workshop · Stage mission. Use procedures to build a long pattern with a short program.
+mission.desc.d6-p2-018,Pattern Workshop · Line mission. Inspect the lights and reproduce the exact sequence.
+mission.desc.d6-p2-019,Pattern Workshop · Pattern mission. Use procedures to build a long pattern with a short program.
+mission.desc.d6-p2-020,Pattern Workshop · Weave mission. Use the number machine operations to reach the target.
+mission.desc.d6-p3-021,Pattern Workshop · Rhythm mission. Switch the right bits on the binary light panel.
+mission.desc.d6-p3-022,Pattern Workshop · Drum mission. Use procedures to build a long pattern with a short program.
+mission.desc.d6-p3-023,Pattern Workshop · Texture mission. Use the number machine operations to reach the target.
+mission.desc.d6-p3-024,Pattern Workshop · Tile mission. Place the flow steps in their logical order.
+mission.desc.d6-p3-025,Pattern Workshop · Note mission. Use procedures to build a long pattern with a short program.
+mission.desc.d6-p3-026,Pattern Workshop · Print mission. Inspect the lights and reproduce the exact sequence.
+mission.desc.d6-p3-027,Pattern Workshop · Stage mission. Use procedures to build a long pattern with a short program.
+mission.desc.d6-p3-028,Pattern Workshop · Line mission. Use the number machine operations to reach the target.
+mission.desc.d6-p3-029,Pattern Workshop · Pattern mission. Inspect the lights and reproduce the exact sequence.
+mission.desc.d6-p3-030,Pattern Workshop · Weave mission. Place the flow steps in their logical order.
+mission.desc.d6-p4-031,Pattern Workshop · Rhythm mission. Use the number machine operations to reach the target.
+mission.desc.d6-p4-032,Pattern Workshop · Drum mission. Place the flow steps in their logical order.
+mission.desc.d6-p4-033,Pattern Workshop · Texture mission. Use procedures to build a long pattern with a short program.
+mission.desc.d6-p4-034,Pattern Workshop · Tile mission. Inspect the lights and reproduce the exact sequence.
+mission.desc.d6-p4-035,Pattern Workshop · Note mission. Use procedures to build a long pattern with a short program.
+mission.desc.d6-p4-036,Pattern Workshop · Print mission. Use the number machine operations to reach the target.
+mission.desc.d6-p4-037,Pattern Workshop · Stage mission. Inspect the lights and reproduce the exact sequence.
+mission.desc.d6-p4-038,Pattern Workshop · Line mission. Place the flow steps in their logical order.
+mission.desc.d6-p4-039,Pattern Workshop · Pattern mission. Switch the right bits on the binary light panel.
+mission.desc.d6-p4-040,Pattern Workshop · Weave mission. Use procedures to build a long pattern with a short program.
+mission.desc.d6-p5-041,Pattern Workshop · Rhythm mission. Use procedures to build a long pattern with a short program.
+mission.desc.d6-p5-042,Pattern Workshop · Drum mission. Inspect the lights and reproduce the exact sequence.
+mission.desc.d6-p5-043,Pattern Workshop · Texture mission. Use procedures to build a long pattern with a short program.
+mission.desc.d6-p5-044,Pattern Workshop · Tile mission. Use the number machine operations to reach the target.
+mission.desc.d6-p5-045,Pattern Workshop · Note mission. Inspect the lights and reproduce the exact sequence.
+mission.desc.d6-p5-046,Pattern Workshop · Print mission. Place the flow steps in their logical order.
+mission.desc.d6-p5-047,Pattern Workshop · Stage mission. Switch the right bits on the binary light panel.
+mission.desc.d6-p5-048,Pattern Workshop · Line mission. Use procedures to build a long pattern with a short program.
+mission.desc.d6-p5-049,Pattern Workshop · Pattern mission. Use the number machine operations to reach the target.
+mission.desc.d6-p5-050,Pattern Workshop · Weave mission. Place the flow steps in their logical order.
+mission.desc.d7-p1-001,"New Day City · Square mission. Scan the area first, then guide the robot along a safe route."
+mission.desc.d7-p1-002,New Day City · Line mission. Set the gate inputs to produce the required output.
+mission.desc.d7-p1-003,New Day City · Park mission. Set the sensor threshold and enable automatic control.
+mission.desc.d7-p1-004,New Day City · Lighting mission. Place the flow steps in their logical order.
+mission.desc.d7-p1-005,New Day City · Library mission. Navigate connected stops to find an efficient route.
+mission.desc.d7-p1-006,New Day City · Crossing mission. Trigger events in order to reach the target state.
+mission.desc.d7-p1-007,New Day City · Workshop mission. Choose materials to meet the need without exceeding the budget.
+mission.desc.d7-p1-008,New Day City · Station mission. Select all measurements that satisfy the rule.
+mission.desc.d7-p1-009,"New Day City · Orchard mission. Scan the area first, then guide the robot along a safe route."
+mission.desc.d7-p1-010,New Day City · School mission. Navigate connected stops to find an efficient route.
+mission.desc.d7-p2-011,New Day City · Square mission. Set the sensor threshold and enable automatic control.
+mission.desc.d7-p2-012,New Day City · Line mission. Place the flow steps in their logical order.
+mission.desc.d7-p2-013,New Day City · Park mission. Navigate connected stops to find an efficient route.
+mission.desc.d7-p2-014,New Day City · Lighting mission. Trigger events in order to reach the target state.
+mission.desc.d7-p2-015,New Day City · Library mission. Choose materials to meet the need without exceeding the budget.
+mission.desc.d7-p2-016,New Day City · Crossing mission. Select all measurements that satisfy the rule.
+mission.desc.d7-p2-017,"New Day City · Workshop mission. Scan the area first, then guide the robot along a safe route."
+mission.desc.d7-p2-018,New Day City · Station mission. Navigate connected stops to find an efficient route.
+mission.desc.d7-p2-019,"New Day City · Orchard mission. Scan the area first, then guide the robot along a safe route."
+mission.desc.d7-p2-020,New Day City · School mission. Set the gate inputs to produce the required output.
+mission.desc.d7-p3-021,New Day City · Square mission. Navigate connected stops to find an efficient route.
+mission.desc.d7-p3-022,New Day City · Line mission. Trigger events in order to reach the target state.
+mission.desc.d7-p3-023,New Day City · Park mission. Choose materials to meet the need without exceeding the budget.
+mission.desc.d7-p3-024,New Day City · Lighting mission. Select all measurements that satisfy the rule.
+mission.desc.d7-p3-025,"New Day City · Library mission. Scan the area first, then guide the robot along a safe route."
+mission.desc.d7-p3-026,New Day City · Crossing mission. Navigate connected stops to find an efficient route.
+mission.desc.d7-p3-027,"New Day City · Workshop mission. Scan the area first, then guide the robot along a safe route."
+mission.desc.d7-p3-028,New Day City · Station mission. Set the gate inputs to produce the required output.
+mission.desc.d7-p3-029,New Day City · Orchard mission. Set the sensor threshold and enable automatic control.
+mission.desc.d7-p3-030,New Day City · School mission. Place the flow steps in their logical order.
+mission.desc.d7-p4-031,New Day City · Square mission. Choose materials to meet the need without exceeding the budget.
+mission.desc.d7-p4-032,New Day City · Line mission. Select all measurements that satisfy the rule.
+mission.desc.d7-p4-033,"New Day City · Park mission. Scan the area first, then guide the robot along a safe route."
+mission.desc.d7-p4-034,New Day City · Lighting mission. Navigate connected stops to find an efficient route.
+mission.desc.d7-p4-035,"New Day City · Library mission. Scan the area first, then guide the robot along a safe route."
+mission.desc.d7-p4-036,New Day City · Crossing mission. Set the gate inputs to produce the required output.
+mission.desc.d7-p4-037,New Day City · Workshop mission. Set the sensor threshold and enable automatic control.
+mission.desc.d7-p4-038,New Day City · Station mission. Place the flow steps in their logical order.
+mission.desc.d7-p4-039,New Day City · Orchard mission. Navigate connected stops to find an efficient route.
+mission.desc.d7-p4-040,New Day City · School mission. Trigger events in order to reach the target state.
+mission.desc.d7-p5-041,"New Day City · Square mission. Scan the area first, then guide the robot along a safe route."
+mission.desc.d7-p5-042,New Day City · Line mission. Navigate connected stops to find an efficient route.
+mission.desc.d7-p5-043,"New Day City · Park mission. Scan the area first, then guide the robot along a safe route."
+mission.desc.d7-p5-044,New Day City · Lighting mission. Set the gate inputs to produce the required output.
+mission.desc.d7-p5-045,New Day City · Library mission. Set the sensor threshold and enable automatic control.
+mission.desc.d7-p5-046,New Day City · Crossing mission. Place the flow steps in their logical order.
+mission.desc.d7-p5-047,New Day City · Workshop mission. Navigate connected stops to find an efficient route.
+mission.desc.d7-p5-048,New Day City · Station mission. Trigger events in order to reach the target state.
+mission.desc.d7-p5-049,New Day City · Orchard mission. Choose materials to meet the need without exceeding the budget.
+mission.desc.d7-p5-050,New Day City · School mission. Select all measurements that satisfy the rule.
+result.d1-p1-001,"Mina: ""The beacon remembers the route. First light sent."""
+result.d1-p1-002,Quay mail is on its way. Going around the rocks worked.
+result.d1-p1-003,The hidden crossing is on the map. Sometimes the right path bends.
+result.d1-p1-004,The light signals speak again. The next island got the message.
+result.d1-p1-005,The panel came alive. One switch can change several lights.
+result.d1-p1-006,Tide is working again. A new clue entered the first beacons file.
+result.d1-p1-007,Tower is working again. A new clue entered the first beacons file.
+result.d1-p1-008,Map is working again. A new clue entered the first beacons file.
+result.d1-p1-009,Post is working again. A new clue entered the first beacons file.
+result.d1-p1-010,Bell is working again. A new clue entered the first beacons file.
+result.d1-p2-011,Pier is working again. A new clue entered the island post file.
+result.d1-p2-012,Shore is working again. A new clue entered the island post file.
+result.d1-p2-013,Beacon is working again. A new clue entered the island post file.
+result.d1-p2-014,Buoy is working again. A new clue entered the island post file.
+result.d1-p2-015,Bay is working again. A new clue entered the island post file.
+result.d1-p2-016,Tide is working again. A new clue entered the island post file.
+result.d1-p2-017,Tower is working again. A new clue entered the island post file.
+result.d1-p2-018,Map is working again. A new clue entered the island post file.
+result.d1-p2-019,Post is working again. A new clue entered the island post file.
+result.d1-p2-020,Bell is working again. A new clue entered the island post file.
+result.d1-p3-021,Pier is working again. A new clue entered the repeating signals file.
+result.d1-p3-022,Shore is working again. A new clue entered the repeating signals file.
+result.d1-p3-023,Beacon is working again. A new clue entered the repeating signals file.
+result.d1-p3-024,Buoy is working again. A new clue entered the repeating signals file.
+result.d1-p3-025,Bay is working again. A new clue entered the repeating signals file.
+result.d1-p3-026,Tide is working again. A new clue entered the repeating signals file.
+result.d1-p3-027,Tower is working again. A new clue entered the repeating signals file.
+result.d1-p3-028,Map is working again. A new clue entered the repeating signals file.
+result.d1-p3-029,Post is working again. A new clue entered the repeating signals file.
+result.d1-p3-030,Bell is working again. A new clue entered the repeating signals file.
+result.d1-p4-031,Pier is working again. A new clue entered the misty routes file.
+result.d1-p4-032,Shore is working again. A new clue entered the misty routes file.
+result.d1-p4-033,Beacon is working again. A new clue entered the misty routes file.
+result.d1-p4-034,Buoy is working again. A new clue entered the misty routes file.
+result.d1-p4-035,Bay is working again. A new clue entered the misty routes file.
+result.d1-p4-036,Tide is working again. A new clue entered the misty routes file.
+result.d1-p4-037,Tower is working again. A new clue entered the misty routes file.
+result.d1-p4-038,Map is working again. A new clue entered the misty routes file.
+result.d1-p4-039,Post is working again. A new clue entered the misty routes file.
+result.d1-p4-040,Bell is working again. A new clue entered the misty routes file.
+result.d1-p5-041,Pier is working again. A new clue entered the beacons together file.
+result.d1-p5-042,Shore is working again. A new clue entered the beacons together file.
+result.d1-p5-043,Beacon is working again. A new clue entered the beacons together file.
+result.d1-p5-044,Buoy is working again. A new clue entered the beacons together file.
+result.d1-p5-045,Bay is working again. A new clue entered the beacons together file.
+result.d1-p5-046,Tide is working again. A new clue entered the beacons together file.
+result.d1-p5-047,Tower is working again. A new clue entered the beacons together file.
+result.d1-p5-048,Map is working again. A new clue entered the beacons together file.
+result.d1-p5-049,Post is working again. A new clue entered the beacons together file.
+result.d1-p5-050,Bell is working again. A new clue entered the beacons together file.
+result.d2-p1-001,Gear is working again. A new clue entered the steady tick file.
+result.d2-p1-002,Window is working again. A new clue entered the steady tick file.
+result.d2-p1-003,Bell is working again. A new clue entered the steady tick file.
+result.d2-p1-004,Shuttle is working again. A new clue entered the steady tick file.
+result.d2-p1-005,Spring is working again. A new clue entered the steady tick file.
+result.d2-p1-006,Pendulum is working again. A new clue entered the steady tick file.
+result.d2-p1-007,Pane is working again. A new clue entered the steady tick file.
+result.d2-p1-008,Calendar is working again. A new clue entered the steady tick file.
+result.d2-p1-009,Hand is working again. A new clue entered the steady tick file.
+result.d2-p1-010,Workshop is working again. A new clue entered the steady tick file.
+result.d2-p2-011,Gear is working again. A new clue entered the two gears file.
+result.d2-p2-012,Window is working again. A new clue entered the two gears file.
+result.d2-p2-013,Bell is working again. A new clue entered the two gears file.
+result.d2-p2-014,Shuttle is working again. A new clue entered the two gears file.
+result.d2-p2-015,Spring is working again. A new clue entered the two gears file.
+result.d2-p2-016,Pendulum is working again. A new clue entered the two gears file.
+result.d2-p2-017,Pane is working again. A new clue entered the two gears file.
+result.d2-p2-018,Calendar is working again. A new clue entered the two gears file.
+result.d2-p2-019,Hand is working again. A new clue entered the two gears file.
+result.d2-p2-020,Workshop is working again. A new clue entered the two gears file.
+result.d2-p3-021,Gear is working again. A new clue entered the when the door opens file.
+result.d2-p3-022,Window is working again. A new clue entered the when the door opens file.
+result.d2-p3-023,Bell is working again. A new clue entered the when the door opens file.
+result.d2-p3-024,Shuttle is working again. A new clue entered the when the door opens file.
+result.d2-p3-025,Spring is working again. A new clue entered the when the door opens file.
+result.d2-p3-026,Pendulum is working again. A new clue entered the when the door opens file.
+result.d2-p3-027,Pane is working again. A new clue entered the when the door opens file.
+result.d2-p3-028,Calendar is working again. A new clue entered the when the door opens file.
+result.d2-p3-029,Hand is working again. A new clue entered the when the door opens file.
+result.d2-p3-030,Workshop is working again. A new clue entered the when the door opens file.
+result.d2-p4-031,Gear is working again. A new clue entered the misplaced gear file.
+result.d2-p4-032,Window is working again. A new clue entered the misplaced gear file.
+result.d2-p4-033,Bell is working again. A new clue entered the misplaced gear file.
+result.d2-p4-034,Shuttle is working again. A new clue entered the misplaced gear file.
+result.d2-p4-035,Spring is working again. A new clue entered the misplaced gear file.
+result.d2-p4-036,Pendulum is working again. A new clue entered the misplaced gear file.
+result.d2-p4-037,Pane is working again. A new clue entered the misplaced gear file.
+result.d2-p4-038,Calendar is working again. A new clue entered the misplaced gear file.
+result.d2-p4-039,Hand is working again. A new clue entered the misplaced gear file.
+result.d2-p4-040,Workshop is working again. A new clue entered the misplaced gear file.
+result.d2-p5-041,Gear is working again. A new clue entered the street orchestra file.
+result.d2-p5-042,Window is working again. A new clue entered the street orchestra file.
+result.d2-p5-043,Bell is working again. A new clue entered the street orchestra file.
+result.d2-p5-044,Shuttle is working again. A new clue entered the street orchestra file.
+result.d2-p5-045,Spring is working again. A new clue entered the street orchestra file.
+result.d2-p5-046,Pendulum is working again. A new clue entered the street orchestra file.
+result.d2-p5-047,Pane is working again. A new clue entered the street orchestra file.
+result.d2-p5-048,Calendar is working again. A new clue entered the street orchestra file.
+result.d2-p5-049,Hand is working again. A new clue entered the street orchestra file.
+result.d2-p5-050,Workshop is working again. A new clue entered the street orchestra file.
+result.d3-p1-001,Seedling is working again. A new clue entered the first seeds file.
+result.d3-p1-002,Pot is working again. A new clue entered the first seeds file.
+result.d3-p1-003,Canal is working again. A new clue entered the first seeds file.
+result.d3-p1-004,Soil is working again. A new clue entered the first seeds file.
+result.d3-p1-005,Sensor is working again. A new clue entered the first seeds file.
+result.d3-p1-006,Greenhouse is working again. A new clue entered the first seeds file.
+result.d3-p1-007,Seed is working again. A new clue entered the first seeds file.
+result.d3-p1-008,Leaf is working again. A new clue entered the first seeds file.
+result.d3-p1-009,Moisture is working again. A new clue entered the first seeds file.
+result.d3-p1-010,Dome is working again. A new clue entered the first seeds file.
+result.d3-p2-011,Seedling is working again. A new clue entered the when to water file.
+result.d3-p2-012,Pot is working again. A new clue entered the when to water file.
+result.d3-p2-013,Canal is working again. A new clue entered the when to water file.
+result.d3-p2-014,Soil is working again. A new clue entered the when to water file.
+result.d3-p2-015,Sensor is working again. A new clue entered the when to water file.
+result.d3-p2-016,Greenhouse is working again. A new clue entered the when to water file.
+result.d3-p2-017,Seed is working again. A new clue entered the when to water file.
+result.d3-p2-018,Leaf is working again. A new clue entered the when to water file.
+result.d3-p2-019,Moisture is working again. A new clue entered the when to water file.
+result.d3-p2-020,Dome is working again. A new clue entered the when to water file.
+result.d3-p3-021,Seedling is working again. A new clue entered the balance log file.
+result.d3-p3-022,Pot is working again. A new clue entered the balance log file.
+result.d3-p3-023,Canal is working again. A new clue entered the balance log file.
+result.d3-p3-024,Soil is working again. A new clue entered the balance log file.
+result.d3-p3-025,Sensor is working again. A new clue entered the balance log file.
+result.d3-p3-026,Greenhouse is working again. A new clue entered the balance log file.
+result.d3-p3-027,Seed is working again. A new clue entered the balance log file.
+result.d3-p3-028,Leaf is working again. A new clue entered the balance log file.
+result.d3-p3-029,Moisture is working again. A new clue entered the balance log file.
+result.d3-p3-030,Dome is working again. A new clue entered the balance log file.
+result.d3-p4-031,Seedling is working again. A new clue entered the a day model file.
+result.d3-p4-032,Pot is working again. A new clue entered the a day model file.
+result.d3-p4-033,Canal is working again. A new clue entered the a day model file.
+result.d3-p4-034,Soil is working again. A new clue entered the a day model file.
+result.d3-p4-035,Sensor is working again. A new clue entered the a day model file.
+result.d3-p4-036,Greenhouse is working again. A new clue entered the a day model file.
+result.d3-p4-037,Seed is working again. A new clue entered the a day model file.
+result.d3-p4-038,Leaf is working again. A new clue entered the a day model file.
+result.d3-p4-039,Moisture is working again. A new clue entered the a day model file.
+result.d3-p4-040,Dome is working again. A new clue entered the a day model file.
+result.d3-p5-041,Seedling is working again. A new clue entered the station heartbeat file.
+result.d3-p5-042,Pot is working again. A new clue entered the station heartbeat file.
+result.d3-p5-043,Canal is working again. A new clue entered the station heartbeat file.
+result.d3-p5-044,Soil is working again. A new clue entered the station heartbeat file.
+result.d3-p5-045,Sensor is working again. A new clue entered the station heartbeat file.
+result.d3-p5-046,Greenhouse is working again. A new clue entered the station heartbeat file.
+result.d3-p5-047,Seed is working again. A new clue entered the station heartbeat file.
+result.d3-p5-048,Leaf is working again. A new clue entered the station heartbeat file.
+result.d3-p5-049,Moisture is working again. A new clue entered the station heartbeat file.
+result.d3-p5-050,Dome is working again. A new clue entered the station heartbeat file.
+result.d4-p1-001,File is working again. A new clue entered the lost labels file.
+result.d4-p1-002,Shelf is working again. A new clue entered the lost labels file.
+result.d4-p1-003,Book is working again. A new clue entered the lost labels file.
+result.d4-p1-004,Chest is working again. A new clue entered the lost labels file.
+result.d4-p1-005,Record is working again. A new clue entered the lost labels file.
+result.d4-p1-006,Seal is working again. A new clue entered the lost labels file.
+result.d4-p1-007,Card is working again. A new clue entered the lost labels file.
+result.d4-p1-008,Index is working again. A new clue entered the lost labels file.
+result.d4-p1-009,Key is working again. A new clue entered the lost labels file.
+result.d4-p1-010,Scroll is working again. A new clue entered the lost labels file.
+result.d4-p2-011,File is working again. A new clue entered the coded records file.
+result.d4-p2-012,Shelf is working again. A new clue entered the coded records file.
+result.d4-p2-013,Book is working again. A new clue entered the coded records file.
+result.d4-p2-014,Chest is working again. A new clue entered the coded records file.
+result.d4-p2-015,Record is working again. A new clue entered the coded records file.
+result.d4-p2-016,Seal is working again. A new clue entered the coded records file.
+result.d4-p2-017,Card is working again. A new clue entered the coded records file.
+result.d4-p2-018,Index is working again. A new clue entered the coded records file.
+result.d4-p2-019,Key is working again. A new clue entered the coded records file.
+result.d4-p2-020,Scroll is working again. A new clue entered the coded records file.
+result.d4-p3-021,File is working again. A new clue entered the the index file.
+result.d4-p3-022,Shelf is working again. A new clue entered the the index file.
+result.d4-p3-023,Book is working again. A new clue entered the the index file.
+result.d4-p3-024,Chest is working again. A new clue entered the the index file.
+result.d4-p3-025,Record is working again. A new clue entered the the index file.
+result.d4-p3-026,Seal is working again. A new clue entered the the index file.
+result.d4-p3-027,Card is working again. A new clue entered the the index file.
+result.d4-p3-028,Index is working again. A new clue entered the the index file.
+result.d4-p3-029,Key is working again. A new clue entered the the index file.
+result.d4-p3-030,Scroll is working again. A new clue entered the the index file.
+result.d4-p4-031,File is working again. A new clue entered the cipher drawer file.
+result.d4-p4-032,Shelf is working again. A new clue entered the cipher drawer file.
+result.d4-p4-033,Book is working again. A new clue entered the cipher drawer file.
+result.d4-p4-034,Chest is working again. A new clue entered the cipher drawer file.
+result.d4-p4-035,Record is working again. A new clue entered the cipher drawer file.
+result.d4-p4-036,Seal is working again. A new clue entered the cipher drawer file.
+result.d4-p4-037,Card is working again. A new clue entered the cipher drawer file.
+result.d4-p4-038,Index is working again. A new clue entered the cipher drawer file.
+result.d4-p4-039,Key is working again. A new clue entered the cipher drawer file.
+result.d4-p4-040,Scroll is working again. A new clue entered the cipher drawer file.
+result.d4-p5-041,File is working again. A new clue entered the archive opens file.
+result.d4-p5-042,Shelf is working again. A new clue entered the archive opens file.
+result.d4-p5-043,Book is working again. A new clue entered the archive opens file.
+result.d4-p5-044,Chest is working again. A new clue entered the archive opens file.
+result.d4-p5-045,Record is working again. A new clue entered the archive opens file.
+result.d4-p5-046,Seal is working again. A new clue entered the archive opens file.
+result.d4-p5-047,Card is working again. A new clue entered the archive opens file.
+result.d4-p5-048,Index is working again. A new clue entered the archive opens file.
+result.d4-p5-049,Key is working again. A new clue entered the archive opens file.
+result.d4-p5-050,Scroll is working again. A new clue entered the archive opens file.
+result.d5-p1-001,Bridge is working again. A new clue entered the little junctions file.
+result.d5-p1-002,Footpath is working again. A new clue entered the little junctions file.
+result.d5-p1-003,Tram is working again. A new clue entered the little junctions file.
+result.d5-p1-004,Tunnel is working again. A new clue entered the little junctions file.
+result.d5-p1-005,River is working again. A new clue entered the little junctions file.
+result.d5-p1-006,Stop is working again. A new clue entered the little junctions file.
+result.d5-p1-007,Crossing is working again. A new clue entered the little junctions file.
+result.d5-p1-008,Trail is working again. A new clue entered the little junctions file.
+result.d5-p1-009,Station is working again. A new clue entered the little junctions file.
+result.d5-p1-010,Valley is working again. A new clue entered the little junctions file.
+result.d5-p2-011,Bridge is working again. A new clue entered the bridges file.
+result.d5-p2-012,Footpath is working again. A new clue entered the bridges file.
+result.d5-p2-013,Tram is working again. A new clue entered the bridges file.
+result.d5-p2-014,Tunnel is working again. A new clue entered the bridges file.
+result.d5-p2-015,River is working again. A new clue entered the bridges file.
+result.d5-p2-016,Stop is working again. A new clue entered the bridges file.
+result.d5-p2-017,Crossing is working again. A new clue entered the bridges file.
+result.d5-p2-018,Trail is working again. A new clue entered the bridges file.
+result.d5-p2-019,Station is working again. A new clue entered the bridges file.
+result.d5-p2-020,Valley is working again. A new clue entered the bridges file.
+result.d5-p3-021,Bridge is working again. A new clue entered the route cost file.
+result.d5-p3-022,Footpath is working again. A new clue entered the route cost file.
+result.d5-p3-023,Tram is working again. A new clue entered the route cost file.
+result.d5-p3-024,Tunnel is working again. A new clue entered the route cost file.
+result.d5-p3-025,River is working again. A new clue entered the route cost file.
+result.d5-p3-026,Stop is working again. A new clue entered the route cost file.
+result.d5-p3-027,Crossing is working again. A new clue entered the route cost file.
+result.d5-p3-028,Trail is working again. A new clue entered the route cost file.
+result.d5-p3-029,Station is working again. A new clue entered the route cost file.
+result.d5-p3-030,Valley is working again. A new clue entered the route cost file.
+result.d5-p4-031,Bridge is working again. A new clue entered the two routes file.
+result.d5-p4-032,Footpath is working again. A new clue entered the two routes file.
+result.d5-p4-033,Tram is working again. A new clue entered the two routes file.
+result.d5-p4-034,Tunnel is working again. A new clue entered the two routes file.
+result.d5-p4-035,River is working again. A new clue entered the two routes file.
+result.d5-p4-036,Stop is working again. A new clue entered the two routes file.
+result.d5-p4-037,Crossing is working again. A new clue entered the two routes file.
+result.d5-p4-038,Trail is working again. A new clue entered the two routes file.
+result.d5-p4-039,Station is working again. A new clue entered the two routes file.
+result.d5-p4-040,Valley is working again. A new clue entered the two routes file.
+result.d5-p5-041,Bridge is working again. A new clue entered the valley map file.
+result.d5-p5-042,Footpath is working again. A new clue entered the valley map file.
+result.d5-p5-043,Tram is working again. A new clue entered the valley map file.
+result.d5-p5-044,Tunnel is working again. A new clue entered the valley map file.
+result.d5-p5-045,River is working again. A new clue entered the valley map file.
+result.d5-p5-046,Stop is working again. A new clue entered the valley map file.
+result.d5-p5-047,Crossing is working again. A new clue entered the valley map file.
+result.d5-p5-048,Trail is working again. A new clue entered the valley map file.
+result.d5-p5-049,Station is working again. A new clue entered the valley map file.
+result.d5-p5-050,Valley is working again. A new clue entered the valley map file.
+result.d6-p1-001,Rhythm is working again. A new clue entered the first pattern file.
+result.d6-p1-002,Drum is working again. A new clue entered the first pattern file.
+result.d6-p1-003,Texture is working again. A new clue entered the first pattern file.
+result.d6-p1-004,Tile is working again. A new clue entered the first pattern file.
+result.d6-p1-005,Note is working again. A new clue entered the first pattern file.
+result.d6-p1-006,Print is working again. A new clue entered the first pattern file.
+result.d6-p1-007,Stage is working again. A new clue entered the first pattern file.
+result.d6-p1-008,Line is working again. A new clue entered the first pattern file.
+result.d6-p1-009,Pattern is working again. A new clue entered the first pattern file.
+result.d6-p1-010,Weave is working again. A new clue entered the first pattern file.
+result.d6-p2-011,Rhythm is working again. A new clue entered the steady beat file.
+result.d6-p2-012,Drum is working again. A new clue entered the steady beat file.
+result.d6-p2-013,Texture is working again. A new clue entered the steady beat file.
+result.d6-p2-014,Tile is working again. A new clue entered the steady beat file.
+result.d6-p2-015,Note is working again. A new clue entered the steady beat file.
+result.d6-p2-016,Print is working again. A new clue entered the steady beat file.
+result.d6-p2-017,Stage is working again. A new clue entered the steady beat file.
+result.d6-p2-018,Line is working again. A new clue entered the steady beat file.
+result.d6-p2-019,Pattern is working again. A new clue entered the steady beat file.
+result.d6-p2-020,Weave is working again. A new clue entered the steady beat file.
+result.d6-p3-021,Rhythm is working again. A new clue entered the a tiny function file.
+result.d6-p3-022,Drum is working again. A new clue entered the a tiny function file.
+result.d6-p3-023,Texture is working again. A new clue entered the a tiny function file.
+result.d6-p3-024,Tile is working again. A new clue entered the a tiny function file.
+result.d6-p3-025,Note is working again. A new clue entered the a tiny function file.
+result.d6-p3-026,Print is working again. A new clue entered the a tiny function file.
+result.d6-p3-027,Stage is working again. A new clue entered the a tiny function file.
+result.d6-p3-028,Line is working again. A new clue entered the a tiny function file.
+result.d6-p3-029,Pattern is working again. A new clue entered the a tiny function file.
+result.d6-p3-030,Weave is working again. A new clue entered the a tiny function file.
+result.d6-p4-031,Rhythm is working again. A new clue entered the big composition file.
+result.d6-p4-032,Drum is working again. A new clue entered the big composition file.
+result.d6-p4-033,Texture is working again. A new clue entered the big composition file.
+result.d6-p4-034,Tile is working again. A new clue entered the big composition file.
+result.d6-p4-035,Note is working again. A new clue entered the big composition file.
+result.d6-p4-036,Print is working again. A new clue entered the big composition file.
+result.d6-p4-037,Stage is working again. A new clue entered the big composition file.
+result.d6-p4-038,Line is working again. A new clue entered the big composition file.
+result.d6-p4-039,Pattern is working again. A new clue entered the big composition file.
+result.d6-p4-040,Weave is working again. A new clue entered the big composition file.
+result.d6-p5-041,Rhythm is working again. A new clue entered the workshop show file.
+result.d6-p5-042,Drum is working again. A new clue entered the workshop show file.
+result.d6-p5-043,Texture is working again. A new clue entered the workshop show file.
+result.d6-p5-044,Tile is working again. A new clue entered the workshop show file.
+result.d6-p5-045,Note is working again. A new clue entered the workshop show file.
+result.d6-p5-046,Print is working again. A new clue entered the workshop show file.
+result.d6-p5-047,Stage is working again. A new clue entered the workshop show file.
+result.d6-p5-048,Line is working again. A new clue entered the workshop show file.
+result.d6-p5-049,Pattern is working again. A new clue entered the workshop show file.
+result.d6-p5-050,Weave is working again. A new clue entered the workshop show file.
+result.d7-p1-001,Square is working again. A new clue entered the draft plan file.
+result.d7-p1-002,Line is working again. A new clue entered the draft plan file.
+result.d7-p1-003,Park is working again. A new clue entered the draft plan file.
+result.d7-p1-004,Lighting is working again. A new clue entered the draft plan file.
+result.d7-p1-005,Library is working again. A new clue entered the draft plan file.
+result.d7-p1-006,Crossing is working again. A new clue entered the draft plan file.
+result.d7-p1-007,Workshop is working again. A new clue entered the draft plan file.
+result.d7-p1-008,Station is working again. A new clue entered the draft plan file.
+result.d7-p1-009,Orchard is working again. A new clue entered the draft plan file.
+result.d7-p1-010,School is working again. A new clue entered the draft plan file.
+result.d7-p2-011,Square is working again. A new clue entered the first test file.
+result.d7-p2-012,Line is working again. A new clue entered the first test file.
+result.d7-p2-013,Park is working again. A new clue entered the first test file.
+result.d7-p2-014,Lighting is working again. A new clue entered the first test file.
+result.d7-p2-015,Library is working again. A new clue entered the first test file.
+result.d7-p2-016,Crossing is working again. A new clue entered the first test file.
+result.d7-p2-017,Workshop is working again. A new clue entered the first test file.
+result.d7-p2-018,Station is working again. A new clue entered the first test file.
+result.d7-p2-019,Orchard is working again. A new clue entered the first test file.
+result.d7-p2-020,School is working again. A new clue entered the first test file.
+result.d7-p3-021,Square is working again. A new clue entered the systems together file.
+result.d7-p3-022,Line is working again. A new clue entered the systems together file.
+result.d7-p3-023,Park is working again. A new clue entered the systems together file.
+result.d7-p3-024,Lighting is working again. A new clue entered the systems together file.
+result.d7-p3-025,Library is working again. A new clue entered the systems together file.
+result.d7-p3-026,Crossing is working again. A new clue entered the systems together file.
+result.d7-p3-027,Workshop is working again. A new clue entered the systems together file.
+result.d7-p3-028,Station is working again. A new clue entered the systems together file.
+result.d7-p3-029,Orchard is working again. A new clue entered the systems together file.
+result.d7-p3-030,School is working again. A new clue entered the systems together file.
+result.d7-p4-031,Square is working again. A new clue entered the test area file.
+result.d7-p4-032,Line is working again. A new clue entered the test area file.
+result.d7-p4-033,Park is working again. A new clue entered the test area file.
+result.d7-p4-034,Lighting is working again. A new clue entered the test area file.
+result.d7-p4-035,Library is working again. A new clue entered the test area file.
+result.d7-p4-036,Crossing is working again. A new clue entered the test area file.
+result.d7-p4-037,Workshop is working again. A new clue entered the test area file.
+result.d7-p4-038,Station is working again. A new clue entered the test area file.
+result.d7-p4-039,Orchard is working again. A new clue entered the test area file.
+result.d7-p4-040,School is working again. A new clue entered the test area file.
+result.d7-p5-041,Square is working again. A new clue entered the new day file.
+result.d7-p5-042,Line is working again. A new clue entered the new day file.
+result.d7-p5-043,Park is working again. A new clue entered the new day file.
+result.d7-p5-044,Lighting is working again. A new clue entered the new day file.
+result.d7-p5-045,Library is working again. A new clue entered the new day file.
+result.d7-p5-046,Crossing is working again. A new clue entered the new day file.
+result.d7-p5-047,Workshop is working again. A new clue entered the new day file.
+result.d7-p5-048,Station is working again. A new clue entered the new day file.
+result.d7-p5-049,Orchard is working again. A new clue entered the new day file.
+result.d7-p5-050,School is working again. A new clue entered the new day file.
+ui.act,Act
+ui.active,Active
+ui.add_command,COMMAND DESK
+ui.agent,AGENT FILE  /  01
+ui.app,ALGORITHM GAME
+ui.archive,Save file
+ui.atlas,World Atlas
+ui.back,Back to mission
+ui.backup_failed,Could not read the backup.
+ui.backup_restored,Achievements merged safely.
+ui.backup_success,Backup saved.
+ui.blocked,This route stops here. Let’s find another.
+ui.blocks,Think in blocks
+ui.choose,Choose
+ui.clear,Clear
+ui.collection,Collection
+ui.collection_note,Every earned clue stays in your collection.
+ui.color_blind_mode,Color-safe markers
+ui.completed,The island light is back.
+ui.concrete,Explore
+ui.cost,Cost
+ui.daily,Daily discovery
+ui.daily_note,Today’s discovery file
+ui.data,Readings
+ui.export,Export backup
+ui.gate,Connection mission
+ui.goal_number,Goal value
+ui.high_contrast,High contrast
+ui.hint,Hint from Mina
+ui.home,Atlas
+ui.import,Import backup
+ui.incomplete,The signal has not arrived yet. Let’s try again.
+ui.journey,My journey
+ui.lamp_off,Off
+ui.lamp_on,On
+ui.language,Language
+ui.large_text,Large text
+ui.layer,Challenge style
+ui.levels,Missions
+ui.limit,We can try a shorter route.
+ui.mission_list,Mission files
+ui.mode,Mode
+ui.move_down,DOWN
+ui.move_left,LEFT
+ui.move_right,RIGHT
+ui.move_up,UP
+ui.music_volume,Music volume
+ui.new_profile,New player
+ui.next,Next mission
+ui.next_world,Next world
+ui.no_command,No commands yet. Tap the stones to begin.
+ui.no_profile,No player available
+ui.no_results,No clues here yet
+ui.off,OFF
+ui.offline,OFFLINE · NO ADS
+ui.on,ON
+ui.panel,Beacon switches
+ui.performance,Performance mode
+ui.play_again,Try again
+ui.practice_note,Take your time. A timer is never required.
+ui.preview,Preview · not yet unlocked
+ui.preview_d1,The Lost Lighthouse
+ui.preview_d2,Clockmakers Alley
+ui.preview_d3,Living Station
+ui.preview_d4,Silent Archive
+ui.preview_d5,Crossroads Valley
+ui.preview_d6,Pattern Workshop
+ui.preview_d7,New Day City
+ui.preview_route,Complete mission 40 in the previous world to begin here.
+ui.preview_title,More agent files await
+ui.profiles,Players
+ui.progress,Completed
+ui.prologue,"Mina: ""The lighthouse remembers the way. Just not the order."""
+ui.ready,Ready
+ui.recovery_heading,SAVE PROTECTION
+ui.recovery_warning,The save could not be read. Existing data was not overwritten. Keep your backup.
+ui.reduced_motion,Reduced motion
+ui.retry,Try another way
+ui.route,Coast map
+ui.run,Send the signal
+ui.sandbox,Free laboratory
+ui.sandbox_note,Retry any mission. Every attempt is free.
+ui.scan,Scan
+ui.sequence,SIGNAL ORDER
+ui.settings,Settings
+ui.sfx_volume,Effects volume
+ui.signal,Light pattern
+ui.simulation,Challenge practice
+ui.skills,My skills
+ui.skills_note,No competition or ranking here; track concepts you have explored.
+ui.start,Start
+ui.start_number,Start
+ui.success,The beacon is shining. The next island is ready!
+ui.system,Build systems
+ui.target,Target
+ui.timer,Optional timer
+ui.undo,Undo last
+ui.unknown,Shall we look again?
+ui.unsupported,No control is available for this mission yet
+ui.witness,Example order
+ui.workshop,Project studio
+ui.workshop_choice_1_1,Measure soil moisture
+ui.workshop_choice_1_2,Measure daily light
+ui.workshop_choice_2_1,Low moisture may require watering
+ui.workshop_choice_2_2,Always use the same water amount
+ui.workshop_choice_3_1,Moisture sensor + automatic valve
+ui.workshop_choice_3_2,Fixed-time watering schedule
+ui.workshop_choice_4_1,Test three moisture values
+ui.workshop_choice_4_2,Test just one value
+ui.workshop_choice_5_1,Compare water use and growth
+ui.workshop_choice_5_2,Check only whether the system starts
+ui.workshop_criterion_controlled_test,Testing different conditions
+ui.workshop_criterion_hypothesis,Measurable prediction
+ui.workshop_criterion_reflection,Data-informed reflection
+ui.workshop_discover,You can explore this approach in your next experiment.
+ui.workshop_found,You tried this approach.
+ui.workshop_note,"Define a problem, predict, design, test, and reflect."
+ui.workshop_phase_1,1 · Define a problem
+ui.workshop_phase_2,2 · Make a prediction
+ui.workshop_phase_3,3 · Design
+ui.workshop_phase_4,4 · Run a test
+ui.workshop_phase_5,5 · Reflect on results
+ui.workshop_question_1,Plants grow at different rates. What do you investigate?
+ui.workshop_question_2,Predict what might happen when soil moisture drops.
+ui.workshop_question_3,Which system would you design?
+ui.workshop_question_4,How will you test your prediction?
+ui.workshop_question_5,How will you reflect on your results?
+ui.workshop_result,A new entry was added to your experiment notebook. Try different choices next time.
+ui.world,World
+ui.world_locked,Preview available · Missions not yet open
+ui.world_open,Explore this world
+ui.sandbox_instruction,Tap the board to change rocks. Try commands and start again whenever you like.
+ui.sandbox_terrain,Place / remove a rock
+ui.sandbox_reached,The robot reached the light. Try another route if you like.
+ui.sandbox_explore,The robot stopped here. Explore a different route.

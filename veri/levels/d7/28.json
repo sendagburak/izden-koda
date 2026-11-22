@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "id": "d7-p3-028",
+  "world": "d7",
+  "act": 3,
+  "order": 28,
+  "type": "logic_gate",
+  "concepts": [
+    "boolean",
+    "conditions"
+  ],
+  "locale_key": "mission.d7-p3-028",
+  "hints": [
+    "hint.d7-p3-028.1",
+    "hint.d7-p3-028.2",
+    "hint.d7-p3-028.3"
+  ],
+  "layers": {
+    "concrete": {
+      "params": {
+        "gate": "XOR",
+        "goal": 1,
+        "alphabet": [
+          "A0",
+          "A1",
+          "B0",
+          "B1"
+        ],
+        "max_steps": 4
+      },
+      "witness": [
+        "A1"
+      ]
+    },
+    "blocks": {
+      "params": {
+        "gate": "XOR",
+        "goal": 1,
+        "alphabet": [
+          "A0",
+          "A1",
+          "B0",
+          "B1"
+        ],
+        "max_steps": 4
+      },
+      "witness": [
+        "A1"
+      ]
+    },
+    "system": {
+      "params": {
+        "gate": "XOR",
+        "goal": 1,
+        "alphabet": [
+          "A0",
+          "A1",
+          "B0",
+          "B1"
+        ],
+        "max_steps": 4
+      },
+      "witness": [
+        "A1"
+      ]
+    }
+  }
+}

@@ -1,0 +1,152 @@
+{
+  "schema_version": 1,
+  "id": "d4-p4-032",
+  "world": "d4",
+  "act": 4,
+  "order": 32,
+  "type": "cipher_wheel",
+  "concepts": [
+    "encoding",
+    "variables"
+  ],
+  "locale_key": "mission.d4-p4-032",
+  "hints": [
+    "hint.d4-p4-032.1",
+    "hint.d4-p4-032.2",
+    "hint.d4-p4-032.3"
+  ],
+  "layers": {
+    "concrete": {
+      "params": {
+        "source": "DENGE",
+        "encodings": [
+          "DENGE",
+          "EFOHF",
+          "FGPIG",
+          "GHQJH",
+          "HIRKI",
+          "IJSLJ",
+          "JKTMK",
+          "KLUNL",
+          "LMVOM",
+          "MNWPN",
+          "NOXQO",
+          "OPYRP",
+          "PQZSQ",
+          "QRATR",
+          "RSBUS",
+          "STCVT",
+          "TUDWU",
+          "UVEXV",
+          "VWFYW",
+          "WXGZX",
+          "XYHAY",
+          "YZIBZ",
+          "ZAJCA",
+          "ABKDB",
+          "BCLEC",
+          "CDMFD"
+        ],
+        "goal_shift": 2,
+        "alphabet": [
+          "+",
+          "-"
+        ],
+        "max_steps": 10
+      },
+      "witness": [
+        "+",
+        "+"
+      ]
+    },
+    "blocks": {
+      "params": {
+        "source": "DENGE",
+        "encodings": [
+          "DENGE",
+          "EFOHF",
+          "FGPIG",
+          "GHQJH",
+          "HIRKI",
+          "IJSLJ",
+          "JKTMK",
+          "KLUNL",
+          "LMVOM",
+          "MNWPN",
+          "NOXQO",
+          "OPYRP",
+          "PQZSQ",
+          "QRATR",
+          "RSBUS",
+          "STCVT",
+          "TUDWU",
+          "UVEXV",
+          "VWFYW",
+          "WXGZX",
+          "XYHAY",
+          "YZIBZ",
+          "ZAJCA",
+          "ABKDB",
+          "BCLEC",
+          "CDMFD"
+        ],
+        "goal_shift": 3,
+        "alphabet": [
+          "+",
+          "-"
+        ],
+        "max_steps": 10
+      },
+      "witness": [
+        "+",
+        "+",
+        "+"
+      ]
+    },
+    "system": {
+      "params": {
+        "source": "DENGE",
+        "encodings": [
+          "DENGE",
+          "EFOHF",
+          "FGPIG",
+          "GHQJH",
+          "HIRKI",
+          "IJSLJ",
+          "JKTMK",
+          "KLUNL",
+          "LMVOM",
+          "MNWPN",
+          "NOXQO",
+          "OPYRP",
+          "PQZSQ",
+          "QRATR",
+          "RSBUS",
+          "STCVT",
+          "TUDWU",
+          "UVEXV",
+          "VWFYW",
+          "WXGZX",
+          "XYHAY",
+          "YZIBZ",
+          "ZAJCA",
+          "ABKDB",
+          "BCLEC",
+          "CDMFD"
+        ],
+        "goal_shift": 4,
+        "alphabet": [
+          "+",
+          "-"
+        ],
+        "max_steps": 10
+      },
+      "witness": [
+        "+",
+        "+",
+        "+",
+        "+"
+      ]
+    }
+  }
+}

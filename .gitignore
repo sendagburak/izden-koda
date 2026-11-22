@@ -1,0 +1,9 @@
+.godot/
+.superpowers/
+*.tmp
+build/
+local_test_output/
+*.log
+__pycache__/
+*.pyc
+.DS_Store

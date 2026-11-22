@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "id": "d1-p3-024",
+  "world": "d1",
+  "act": 3,
+  "order": 24,
+  "type": "pattern_machine",
+  "concepts": [
+    "functions",
+    "arithmetic"
+  ],
+  "locale_key": "mission.d1-p3-024",
+  "hints": [
+    "hint.d1-p3-024.1",
+    "hint.d1-p3-024.2",
+    "hint.d1-p3-024.3"
+  ],
+  "layers": {
+    "concrete": {
+      "params": {
+        "start": 1,
+        "goal": 6,
+        "alphabet": [
+          "+2",
+          "+3",
+          "-1",
+          "*2"
+        ],
+        "max_steps": 5
+      },
+      "witness": [
+        "+2",
+        "*2"
+      ]
+    },
+    "blocks": {
+      "params": {
+        "start": 2,
+        "goal": 11,
+        "alphabet": [
+          "+2",
+          "+3",
+          "-1",
+          "*2"
+        ],
+        "max_steps": 5
+      },
+      "witness": [
+        "+2",
+        "*2",
+        "+3"
+      ]
+    },
+    "system": {
+      "params": {
+        "start": 3,
+        "goal": 13,
+        "alphabet": [
+          "+2",
+          "+3",
+          "-1",
+          "*2"
+        ],
+        "max_steps": 5
+      },
+      "witness": [
+        "+2",
+        "*2",
+        "+3"
+      ]
+    }
+  }
+}

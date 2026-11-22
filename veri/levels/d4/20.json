@@ -1,0 +1,151 @@
+{
+  "schema_version": 1,
+  "id": "d4-p2-020",
+  "world": "d4",
+  "act": 2,
+  "order": 20,
+  "type": "cipher_wheel",
+  "concepts": [
+    "encoding",
+    "variables"
+  ],
+  "locale_key": "mission.d4-p2-020",
+  "hints": [
+    "hint.d4-p2-020.1",
+    "hint.d4-p2-020.2",
+    "hint.d4-p2-020.3"
+  ],
+  "layers": {
+    "concrete": {
+      "params": {
+        "source": "YOL",
+        "encodings": [
+          "YOL",
+          "ZPM",
+          "AQN",
+          "BRO",
+          "CSP",
+          "DTQ",
+          "EUR",
+          "FVS",
+          "GWT",
+          "HXU",
+          "IYV",
+          "JZW",
+          "KAX",
+          "LBY",
+          "MCZ",
+          "NDA",
+          "OEB",
+          "PFC",
+          "QGD",
+          "RHE",
+          "SIF",
+          "TJG",
+          "UKH",
+          "VLI",
+          "WMJ",
+          "XNK"
+        ],
+        "goal_shift": 5,
+        "alphabet": [
+          "+",
+          "-"
+        ],
+        "max_steps": 10
+      },
+      "witness": [
+        "+",
+        "+",
+        "+",
+        "+",
+        "+"
+      ]
+    },
+    "blocks": {
+      "params": {
+        "source": "YOL",
+        "encodings": [
+          "YOL",
+          "ZPM",
+          "AQN",
+          "BRO",
+          "CSP",
+          "DTQ",
+          "EUR",
+          "FVS",
+          "GWT",
+          "HXU",
+          "IYV",
+          "JZW",
+          "KAX",
+          "LBY",
+          "MCZ",
+          "NDA",
+          "OEB",
+          "PFC",
+          "QGD",
+          "RHE",
+          "SIF",
+          "TJG",
+          "UKH",
+          "VLI",
+          "WMJ",
+          "XNK"
+        ],
+        "goal_shift": 1,
+        "alphabet": [
+          "+",
+          "-"
+        ],
+        "max_steps": 10
+      },
+      "witness": [
+        "+"
+      ]
+    },
+    "system": {
+      "params": {
+        "source": "YOL",
+        "encodings": [
+          "YOL",
+          "ZPM",
+          "AQN",
+          "BRO",
+          "CSP",
+          "DTQ",
+          "EUR",
+          "FVS",
+          "GWT",
+          "HXU",
+          "IYV",
+          "JZW",
+          "KAX",
+          "LBY",
+          "MCZ",
+          "NDA",
+          "OEB",
+          "PFC",
+          "QGD",
+          "RHE",
+          "SIF",
+          "TJG",
+          "UKH",
+          "VLI",
+          "WMJ",
+          "XNK"
+        ],
+        "goal_shift": 2,
+        "alphabet": [
+          "+",
+          "-"
+        ],
+        "max_steps": 10
+      },
+      "witness": [
+        "+",
+        "+"
+      ]
+    }
+  }
+}

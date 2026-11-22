@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "id": "d2-p3-027",
+  "world": "d2",
+  "act": 3,
+  "order": 27,
+  "type": "signal_pattern",
+  "concepts": [
+    "patterns",
+    "sequence"
+  ],
+  "locale_key": "mission.d2-p3-027",
+  "hints": [
+    "hint.d2-p3-027.1",
+    "hint.d2-p3-027.2",
+    "hint.d2-p3-027.3"
+  ],
+  "layers": {
+    "concrete": {
+      "params": {
+        "alphabet": [
+          "K",
+          "M",
+          "T",
+          "S"
+        ],
+        "target": [
+          "T",
+          "S",
+          "S"
+        ],
+        "max_steps": 4
+      },
+      "witness": [
+        "T",
+        "S",
+        "S"
+      ]
+    },
+    "blocks": {
+      "params": {
+        "alphabet": [
+          "K",
+          "M",
+          "T",
+          "S"
+        ],
+        "target": [
+          "T",
+          "S",
+          "S",
+          "K"
+        ],
+        "max_steps": 5
+      },
+      "witness": [
+        "T",
+        "S",
+        "S",
+        "K"
+      ]
+    },
+    "system": {
+      "params": {
+        "alphabet": [
+          "K",
+          "M",
+          "T",
+          "S"
+        ],
+        "target": [
+          "T",
+          "S",
+          "S",
+          "K",
+          "K"
+        ],
+        "max_steps": 6
+      },
+      "witness": [
+        "T",
+        "S",
+        "S",
+        "K",
+        "K"
+      ]
+    }
+  }
+}

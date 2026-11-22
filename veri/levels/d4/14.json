@@ -1,0 +1,123 @@
+{
+  "schema_version": 1,
+  "id": "d4-p2-014",
+  "world": "d4",
+  "act": 2,
+  "order": 14,
+  "type": "binary_lights",
+  "concepts": [
+    "binary",
+    "encoding"
+  ],
+  "locale_key": "mission.d4-p2-014",
+  "hints": [
+    "hint.d4-p2-014.1",
+    "hint.d4-p2-014.2",
+    "hint.d4-p2-014.3"
+  ],
+  "layers": {
+    "concrete": {
+      "params": {
+        "initial": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "goal": [
+          1,
+          1,
+          1,
+          0,
+          0
+        ],
+        "alphabet": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "max_steps": 7
+      },
+      "witness": [
+        "0",
+        "1",
+        "2"
+      ]
+    },
+    "blocks": {
+      "params": {
+        "initial": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "goal": [
+          0,
+          0,
+          0,
+          1,
+          1,
+          1
+        ],
+        "alphabet": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4",
+          "5"
+        ],
+        "max_steps": 8
+      },
+      "witness": [
+        "3",
+        "4",
+        "5"
+      ]
+    },
+    "system": {
+      "params": {
+        "initial": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "goal": [
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          1
+        ],
+        "alphabet": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6"
+        ],
+        "max_steps": 9
+      },
+      "witness": [
+        "0",
+        "1",
+        "2",
+        "6"
+      ]
+    }
+  }
+}

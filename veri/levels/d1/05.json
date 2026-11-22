@@ -1,0 +1,131 @@
+{
+  "schema_version": 1,
+  "id": "d1-p1-005",
+  "world": "d1",
+  "act": 1,
+  "order": 5,
+  "type": "toggle_board",
+  "concepts": [
+    "state",
+    "cause_effect"
+  ],
+  "locale_key": "mission.d1-p1-005",
+  "hints": [
+    "hint.d1-p1-005.1",
+    "hint.d1-p1-005.2",
+    "hint.d1-p1-005.3"
+  ],
+  "layers": {
+    "concrete": {
+      "params": {
+        "initial": [
+          0,
+          0,
+          0
+        ],
+        "goal": [
+          1,
+          1,
+          0
+        ],
+        "wiring": {
+          "0": [
+            0,
+            1
+          ],
+          "1": [
+            1,
+            2
+          ],
+          "2": [
+            0,
+            2
+          ]
+        },
+        "max_steps": 2
+      },
+      "witness": [
+        "0"
+      ]
+    },
+    "blocks": {
+      "params": {
+        "initial": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "goal": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "wiring": {
+          "0": [
+            0,
+            1
+          ],
+          "1": [
+            1,
+            2
+          ],
+          "2": [
+            2,
+            3
+          ],
+          "3": [
+            0,
+            3
+          ]
+        },
+        "max_steps": 3
+      },
+      "witness": [
+        "0",
+        "2"
+      ]
+    },
+    "system": {
+      "params": {
+        "initial": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "goal": [
+          0,
+          0,
+          1,
+          1
+        ],
+        "wiring": {
+          "0": [
+            0,
+            1
+          ],
+          "1": [
+            1,
+            2
+          ],
+          "2": [
+            2,
+            3
+          ],
+          "3": [
+            0,
+            3
+          ]
+        },
+        "max_steps": 4
+      },
+      "witness": [
+        "0",
+        "1",
+        "3"
+      ]
+    }
+  }
+}

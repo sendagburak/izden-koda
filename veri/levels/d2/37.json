@@ -1,0 +1,116 @@
+{
+  "schema_version": 1,
+  "id": "d2-p4-037",
+  "world": "d2",
+  "act": 4,
+  "order": 37,
+  "type": "state_machine",
+  "concepts": [
+    "states",
+    "events"
+  ],
+  "locale_key": "mission.d2-p4-037",
+  "hints": [
+    "hint.d2-p4-037.1",
+    "hint.d2-p4-037.2",
+    "hint.d2-p4-037.3"
+  ],
+  "layers": {
+    "concrete": {
+      "params": {
+        "transitions": {
+          "OFF": {
+            "START": "READY"
+          },
+          "READY": {
+            "CHECK": "ACTIVE"
+          },
+          "ACTIVE": {
+            "SEND": "DONE"
+          },
+          "DONE": {
+            "RESET": "OFF"
+          }
+        },
+        "start": "OFF",
+        "goal": "DONE",
+        "alphabet": [
+          "START",
+          "CHECK",
+          "SEND",
+          "RESET"
+        ],
+        "max_steps": 6
+      },
+      "witness": [
+        "START",
+        "CHECK",
+        "SEND"
+      ]
+    },
+    "blocks": {
+      "params": {
+        "transitions": {
+          "OFF": {
+            "START": "READY"
+          },
+          "READY": {
+            "CHECK": "ACTIVE"
+          },
+          "ACTIVE": {
+            "SEND": "DONE"
+          },
+          "DONE": {
+            "RESET": "OFF"
+          }
+        },
+        "start": "OFF",
+        "goal": "DONE",
+        "alphabet": [
+          "START",
+          "CHECK",
+          "SEND",
+          "RESET"
+        ],
+        "max_steps": 6
+      },
+      "witness": [
+        "START",
+        "CHECK",
+        "SEND"
+      ]
+    },
+    "system": {
+      "params": {
+        "transitions": {
+          "OFF": {
+            "START": "READY"
+          },
+          "READY": {
+            "CHECK": "ACTIVE"
+          },
+          "ACTIVE": {
+            "SEND": "DONE"
+          },
+          "DONE": {
+            "RESET": "OFF"
+          }
+        },
+        "start": "OFF",
+        "goal": "DONE",
+        "alphabet": [
+          "START",
+          "CHECK",
+          "SEND",
+          "RESET"
+        ],
+        "max_steps": 6
+      },
+      "witness": [
+        "START",
+        "CHECK",
+        "SEND"
+      ]
+    }
+  }
+}

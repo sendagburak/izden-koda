@@ -1,0 +1,140 @@
+{
+  "schema_version": 1,
+  "id": "d6-p5-050",
+  "world": "d6",
+  "act": 5,
+  "order": 50,
+  "type": "flowchart",
+  "concepts": [
+    "flowchart",
+    "sequence"
+  ],
+  "locale_key": "mission.d6-p5-050",
+  "hints": [
+    "hint.d6-p5-050.1",
+    "hint.d6-p5-050.2",
+    "hint.d6-p5-050.3"
+  ],
+  "layers": {
+    "concrete": {
+      "params": {
+        "nodes": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "labels": {
+          "B": "OBSERVE",
+          "D": "PLAN",
+          "A": "ACT",
+          "C": "CHECK"
+        },
+        "goal": [
+          "B",
+          "D",
+          "A",
+          "C"
+        ],
+        "alphabet": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "max_steps": 5
+      },
+      "witness": [
+        "B",
+        "D",
+        "A",
+        "C"
+      ]
+    },
+    "blocks": {
+      "params": {
+        "nodes": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "labels": {
+          "B": "OBSERVE",
+          "D": "PLAN",
+          "A": "ACT",
+          "E": "CHECK",
+          "C": "REFINE"
+        },
+        "goal": [
+          "B",
+          "D",
+          "A",
+          "E",
+          "C"
+        ],
+        "alphabet": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "max_steps": 6
+      },
+      "witness": [
+        "B",
+        "D",
+        "A",
+        "E",
+        "C"
+      ]
+    },
+    "system": {
+      "params": {
+        "nodes": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E",
+          "F"
+        ],
+        "labels": {
+          "C": "OBSERVE",
+          "B": "PLAN",
+          "D": "ACT",
+          "A": "CHECK",
+          "F": "REFINE",
+          "E": "SHARE"
+        },
+        "goal": [
+          "C",
+          "B",
+          "D",
+          "A",
+          "F",
+          "E"
+        ],
+        "alphabet": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E",
+          "F"
+        ],
+        "max_steps": 7
+      },
+      "witness": [
+        "C",
+        "B",
+        "D",
+        "A",
+        "F",
+        "E"
+      ]
+    }
+  }
+}

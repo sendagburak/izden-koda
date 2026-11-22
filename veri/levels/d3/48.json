@@ -1,0 +1,110 @@
+{
+  "schema_version": 1,
+  "id": "d3-p5-048",
+  "world": "d3",
+  "act": 5,
+  "order": 48,
+  "type": "robot_course",
+  "concepts": [
+    "robotics",
+    "events"
+  ],
+  "locale_key": "mission.d3-p5-048",
+  "hints": [
+    "hint.d3-p5-048.1",
+    "hint.d3-p5-048.2",
+    "hint.d3-p5-048.3"
+  ],
+  "layers": {
+    "concrete": {
+      "params": {
+        "size": [
+          5,
+          5
+        ],
+        "start": [
+          0,
+          2
+        ],
+        "goal": [
+          3,
+          2
+        ],
+        "rocks": [
+          [
+            1,
+            2
+          ]
+        ],
+        "max_steps": 8,
+        "needs_scan": true
+      },
+      "witness": [
+        "S",
+        "U",
+        "R",
+        "R",
+        "R",
+        "D"
+      ]
+    },
+    "blocks": {
+      "params": {
+        "size": [
+          6,
+          5
+        ],
+        "start": [
+          0,
+          2
+        ],
+        "goal": [
+          4,
+          2
+        ],
+        "rocks": [
+          [
+            1,
+            2
+          ]
+        ],
+        "max_steps": 9,
+        "needs_scan": true
+      },
+      "witness": [
+        "S",
+        "U",
+        "R",
+        "R",
+        "R",
+        "R",
+        "D"
+      ]
+    },
+    "system": {
+      "params": {
+        "size": [
+          5,
+          5
+        ],
+        "start": [
+          0,
+          2
+        ],
+        "goal": [
+          3,
+          2
+        ],
+        "rocks": [],
+        "max_steps": 6,
+        "needs_scan": true
+      },
+      "witness": [
+        "S",
+        "R",
+        "R",
+        "R"
+      ]
+    }
+  }
+}
