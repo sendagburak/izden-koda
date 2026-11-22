@@ -11,6 +11,7 @@ const SettingsScript = preload("res://oyun/core/settings_store.gd")
 const BackupScript = preload("res://oyun/core/backup_io.gd")
 const InputScript = preload("res://oyun/core/input_actions.gd")
 const StageScript = preload("res://oyun/app/mission_stage.gd")
+const APP_ICON = preload("res://varliklar/ui/icon.png")
 const STANDARD_FONT = preload("res://varliklar/fonts/NotoSans-Regular.ttf")
 const READABLE_FONT = preload("res://varliklar/fonts/AtkinsonHyperlegibleNext-Regular.ttf")
 const COMMAND_LIMIT := 40
@@ -266,11 +267,23 @@ func _frame(subtitle: String, image_world: int = -1) -> VBoxContainer:
 	top.add_theme_constant_override("h_separation", 8)
 	top.add_theme_constant_override("v_separation", 5)
 	body.add_child(top)
+	var brand := HBoxContainer.new()
+	brand.add_theme_constant_override("separation", 8)
+	top.add_child(brand)
+	var mark := TextureRect.new()
+	mark.name = "AppLogo"
+	mark.texture = APP_ICON
+	mark.custom_minimum_size = Vector2(44, 44)
+	mark.size_flags_vertical = Control.SIZE_SHRINK_CENTER
+	mark.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
+	mark.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
+	mark.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	brand.add_child(mark)
 	var title := _heading(_tr("ui.app"), 27, COLORS.light)
 	title.size_flags_horizontal = Control.SIZE_SHRINK_BEGIN
 	title.autowrap_mode = TextServer.AUTOWRAP_OFF
 	title.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
-	top.add_child(title)
+	brand.add_child(title)
 	top.add_child(_btn(_tr("ui.atlas"), func(): _open_atlas(), true))
 	top.add_child(_btn(_tr("ui.mode"), func(): _open_modes(), true))
 	top.add_child(_btn(_tr("ui.profiles"), func(): _open_profiles(), true))

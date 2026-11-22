@@ -33,6 +33,20 @@ func _wait_for_program() -> void:
 		await process_frame
 	_check(not app.playback_active, "program returns to playable controls")
 
+func _wait_for_effect(expected: String, needs_hop := false) -> bool:
+	var deadline := Time.get_ticks_msec() + 3500
+	while app.playback_active and Time.get_ticks_msec() < deadline:
+		if app.mission_stage.effect == expected and app.mission_stage.effect_amount > 0.0 \
+				and (not needs_hop or app.mission_stage.hop > 0.0):
+			return true
+		await process_frame
+	return false
+
+func _check_logo() -> void:
+	var logo := app.find_child("AppLogo", true, false) as TextureRect
+	_check(logo != null and logo.is_visible_in_tree() and logo.size.x == logo.size.y
+		and logo.texture.resource_path == "res://varliklar/ui/icon.png", "square logo is visible in the game header")
+
 func _capture(filename: String) -> void:
 	await process_frame
 	await RenderingServer.frame_post_draw
@@ -58,8 +72,12 @@ func _run() -> void:
 	app.locale.language = "tr"
 	app._open_mission(1)
 	_check(app._tr("ui.app") == "İzden Koda" and app._tr("ui.run") == "Başlat", "new Turkish title and run label")
+	_check(ProjectSettings.get_setting("application/boot_splash/show_image")
+		and ProjectSettings.get_setting("application/boot_splash/image") == "res://varliklar/ui/icon.png",
+		"the same logo is used on the Godot splash screen")
 	_check(OS.get_user_data_dir().ends_with("godot/app_userdata/ALGORİTMA OYUNU"), "existing desktop profile path is preserved")
 	await _capture("01_Kayip_Feneri")
+	_check_logo()
 
 	_enter(app.level["layers"]["concrete"]["witness"])
 	var position: Vector2 = app.mission_stage.actor
@@ -71,8 +89,11 @@ func _run() -> void:
 		await process_frame
 	_check(app.playback_active and app.mission_stage == stage and app.mission_stage.actor != position and app.mission_order == 1,
 		"explorer moves while the original mission is on screen")
+	_check(await _wait_for_effect("step", true), "normal movement shows a small hop and a step spark")
 	_check(app.run_status.visible and app.run_status.text.begins_with("Adım "), "running command has Turkish feedback")
 	await _capture("02_Komut_Isliyor")
+	_check(await _wait_for_effect("success"), "arrival at the goal plays the celebration effect")
+	await _capture("03_Hedef_Pariltisi")
 	await _wait_for_program()
 	_check(app.mission_stage.completed and app.data["completed_ids"].has("d1-p1-001"), "visible playback reaches the beacon and stores completion")
 
@@ -80,9 +101,12 @@ func _run() -> void:
 	_check(app.mission_order == 2 and not app.mission_stage.route["rocks"].is_empty(), "next mission has a different rocky layout")
 	root.size = Vector2i(430, 780)
 	await process_frame
-	await _capture("03_Kayalik_Iskele_Dikey")
+	await _capture("04_Kayalik_Iskele_Dikey")
+	_check_logo()
 	_enter(["R", "R"])
 	_press("Başlat")
+	_check(await _wait_for_effect("blocked"), "rock impact plays its warning effect")
+	await _capture("05_Kaya_Carpmasi")
 	await _wait_for_program()
 	_check(app.feedback == "ui.route_blocked" and not app.data["completed_ids"].has("d1-p1-002"), "rock impact is explained and does not complete the mission")
 	_press(app._tr("ui.clear"))
@@ -101,7 +125,7 @@ func _run() -> void:
 		app._open_mission(1)
 		worlds[app.mission_stage.backdrop.resource_path] = true
 		if world == 3 or world == 7:
-			await _capture("04_Yasayan_Istasyon" if world == 3 else "05_Yeni_Gun_Kenti")
+			await _capture("06_Yasayan_Istasyon" if world == 3 else "07_Yeni_Gun_Kenti")
 	_check(worlds.size() == 7, "all seven worlds load distinct production backdrops")
 	app.queue_free()
 	await process_frame

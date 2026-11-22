@@ -9,6 +9,6 @@
 
 - `varliklar/sprites/world_2.png`–`world_7.png`: özgün çizim betiği `tools/generate_world_art.py` ile üretildi.
 - `varliklar/sprites/character_1.png`–`character_7.png`: aynı betiğin özgün karakter pikselleri.
-- `varliklar/ui/icon.png`: oyun için özel piksel ikon.
+- `varliklar/ui/icon.png`: İzden Koda'nın kâşifiyle, verilen yerleşim referansı temel alınarak üretilmiş özel piksel logo.
 - `varliklar/sahne/`: İzden Koda için üretilmiş yedi özgün piksel sahne ve oyun içi sprite çizimleri.
 - `varliklar/audio/*.wav`: `tools/generate_audio.py` ile oluşturulmuş özgün notalar/sentez; örneklenmiş üçüncü taraf müzik içermez.

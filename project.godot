@@ -3,7 +3,7 @@ config_version=5
 
 [application]
 config/name="İzden Koda"
-config/version="0.8.0"
+config/version="0.8.1"
 config/use_custom_user_dir=true
 config/custom_user_dir_name="godot/app_userdata/ALGORİTMA OYUNU"
 config/quit_on_go_back=false
@@ -11,7 +11,10 @@ config/description="Çevrimdışı, yedi dünyalı algoritma öğrenme macerası
 config/icon="res://varliklar/ui/icon.png"
 run/main_scene="res://oyun/app/main.tscn"
 config/features=PackedStringArray("4.7", "GL Compatibility")
-boot_splash/show_image=false
+boot_splash/show_image=true
+boot_splash/image="res://varliklar/ui/icon.png"
+boot_splash/use_filter=false
+boot_splash/bg_color=Color(0.025, 0.10, 0.14, 1)
 
 [display]
 window/size/viewport_width=960
