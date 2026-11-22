@@ -6,10 +6,16 @@ func apply_action(level: Dictionary, state: Dictionary, action: Dictionary) -> D
 	var p: Dictionary = level["layers"][state["layer"]]["params"]
 	var s: Dictionary = state.duplicate(true)
 	var token: String = str(action.get("command", ""))
-	if not p["macros"].has(token): return {"state":s,"events":["blocked"]}
+	if not token in p["alphabet"]: return {"state":s,"events":["blocked"]}
+	var parts := token.split("*")
+	if not p["macros"].has(parts[0]) or parts.size() > 2:
+		return {"state":s,"events":["blocked"]}
+	if parts.size() == 2 and parts[1] not in ["2", "3"]:
+		return {"state":s,"events":["blocked"]}
 	if s["calls"].size() >= int(p["max_steps"]): return {"state":s,"events":["limit"]}
 	s["calls"].append(token)
-	s["sequence"] += str(p["macros"][token])
+	var repetitions := int(parts[1]) if parts.size() == 2 else 1
+	s["sequence"] += str(p["macros"][parts[0]]).repeat(repetitions)
 	return {"state":s,"events":["called"]}
 func evaluate(level: Dictionary, state: Dictionary) -> Dictionary:
 	var p: Dictionary = level["layers"][state["layer"]]["params"]

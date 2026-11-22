@@ -7,7 +7,10 @@ func _safe_read(path: String) -> Dictionary:
 	var f = FileAccess.open(path, FileAccess.READ)
 	if f == null:
 		return {}
-	var data = JSON.parse_string(f.get_as_text())
+	var json := JSON.new()
+	if json.parse(f.get_as_text()) != OK:
+		return {}
+	var data = json.data
 	if data is Dictionary and data.get("profiles") is Array:
 		return data
 	return {}
@@ -53,20 +56,37 @@ func has_profile(id: String) -> bool:
 
 func create_profile(title: String) -> String:
 	var id: String = "p_" + str(Time.get_ticks_usec()) + "_" + str(randi())
+	var previous := selected
 	entries.append({"id": id, "title": title.substr(0, 30)})
 	selected = id
-	persist()
-	return id
+	if persist():
+		return id
+	entries.pop_back()
+	selected = previous
+	return ""
+
+func register_profile(id: String, title: String) -> bool:
+	if has_profile(id):
+		return true
+	entries.append({"id": id, "title": title.substr(0, 30)})
+	if persist():
+		return true
+	entries.pop_back()
+	return false
 
 func select_profile(id: String) -> bool:
 	if not has_profile(id):
 		return false
+	var previous := selected
 	selected = id
-	persist()
-	return true
+	if persist():
+		return true
+	selected = previous
+	return false
 
 func persist() -> bool:
-	DirAccess.make_dir_recursive_absolute(ProjectSettings.globalize_path("user://profiles"))
+	if DirAccess.make_dir_recursive_absolute(ProjectSettings.globalize_path("user://profiles")) != OK:
+		return false
 	var tmp: String = PATH + ".tmp"
 	var f = FileAccess.open(tmp, FileAccess.WRITE)
 	if f == null:
@@ -76,9 +96,12 @@ func persist() -> bool:
 	f.close()
 	if _safe_read(tmp).is_empty():
 		return false
-	if FileAccess.file_exists(PATH):
-		DirAccess.copy_absolute(ProjectSettings.globalize_path(PATH), ProjectSettings.globalize_path(PATH + ".bak"))
-		DirAccess.remove_absolute(ProjectSettings.globalize_path(PATH))
+	if not _safe_read(PATH).is_empty():
+		var backup_tmp := PATH + ".bak.tmp"
+		if DirAccess.copy_absolute(ProjectSettings.globalize_path(PATH), ProjectSettings.globalize_path(backup_tmp)) != OK:
+			return false
+		if DirAccess.rename_absolute(ProjectSettings.globalize_path(backup_tmp), ProjectSettings.globalize_path(PATH + ".bak")) != OK:
+			return false
 	return DirAccess.rename_absolute(ProjectSettings.globalize_path(tmp), ProjectSettings.globalize_path(PATH)) == OK
 
 func title_for(id: String) -> String:

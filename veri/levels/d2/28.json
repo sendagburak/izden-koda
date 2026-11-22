@@ -19,60 +19,74 @@
     "concrete": {
       "params": {
         "macros": {
-          "A": "ST",
-          "B": "TS",
-          "C": "SS"
+          "A": "TS",
+          "B": "TT",
+          "C": "ST"
         },
-        "target": "STTS",
+        "target": "TTSTSTST",
         "alphabet": [
           "A",
           "B",
-          "C"
+          "C",
+          "A*2",
+          "B*2",
+          "C*2"
         ],
-        "max_steps": 3
+        "max_steps": 5
       },
       "witness": [
-        "A",
-        "B"
+        "B",
+        "C",
+        "C*2"
       ]
     },
     "blocks": {
       "params": {
         "macros": {
-          "A": "ST",
-          "B": "TS",
-          "C": "SS"
+          "A": "SS",
+          "B": "MK",
+          "C": "KM"
         },
-        "target": "SSSTTS",
+        "target": "KMKMSSSSSS",
         "alphabet": [
           "A",
           "B",
-          "C"
+          "C",
+          "A*2",
+          "B*2",
+          "C*2"
         ],
-        "max_steps": 3
+        "max_steps": 5
       },
       "witness": [
-        "C",
+        "C*2",
         "A",
-        "B"
+        "A*2"
       ]
     },
     "system": {
       "params": {
         "macros": {
           "A": "ST",
-          "B": "TS",
+          "B": "MK",
           "C": "SS"
         },
-        "target": "STTS",
+        "target": "MKMKMKSTMK",
         "alphabet": [
           "A",
           "B",
-          "C"
+          "C",
+          "A*2",
+          "B*2",
+          "C*2",
+          "A*3",
+          "B*3",
+          "C*3"
         ],
-        "max_steps": 3
+        "max_steps": 5
       },
       "witness": [
+        "B*3",
         "A",
         "B"
       ]

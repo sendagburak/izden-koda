@@ -27,14 +27,14 @@
         "target": [
           "K",
           "M",
-          "M"
+          "K"
         ],
-        "max_steps": 4
+        "max_steps": 3
       },
       "witness": [
         "K",
         "M",
-        "M"
+        "K"
       ]
     },
     "blocks": {
@@ -47,16 +47,16 @@
         ],
         "target": [
           "K",
-          "M",
-          "M",
+          "T",
+          "K",
           "T"
         ],
-        "max_steps": 5
+        "max_steps": 4
       },
       "witness": [
         "K",
-        "M",
-        "M",
+        "T",
+        "K",
         "T"
       ]
     },
@@ -69,20 +69,20 @@
           "S"
         ],
         "target": [
+          "M",
           "K",
-          "M",
-          "M",
           "T",
-          "T"
+          "M",
+          "K"
         ],
-        "max_steps": 6
+        "max_steps": 5
       },
       "witness": [
+        "M",
         "K",
-        "M",
-        "M",
         "T",
-        "T"
+        "M",
+        "K"
       ]
     }
   }

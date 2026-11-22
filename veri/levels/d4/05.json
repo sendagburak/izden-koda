@@ -24,13 +24,13 @@
           "C"
         ],
         "labels": {
-          "B": "OBSERVE",
-          "C": "PLAN",
+          "C": "OBSERVE",
+          "B": "PLAN",
           "A": "ACT"
         },
         "goal": [
-          "B",
           "C",
+          "B",
           "A"
         ],
         "alphabet": [
@@ -41,8 +41,8 @@
         "max_steps": 4
       },
       "witness": [
-        "B",
         "C",
+        "B",
         "A"
       ]
     },
@@ -55,9 +55,9 @@
           "D"
         ],
         "labels": {
-          "B": "OBSERVE",
-          "A": "PLAN",
-          "C": "ACT",
+          "B": "MEASURE",
+          "A": "RECORD",
+          "C": "COMPARE",
           "D": "CHECK"
         },
         "goal": [
@@ -91,18 +91,18 @@
           "E"
         ],
         "labels": {
-          "E": "OBSERVE",
-          "D": "PLAN",
-          "A": "ACT",
-          "C": "CHECK",
-          "B": "REFINE"
+          "B": "OBSERVE",
+          "E": "PLAN",
+          "D": "ACT",
+          "A": "CHECK",
+          "C": "REFINE"
         },
         "goal": [
+          "B",
           "E",
           "D",
           "A",
-          "C",
-          "B"
+          "C"
         ],
         "alphabet": [
           "A",
@@ -114,11 +114,11 @@
         "max_steps": 6
       },
       "witness": [
+        "B",
         "E",
         "D",
         "A",
-        "C",
-        "B"
+        "C"
       ]
     }
   }

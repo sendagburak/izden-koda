@@ -2,7 +2,7 @@
 
 - `varliklar/sprites/*.png`: Bu proje için kodla oluşturulmuş özgün, telifli üçüncü taraf varlık içermez. Kullanıcının proje içi kullanımına sunulur.
 - Godot **4.7.2 stable**: MIT lisansı; motorun dağıtımında Godot lisans koşullarına uyulacak. https://godotengine.org/license/
-- Fonts: Projede dışarıdan alınmış font **paketlenmedi**. Godot 4'ün yerleşik varsayılan yazı tipine başvurulur; Türkçe harf ve alternatif disleksi fontu gerçek cihazda doğrulanmalıdır.
+- Noto Sans ve Atkinson Hyperlegible Next SIL Open Font License 1.1 kapsamında dağıtılır. Yazı tipleri ve lisansları varliklar/fonts altında bulunur.
 - Sesler: `varliklar/audio` içerisinde proje için algoritmik olarak sentezlenmiş 7 özgün müzik döngüsü ve 3 arayüz efekti vardır. Godot içinde gerçek oynatım testi henüz yapılmadı.
 - Harici API, ağ hizmeti, reklam/analitik SDK'sı: **Yok**.
 - Python Pillow: yalnızca varlık oluşturma betiğinde kullanıldı; oyunun runtime'ına eklenmedi.

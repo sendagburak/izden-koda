@@ -19,23 +19,29 @@
     "concrete": {
       "params": {
         "size": [
-          4,
+          5,
           5
         ],
         "start": [
           0,
-          2
+          4
         ],
         "goal": [
-          2,
-          2
+          3,
+          3
         ],
-        "rocks": [],
-        "max_steps": 5,
-        "needs_scan": true
+        "rocks": [
+          [
+            0,
+            3
+          ]
+        ],
+        "max_steps": 8
       },
       "witness": [
         "S",
+        "R",
+        "U",
         "R",
         "R"
       ]
@@ -43,66 +49,89 @@
     "blocks": {
       "params": {
         "size": [
-          5,
-          5
+          6,
+          6
         ],
         "start": [
           0,
-          2
+          3
         ],
         "goal": [
-          3,
-          2
+          4,
+          3
         ],
         "rocks": [
           [
+            0,
+            1
+          ],
+          [
             1,
-            2
+            4
           ]
         ],
-        "max_steps": 8,
-        "needs_scan": true
+        "max_steps": 7
       },
       "witness": [
         "S",
-        "U",
         "R",
         "R",
         "R",
-        "D"
+        "R"
       ]
     },
     "system": {
       "params": {
         "size": [
-          7,
-          5
+          8,
+          6
         ],
         "start": [
           0,
-          2
+          1
         ],
         "goal": [
-          5,
-          2
+          6,
+          4
         ],
         "rocks": [
           [
             1,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            5,
+            4
+          ],
+          [
+            6,
+            0
+          ],
+          [
+            7,
             2
           ]
         ],
-        "max_steps": 10,
-        "needs_scan": true
+        "max_steps": 11
       },
       "witness": [
         "S",
-        "U",
+        "D",
         "R",
         "R",
         "R",
         "R",
         "R",
+        "R",
+        "D",
         "D"
       ]
     }

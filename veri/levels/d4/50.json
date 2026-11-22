@@ -18,124 +18,124 @@
   "layers": {
     "concrete": {
       "params": {
-        "source": "YOL",
+        "source": "HAVUZ",
         "encodings": [
-          "YOL",
-          "ZPM",
-          "AQN",
-          "BRO",
-          "CSP",
-          "DTQ",
-          "EUR",
-          "FVS",
-          "GWT",
-          "HXU",
-          "IYV",
-          "JZW",
-          "KAX",
-          "LBY",
-          "MCZ",
-          "NDA",
-          "OEB",
-          "PFC",
-          "QGD",
-          "RHE",
-          "SIF",
-          "TJG",
-          "UKH",
-          "VLI",
-          "WMJ",
-          "XNK"
-        ],
-        "goal_shift": 5,
-        "alphabet": [
-          "+",
-          "-"
-        ],
-        "max_steps": 10
-      },
-      "witness": [
-        "+",
-        "+",
-        "+",
-        "+",
-        "+"
-      ]
-    },
-    "blocks": {
-      "params": {
-        "source": "YOL",
-        "encodings": [
-          "YOL",
-          "ZPM",
-          "AQN",
-          "BRO",
-          "CSP",
-          "DTQ",
-          "EUR",
-          "FVS",
-          "GWT",
-          "HXU",
-          "IYV",
-          "JZW",
-          "KAX",
-          "LBY",
-          "MCZ",
-          "NDA",
-          "OEB",
-          "PFC",
-          "QGD",
-          "RHE",
-          "SIF",
-          "TJG",
-          "UKH",
-          "VLI",
-          "WMJ",
-          "XNK"
+          "HAVUZ",
+          "IBWVA",
+          "JCXWB",
+          "KDYXC",
+          "LEZYD",
+          "MFAZE",
+          "NGBAF",
+          "OHCBG",
+          "PIDCH",
+          "QJEDI",
+          "RKFEJ",
+          "SLGFK",
+          "TMHGL",
+          "UNIHM",
+          "VOJIN",
+          "WPKJO",
+          "XQLKP",
+          "YRMLQ",
+          "ZSNMR",
+          "ATONS",
+          "BUPOT",
+          "CVQPU",
+          "DWRQV",
+          "EXSRW",
+          "FYTSX",
+          "GZUTY"
         ],
         "goal_shift": 1,
         "alphabet": [
           "+",
           "-"
         ],
-        "max_steps": 10
+        "max_steps": 3
       },
       "witness": [
         "+"
       ]
     },
+    "blocks": {
+      "params": {
+        "source": "HARITA",
+        "encodings": [
+          "HARITA",
+          "IBSJUB",
+          "JCTKVC",
+          "KDULWD",
+          "LEVMXE",
+          "MFWNYF",
+          "NGXOZG",
+          "OHYPAH",
+          "PIZQBI",
+          "QJARCJ",
+          "RKBSDK",
+          "SLCTEL",
+          "TMDUFM",
+          "UNEVGN",
+          "VOFWHO",
+          "WPGXIP",
+          "XQHYJQ",
+          "YRIZKR",
+          "ZSJALS",
+          "ATKBMT",
+          "BULCNU",
+          "CVMDOV",
+          "DWNEPW",
+          "EXOFQX",
+          "FYPGRY",
+          "GZQHSZ"
+        ],
+        "goal_shift": 21,
+        "alphabet": [
+          "+",
+          "-"
+        ],
+        "max_steps": 7
+      },
+      "witness": [
+        "-",
+        "-",
+        "-",
+        "-",
+        "-"
+      ]
+    },
     "system": {
       "params": {
-        "source": "YOL",
+        "source": "RITIM",
         "encodings": [
-          "YOL",
-          "ZPM",
-          "AQN",
-          "BRO",
-          "CSP",
-          "DTQ",
-          "EUR",
-          "FVS",
-          "GWT",
-          "HXU",
-          "IYV",
-          "JZW",
-          "KAX",
-          "LBY",
-          "MCZ",
-          "NDA",
-          "OEB",
-          "PFC",
-          "QGD",
-          "RHE",
-          "SIF",
-          "TJG",
-          "UKH",
-          "VLI",
-          "WMJ",
-          "XNK"
+          "RITIM",
+          "SJUJN",
+          "TKVKO",
+          "ULWLP",
+          "VMXMQ",
+          "WNYNR",
+          "XOZOS",
+          "YPAPT",
+          "ZQBQU",
+          "ARCRV",
+          "BSDSW",
+          "CTETX",
+          "DUFUY",
+          "EVGVZ",
+          "FWHWA",
+          "GXIXB",
+          "HYJYC",
+          "IZKZD",
+          "JALAE",
+          "KBMBF",
+          "LCNCG",
+          "MDODH",
+          "NEPEI",
+          "OFQFJ",
+          "PGRGK",
+          "QHSHL"
         ],
-        "goal_shift": 2,
+        "goal_shift": 18,
         "alphabet": [
           "+",
           "-"
@@ -143,8 +143,14 @@
         "max_steps": 10
       },
       "witness": [
-        "+",
-        "+"
+        "-",
+        "-",
+        "-",
+        "-",
+        "-",
+        "-",
+        "-",
+        "-"
       ]
     }
   }

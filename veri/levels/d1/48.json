@@ -25,16 +25,16 @@
           "D"
         ],
         "labels": {
-          "B": "OBSERVE",
-          "A": "PLAN",
-          "C": "ACT",
-          "D": "CHECK"
+          "C": "READ",
+          "B": "SELECT",
+          "D": "SORT",
+          "A": "VERIFY"
         },
         "goal": [
-          "B",
-          "A",
           "C",
-          "D"
+          "B",
+          "D",
+          "A"
         ],
         "alphabet": [
           "A",
@@ -45,10 +45,10 @@
         "max_steps": 5
       },
       "witness": [
-        "B",
-        "A",
         "C",
-        "D"
+        "B",
+        "D",
+        "A"
       ]
     },
     "blocks": {
@@ -61,18 +61,18 @@
           "E"
         ],
         "labels": {
-          "E": "OBSERVE",
-          "A": "PLAN",
-          "B": "ACT",
-          "D": "CHECK",
-          "C": "REFINE"
+          "B": "READ",
+          "C": "SELECT",
+          "A": "SORT",
+          "E": "VERIFY",
+          "D": "SAVE"
         },
         "goal": [
-          "E",
-          "A",
           "B",
-          "D",
-          "C"
+          "C",
+          "A",
+          "E",
+          "D"
         ],
         "alphabet": [
           "A",
@@ -84,11 +84,11 @@
         "max_steps": 6
       },
       "witness": [
-        "E",
-        "A",
         "B",
-        "D",
-        "C"
+        "C",
+        "A",
+        "E",
+        "D"
       ]
     },
     "system": {
@@ -103,18 +103,18 @@
         ],
         "labels": {
           "D": "OBSERVE",
-          "E": "PLAN",
+          "F": "PLAN",
           "A": "ACT",
           "C": "CHECK",
-          "F": "REFINE",
+          "E": "REFINE",
           "B": "SHARE"
         },
         "goal": [
           "D",
-          "E",
+          "F",
           "A",
           "C",
-          "F",
+          "E",
           "B"
         ],
         "alphabet": [
@@ -129,10 +129,10 @@
       },
       "witness": [
         "D",
-        "E",
+        "F",
         "A",
         "C",
-        "F",
+        "E",
         "B"
       ]
     }

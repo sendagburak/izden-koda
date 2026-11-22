@@ -25,18 +25,22 @@
           "S"
         ],
         "target": [
+          "K",
           "M",
           "T",
-          "T",
-          "S"
+          "K",
+          "M",
+          "T"
         ],
-        "max_steps": 5
+        "max_steps": 6
       },
       "witness": [
+        "K",
         "M",
         "T",
-        "T",
-        "S"
+        "K",
+        "M",
+        "T"
       ]
     },
     "blocks": {
@@ -48,20 +52,24 @@
           "S"
         ],
         "target": [
-          "M",
-          "T",
           "T",
           "S",
-          "S"
+          "M",
+          "T",
+          "S",
+          "M",
+          "T"
         ],
-        "max_steps": 6
+        "max_steps": 7
       },
       "witness": [
-        "M",
-        "T",
         "T",
         "S",
-        "S"
+        "M",
+        "T",
+        "S",
+        "M",
+        "T"
       ]
     },
     "system": {
@@ -73,22 +81,26 @@
           "S"
         ],
         "target": [
+          "K",
           "M",
           "T",
+          "S",
+          "K",
+          "M",
           "T",
-          "S",
-          "S",
-          "K"
+          "S"
         ],
-        "max_steps": 7
+        "max_steps": 8
       },
       "witness": [
+        "K",
         "M",
         "T",
+        "S",
+        "K",
+        "M",
         "T",
-        "S",
-        "S",
-        "K"
+        "S"
       ]
     }
   }

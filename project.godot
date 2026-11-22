@@ -3,6 +3,8 @@ config_version=5
 
 [application]
 config/name="ALGORİTMA OYUNU"
+config/version="0.7.0"
+config/quit_on_go_back=false
 config/description="Çevrimdışı, yedi dünyalı algoritma öğrenme macerası"
 config/icon="res://varliklar/ui/icon.png"
 run/main_scene="res://oyun/app/main.tscn"
@@ -15,11 +17,13 @@ window/size/viewport_height=540
 window/size/window_width_override=960
 window/size/window_height_override=540
 window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
 window/handheld/orientation=6
 
 [rendering]
 renderer/rendering_method="gl_compatibility"
 renderer/rendering_method.mobile="gl_compatibility"
+textures/vram_compression/import_etc2_astc=true
 textures/default_filters/use_nearest_mipmap_filter=false
 textures/canvas_textures/default_texture_filter=0
 anti_aliasing/quality/msaa_2d=0

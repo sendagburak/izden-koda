@@ -25,16 +25,16 @@
           "D"
         ],
         "labels": {
-          "B": "OBSERVE",
-          "D": "PLAN",
-          "A": "ACT",
-          "C": "CHECK"
+          "C": "READ",
+          "D": "SELECT",
+          "A": "SORT",
+          "B": "VERIFY"
         },
         "goal": [
-          "B",
+          "C",
           "D",
           "A",
-          "C"
+          "B"
         ],
         "alphabet": [
           "A",
@@ -45,10 +45,10 @@
         "max_steps": 5
       },
       "witness": [
-        "B",
+        "C",
         "D",
         "A",
-        "C"
+        "B"
       ]
     },
     "blocks": {
@@ -61,17 +61,17 @@
           "E"
         ],
         "labels": {
-          "B": "OBSERVE",
-          "D": "PLAN",
-          "A": "ACT",
-          "E": "CHECK",
-          "C": "REFINE"
+          "B": "READ",
+          "E": "SELECT",
+          "D": "SORT",
+          "A": "VERIFY",
+          "C": "SAVE"
         },
         "goal": [
           "B",
+          "E",
           "D",
           "A",
-          "E",
           "C"
         ],
         "alphabet": [
@@ -85,9 +85,9 @@
       },
       "witness": [
         "B",
+        "E",
         "D",
         "A",
-        "E",
         "C"
       ]
     },
@@ -102,19 +102,19 @@
           "F"
         ],
         "labels": {
-          "C": "OBSERVE",
-          "B": "PLAN",
-          "D": "ACT",
-          "A": "CHECK",
-          "F": "REFINE",
+          "D": "MEASURE",
+          "B": "RECORD",
+          "C": "COMPARE",
+          "F": "CHECK",
+          "A": "REFINE",
           "E": "SHARE"
         },
         "goal": [
-          "C",
-          "B",
           "D",
-          "A",
+          "B",
+          "C",
           "F",
+          "A",
           "E"
         ],
         "alphabet": [
@@ -128,11 +128,11 @@
         "max_steps": 7
       },
       "witness": [
-        "C",
-        "B",
         "D",
-        "A",
+        "B",
+        "C",
         "F",
+        "A",
         "E"
       ]
     }

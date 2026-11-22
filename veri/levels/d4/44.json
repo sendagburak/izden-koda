@@ -18,36 +18,36 @@
   "layers": {
     "concrete": {
       "params": {
-        "source": "KOD",
+        "source": "YON",
         "encodings": [
-          "KOD",
-          "LPE",
-          "MQF",
-          "NRG",
-          "OSH",
-          "PTI",
-          "QUJ",
-          "RVK",
-          "SWL",
-          "TXM",
-          "UYN",
-          "VZO",
-          "WAP",
-          "XBQ",
-          "YCR",
-          "ZDS",
-          "AET",
-          "BFU",
-          "CGV",
-          "DHW",
-          "EIX",
-          "FJY",
-          "GKZ",
-          "HLA",
-          "IMB",
-          "JNC"
+          "YON",
+          "ZPO",
+          "AQP",
+          "BRQ",
+          "CSR",
+          "DTS",
+          "EUT",
+          "FVU",
+          "GWV",
+          "HXW",
+          "IYX",
+          "JZY",
+          "KAZ",
+          "LBA",
+          "MCB",
+          "NDC",
+          "OED",
+          "PFE",
+          "QGF",
+          "RHG",
+          "SIH",
+          "TJI",
+          "UKJ",
+          "VLK",
+          "WML",
+          "XNM"
         ],
-        "goal_shift": 4,
+        "goal_shift": 18,
         "alphabet": [
           "+",
           "-"
@@ -55,10 +55,14 @@
         "max_steps": 10
       },
       "witness": [
-        "+",
-        "+",
-        "+",
-        "+"
+        "-",
+        "-",
+        "-",
+        "-",
+        "-",
+        "-",
+        "-",
+        "-"
       ]
     },
     "blocks": {
@@ -92,7 +96,7 @@
           "IMB",
           "JNC"
         ],
-        "goal_shift": 5,
+        "goal_shift": 18,
         "alphabet": [
           "+",
           "-"
@@ -100,53 +104,61 @@
         "max_steps": 10
       },
       "witness": [
-        "+",
-        "+",
-        "+",
-        "+",
-        "+"
+        "-",
+        "-",
+        "-",
+        "-",
+        "-",
+        "-",
+        "-",
+        "-"
       ]
     },
     "system": {
       "params": {
-        "source": "KOD",
+        "source": "HARITA",
         "encodings": [
-          "KOD",
-          "LPE",
-          "MQF",
-          "NRG",
-          "OSH",
-          "PTI",
-          "QUJ",
-          "RVK",
-          "SWL",
-          "TXM",
-          "UYN",
-          "VZO",
-          "WAP",
-          "XBQ",
-          "YCR",
-          "ZDS",
-          "AET",
-          "BFU",
-          "CGV",
-          "DHW",
-          "EIX",
-          "FJY",
-          "GKZ",
-          "HLA",
-          "IMB",
-          "JNC"
+          "HARITA",
+          "IBSJUB",
+          "JCTKVC",
+          "KDULWD",
+          "LEVMXE",
+          "MFWNYF",
+          "NGXOZG",
+          "OHYPAH",
+          "PIZQBI",
+          "QJARCJ",
+          "RKBSDK",
+          "SLCTEL",
+          "TMDUFM",
+          "UNEVGN",
+          "VOFWHO",
+          "WPGXIP",
+          "XQHYJQ",
+          "YRIZKR",
+          "ZSJALS",
+          "ATKBMT",
+          "BULCNU",
+          "CVMDOV",
+          "DWNEPW",
+          "EXOFQX",
+          "FYPGRY",
+          "GZQHSZ"
         ],
-        "goal_shift": 1,
+        "goal_shift": 20,
         "alphabet": [
           "+",
           "-"
         ],
-        "max_steps": 10
+        "max_steps": 8
       },
       "witness": [
-        "+"
+        "-",
+        "-",
+        "-",
+        "-",
+        "-",
+        "-"
       ]
     }
   }

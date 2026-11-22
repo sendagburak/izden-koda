@@ -19,6 +19,22 @@
     "concrete": {
       "params": {
         "start": 1,
+        "goal": 3,
+        "alphabet": [
+          "+2",
+          "+3",
+          "-1",
+          "*2"
+        ],
+        "max_steps": 3
+      },
+      "witness": [
+        "+2"
+      ]
+    },
+    "blocks": {
+      "params": {
+        "start": 5,
         "goal": 9,
         "alphabet": [
           "+2",
@@ -26,36 +42,17 @@
           "-1",
           "*2"
         ],
-        "max_steps": 5
+        "max_steps": 4
       },
       "witness": [
-        "+2",
         "*2",
-        "+3"
-      ]
-    },
-    "blocks": {
-      "params": {
-        "start": 2,
-        "goal": 11,
-        "alphabet": [
-          "+2",
-          "+3",
-          "-1",
-          "*2"
-        ],
-        "max_steps": 5
-      },
-      "witness": [
-        "+2",
-        "*2",
-        "+3"
+        "-1"
       ]
     },
     "system": {
       "params": {
-        "start": 3,
-        "goal": 10,
+        "start": 2,
+        "goal": 5,
         "alphabet": [
           "+2",
           "+3",
@@ -65,8 +62,9 @@
         "max_steps": 5
       },
       "witness": [
-        "+2",
-        "*2"
+        "*2",
+        "-1",
+        "+2"
       ]
     }
   }

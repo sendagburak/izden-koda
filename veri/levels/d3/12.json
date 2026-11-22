@@ -18,39 +18,49 @@
   "layers": {
     "concrete": {
       "params": {
-        "gate": "OR",
+        "gate": "NOT",
+        "initial": [
+          1,
+          0
+        ],
         "goal": 1,
         "alphabet": [
           "A0",
-          "A1",
-          "B0",
-          "B1"
+          "A1"
         ],
-        "max_steps": 4
+        "max_steps": 3
       },
       "witness": [
-        "B1"
+        "A0"
       ]
     },
     "blocks": {
       "params": {
-        "gate": "OR",
-        "goal": 1,
+        "gate": "XOR",
+        "initial": [
+          0,
+          1
+        ],
+        "goal": 0,
         "alphabet": [
           "A0",
           "A1",
           "B0",
           "B1"
         ],
-        "max_steps": 4
+        "max_steps": 3
       },
       "witness": [
-        "B1"
+        "A1"
       ]
     },
     "system": {
       "params": {
-        "gate": "OR",
+        "gate": "NOR",
+        "initial": [
+          1,
+          0
+        ],
         "goal": 1,
         "alphabet": [
           "A0",
@@ -58,10 +68,10 @@
           "B0",
           "B1"
         ],
-        "max_steps": 4
+        "max_steps": 3
       },
       "witness": [
-        "B1"
+        "A0"
       ]
     }
   }

@@ -19,23 +19,28 @@
     "concrete": {
       "params": {
         "size": [
-          4,
-          5
+          5,
+          4
         ],
         "start": [
           0,
-          2
+          3
         ],
         "goal": [
-          2,
-          2
+          3,
+          3
         ],
-        "rocks": [],
-        "max_steps": 5,
-        "needs_scan": true
+        "rocks": [
+          [
+            1,
+            2
+          ]
+        ],
+        "max_steps": 7
       },
       "witness": [
         "S",
+        "R",
         "R",
         "R"
       ]
@@ -48,7 +53,7 @@
         ],
         "start": [
           0,
-          2
+          0
         ],
         "goal": [
           3,
@@ -57,51 +62,52 @@
         "rocks": [
           [
             1,
-            2
+            4
           ]
         ],
-        "max_steps": 8,
-        "needs_scan": true
+        "max_steps": 8
       },
       "witness": [
         "S",
-        "U",
         "R",
         "R",
         "R",
+        "D",
         "D"
       ]
     },
     "system": {
       "params": {
         "size": [
-          7,
+          6,
           5
         ],
         "start": [
           0,
-          2
+          1
         ],
         "goal": [
-          5,
-          2
+          4,
+          3
         ],
         "rocks": [
           [
-            1,
-            2
+            4,
+            1
+          ],
+          [
+            5,
+            1
           ]
         ],
-        "max_steps": 10,
-        "needs_scan": true
+        "max_steps": 8
       },
       "witness": [
         "S",
-        "U",
         "R",
         "R",
         "R",
-        "R",
+        "D",
         "R",
         "D"
       ]

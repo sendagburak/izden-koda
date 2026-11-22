@@ -25,15 +25,15 @@
           "D"
         ],
         "labels": {
-          "B": "OBSERVE",
+          "C": "OBSERVE",
           "D": "PLAN",
-          "C": "ACT",
+          "B": "ACT",
           "A": "CHECK"
         },
         "goal": [
-          "B",
-          "D",
           "C",
+          "D",
+          "B",
           "A"
         ],
         "alphabet": [
@@ -45,9 +45,9 @@
         "max_steps": 5
       },
       "witness": [
-        "B",
-        "D",
         "C",
+        "D",
+        "B",
         "A"
       ]
     },
@@ -61,18 +61,18 @@
           "E"
         ],
         "labels": {
-          "A": "OBSERVE",
-          "D": "PLAN",
-          "C": "ACT",
-          "B": "CHECK",
-          "E": "REFINE"
+          "C": "MEASURE",
+          "A": "RECORD",
+          "E": "COMPARE",
+          "D": "CHECK",
+          "B": "REFINE"
         },
         "goal": [
-          "A",
-          "D",
           "C",
-          "B",
-          "E"
+          "A",
+          "E",
+          "D",
+          "B"
         ],
         "alphabet": [
           "A",
@@ -84,11 +84,11 @@
         "max_steps": 6
       },
       "witness": [
-        "A",
-        "D",
         "C",
-        "B",
-        "E"
+        "A",
+        "E",
+        "D",
+        "B"
       ]
     },
     "system": {
@@ -102,20 +102,20 @@
           "F"
         ],
         "labels": {
-          "C": "OBSERVE",
-          "B": "PLAN",
-          "A": "ACT",
-          "F": "CHECK",
-          "E": "REFINE",
-          "D": "SHARE"
+          "C": "READ",
+          "F": "SELECT",
+          "B": "SORT",
+          "A": "VERIFY",
+          "D": "SAVE",
+          "E": "SHARE"
         },
         "goal": [
           "C",
+          "F",
           "B",
           "A",
-          "F",
-          "E",
-          "D"
+          "D",
+          "E"
         ],
         "alphabet": [
           "A",
@@ -129,11 +129,11 @@
       },
       "witness": [
         "C",
+        "F",
         "B",
         "A",
-        "F",
-        "E",
-        "D"
+        "D",
+        "E"
       ]
     }
   }

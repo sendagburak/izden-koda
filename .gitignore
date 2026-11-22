@@ -6,4 +6,5 @@ local_test_output/
 *.log
 __pycache__/
 *.pyc
+*.translation
 .DS_Store

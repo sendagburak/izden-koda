@@ -19,49 +19,72 @@
     "concrete": {
       "params": {
         "size": [
-          4,
+          6,
           5
         ],
         "start": [
           0,
-          2
+          0
         ],
         "goal": [
-          2,
+          4,
           2
         ],
-        "rocks": [],
-        "max_steps": 5,
-        "needs_scan": true
+        "rocks": [
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            4,
+            3
+          ]
+        ],
+        "max_steps": 10
       },
       "witness": [
         "S",
         "R",
-        "R"
+        "R",
+        "R",
+        "R",
+        "D",
+        "D"
       ]
     },
     "blocks": {
       "params": {
         "size": [
-          5,
-          5
+          7,
+          6
         ],
         "start": [
           0,
-          2
+          1
         ],
         "goal": [
-          3,
-          2
+          5,
+          0
         ],
         "rocks": [
           [
-            1,
+            0,
+            3
+          ],
+          [
+            2,
             2
+          ],
+          [
+            4,
+            3
           ]
         ],
-        "max_steps": 8,
-        "needs_scan": true
+        "max_steps": 9
       },
       "witness": [
         "S",
@@ -69,14 +92,15 @@
         "R",
         "R",
         "R",
-        "D"
+        "R",
+        "R"
       ]
     },
     "system": {
       "params": {
         "size": [
           7,
-          5
+          6
         ],
         "start": [
           0,
@@ -84,26 +108,36 @@
         ],
         "goal": [
           5,
-          2
+          3
         ],
         "rocks": [
           [
-            1,
+            0,
+            3
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            4,
             2
+          ],
+          [
+            6,
+            0
           ]
         ],
-        "max_steps": 10,
-        "needs_scan": true
+        "max_steps": 8
       },
       "witness": [
         "S",
-        "U",
         "R",
         "R",
         "R",
+        "D",
         "R",
-        "R",
-        "D"
+        "R"
       ]
     }
   }

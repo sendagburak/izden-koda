@@ -19,19 +19,19 @@
     "concrete": {
       "params": {
         "costs": {
-          "A": 1,
-          "B": 2,
-          "C": 3,
-          "D": 4
+          "A": 3,
+          "B": 1,
+          "C": 4,
+          "D": 1
         },
         "benefits": {
-          "A": 2,
-          "B": 3,
-          "C": 2,
+          "A": 5,
+          "B": 5,
+          "C": 5,
           "D": 5
         },
-        "goal": 4,
-        "budget": 4,
+        "goal": 10,
+        "budget": 5,
         "max_steps": 3,
         "alphabet": [
           "A",
@@ -41,26 +41,26 @@
         ]
       },
       "witness": [
-        "A",
+        "B",
         "C"
       ]
     },
     "blocks": {
       "params": {
         "costs": {
-          "A": 2,
-          "B": 3,
+          "A": 3,
+          "B": 5,
           "C": 4,
-          "D": 5
+          "D": 2
         },
         "benefits": {
           "A": 3,
-          "B": 4,
-          "C": 3,
-          "D": 6
+          "B": 3,
+          "C": 6,
+          "D": 2
         },
-        "goal": 6,
-        "budget": 6,
+        "goal": 5,
+        "budget": 5,
         "max_steps": 3,
         "alphabet": [
           "A",
@@ -71,36 +71,39 @@
       },
       "witness": [
         "A",
-        "C"
+        "D"
       ]
     },
     "system": {
       "params": {
         "costs": {
-          "A": 3,
-          "B": 4,
-          "C": 5,
-          "D": 6
+          "A": 5,
+          "B": 1,
+          "C": 3,
+          "D": 2,
+          "E": 2
         },
         "benefits": {
-          "A": 4,
+          "A": 2,
           "B": 5,
-          "C": 4,
-          "D": 7
+          "C": 6,
+          "D": 1,
+          "E": 2
         },
-        "goal": 8,
-        "budget": 8,
+        "goal": 4,
+        "budget": 7,
         "max_steps": 3,
         "alphabet": [
           "A",
           "B",
           "C",
-          "D"
+          "D",
+          "E"
         ]
       },
       "witness": [
         "A",
-        "C"
+        "E"
       ]
     }
   }

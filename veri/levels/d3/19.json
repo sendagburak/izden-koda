@@ -19,22 +19,20 @@
     "concrete": {
       "params": {
         "samples": [
-          0,
-          1,
-          2,
-          3,
           4,
-          5
+          3,
+          0,
+          3,
+          2
         ],
         "expected": [
-          1,
-          1,
-          1,
+          0,
+          0,
           1,
           0,
-          0
+          1
         ],
-        "goal_threshold": 4,
+        "goal_threshold": 3,
         "alphabet": [
           "T1",
           "T2",
@@ -45,29 +43,29 @@
         "max_steps": 3
       },
       "witness": [
-        "T4",
+        "T3",
         "AUTO"
       ]
     },
     "blocks": {
       "params": {
         "samples": [
-          0,
-          1,
+          4,
           2,
           3,
-          4,
-          5
+          2,
+          3,
+          2
         ],
         "expected": [
+          0,
           1,
+          0,
           1,
           0,
-          0,
-          0,
-          0
+          1
         ],
-        "goal_threshold": 2,
+        "goal_threshold": 3,
         "alphabet": [
           "T1",
           "T2",
@@ -78,24 +76,26 @@
         "max_steps": 3
       },
       "witness": [
-        "T2",
+        "T3",
         "AUTO"
       ]
     },
     "system": {
       "params": {
         "samples": [
-          0,
-          1,
+          2,
           2,
           3,
           4,
-          5
+          5,
+          4,
+          4
         ],
         "expected": [
           1,
           1,
-          1,
+          0,
+          0,
           0,
           0,
           0

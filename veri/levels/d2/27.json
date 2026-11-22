@@ -25,15 +25,19 @@
           "S"
         ],
         "target": [
-          "T",
+          "K",
           "S",
+          "T",
+          "K",
           "S"
         ],
-        "max_steps": 4
+        "max_steps": 5
       },
       "witness": [
-        "T",
+        "K",
         "S",
+        "T",
+        "K",
         "S"
       ]
     },
@@ -46,18 +50,22 @@
           "S"
         ],
         "target": [
+          "K",
+          "S",
           "T",
+          "K",
           "S",
-          "S",
-          "K"
+          "T"
         ],
-        "max_steps": 5
+        "max_steps": 6
       },
       "witness": [
+        "K",
+        "S",
         "T",
+        "K",
         "S",
-        "S",
-        "K"
+        "T"
       ]
     },
     "system": {
@@ -69,19 +77,23 @@
           "S"
         ],
         "target": [
+          "S",
           "T",
-          "S",
-          "S",
           "K",
+          "M",
+          "S",
+          "T",
           "K"
         ],
-        "max_steps": 6
+        "max_steps": 7
       },
       "witness": [
+        "S",
         "T",
-        "S",
-        "S",
         "K",
+        "M",
+        "S",
+        "T",
         "K"
       ]
     }

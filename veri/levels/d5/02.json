@@ -19,85 +19,112 @@
     "concrete": {
       "params": {
         "size": [
-          5,
-          5
+          4,
+          4
         ],
         "start": [
           0,
-          2
+          3
         ],
         "goal": [
-          3,
-          2
+          2,
+          3
         ],
         "rocks": [
+          [
+            1,
+            0
+          ],
           [
             1,
             2
           ]
         ],
-        "max_steps": 7
+        "max_steps": 5
       },
       "witness": [
-        "U",
         "R",
-        "R",
-        "R",
-        "D"
+        "R"
       ]
     },
     "blocks": {
       "params": {
         "size": [
-          6,
+          5,
           5
         ],
         "start": [
           0,
-          2
+          3
         ],
         "goal": [
-          4,
-          2
+          3,
+          4
         ],
         "rocks": [
           [
-            1,
+            0,
             2
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            3
           ]
         ],
         "max_steps": 8
       },
       "witness": [
+        "R",
         "U",
         "R",
         "R",
-        "R",
-        "R",
+        "D",
         "D"
       ]
     },
     "system": {
       "params": {
         "size": [
-          5,
+          7,
           5
         ],
         "start": [
           0,
-          2
+          0
         ],
         "goal": [
-          3,
-          2
+          5,
+          3
         ],
-        "rocks": [],
-        "max_steps": 5
+        "rocks": [
+          [
+            0,
+            4
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            5,
+            4
+          ]
+        ],
+        "max_steps": 9
       },
       "witness": [
         "R",
         "R",
-        "R"
+        "R",
+        "R",
+        "R",
+        "D",
+        "D",
+        "D"
       ]
     }
   }

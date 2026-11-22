@@ -19,34 +19,13 @@
     "concrete": {
       "params": {
         "values": [
-          1,
+          2,
+          3,
           2,
           2,
           6
         ],
-        "threshold": 6,
-        "alphabet": [
-          "0",
-          "1",
-          "2",
-          "3"
-        ],
-        "max_steps": 4
-      },
-      "witness": [
-        "3"
-      ]
-    },
-    "blocks": {
-      "params": {
-        "values": [
-          7,
-          6,
-          7,
-          9,
-          1
-        ],
-        "threshold": 6,
+        "threshold": 3,
         "alphabet": [
           "0",
           "1",
@@ -57,21 +36,19 @@
         "max_steps": 5
       },
       "witness": [
-        "0",
         "1",
-        "2",
-        "3"
+        "4"
       ]
     },
-    "system": {
+    "blocks": {
       "params": {
         "values": [
-          8,
-          3,
-          8,
-          1,
+          6,
+          5,
           9,
-          5
+          7,
+          6,
+          1
         ],
         "threshold": 6,
         "alphabet": [
@@ -87,7 +64,37 @@
       "witness": [
         "0",
         "2",
+        "3",
         "4"
+      ]
+    },
+    "system": {
+      "params": {
+        "values": [
+          1,
+          5,
+          3,
+          5,
+          6,
+          9,
+          8
+        ],
+        "threshold": 6,
+        "alphabet": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6"
+        ],
+        "max_steps": 7
+      },
+      "witness": [
+        "4",
+        "5",
+        "6"
       ]
     }
   }

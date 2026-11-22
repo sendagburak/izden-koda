@@ -3,6 +3,7 @@ Version=1.0
 Name=Algoritma Oyunu
 Comment=Çevrimdışı algoritmik keşif oyunu
 Exec=/usr/games/algoritma-oyunu
+Icon=algoritma-oyunu
 Terminal=false
 Type=Application
 Categories=Education;Game;

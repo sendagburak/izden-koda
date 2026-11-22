@@ -23,29 +23,30 @@
             "START": "READY"
           },
           "READY": {
-            "CHECK": "ACTIVE"
+            "OPEN": "ACTIVE"
           },
           "ACTIVE": {
-            "SEND": "DONE"
+            "STOP": "SAFE",
+            "RESET": "OFF"
           },
-          "DONE": {
+          "SAFE": {
             "RESET": "OFF"
           }
         },
         "start": "OFF",
-        "goal": "DONE",
+        "goal": "SAFE",
         "alphabet": [
+          "OPEN",
+          "RESET",
           "START",
-          "CHECK",
-          "SEND",
-          "RESET"
+          "STOP"
         ],
         "max_steps": 6
       },
       "witness": [
         "START",
-        "CHECK",
-        "SEND"
+        "OPEN",
+        "STOP"
       ]
     },
     "blocks": {
@@ -55,60 +56,63 @@
             "START": "READY"
           },
           "READY": {
-            "CHECK": "ACTIVE"
+            "OPEN": "ACTIVE"
           },
           "ACTIVE": {
-            "SEND": "DONE"
+            "STOP": "SAFE",
+            "RESET": "OFF"
           },
-          "DONE": {
+          "SAFE": {
             "RESET": "OFF"
           }
         },
         "start": "OFF",
-        "goal": "DONE",
+        "goal": "SAFE",
         "alphabet": [
+          "OPEN",
+          "RESET",
           "START",
-          "CHECK",
-          "SEND",
-          "RESET"
+          "STOP"
         ],
-        "max_steps": 6
+        "max_steps": 5
       },
       "witness": [
         "START",
-        "CHECK",
-        "SEND"
+        "OPEN",
+        "STOP"
       ]
     },
     "system": {
       "params": {
         "transitions": {
-          "OFF": {
-            "START": "READY"
+          "IDLE": {
+            "START": "WARMING"
+          },
+          "WARMING": {
+            "TICK": "READY",
+            "RESET": "IDLE"
           },
           "READY": {
-            "CHECK": "ACTIVE"
-          },
-          "ACTIVE": {
-            "SEND": "DONE"
+            "SEND": "DONE",
+            "RESET": "IDLE"
           },
           "DONE": {
-            "RESET": "OFF"
+            "RESET": "IDLE"
           }
         },
-        "start": "OFF",
+        "start": "IDLE",
         "goal": "DONE",
         "alphabet": [
-          "START",
-          "CHECK",
+          "RESET",
           "SEND",
-          "RESET"
+          "START",
+          "TICK"
         ],
-        "max_steps": 6
+        "max_steps": 4
       },
       "witness": [
         "START",
-        "CHECK",
+        "TICK",
         "SEND"
       ]
     }

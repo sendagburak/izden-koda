@@ -43,12 +43,13 @@ def replay(level,layer):
             return shift==p['goal_shift']
         if t=='flowchart':return commands==p['goal'] and len(set(commands))==len(commands) and all(x in p['nodes'] for x in commands)
         if t=='logic_gate':
-            a=b=0
+            default=1 if p['gate'] in ('NAND','NOR') else 0
+            a,b=p.get('initial',(default,default))
             for c in commands:
                 if c not in p['alphabet']:return False
                 if c[0]=='A':a=int(c[1])
                 else:b=int(c[1])
-            result={'AND':a and b,'OR':a or b,'XOR':a!=b,'NAND':not(a and b),'NOR':not(a or b)}[p['gate']]
+            result={'AND':a and b,'OR':a or b,'XOR':a!=b,'NAND':not(a and b),'NOR':not(a or b),'NOT':not a}[p['gate']]
             return int(result)==p['goal']
         if t=='pattern_machine':
             n=p['start']
@@ -67,12 +68,20 @@ def replay(level,layer):
                 else:th=int(c[1:])
             return auto and all((v<th)==(v<p['goal_threshold']) for v in p['samples'])
         if t=='graph_path':
-            node=p['start'];total=0
+            node=p['start'];total=0;stops=iter(p.get('via',[]));pending=next(stops,None)
             for c in commands:
                 if c not in p['edges'].get(node,{}):return False
                 total+=p['edges'][node][c];node=c
-            return node==p['goal'] and total<=p['max_cost']
-        if t=='function_loops':return ''.join(p['macros'][x] for x in commands)==p['target'] and len(commands)<len(p['target'])
+                if node==pending:pending=next(stops,None)
+            return node==p['goal'] and total<=p['max_cost'] and pending is None
+        if t=='function_loops':
+            fragments=[]
+            for token in commands:
+                if token not in p['alphabet']:return False
+                name,separator,count=token.partition('*')
+                if separator and count not in ('2','3'):return False
+                fragments.append(p['macros'][name]*(int(count) if separator else 1))
+            return ''.join(fragments)==p['target'] and len(commands)<len(p['target'])
         if t=='state_machine':
             mode=p['start']
             for c in commands:

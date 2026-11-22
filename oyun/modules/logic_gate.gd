@@ -1,9 +1,11 @@
 extends "res://oyun/core/puzzle_module.gd"
-## Configure two boolean inputs; evaluate actual AND/OR/XOR/NAND/NOR.
+## Evaluate unary NOT and two-input Boolean gates.
 func create_state(level: Dictionary, layer: String) -> Dictionary:
-	var gate: String = str(level["layers"][layer]["params"]["gate"])
+	var params: Dictionary = level["layers"][layer]["params"]
+	var gate: String = str(params["gate"])
 	var initial: int = 1 if gate in ["NAND", "NOR"] else 0
-	return {"a":initial,"b":initial,"turns":0,"layer":layer}
+	var inputs: Array = params.get("initial", [initial, initial])
+	return {"a":int(inputs[0]),"b":int(inputs[1]),"turns":0,"layer":layer}
 func apply_action(level: Dictionary, state: Dictionary, action: Dictionary) -> Dictionary:
 	var p: Dictionary = level["layers"][state["layer"]]["params"]
 	var s: Dictionary = state.duplicate(true)
@@ -24,5 +26,6 @@ func evaluate(level: Dictionary, state: Dictionary) -> Dictionary:
 		"XOR": output = a != b
 		"NAND": output = not (a and b)
 		"NOR": output = not (a or b)
+		"NOT": output = not a
 	var ok: bool = int(output) == int(level["layers"][state["layer"]]["params"]["goal"])
 	return {"met":ok,"criteria":{"gate_output":ok},"evidence":[int(output)]}

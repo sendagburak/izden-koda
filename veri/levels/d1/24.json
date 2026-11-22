@@ -18,24 +18,7 @@
   "layers": {
     "concrete": {
       "params": {
-        "start": 1,
-        "goal": 6,
-        "alphabet": [
-          "+2",
-          "+3",
-          "-1",
-          "*2"
-        ],
-        "max_steps": 5
-      },
-      "witness": [
-        "+2",
-        "*2"
-      ]
-    },
-    "blocks": {
-      "params": {
-        "start": 2,
+        "start": 6,
         "goal": 11,
         "alphabet": [
           "+2",
@@ -43,18 +26,17 @@
           "-1",
           "*2"
         ],
-        "max_steps": 5
+        "max_steps": 4
       },
       "witness": [
         "+2",
-        "*2",
         "+3"
       ]
     },
-    "system": {
+    "blocks": {
       "params": {
-        "start": 3,
-        "goal": 13,
+        "start": 5,
+        "goal": 18,
         "alphabet": [
           "+2",
           "+3",
@@ -64,9 +46,28 @@
         "max_steps": 5
       },
       "witness": [
-        "+2",
+        "+3",
         "*2",
-        "+3"
+        "+2"
+      ]
+    },
+    "system": {
+      "params": {
+        "start": 4,
+        "goal": 12,
+        "alphabet": [
+          "+2",
+          "+3",
+          "-1",
+          "*2"
+        ],
+        "max_steps": 6
+      },
+      "witness": [
+        "+2",
+        "-1",
+        "*2",
+        "+2"
       ]
     }
   }

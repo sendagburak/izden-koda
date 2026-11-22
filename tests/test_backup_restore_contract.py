@@ -18,9 +18,9 @@ def method(source, name):
 
 class BackupRestoreContract(unittest.TestCase):
     def test_foreign_profiles_are_saved_before_being_listed(self):
-        handler = method(APP, '_choose_backup')
-        self.assertIn('target.length() <= 64', handler)
-        self.assertLess(handler.index('store.save_profile(target,'), handler.index('profiles.entries.append('))
+        handler = method(APP, '_restore_backup')
+        self.assertIn('target.length() > 64', handler)
+        self.assertLess(handler.index('store.save_profile(target,'), handler.index('profiles.register_profile(target,'))
 
     def test_backup_requires_valid_immutable_id(self):
         for method_name in ('import_data', 'export_data'):

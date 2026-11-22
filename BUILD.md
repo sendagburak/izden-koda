@@ -1,68 +1,35 @@
-# ALGORİTMA OYUNU — Kaynaktan derleme
+# Algoritma Oyunu v0.7.0 · Derleme ve test
 
-> **Durum:** Bu repository derleme hedeflerini içerir; bu dağıtım ortamında Godot 4.7.2 ve Android SDK mevcut olmadığı için Android APK, Windows EXE, Linux portable ve Pardus `.deb` **oluşturulmadı**. Bu dosya gerçek bir paket veya motor testinin kanıtı değildir.
+Godot **4.7.2 Standard** ve aynı sürümün resmî dışa aktarma şablonları gerekir. Masaüstü derlemesi Python 3, Bash, tar, zip, file ve dpkg-deb kullanır. Android ihracı OpenJDK 17 veya üzeri ve Godot editöründe kayıtlı Android SDK gerektirir.
 
-## Gerekli araçlar
-
-1. **Godot 4.7.2 Standard** ile birebir eşleşen **Godot 4.7.2 export templates**. Özel C#/.NET sürümüne gerek yok.
-2. Android çıktısı için **OpenJDK 17+**, Android SDK/Build Tools ve Godot Editor Settings'de doğru JDK/SDK konumu. Linux/Windows için SDK gerekmez.
-3. Linux / Pardus için `python3`, `zip`, `tar`, `dpkg-deb`; Windows için PowerShell ve uygun zip aracı.
-4. Paketleme öncesi gerçek cihaz/GPU, dokunmatik ve kayıt/geri yükleme testi. Faz 1 Intel HD Graphics 3000 OpenGL 3.1 uyumsuzluğu hâlâ araştırılmalıdır.
-
-## Testler (derleme olmadan da çalışır)
+## Kaynağı test etme
 
 ```sh
 python3 -m unittest discover -s tests -p 'test_*.py' -v
-python3 tools/campaign_validator.py
 python3 tools/validate_sources.py
-```
-
-Bu kontroller görev verilerini Python modelinde doğrular. Godot GDScript derlemesini **doğrulamazlar**. Godot kuruluyken ayrıca:
-
-```sh
-godot --headless --editor --path . --quit
-# Projeyi içe aktarır; herhangi bir parser hatasında ilerlemeyin.
-godot --headless --path . --script res://tests/runner.gd
+python3 tools/campaign_validator.py
+godot --headless --editor --path . --import
+XDG_DATA_HOME="$(mktemp -d)" godot --headless --path . --script res://tests/runner.gd
 godot --headless --path . --script res://tools/validate_levels.gd
+godot --headless --path . --script res://tests/test_campaign.gd
+XDG_DATA_HOME="$(mktemp -d)" godot --headless --path . --script res://tests/test_app_flow.gd
+XDG_DATA_HOME="$(mktemp -d)" godot --headless --path . --script res://tests/play_campaign.gd
 ```
 
-## Masaüstü ve Pardus
+Test profilleri için her sahne testine boş bir kullanıcı veri dizini verin. Godot bazen script hatasını süreç çıkış koduna yansıtmaz. Çıkış koduyla birlikte günlükteki hata satırlarını inceleyin.
+
+## Hedefleri derleme
 
 ```sh
 GODOT_BIN=godot bash packaging/build.sh
+GODOT_BIN=godot BUILD_ANDROID=debug bash packaging/build.sh
 ```
 
-Başarılıysa şu dosyaları üretir:
+Linux ve Windows taşınabilir paketlerinde çalıştırıcıyı ve yanındaki `.pck` dosyasını birlikte çıkarın. Pardus paketi `build/pardus/algoritma-oyunu_0.7.0_amd64.deb` yolundadır.
 
-- `build/algoritma-oyunu-linux-portable.tar.gz` (Linux/Pardus portable)
-- `build/algoritma-oyunu-windows-portable.zip` (Windows portable)
-- `build/pardus/algoritma-oyunu_0.5.0-preview1_amd64.deb` (Pardus x86-64)
+Android debug ve release aynı uygulama kimliğine sahiptir. Release imzası için `BUILD_ANDROID=release` ve `GODOT_ANDROID_KEYSTORE_RELEASE_PATH`, `GODOT_ANDROID_KEYSTORE_RELEASE_USER`, `GODOT_ANDROID_KEYSTORE_RELEASE_PASSWORD` gerekir. İmzasız release'i kurmadan önce imzalayın. İmzayı `apksigner verify --verbose`, izinleri `aapt dump permissions` ile denetleyin.
 
-`packaging/pardus/build-deb.sh`, gerçek Linux export binary'si olmadığında çalışmayı reddeder; boş veya sahte `.deb` oluşturmaz. **Faz 1 cihaz uyumluluğu garanti değildir.**
+Yerel kayıtlar `user://profiles/` altındadır. Farklı profil kimliğine ait yedek ayrı profil açar. Android'de uygulamayı kaldırmak kullanıcı verilerini silebilir.
 
-## Android APK (çevrimdışı, izinsiz)
-
-`export_presets.cfg` içinde iki Android preset vardır: `Android ARM64` ve `Android ARM32`. Her ikisinde de `permissions/internet=false` olarak ayarlanmıştır. Gerçek APK manifesti ayrıca incelenmelidir; yalnız preset doğrulaması yeterli değildir.
-
-Android release imzası için kendi keystore'unuzu güvenli yerde üretin. Gizli anahtarı ve şifreyi kaynak projeye eklemeyin. Kabuk oturumunda:
-
-```sh
-export GODOT_ANDROID_KEYSTORE_RELEASE_PATH='/private/path/algoritma-release.keystore'
-export GODOT_ANDROID_KEYSTORE_RELEASE_USER='algoritma-release'
-export GODOT_ANDROID_KEYSTORE_RELEASE_PASSWORD='YOUR_SECRET'
-BUILD_ANDROID=1 GODOT_BIN=godot bash packaging/build.sh
-```
-
-Godot Editor'de gerekli Android SDK yolunun ve export template'lerin tanımlı olması gerekir. Bu çalıştırıldığında `build/android/algoritma-oyunu-arm64.apk` ve `build/android/algoritma-oyunu-arm32.apk` **oluşması beklenir**; elde çalıştırılmış build sonucu yoktur. SDK ve Godot sürümüne bağlı preset düzenlemesi gerekebilir.
-
-Paket üretiminden sonra `apkanalyzer manifest permissions` veya `aapt dump permissions` ile **INTERNET** izni bulunmadığını doğrulayın; gerçek bir Samsung A32 üzerinde dokunmatik, kayıt ve kapalı ağ testi yapın.
-
-## Kullanıcı verileri ve yedekleme
-
-Godot `user://profiles/` kullanıcıya özel uygulama veri dizinini kullanır. Paket güncellerken bu dizini silmeyin. Ayarlar → dışa/içe aktarma ile JSON yedek alınabilir. Yedek birleştirmede tamamlanmış görev ve kazanılmış rozetler korunur. Windows ve Linux portable paketler, uygulama kodunu taşınabilir çalıştırır; kayıtlar varsayılan olarak kullanıcı profiline özgü `user://` konumundadır.
-
-## Resmî dökümantasyon
-
-- Godot 4.7 Exporting: https://docs.godotengine.org/en/4.7/tutorials/export/exporting_projects.html
-- Godot 4.7 Android: https://docs.godotengine.org/en/4.7/tutorials/export/exporting_for_android.html
-- Godot Engine MIT: https://godotengine.org/license/
+- [Godot dışa aktarma belgesi](https://docs.godotengine.org/en/stable/tutorials/export/exporting_projects.html)
+- [Godot Android dışa aktarma belgesi](https://docs.godotengine.org/en/stable/tutorials/export/exporting_for_android.html)

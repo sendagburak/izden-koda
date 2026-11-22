@@ -19,97 +19,110 @@
     "concrete": {
       "params": {
         "transitions": {
-          "OFF": {
-            "START": "READY"
+          "IDLE": {
+            "START": "WARMING"
+          },
+          "WARMING": {
+            "TICK": "READY"
           },
           "READY": {
-            "CHECK": "ACTIVE"
-          },
-          "ACTIVE": {
             "SEND": "DONE"
           },
           "DONE": {
-            "RESET": "OFF"
+            "RESET": "IDLE"
           }
         },
-        "start": "OFF",
+        "start": "IDLE",
         "goal": "DONE",
         "alphabet": [
-          "START",
-          "CHECK",
+          "RESET",
           "SEND",
-          "RESET"
+          "START",
+          "TICK"
         ],
         "max_steps": 6
       },
       "witness": [
         "START",
-        "CHECK",
+        "TICK",
         "SEND"
       ]
     },
     "blocks": {
       "params": {
         "transitions": {
-          "OFF": {
-            "START": "READY"
+          "IDLE": {
+            "CHECK": "READY"
           },
           "READY": {
-            "CHECK": "ACTIVE"
+            "START": "ACTIVE"
           },
           "ACTIVE": {
-            "SEND": "DONE"
+            "STOP": "COOLING"
           },
-          "DONE": {
-            "RESET": "OFF"
+          "COOLING": {
+            "TICK": "SAFE",
+            "RESET": "IDLE"
+          },
+          "SAFE": {
+            "RESET": "IDLE"
           }
         },
-        "start": "OFF",
-        "goal": "DONE",
+        "start": "IDLE",
+        "goal": "SAFE",
         "alphabet": [
-          "START",
           "CHECK",
-          "SEND",
-          "RESET"
+          "RESET",
+          "START",
+          "STOP",
+          "TICK"
         ],
         "max_steps": 6
       },
       "witness": [
-        "START",
         "CHECK",
-        "SEND"
+        "START",
+        "STOP",
+        "TICK"
       ]
     },
     "system": {
       "params": {
         "transitions": {
-          "OFF": {
-            "START": "READY"
+          "IDLE": {
+            "CHECK": "READY"
           },
           "READY": {
-            "CHECK": "ACTIVE"
+            "START": "ACTIVE",
+            "RESET": "IDLE"
           },
           "ACTIVE": {
-            "SEND": "DONE"
+            "STOP": "COOLING"
           },
-          "DONE": {
-            "RESET": "OFF"
+          "COOLING": {
+            "TICK": "SAFE",
+            "RESET": "IDLE"
+          },
+          "SAFE": {
+            "RESET": "IDLE"
           }
         },
-        "start": "OFF",
-        "goal": "DONE",
+        "start": "IDLE",
+        "goal": "SAFE",
         "alphabet": [
-          "START",
           "CHECK",
-          "SEND",
-          "RESET"
+          "RESET",
+          "START",
+          "STOP",
+          "TICK"
         ],
-        "max_steps": 6
+        "max_steps": 5
       },
       "witness": [
-        "START",
         "CHECK",
-        "SEND"
+        "START",
+        "STOP",
+        "TICK"
       ]
     }
   }

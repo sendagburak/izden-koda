@@ -26,10 +26,22 @@ func _read_json(path: String) -> Dictionary:
 	var file = FileAccess.open(path, FileAccess.READ)
 	if file == null:
 		return {}
-	var parsed = JSON.parse_string(file.get_as_text())
-	if parsed is Dictionary:
-		return parsed
+	var json := JSON.new()
+	if json.parse(file.get_as_text()) == OK and json.data is Dictionary:
+		return _normalize_json_numbers(json.data)
 	return {}
+
+func _normalize_json_numbers(value: Variant) -> Variant:
+	# JSON numbers are floats in Godot. Array equality distinguishes 1 from 1.0.
+	if value is float and is_finite(value) and absf(value) <= 9007199254740991.0 and floorf(value) == value:
+		return int(value)
+	if value is Array:
+		for index in range(value.size()):
+			value[index] = _normalize_json_numbers(value[index])
+	elif value is Dictionary:
+		for key in value:
+			value[key] = _normalize_json_numbers(value[key])
+	return value
 
 func validate_level(level: Dictionary) -> PackedStringArray:
 	var errors := PackedStringArray()

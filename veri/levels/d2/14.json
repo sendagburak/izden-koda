@@ -21,18 +21,48 @@
         "nodes": [
           "A",
           "B",
+          "C"
+        ],
+        "labels": {
+          "B": "OBSERVE",
+          "C": "PLAN",
+          "A": "ACT"
+        },
+        "goal": [
+          "B",
+          "C",
+          "A"
+        ],
+        "alphabet": [
+          "A",
+          "B",
+          "C"
+        ],
+        "max_steps": 4
+      },
+      "witness": [
+        "B",
+        "C",
+        "A"
+      ]
+    },
+    "blocks": {
+      "params": {
+        "nodes": [
+          "A",
+          "B",
           "C",
           "D"
         ],
         "labels": {
-          "D": "OBSERVE",
-          "C": "PLAN",
-          "A": "ACT",
+          "C": "MEASURE",
+          "D": "RECORD",
+          "A": "COMPARE",
           "B": "CHECK"
         },
         "goal": [
-          "D",
           "C",
+          "D",
           "A",
           "B"
         ],
@@ -45,13 +75,13 @@
         "max_steps": 5
       },
       "witness": [
-        "D",
         "C",
+        "D",
         "A",
         "B"
       ]
     },
-    "blocks": {
+    "system": {
       "params": {
         "nodes": [
           "A",
@@ -61,18 +91,18 @@
           "E"
         ],
         "labels": {
-          "C": "OBSERVE",
-          "D": "PLAN",
-          "A": "ACT",
+          "D": "OBSERVE",
+          "E": "PLAN",
+          "C": "ACT",
           "B": "CHECK",
-          "E": "REFINE"
+          "A": "REFINE"
         },
         "goal": [
-          "C",
           "D",
-          "A",
+          "E",
+          "C",
           "B",
-          "E"
+          "A"
         ],
         "alphabet": [
           "A",
@@ -84,56 +114,11 @@
         "max_steps": 6
       },
       "witness": [
-        "C",
-        "D",
-        "A",
-        "B",
-        "E"
-      ]
-    },
-    "system": {
-      "params": {
-        "nodes": [
-          "A",
-          "B",
-          "C",
-          "D",
-          "E",
-          "F"
-        ],
-        "labels": {
-          "D": "OBSERVE",
-          "E": "PLAN",
-          "C": "ACT",
-          "F": "CHECK",
-          "A": "REFINE",
-          "B": "SHARE"
-        },
-        "goal": [
-          "D",
-          "E",
-          "C",
-          "F",
-          "A",
-          "B"
-        ],
-        "alphabet": [
-          "A",
-          "B",
-          "C",
-          "D",
-          "E",
-          "F"
-        ],
-        "max_steps": 7
-      },
-      "witness": [
         "D",
         "E",
         "C",
-        "F",
-        "A",
-        "B"
+        "B",
+        "A"
       ]
     }
   }

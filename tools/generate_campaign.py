@@ -4,7 +4,8 @@ Re-run only from the repository root. Existing first five D1 missions are preser
 No internet, external assets, or generative service.
 """
 from __future__ import annotations
-import csv, json, random
+import csv, heapq, json, random
+from collections import deque
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 LOCALES={}
@@ -54,88 +55,286 @@ CONCEPTS={
 'resource_plan':['optimization','planning'],'sensor_lab':['sensors','conditions'],'robot_course':['robotics','events'],
 'graph_path':['graphs','efficiency'],'function_loops':['functions','loops'],'state_machine':['states','events'],
 'data_detective':['data','filtering']}
+HINTS = {
+    "grid_route": (("Hedefin yönünü bul. Engellere bakmadan komut ekleme.", "Find the direction of the goal. Check for obstacles before adding a move."),
+                   ("Her komut bir kare ilerletir. Bir engelin çevresinden dolaşabilirsin.", "Each command moves one square. You can go around an obstacle.")),
+    "signal_pattern": (("Işık dizisinin tekrar eden parçasını bul.", "Find the repeating part of the signal."),
+                       ("Küçük parçayı baştan sona kur, sonra dizide yeniden başlat.", "Build the short pattern first, then repeat it in order.")),
+    "toggle_board": (("Başlangıç ve hedefte farklı olan ışıkları belirle.", "Find the lights that differ between the start and the target."),
+                     ("Bir anahtara iki kez basmak etkisini geri alır.", "Using the same switch twice cancels its effect.")),
+    "sort_train": (("Hedefte hangi vagonun sıranın başında olduğuna bak.", "See which wagon is first in the target order."),
+                   ("İki komşu vagonu değiştirerek yanlış sıradaki sayıyı hedefe yaklaştır.", "Swap adjacent wagons to move a misplaced value closer to its target.")),
+    "binary_lights": (("Başlangıç ve hedefi aynı konumdaki bitleri eşleştirerek oku.", "Compare the starting and target bits position by position."),
+                      ("Yalnızca hedefinden farklı olan bitleri değiştir.", "Toggle the bits whose values differ from their targets.")),
+    "cipher_wheel": (("İlk harfin başlangıç ve hedefini karşılaştır.", "Compare the first letter at the start and at the target."),
+                     ("Çark her adımda bütün harfleri aynı yöne kaydırır.", "Each turn shifts every letter in the same direction.")),
+    "flowchart": (("İlk adım veri okumak, gözlem yapmak ya da ölçmektir.", "Start by reading, observing, or measuring."),
+                  ("Önce bilgi toplanır, sonra işlenir ve sonunda kontrol edilir.", "Collect information first, use it next, then check the result.")),
+    "logic_gate": (("Kapının adını ve istenen çıkışı birlikte oku.", "Read the gate name together with the required output."),
+                   ("Girişlerden birini değiştirip çıkışın nasıl değiştiğini incele.", "Change one input and observe what happens to the output.")),
+    "pattern_machine": (("Başlangıç ile hedef arasındaki farkı bul.", "Find the difference between the starting and target values."),
+                        ("Çarpma komutunu erken ve geç uygulayarak sonuçları karşılaştır.", "Compare the results of multiplying early and late.")),
+    "resource_plan": (("En yüksek katkıyı veren seçeneğin maliyetini kontrol et.", "Check the cost of the option with the greatest benefit."),
+                      ("İki seçeneğin maliyet ve katkı toplamını ayrı ayrı hesapla.", "Add the costs and benefits separately for two choices.")),
+    "sensor_lab": (("Hedefte 1 olan ölçümler için eşiği düşün.", "Use the measurements marked 1 to narrow down the threshold."),
+                   ("Sensör eşikten küçük ölçümlere yanıt verir. Sonra AUTO komutuyla denetimi aç.", "Readings below the threshold trigger the sensor. Use AUTO to enable it.")),
+    "robot_course": (("Robot hareket etmeden önce çevresini taramalı.", "The robot needs to scan its surroundings before moving."),
+                     ("Taramadan sonra engellerin çevresinden geçecek bir yön sırası kur.", "After scanning, plan a sequence that goes around the obstacles.")),
+    "graph_path": (("Başlangıç ile bitiş arasındaki bağlantıları ve varsa uğranacak durakları bul.", "Find the links and any required stops between the start and the destination."),
+                   ("Her kenarın maliyetini topla ve zorunlu durakları verilen sırayla geç.", "Add the edge costs and visit any required stops in the given order.")),
+    "function_loops": (("Hedef dizide bir yordamın ürettiği parçayı ara.", "Look for a chunk of the target sequence produced by one procedure."),
+                       ("Aynı parça art arda geliyorsa varsa tekrar komutunu kullan.", "If the same pattern repeats in a row, use a repeat command when available.")),
+    "state_machine": (("Başlangıç durumunda hangi olayların mümkün olduğuna bak.", "Check which events are available in the start state."),
+                      ("Her olaydan sonra yeni durumu bul. Bir saat adımı gerekiyorsa TICK kullan.", "Check the new state after each event. Use TICK when a clock step is required.")),
+    "data_detective": (("Ölçümlerin sıra numarasını ve eşik değerini ayırt et.", "Distinguish measurement positions from the threshold value."),
+                       ("Eşiğe eşit ölçümleri de seç.", "Include readings equal to the threshold.")),
+}
+MECHANIC_LABELS = {
+    "flow.step_observe": ("Gözlemle", "Observe"), "flow.step_plan": ("Planla", "Plan"),
+    "flow.step_act": ("Uygula", "Act"), "flow.step_check": ("Kontrol et", "Check"),
+    "flow.step_refine": ("İyileştir", "Refine"), "flow.step_share": ("Paylaş", "Share"),
+    "flow.step_read": ("Oku", "Read"), "flow.step_select": ("Seç", "Select"),
+    "flow.step_sort": ("Sırala", "Sort"), "flow.step_verify": ("Doğrula", "Verify"),
+    "flow.step_save": ("Kaydet", "Save"), "flow.step_measure": ("Ölç", "Measure"),
+    "flow.step_record": ("Kayda al", "Record"), "flow.step_compare": ("Karşılaştır", "Compare"),
+    "machine.state_off": ("Kapalı", "Off"), "machine.state_idle": ("Boşta", "Idle"),
+    "machine.state_warming": ("Isınıyor", "Warming"), "machine.state_ready": ("Hazır", "Ready"),
+    "machine.state_active": ("Etkin", "Active"), "machine.state_waiting": ("Bekliyor", "Waiting"),
+    "machine.state_cooling": ("Soğuyor", "Cooling"), "machine.state_safe": ("Güvenli", "Safe"),
+    "machine.state_done": ("Bitti", "Done"),
+    "machine.event_start": ("Başlat", "Start"), "machine.event_check": ("Kontrol et", "Check"),
+    "machine.event_send": ("Gönder", "Send"), "machine.event_reset": ("Başa al", "Reset"),
+    "machine.event_tick": ("Bir saat adımı ilerlet", "Advance one clock tick"),
+    "machine.event_open": ("Aç", "Open"), "machine.event_stop": ("Durdur", "Stop"),
+}
 
-def params_for(t,w,a,j,layer):
-    k={'concrete':0,'blocks':1,'system':2}[layer]
-    r=random.Random(w*100000+a*1000+j*37+k*11)
-    if t in ('grid_route','robot_course'):
-        distance=2+(j+k)%3+k//2
-        y=2; width=distance+2; h=5
-        obstruction=(j+k)%3!=0
-        rocks=[[1,y]] if obstruction else []
-        route=['U']+['R']*distance+['D'] if obstruction else ['R']*distance
-        p={'size':[width,h],'start':[0,y],'goal':[distance,y],'rocks':rocks,'max_steps':len(route)+2}
-        if t=='robot_course':p['needs_scan']=True;route=['S']+route;p['max_steps']+=1
-        return p,route
-    if t=='signal_pattern':
-        alphabet=['K','M','T','S'];n=3+k+(j%3)
-        goal=[alphabet[(i*i+j+i//2)%len(alphabet)] for i in range(n)]
-        return {'alphabet':alphabet,'target':goal,'max_steps':n+1},goal
-    if t=='toggle_board':
-        n=3+k;wiring={f'S{i}':[i,(i+1)%n] for i in range(n)}
-        commands=[f'S{i}' for i in sorted({j%n,(j+1+k)%n})]
-        goal=[0]*n
+MOVES = {"U": (0, -1), "R": (1, 0), "D": (0, 1), "L": (-1, 0)}
+GATES = {
+    "AND": lambda a, b: a and b,
+    "OR": lambda a, b: a or b,
+    "XOR": lambda a, b: a != b,
+    "NAND": lambda a, b: not (a and b),
+    "NOR": lambda a, b: not (a or b),
+    "NOT": lambda a, b: not a,
+}
+FLOW_STEPS = (
+    ("OBSERVE", "PLAN", "ACT", "CHECK", "REFINE", "SHARE"),
+    ("READ", "SELECT", "SORT", "VERIFY", "SAVE", "SHARE"),
+    ("MEASURE", "RECORD", "COMPARE", "CHECK", "REFINE", "SHARE"),
+)
+CIPHER_WORDS = ("ISIK", "DENGE", "IZLER", "KOD", "ROTA", "ADA", "RITIM", "VERI", "KAPI", "YOL",
+                "FENER", "ISKELE", "YON", "HARITA", "GOZLEM", "KAYIT", "HAVUZ", "DESEN", "DEVRE", "DENEY")
+STATE_STEPS = (
+    (("OFF", "START", "READY"), ("READY", "CHECK", "ACTIVE"), ("ACTIVE", "SEND", "DONE")),
+    (("IDLE", "START", "WARMING"), ("WARMING", "TICK", "READY"), ("READY", "SEND", "DONE")),
+    (("OFF", "START", "READY"), ("READY", "OPEN", "ACTIVE"), ("ACTIVE", "STOP", "SAFE")),
+    (("IDLE", "START", "ACTIVE"), ("ACTIVE", "CHECK", "WAITING"), ("WAITING", "TICK", "DONE")),
+    (("OFF", "START", "WARMING"), ("WARMING", "TICK", "READY"), ("READY", "TICK", "ACTIVE"), ("ACTIVE", "SEND", "DONE")),
+    (("IDLE", "CHECK", "READY"), ("READY", "START", "ACTIVE"), ("ACTIVE", "STOP", "COOLING"), ("COOLING", "TICK", "SAFE")),
+)
+
+def route_on_grid(width, height, start, goal, rocks):
+    queue = deque([(start, [])])
+    seen = {start}
+    while queue:
+        position, path = queue.popleft()
+        if position == goal:
+            return path
+        for move, (dx, dy) in MOVES.items():
+            spot = (position[0] + dx, position[1] + dy)
+            if 0 <= spot[0] < width and 0 <= spot[1] < height and spot not in rocks and spot not in seen:
+                seen.add(spot)
+                queue.append((spot, path + [move]))
+    return []
+
+def graph_params(r, k, act):
+    nodes = list("ABCDE" if k == 0 else "ABCDEF")
+    order = r.sample(nodes, len(nodes))
+    start, goal = order[:2]
+    via = order[2:2 + min(2, k + (act >= 4))]
+    edges = {node: {} for node in nodes}
+    ring = r.sample(nodes, len(nodes))
+    connections = list(zip(ring, ring[1:] + ring[:1])) + [tuple(r.sample(nodes, 2)) for _ in range(k + 2)]
+    for first, second in connections:
+        cost = r.randint(1, 3 + k)
+        edges[first][second] = cost
+        edges[second][first] = cost
+    # A search state includes the progress of the required stops, not just the current stop.
+    candidates = [(0, 0, start, [])]
+    seen = set()
+    while candidates:
+        cost, visited, node, path = heapq.heappop(candidates)
+        if (node, visited) in seen:
+            continue
+        seen.add((node, visited))
+        if node == goal and visited == len(via):
+            return {"edges": edges, "start": start, "goal": goal, "via": via, "max_cost": cost + (2 - k),
+                    "max_steps": len(path) + 2, "alphabet": nodes}, path
+        for stop, extra in edges[node].items():
+            next_visited = visited + int(visited < len(via) and stop == via[visited])
+            heapq.heappush(candidates, (cost + extra, next_visited, stop, path + [stop]))
+    raise ValueError("unreachable graph objective")
+
+def params_for(t, w, a, j, layer, variation=0):
+    k = {"concrete": 0, "blocks": 1, "system": 2}[layer]
+    r = random.Random(w * 100000 + a * 1000 + j * 37 + k * 11 + variation * 1000003)
+    if t in ("grid_route", "robot_course"):
+        width = 4 + k + (a >= 3) + r.randrange(2)
+        height = 4 + (k > 0) + (a >= 4)
+        start, goal = (0, r.randrange(height)), (width - 2, r.randrange(height))
+        spaces = [(x, y) for x in range(width) for y in range(height) if (x, y) not in [start, goal]]
+        rocks = r.sample(spaces, r.randint(1, 2 + a // 2 + k))
+        path = route_on_grid(width, height, start, goal, rocks)
+        while not path:
+            rocks.pop()
+            path = route_on_grid(width, height, start, goal, rocks)
+        if t == "robot_course":
+            path = ["S"] + path
+        return {"size": [width, height], "start": list(start), "goal": list(goal),
+                "rocks": [list(pos) for pos in sorted(rocks)], "max_steps": len(path) + 3 - k}, path
+    if t == "signal_pattern":
+        alphabet = ["K", "M", "T", "S"]
+        motif = r.sample(alphabet, 2 + (a >= 3) + (k == 2))
+        repetitions = 2 + (a >= 4) + (k == 2)
+        target = (motif * repetitions)[:3 + k + (a >= 3) * 2 + j % 2]
+        return {"alphabet": alphabet, "target": target, "max_steps": len(target)}, target
+    if t == "toggle_board":
+        n = 3 + k + (a >= 4)
+        wiring = {f"S{i}": [i, r.choice([other for other in range(n) if other != i])] for i in range(n)}
+        initial = [r.randrange(2) if a > 1 or k else 0 for _ in range(n)]
+        commands = r.sample(list(wiring), 1 + (a >= 3) + (k == 2))
+        goal = initial[:]
         for key in commands:
-            for ind in wiring[key]:goal[ind]^=1
-        return {'initial':[0]*n,'goal':goal,'wiring':wiring,'max_steps':len(commands)+3},commands
-    if t=='sort_train':
-        n=3+k+(j%2)
-        numbers=list(range(1,n+1));r.shuffle(numbers)
-        if numbers==sorted(numbers):numbers=numbers[::-1]
-        current=numbers[:];ops=[]
-        for z in range(n):
-            for x in range(n-1):
-                if current[x]>current[x+1]:
-                    current[x],current[x+1]=current[x+1],current[x];ops.append(str(x))
-        return {'initial':numbers,'goal':current,'alphabet':[str(i) for i in range(n-1)],'max_steps':len(ops)+2},ops
-    if t=='binary_lights':
-        n=4+k+(j%2);target=[(j+k+i*7//3)%2 for i in range(n)]
-        if not any(target):target[-1]=1
-        return {'initial':[0]*n,'goal':target,'alphabet':[str(i) for i in range(n)],'max_steps':n+2},[str(i) for i,x in enumerate(target) if x]
-    if t=='cipher_wheel':
-        shift=1+(j+k)%5;word=['ISIK','DENGE','IZLER','KOD','ROTA','ADA','RITIM','VERI','KAPI','YOL'][j%10]
-        encodings=[''.join(chr((ord(ch)-65+q)%26+65) for ch in word) for q in range(26)]
-        return {'source':word,'encodings':encodings,'goal_shift':shift,'alphabet':['+','-'],'max_steps':10},['+']*shift
-    if t=='flowchart':
-        n=3+k+(j%2);step_names=['OBSERVE','PLAN','ACT','CHECK','REFINE','SHARE'][:n]
-        tokens=list('ABCDEF')[:n];r.shuffle(tokens)
-        labels=dict(zip(tokens,step_names))
-        return {'nodes':sorted(tokens),'labels':labels,'goal':tokens,'alphabet':sorted(tokens),'max_steps':n+1},tokens
-    if t=='logic_gate':
-        gate=['AND','OR','XOR','NAND','NOR'][j%5]
-        answers={'AND':['A1','B1'],'OR':['B1'],'XOR':['A1'],'NAND':['A0','B0'],'NOR':['A0','B0']}
-        goal=int(gate in ['AND','OR','XOR','NAND','NOR'])
-        return {'gate':gate,'goal':goal,'alphabet':['A0','A1','B0','B1'],'max_steps':4},answers[gate]
-    if t=='pattern_machine':
-        start=1+k;ops={'+2':2,'+3':3,'-1':-1,'*2':2};actions=['+2','*2','+3'][:1+(j+k)%3+1];cur=start
-        for action in actions:
-            cur=cur*2 if action=='*2' else cur+int(action)
-        return {'start':start,'goal':cur,'alphabet':list(ops),'max_steps':5},actions
-    if t=='resource_plan':
-        costs={'A':1+k,'B':2+k,'C':3+k,'D':4+k};benefits={'A':2+k,'B':3+k,'C':2+k,'D':5+k}
-        chosen=['A','B'] if j%2 else ['A','C'];goal=sum(benefits[x] for x in chosen);budget=sum(costs[x] for x in chosen)
-        return {'costs':costs,'benefits':benefits,'goal':goal,'budget':budget,'max_steps':3,'alphabet':list(costs)},chosen
-    if t=='sensor_lab':
-        threshold=2+(j+k)%3; samples=[0,1,2,3,4,5]
-        return {'samples':samples,'expected':[int(v<threshold) for v in samples],'goal_threshold':threshold,'alphabet':['T1','T2','T3','T4','AUTO'],'max_steps':3},[f'T{threshold}','AUTO']
-    if t=='graph_path':
-        # Route via B is lower cost than detour via C/E; graph is undirected.
-        delta=(j+k)%3
-        edges={'A':{'B':1+delta,'C':4+delta},'B':{'A':1+delta,'D':1+k},'C':{'A':4+delta,'E':2},'E':{'C':2,'D':2},'D':{'B':1+k,'E':2}}
-        return {'edges':edges,'start':'A','goal':'D','max_cost':2+delta+k,'max_steps':5,'alphabet':['B','C','D','E','A']},['B','D']
-    if t=='function_loops':
-        macros={'A':'ST','B':'TS','C':'SS'};ops=['A','B'] if (j+k)%2 else ['C','A','B'];target=''.join(macros[x] for x in ops)
-        return {'macros':macros,'target':target,'alphabet':list(macros),'max_steps':3},ops
-    if t=='state_machine':
-        transitions={'OFF':{'START':'READY'},'READY':{'CHECK':'ACTIVE'},'ACTIVE':{'SEND':'DONE'},'DONE':{'RESET':'OFF'}}
-        return {'transitions':transitions,'start':'OFF','goal':'DONE','alphabet':['START','CHECK','SEND','RESET'],'max_steps':6},['START','CHECK','SEND']
-    if t=='data_detective':
-        nums=[r.randint(1,9) for _ in range(4+k)];cutoff=4+(j%3);indexes=[str(i) for i,v in enumerate(nums) if v>=cutoff]
-        if not indexes:nums[0]=9;indexes=['0']
-        return {'values':nums,'threshold':cutoff,'alphabet':[str(i) for i in range(len(nums))],'max_steps':len(nums)},indexes
+            for i in wiring[key]:
+                goal[i] ^= 1
+        if goal == initial:
+            commands = commands[:1]
+            for i in wiring[commands[0]]:
+                goal[i] ^= 1
+        return {"initial": initial, "goal": goal, "wiring": wiring, "max_steps": len(commands) + 2}, commands
+    if t == "sort_train":
+        n = 3 + k + (a >= 3)
+        numbers = r.sample(range(1, 11 + a), n)
+        reverse = k == 2 and a >= 3
+        target = sorted(numbers, reverse=reverse)
+        if numbers == target:
+            numbers = numbers[::-1]
+        current = numbers[:]
+        actions = []
+        for stop in range(n - 1, 0, -1):
+            for index in range(stop):
+                left, right = current[index:index + 2]
+                out_of_order = left < right if reverse else left > right
+                if out_of_order:
+                    current[index], current[index + 1] = current[index + 1], current[index]
+                    actions.append(str(index))
+        return {"initial": numbers, "goal": target, "alphabet": [str(i) for i in range(n - 1)],
+                "max_steps": len(actions) + 2}, actions
+    if t == "binary_lights":
+        n = 4 + k + (a >= 3)
+        initial = [r.randrange(2) if a > 1 or k else 0 for _ in range(n)]
+        toggles = sorted(r.sample(range(n), r.randint(1, n)))
+        target = [bit ^ int(index in toggles) for index, bit in enumerate(initial)]
+        return {"initial": initial, "goal": target, "alphabet": [str(i) for i in range(n)],
+                "max_steps": len(toggles) + 2}, [str(i) for i in toggles]
+    if t == "cipher_wheel":
+        shift = r.randint(1 + k, 3 + k + a)
+        if k or a >= 3:
+            shift *= r.choice([-1, 1])
+        word = r.choice(CIPHER_WORDS)
+        encodings = ["".join(chr((ord(ch) - 65 + offset) % 26 + 65) for ch in word) for offset in range(26)]
+        return {"source": word, "encodings": encodings, "goal_shift": shift % 26, "alphabet": ["+", "-"],
+                "max_steps": abs(shift) + 2}, ["+" if shift > 0 else "-"] * abs(shift)
+    if t == "flowchart":
+        n = min(6, 3 + k + (a >= 3))
+        sequence = list(r.choice(FLOW_STEPS)[:n])
+        tokens = list("ABCDEF")[:n]
+        r.shuffle(tokens)
+        labels = dict(zip(tokens, sequence))
+        return {"nodes": sorted(tokens), "labels": labels, "goal": tokens, "alphabet": sorted(tokens),
+                "max_steps": n + 1}, tokens
+    if t == "logic_gate":
+        choices = list(GATES) if a + k >= 3 else ["AND", "OR", "NOT"]
+        gate = r.choice(choices)
+        initial = [r.randrange(2), r.randrange(2) if gate != "NOT" else 0]
+        desired = int(not GATES[gate](*initial))
+        targets = [[first, second] for first in range(2) for second in range(2)
+                   if int(GATES[gate](first, second)) == desired]
+        if gate == "NOT":
+            targets = [[1 - initial[0], 0]]
+        target = min(r.sample(targets, len(targets)), key=lambda bits: sum(x != y for x, y in zip(initial, bits)))
+        commands = [f"{symbol}{after}" for symbol, before, after in zip("AB", initial, target) if before != after]
+        alphabet = ["A0", "A1"] if gate == "NOT" else ["A0", "A1", "B0", "B1"]
+        return {"gate": gate, "initial": initial, "goal": desired, "alphabet": alphabet,
+                "max_steps": len(commands) + 2}, commands
+    if t == "pattern_machine":
+        start = r.randint(1, 3 + a + k)
+        alphabet = ["+2", "+3", "-1", "*2"]
+        actions = [r.choice(alphabet) for _ in range(1 + k + (a >= 3))]
+        current = start
+        for operation in actions:
+            current = current * 2 if operation == "*2" else current + int(operation)
+        if current == start:
+            actions.append("+2")
+            current += 2
+        return {"start": start, "goal": current, "alphabet": alphabet, "max_steps": len(actions) + 2}, actions
+    if t == "resource_plan":
+        names = list("ABCD" if k < 2 else "ABCDE")
+        costs = {item: r.randint(1, 4 + k + a // 2) for item in names}
+        benefits = {item: r.randint(1, 5 + k + a // 2) for item in names}
+        chosen = sorted(r.sample(names, 2 + (a >= 3 and k > 0)))
+        return {"costs": costs, "benefits": benefits, "goal": sum(benefits[x] for x in chosen),
+                "budget": sum(costs[x] for x in chosen), "max_steps": len(chosen) + 1,
+                "alphabet": names}, chosen
+    if t == "sensor_lab":
+        threshold = r.randint(2, 3 + (k > 0))
+        samples = [threshold - 1, threshold] + [r.randrange(6) for _ in range(3 + k)]
+        r.shuffle(samples)
+        return {"samples": samples, "expected": [int(v < threshold) for v in samples], "goal_threshold": threshold,
+                "alphabet": ["T1", "T2", "T3", "T4", "AUTO"], "max_steps": 3}, [f"T{threshold}", "AUTO"]
+    if t == "graph_path":
+        return graph_params(r, k, a)
+    if t == "function_loops":
+        patterns = ["ST", "TS", "SS", "TT", "MK", "KM"] if k else ["ST", "TS", "SS", "TT"]
+        macros = dict(zip("ABC", r.sample(patterns, 3)))
+        alphabet = list(macros)
+        if k > 0 or a >= 3:
+            alphabet += [name + "*2" for name in macros]
+        if k == 2:
+            alphabet += [name + "*3" for name in macros]
+        program = [r.choice(alphabet) for _ in range(2 + (a >= 3))]
+        if k and all("*" not in operation for operation in program):
+            program[0] += "*2"
+        target = "".join(macros[token[0]] * (int(token[-1]) if "*" in token else 1) for token in program)
+        return {"macros": macros, "target": target, "alphabet": alphabet,
+                "max_steps": len(program) + 2}, program
+    if t == "state_machine":
+        program = r.choice(STATE_STEPS[:4] if a < 3 and k == 0 else STATE_STEPS)
+        transitions = {before: {event: after} for before, event, after in program}
+        start, goal = program[0][0], program[-1][2]
+        transitions[goal] = {"RESET": start}
+        if k or a >= 3:
+            for mode in r.sample([before for before, _, _ in program[1:]], k or 1):
+                transitions[mode]["RESET"] = start
+        alphabet = sorted({event for actions in transitions.values() for event in actions})
+        return {"transitions": transitions, "start": start, "goal": goal,
+                "alphabet": alphabet, "max_steps": len(program) + 1 + (2 - k)}, [event for _, event, _ in program]
+    if t == "data_detective":
+        cutoff = r.randint(3, 6)
+        values = [cutoff - 1, cutoff] + [r.randint(1, 9) for _ in range(2 + k + (a >= 4))]
+        r.shuffle(values)
+        return {"values": values, "threshold": cutoff, "alphabet": [str(i) for i in range(len(values))],
+                "max_steps": len(values)}, [str(i) for i, reading in enumerate(values) if reading >= cutoff]
     raise ValueError(t)
 
+def param_signature(kind, layers):
+    return kind, json.dumps([layer["params"] for layer in layers.values()], sort_keys=True)
+
+def turkish_title(word):
+    return word[0].translate(str.maketrans("iı","İI")).upper() + word[1:]
+
 index={'schema_version':1,'worlds':[f'd{i}' for i in range(1,8)],'missions':[]}
+seen_params = set()
 for w in range(1,8):
     tr_world,en_world,tr_acts,en_acts,tr_obj,en_obj=WORLDS[w]
     for n in range(1,51):
@@ -145,14 +344,24 @@ for w in range(1,8):
         if w==1 and n<=5:
             level=json.loads(path.read_text(encoding='utf-8'))
             typ=level['type']
+            seen_params.add(param_signature(typ, level["layers"]))
         else:
             typ=SCHEDULE[w][(j+(a-1)*2)%10]
-            title=f'{tr_acts[a-1]}: {tr_obj[j].capitalize()}'
+            place_tr = turkish_title(tr_obj[j])
+            place_en = en_obj[j].capitalize()
+            title=f'{tr_acts[a-1]}: {place_tr}'
             title_en=f'{en_acts[a-1]}: {en_obj[j].capitalize()}'
-            layers={}
-            for name in ('concrete','blocks','system'):
-                p,sol=params_for(typ,w,a,j,name)
-                layers[name]={'params':p,'witness':sol}
+            for variation in range(16):
+                layers={}
+                for name in ('concrete','blocks','system'):
+                    p,sol=params_for(typ,w,a,j,name,variation)
+                    layers[name]={'params':p,'witness':sol}
+                signature = param_signature(typ, layers)
+                if signature not in seen_params:
+                    seen_params.add(signature)
+                    break
+            else:
+                raise ValueError(f"duplicate parameters for {mid}")
             level={'schema_version':1,'id':mid,'world':f'd{w}','act':a,'order':n,'type':typ,'concepts':CONCEPTS[typ],
                    'locale_key':f'mission.{mid}', 'hints':[f'hint.{mid}.{i}' for i in (1,2,3)],'layers':layers}
             path.parent.mkdir(parents=True,exist_ok=True)
@@ -160,16 +369,15 @@ for w in range(1,8):
             LOCALES['tr'][f'mission.{mid}']=title
             LOCALES['en'][f'mission.{mid}']=title_en
             dtr,den=DESC[typ]
-            LOCALES['tr'][f'mission.desc.{mid}']=f'{tr_world} · {tr_obj[j].capitalize()} görevi. {dtr}'
-            LOCALES['en'][f'mission.desc.{mid}']=f'{en_world} · {en_obj[j].capitalize()} mission. {den}'
+            LOCALES['tr'][f'mission.desc.{mid}']=f'{tr_acts[a-1]} · {place_tr}. {dtr}'
+            LOCALES['en'][f'mission.desc.{mid}']=f'{en_acts[a-1]} · {place_en}. {den}'
+            hints = HINTS[typ] + (('Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.',
+                                   'Step through the example program. Try another approach where it fits.'),)
             for tier in (1,2,3):
-                hints={1:('Önce hedefi ve başlangıç durumunu karşılaştır.','Compare the target with the starting state.'),
-                       2:('Tek hamlenin etkisini izle; aynı kuralı bütün adımlara uygula.','Observe what one move changes, then apply the same rule.'),
-                       3:('Ajan defterindeki örnek çözümü incele ve farklı bir yol da dene.','Study the example in the agent notebook, and try another route.')}
-                LOCALES['tr'][f'hint.{mid}.{tier}']=hints[tier][0]
-                LOCALES['en'][f'hint.{mid}.{tier}']=hints[tier][1]
-            LOCALES['tr'][f'result.{mid}']=f'{tr_obj[j].capitalize()} yeniden işliyor. {tr_acts[a-1].lower()} dosyasına yeni bir iz eklendi.'
-            LOCALES['en'][f'result.{mid}']=f'{en_obj[j].capitalize()} is working again. A new clue entered the {en_acts[a-1].lower()} file.'
+                LOCALES['tr'][f'hint.{mid}.{tier}']=hints[tier-1][0]
+                LOCALES['en'][f'hint.{mid}.{tier}']=hints[tier-1][1]
+            LOCALES['tr'][f'result.{mid}']=f'{place_tr} görevi tamamlandı. {tr_acts[a-1]} dosyasına yeni bir iz eklendi.'
+            LOCALES['en'][f'result.{mid}']=f'{place_en} mission complete. A new clue was added to the {en_acts[a-1]} file.'
         index['missions'].append({'id':mid,'file':f'veri/levels/d{w}/{n:02d}.json'})
 for lang in ('tr','en'):
     for w in range(1,8):
@@ -177,7 +385,10 @@ for lang in ('tr','en'):
     translations={
     'tr':{'ui.daily':'Günlük keşif','ui.simulation':'Yarışma provası','ui.workshop':'Proje atölyesi','ui.sandbox':'Serbest laboratuvar','ui.collection':'Koleksiyon','ui.skills':'Yeteneklerim','ui.mission_list':'Görev dosyaları','ui.world_locked':'Önizleme açık · Görevler henüz açılmadı','ui.world_open':'Dünyayı keşfet','ui.journey':'Yolculuğum','ui.choose':'Seç','ui.ready':'Hazır','ui.progress':'Tamamlanan','ui.preview_route':'Bir önceki dünyanın 40. görevini tamamlayarak buradaki görevlere ulaşabilirsin.','ui.daily_note':'Bugünün keşif dosyası','ui.practice_note':'Dilersen kendi temponda çöz. Süre tutmak zorunda değilsin.','ui.workshop_note':'Bir problemi tanımla, tahmin üret, tasarla, dene ve gözlemle.','ui.sandbox_note':'Dilediğin görevi tekrar dene. Bütün denemeler ücretsiz.','ui.collection_note':'Kazanılan tüm izler burada saklanır. Hiçbiri geri alınmaz.','ui.skills_note':'Burada rekabet veya sıralama yok; keşfettiğin kavramları görürsün.','ui.gate':'Bağlantı görevi','ui.act':'Perde','ui.world':'Dünya','ui.levels':'Görevler','ui.mode':'Mod','ui.home':'Atlas','ui.next_world':'Sonraki dünya','ui.play_again':'Yeniden dene','ui.no_results':'Henüz yeni bir iz yok','ui.unsupported':'Bu görev için bir kontrol henüz hazır değil','ui.cost':'Maliyet','ui.goal_number':'Hedef değer','ui.start_number':'Başlangıç','ui.data':'Ölçümler','ui.active':'Etkin','ui.target':'Hedef'},
     'en':{'ui.daily':'Daily discovery','ui.simulation':'Challenge practice','ui.workshop':'Project studio','ui.sandbox':'Free laboratory','ui.collection':'Collection','ui.skills':'My skills','ui.mission_list':'Mission files','ui.world_locked':'Preview available · Missions not yet open','ui.world_open':'Explore this world','ui.journey':'My journey','ui.choose':'Choose','ui.ready':'Ready','ui.progress':'Completed','ui.preview_route':'Complete mission 40 in the previous world to begin here.','ui.daily_note':'Today’s discovery file','ui.practice_note':'Take your time. A timer is never required.','ui.workshop_note':'Define a problem, predict, design, test, and reflect.','ui.sandbox_note':'Retry any mission. Every attempt is free.','ui.collection_note':'Every earned clue stays in your collection.','ui.skills_note':'No competition or ranking here; track concepts you have explored.','ui.gate':'Connection mission','ui.act':'Act','ui.world':'World','ui.levels':'Missions','ui.mode':'Mode','ui.home':'Atlas','ui.next_world':'Next world','ui.play_again':'Try again','ui.no_results':'No clues here yet','ui.unsupported':'No control is available for this mission yet','ui.cost':'Cost','ui.goal_number':'Goal value','ui.start_number':'Start','ui.data':'Readings','ui.active':'Active','ui.target':'Target'}}
-    LOCALES[lang].update(translations[lang])
+    for key, value in translations[lang].items():
+        LOCALES[lang].setdefault(key, value)
+    for key, values in MECHANIC_LABELS.items():
+        LOCALES[lang][key] = values[0 if lang == "tr" else 1]
     with (ROOT/f'veri/locale/{lang}.csv').open('w',encoding='utf-8',newline='') as f:
         writer=csv.writer(f);writer.writerow(['key','value'])
         for key in sorted(LOCALES[lang]):writer.writerow([key,LOCALES[lang][key]])

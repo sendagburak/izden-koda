@@ -26,7 +26,8 @@
             "CHECK": "ACTIVE"
           },
           "ACTIVE": {
-            "SEND": "DONE"
+            "SEND": "DONE",
+            "RESET": "OFF"
           },
           "DONE": {
             "RESET": "OFF"
@@ -35,10 +36,10 @@
         "start": "OFF",
         "goal": "DONE",
         "alphabet": [
-          "START",
           "CHECK",
+          "RESET",
           "SEND",
-          "RESET"
+          "START"
         ],
         "max_steps": 6
       },
@@ -52,13 +53,17 @@
       "params": {
         "transitions": {
           "OFF": {
-            "START": "READY"
+            "START": "WARMING"
+          },
+          "WARMING": {
+            "TICK": "READY"
           },
           "READY": {
-            "CHECK": "ACTIVE"
+            "TICK": "ACTIVE"
           },
           "ACTIVE": {
-            "SEND": "DONE"
+            "SEND": "DONE",
+            "RESET": "OFF"
           },
           "DONE": {
             "RESET": "OFF"
@@ -67,16 +72,17 @@
         "start": "OFF",
         "goal": "DONE",
         "alphabet": [
-          "START",
-          "CHECK",
+          "RESET",
           "SEND",
-          "RESET"
+          "START",
+          "TICK"
         ],
         "max_steps": 6
       },
       "witness": [
         "START",
-        "CHECK",
+        "TICK",
+        "TICK",
         "SEND"
       ]
     },
@@ -87,10 +93,12 @@
             "START": "READY"
           },
           "READY": {
-            "CHECK": "ACTIVE"
+            "CHECK": "ACTIVE",
+            "RESET": "OFF"
           },
           "ACTIVE": {
-            "SEND": "DONE"
+            "SEND": "DONE",
+            "RESET": "OFF"
           },
           "DONE": {
             "RESET": "OFF"
@@ -99,12 +107,12 @@
         "start": "OFF",
         "goal": "DONE",
         "alphabet": [
-          "START",
           "CHECK",
+          "RESET",
           "SEND",
-          "RESET"
+          "START"
         ],
-        "max_steps": 6
+        "max_steps": 4
       },
       "witness": [
         "START",

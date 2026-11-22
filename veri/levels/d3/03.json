@@ -19,12 +19,12 @@
     "concrete": {
       "params": {
         "values": [
-          4,
-          3,
           6,
+          3,
+          3,
           4
         ],
-        "threshold": 6,
+        "threshold": 4,
         "alphabet": [
           "0",
           "1",
@@ -34,17 +34,18 @@
         "max_steps": 4
       },
       "witness": [
-        "2"
+        "0",
+        "3"
       ]
     },
     "blocks": {
       "params": {
         "values": [
-          7,
-          4,
           6,
-          1,
-          9
+          6,
+          5,
+          4,
+          1
         ],
         "threshold": 6,
         "alphabet": [
@@ -58,21 +59,20 @@
       },
       "witness": [
         "0",
-        "2",
-        "4"
+        "1"
       ]
     },
     "system": {
       "params": {
         "values": [
-          6,
+          9,
           9,
           4,
-          9,
           3,
-          3
+          4,
+          5
         ],
-        "threshold": 6,
+        "threshold": 5,
         "alphabet": [
           "0",
           "1",
@@ -86,7 +86,7 @@
       "witness": [
         "0",
         "1",
-        "3"
+        "5"
       ]
     }
   }

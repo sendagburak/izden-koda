@@ -22,7 +22,8 @@ func _checksum(data: Dictionary) -> String:
 	return JSON.stringify(copy, "", true).sha256_text()
 
 func _signed(data: Dictionary) -> Dictionary:
-	var out: Dictionary = data.duplicate(true)
+	# Godot reads JSON numbers as floats. Sign the representation a reader sees.
+	var out: Dictionary = JSON.parse_string(JSON.stringify(data, "", true))
 	out["checksum"] = _checksum(out)
 	return out
 
@@ -32,7 +33,11 @@ func _read(path: String) -> Dictionary:
 	var file = FileAccess.open(path, FileAccess.READ)
 	if file == null or file.get_length() > 1024 * 1024:
 		return {}
-	var data = JSON.parse_string(file.get_as_text())
+	var raw := file.get_as_text()
+	var json := JSON.new()
+	if json.parse(raw) != OK:
+		return {}
+	var data = json.data
 	if not (data is Dictionary):
 		return {}
 	if data.get("schema_version", -1) == 0 and data.has("completed_ids") and data.has("profile_id"):
@@ -45,8 +50,12 @@ func _read(path: String) -> Dictionary:
 		return data
 	if int(data.get("schema_version", -1)) != SCHEMA:
 		return {}
-	if data.get("checksum", "") != _checksum(data):
-		return {}
+	var checksum := str(data.get("checksum", ""))
+	if checksum != _checksum(data):
+		# v0.6 wrote sorted, compact JSON with checksum as its first field.
+		var prefix := "{\"checksum\":" + JSON.stringify(checksum) + ","
+		if not raw.begins_with(prefix) or ("{" + raw.trim_prefix(prefix)).sha256_text() != checksum:
+			return {}
 	if not (data.get("completed_ids") is Array) or not (data.get("reward_ids") is Array):
 		return {}
 	return data
@@ -55,8 +64,8 @@ func _has_future_schema(path: String) -> bool:
 	var f = FileAccess.open(path, FileAccess.READ)
 	if f == null or f.get_length() > 1024 * 1024:
 		return false
-	var parsed = JSON.parse_string(f.get_as_text())
-	return parsed is Dictionary and int(parsed.get("schema_version", 1)) > SCHEMA
+	var json := JSON.new()
+	return json.parse(f.get_as_text()) == OK and json.data is Dictionary and int(json.data.get("schema_version", 1)) > SCHEMA
 
 func load_profile(id: String) -> Dictionary:
 	last_error = ""
@@ -79,6 +88,13 @@ func load_profile(id: String) -> Dictionary:
 		return a
 	if not b.is_empty():
 		return b
+	var tmp := base.path_join("save.tmp")
+	if _has_future_schema(tmp):
+		last_error = "future schema; kept untouched"
+		return {}
+	var pending := _read(tmp)
+	if pending.get("profile_id", "") == id:
+		return pending
 	if FileAccess.file_exists(base.path_join("save.json")):
 		last_error = "unable to recover save"
 		return {}
@@ -121,7 +137,11 @@ func save_profile(id: String, payload: Dictionary) -> bool:
 		last_error = "temp verification failed"
 		return false
 	var old: Dictionary = _read(main)
-	if not old.is_empty():
+	var previous: Dictionary = _read(backup)
+	if old.get("profile_id", "") == id and (
+		previous.get("profile_id", "") != id
+		or int(old.get("generation", 0)) > int(previous.get("generation", 0))
+	):
 		var btmp: String = base.path_join("save.bak.tmp")
 		if DirAccess.copy_absolute(ProjectSettings.globalize_path(main), ProjectSettings.globalize_path(btmp)) != OK:
 			last_error = "backup copy failed"
@@ -129,16 +149,10 @@ func save_profile(id: String, payload: Dictionary) -> bool:
 		if _read(btmp).is_empty():
 			last_error = "backup verification failed"
 			return false
-		if FileAccess.file_exists(backup):
-			DirAccess.remove_absolute(ProjectSettings.globalize_path(backup))
 		if DirAccess.rename_absolute(ProjectSettings.globalize_path(btmp), ProjectSettings.globalize_path(backup)) != OK:
 			last_error = "backup rename failed"
 			return false
-	if FileAccess.file_exists(main):
-		# Backup verified before the primary file is replaced.
-		if DirAccess.remove_absolute(ProjectSettings.globalize_path(main)) != OK:
-			last_error = "cannot rotate primary"
-			return false
+	# Replace in a single rename with the last recoverable generation still on disk.
 	if DirAccess.rename_absolute(ProjectSettings.globalize_path(tmp), ProjectSettings.globalize_path(main)) != OK:
 		last_error = "primary rename failed; backup retained"
 		return false

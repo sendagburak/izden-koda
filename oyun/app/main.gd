@@ -1,5 +1,5 @@
 extends Control
-## Vertical slice. All major screens use one handcrafted pixel-forward UI language.
+## Main scene for the campaign and local creative modes.
 const RepoScript = preload("res://oyun/core/level_repository.gd")
 const RunnerScript = preload("res://oyun/core/puzzle_runner.gd")
 const LocaleScript = preload("res://oyun/core/locale_service.gd")
@@ -10,6 +10,10 @@ const ProgressScript = preload("res://oyun/core/progress_rules.gd")
 const SettingsScript = preload("res://oyun/core/settings_store.gd")
 const BackupScript = preload("res://oyun/core/backup_io.gd")
 const InputScript = preload("res://oyun/core/input_actions.gd")
+const STANDARD_FONT = preload("res://varliklar/fonts/NotoSans-Regular.ttf")
+const READABLE_FONT = preload("res://varliklar/fonts/AtkinsonHyperlegibleNext-Regular.ttf")
+const COMMAND_LIMIT := 40
+const ROUTE_COMMANDS := {"U": "ui.move_up", "D": "ui.move_down", "L": "ui.move_left", "R": "ui.move_right", "S": "ui.scan"}
 const WORLD_BACKDROPS = {
 	1: preload("res://varliklar/sprites/coast_dusk.png"),
 	2: preload("res://varliklar/sprites/world_2.png"),
@@ -69,9 +73,21 @@ var screen: String = "mission"
 var sandbox_commands: Array = []
 var sandbox_rocks: Array = [[2, 1], [2, 2], [2, 3]]
 var sandbox_last: Dictionary = {}
+var game_scroll: ScrollContainer
+var mission_columns: BoxContainer
+var mission_board: PanelContainer
+var mission_desk: PanelContainer
+var block_index: int = -1
+var notebook_text: String = ""
+var notebook_error: Label
+var trace_index: int = 0
 
 func _ready() -> void:
 	texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
+	theme = Theme.new()
+	get_window().size_changed.connect(_resize_canvas)
+	resized.connect(_fit_mission_columns)
+	_resize_canvas()
 	profiles.open()
 	data = store.load_profile(profiles.selected)
 	if data.is_empty():
@@ -108,10 +124,30 @@ func _resume_progress() -> void:
 	_open_mission(int(target["order"]))
 
 func _accent() -> Color:
+	if bool(preferences.get("high_contrast", false)):
+		return Color("#FFE08C")
 	return WORLD_ACCENTS.get(current_world,Color("#D9A75C"))
+
+func _resize_canvas() -> void:
+	var window := get_window()
+	var base := Vector2i(430, 740) if window.size.x < window.size.y else Vector2i(960, 540)
+	if window.content_scale_size != base:
+		window.content_scale_size = base
+
+func _fit_mission_columns() -> void:
+	if not is_instance_valid(mission_columns) or not mission_columns.is_inside_tree():
+		return
+	var horizontal := size.x >= 760.0
+	mission_columns.vertical = not horizontal
+	mission_board.custom_minimum_size.x = 365.0 if horizontal else 0.0
+	mission_desk.custom_minimum_size.x = 320.0 if horizontal else 0.0
 
 func _tr(key: String) -> String:
 	return locale.text(key)
+
+func _mechanic_label(group: String, value: String) -> String:
+	var key := group + value.to_lower()
+	return _tr(key) if locale.available(key) else value
 
 func _sequence_text(commands: Array) -> String:
 	var parts := PackedStringArray()
@@ -144,7 +180,7 @@ func _txt(message: String, font_size: int = 19, tint: Color = Color(0.914, 0.859
 	var node = Label.new()
 	node.text = message
 	node.add_theme_color_override("font_color", tint)
-	node.add_theme_font_size_override("font_size", font_size + (4 if bool(preferences.get("large_text", false)) else 0))
+	node.add_theme_font_size_override("font_size", font_size + int(preferences.get("text_size", 0)) * 3)
 	node.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART if wrap else TextServer.AUTOWRAP_OFF
 	node.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	return node
@@ -152,7 +188,10 @@ func _txt(message: String, font_size: int = 19, tint: Color = Color(0.914, 0.859
 func _btn(message: String, callback: Callable, small: bool = false) -> Button:
 	var button = Button.new()
 	button.text = message
-	button.custom_minimum_size = Vector2(82 if small else 130, 43 if small else 49)
+	button.set_meta("focus_key", message)
+	button.custom_minimum_size = Vector2(78 if small else 130, 53)
+	if not small:
+		button.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
 	button.add_theme_stylebox_override("normal", _box_color(COLORS.ink, COLORS.line))
 	button.add_theme_stylebox_override("hover", _box_color(COLORS.sea, _accent()))
 	button.add_theme_stylebox_override("pressed", _box_color(_accent(), COLORS.paper))
@@ -161,7 +200,7 @@ func _btn(message: String, callback: Callable, small: bool = false) -> Button:
 	button.add_theme_color_override("font_hover_color", COLORS.paper)
 	button.add_theme_color_override("font_pressed_color", COLORS.ink)
 	button.add_theme_color_override("font_focus_color", COLORS.paper)
-	button.add_theme_font_size_override("font_size", 16 + (4 if bool(preferences.get("large_text", false)) else 0))
+	button.add_theme_font_size_override("font_size", 16 + int(preferences.get("text_size", 0)) * 3)
 	button.focus_mode = Control.FOCUS_ALL
 	button.pressed.connect(func(): _effect("tap"))
 	button.pressed.connect(callback)
@@ -173,15 +212,27 @@ func _stack() -> VBoxContainer:
 	v.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	return v
 
+func _scroll_area(body: VBoxContainer) -> VBoxContainer:
+	var scroll := ScrollContainer.new()
+	scroll.size_flags_vertical = Control.SIZE_EXPAND_FILL
+	scroll.horizontal_scroll_mode = ScrollContainer.SCROLL_MODE_DISABLED
+	scroll.follow_focus = true
+	scroll.scroll_deadzone = 10
+	body.add_child(scroll)
+	var content := _stack()
+	scroll.add_child(content)
+	return content
+
 func _frame(subtitle: String, image_world: int = -1) -> VBoxContainer:
 	_clear()
+	theme.default_font = READABLE_FONT if preferences.get("readable_font", false) else STANDARD_FONT
 	var img = TextureRect.new()
 	var active_world: int = image_world if image_world > 0 else current_world
 	img.texture = WORLD_BACKDROPS.get(active_world, WORLD_BACKDROPS[1])
 	_play_world_music(active_world)
 	img.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	img.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
-	img.stretch_mode = TextureRect.STRETCH_SCALE
+	img.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_COVERED
 	img.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
 	img.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	add_child(img)
@@ -199,10 +250,10 @@ func _frame(subtitle: String, image_world: int = -1) -> VBoxContainer:
 	add_child(margin)
 	var body = _stack()
 	margin.add_child(body)
+	body.add_child(_txt(subtitle, 17, _accent()))
 	var top = HFlowContainer.new()
 	top.add_theme_constant_override("h_separation", 9)
 	body.add_child(top)
-	top.add_child(_txt(_tr("ui.app") + "  /  " + subtitle, 17, _accent()))
 	top.add_child(_btn(_tr("ui.atlas"), func(): _open_atlas(), true))
 	top.add_child(_btn(_tr("ui.mode"), func(): _open_modes(), true))
 	top.add_child(_btn(_tr("ui.profiles"), func(): _open_profiles(), true))
@@ -220,38 +271,43 @@ func _open_mission(order: int) -> void:
 		_show_recovery_error()
 		return
 	command_queue.clear()
+	notebook_text = ""
+	block_index = -1
+	trace_index = 0
 	var attempt: Dictionary = data.get("last_attempt", {})
 	if attempt.get("mission_id", "") == level["id"] and attempt.get("layer", "") == runner.layer:
 		for cmd in attempt.get("commands", []):
-			if command_queue.size() < 30:
+			if command_queue.size() < COMMAND_LIMIT:
 				command_queue.append(str(cmd))
+		notebook_text = str(attempt.get("draft", " ".join(PackedStringArray(command_queue))))
 	hint_tier = int(attempt.get("hint_tier", 0)) if attempt.get("mission_id", "") == level["id"] else 0
 	feedback = ""
 	screen = "mission"
+	game_scroll = null
 	_render_mission()
 
 func _render_mission() -> void:
-	var body = _frame(_tr("ui.agent"))
+	var previous_scroll := game_scroll.scroll_vertical if is_instance_valid(game_scroll) and game_scroll.is_inside_tree() else 0
+	var previous_focus := get_viewport().gui_get_focus_owner()
+	var focus_key := str(previous_focus.get_meta("focus_key", "")) if is_instance_valid(previous_focus) else ""
+	var body := _scroll_area(_frame(_tr("ui.agent")))
+	game_scroll = body.get_parent()
+	if previous_scroll:
+		game_scroll.set_deferred("scroll_vertical", previous_scroll)
 	if mode_context == "simulation" and sim_timer_enabled:
 		sim_clock_label = _txt("00:00", 20, _accent())
 		body.add_child(sim_clock_label)
 	body.add_child(_txt(_tr(WORLDS[current_world-1]), 24, COLORS.paper))
 	body.add_child(_txt("%02d / 50   ·   %s" % [mission_order, _tr(str(level["locale_key"]))], 23, _accent()))
 	body.add_child(_txt(_tr("mission.desc." + str(level["id"])), 17, COLORS.paper))
-	var scroll = ScrollContainer.new()
-	scroll.size_flags_vertical = Control.SIZE_EXPAND_FILL
-	body.add_child(scroll)
-	var horizontal: bool = size.x >= 680
-	var contents: BoxContainer = HBoxContainer.new() if horizontal else VBoxContainer.new()
-	contents.add_theme_constant_override("separation", 12)
-	contents.size_flags_horizontal = Control.SIZE_EXPAND_FILL
-	scroll.add_child(contents)
-	var board: PanelContainer = _panel()
-	if horizontal:
-		board.custom_minimum_size.x = max(330.0, size.x * 0.51)
-	contents.add_child(board)
+	mission_columns = BoxContainer.new()
+	mission_columns.add_theme_constant_override("separation", 12)
+	mission_columns.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	body.add_child(mission_columns)
+	mission_board = _panel()
+	mission_columns.add_child(mission_board)
 	var area = _stack()
-	board.add_child(area)
+	mission_board.add_child(area)
 	if str(level["type"]) in ["grid_route", "robot_course"]:
 		_draw_grid(area)
 	elif str(level["type"]) == "signal_pattern":
@@ -260,22 +316,30 @@ func _render_mission() -> void:
 		_draw_panel(area)
 	else:
 		_draw_mechanic(area)
-	var desk: PanelContainer = _panel()
-	if horizontal:
-		desk.custom_minimum_size.x = max(280.0, size.x * 0.35)
-	contents.add_child(desk)
+	mission_desk = _panel()
+	mission_columns.add_child(mission_desk)
+	_fit_mission_columns()
 	var commands = _stack()
-	desk.add_child(commands)
+	mission_desk.add_child(commands)
 	commands.add_child(_txt(_tr("ui.add_command"), 17, _accent()))
 	_draw_palette(commands)
-	commands.add_child(_txt(_tr("ui.sequence") + ": " + (_sequence_text(command_queue) if not command_queue.is_empty() else _tr("ui.no_command")), 15, COLORS.paper))
-	var row = HBoxContainer.new()
-	row.add_theme_constant_override("separation", 6)
+	match runner.layer:
+		"system": _draw_notebook(commands)
+		"blocks": _draw_blocks(commands)
+		_:
+			commands.add_child(_txt(_tr("ui.sequence") + ": " + (_sequence_text(command_queue) if not command_queue.is_empty() else _tr("ui.no_command")), 15, COLORS.paper))
+	var row = HFlowContainer.new()
+	row.add_theme_constant_override("h_separation", 6)
 	commands.add_child(row)
 	row.add_child(_btn(_tr("ui.undo"), func(): _undo(), true))
 	row.add_child(_btn(_tr("ui.clear"), func(): _clear_commands(), true))
+	row.add_child(_btn(_tr("ui.step"), func(): _step_commands(), true))
 	commands.add_child(_btn(_tr("ui.run"), func(): _run_commands()))
-	commands.add_child(_btn(_tr("ui.hint") + "  %d/3" % hint_tier, func(): _take_hint()))
+	var hint_button := _btn(_tr("ui.hint") + "  %d/3" % hint_tier, func(): _take_hint())
+	hint_button.set_meta("focus_key", "mission_hint")
+	commands.add_child(hint_button)
+	if trace_index > 0:
+		commands.add_child(_txt(_tr("ui.trace") % trace_index, 15, COLORS.paper))
 	if hint_tier > 0:
 		var text = _tr(str(hints.get_hint(level, hint_tier).get("key", "")))
 		if hint_tier == 3:
@@ -291,11 +355,23 @@ func _render_mission() -> void:
 			commands.add_child(_btn(_tr("ui.next_world"), func(): _go_to_next_world()))
 	if mode_context in ["simulation", "daily"]:
 		commands.add_child(_btn(_tr("ui.mode"), func(): _open_modes()))
+	if not focus_key.is_empty():
+		_restore_mission_focus.call_deferred(focus_key)
+
+func _restore_mission_focus(focus_key: String) -> void:
+	if screen != "mission":
+		return
+	for control in find_children("*", "Button", true, false):
+		if control.get_meta("focus_key", "") == focus_key and not control.disabled:
+			control.grab_focus()
+			return
 
 func _square(surface: Container, image_key: String, cell: int) -> void:
 	var cell_node = PanelContainer.new()
 	cell_node.custom_minimum_size = Vector2(cell, cell)
-	cell_node.add_theme_stylebox_override("panel", _box_color(COLORS.sea, COLORS.line))
+	var surface_style := _box_color(COLORS.sea, COLORS.line)
+	surface_style.set_content_margin_all(4)
+	cell_node.add_theme_stylebox_override("panel", surface_style)
 	surface.add_child(cell_node)
 	var texture = TextureRect.new()
 	texture.texture = SPRITES[image_key]
@@ -310,9 +386,10 @@ func _draw_grid(area: VBoxContainer) -> void:
 	var p: Dictionary = level["layers"][runner.layer]["params"]
 	var w: int = int(p["size"][0])
 	var h: int = int(p["size"][1])
-	var cell: int = 47 if size.x > 720 else 38
+	var cell := mini(46, 324 / maxi(w, 1))
 	var grid = GridContainer.new()
 	grid.columns = w
+	grid.size_flags_horizontal = Control.SIZE_SHRINK_CENTER
 	grid.add_theme_constant_override("h_separation", 1)
 	grid.add_theme_constant_override("v_separation", 1)
 	area.add_child(grid)
@@ -322,16 +399,21 @@ func _draw_grid(area: VBoxContainer) -> void:
 		for x in range(w):
 			var key = "floor"
 			if p.get("rocks", []).has([x, y]): key = "rock"
-			elif p["goal"] == [x, y]: key = "goal"
 			elif at == [x, y]: key = "start"
+			elif p["goal"] == [x, y]: key = "goal"
 			elif trail.has([x, y]): key = "trail"
 			_square(grid,key,cell)
-	area.add_child(_txt(_tr("ui.prologue"), 15, COLORS.muted))
+	if str(level["type"]) == "robot_course":
+		area.add_child(_txt(_tr("ui.sensor_scanned" if runner.state.get("scanned", false) else "ui.sensor_waiting"), 16, COLORS.muted))
+	elif str(level["id"]) == "d1-p1-001":
+		area.add_child(_txt(_tr("ui.prologue"), 15, COLORS.muted))
 
 func _light_badge(letter: String, lit: bool) -> PanelContainer:
 	var shell = PanelContainer.new()
 	shell.custom_minimum_size = Vector2(56, 56)
 	shell.add_theme_stylebox_override("panel", _box_color(_accent() if lit else COLORS.sea, COLORS.paper if lit else COLORS.line))
+	if preferences.get("color_blind_mode", false):
+		letter = ("◆ " if lit else "◇ ") + letter
 	shell.add_child(_txt(letter, 23, COLORS.ink if lit else COLORS.paper))
 	return shell
 
@@ -356,61 +438,171 @@ func _draw_panel(area: VBoxContainer) -> void:
 	area.add_child(_txt(_tr("ui.target"), 16, COLORS.muted))
 	var target = HFlowContainer.new()
 	area.add_child(target)
-	for lamp in p["goal"]:
-		target.add_child(_light_badge(str(lamp), lamp == 1))
+	for index in range(p["goal"].size()):
+		var lamp: int = p["goal"][index]
+		target.add_child(_light_badge("%d·%d" % [index + 1, lamp], lamp == 1))
 	area.add_child(_txt(_tr("ui.sequence"), 16, COLORS.muted))
 	var actual = HFlowContainer.new()
 	area.add_child(actual)
-	for lamp in runner.state.get("lamps", p["initial"]):
-		actual.add_child(_light_badge(str(lamp), lamp == 1))
+	var lamps: Array = runner.state.get("lamps", p["initial"])
+	for index in range(lamps.size()):
+		actual.add_child(_light_badge("%d·%d" % [index + 1, lamps[index]], lamps[index] == 1))
+	for symbol in p["wiring"]:
+		var connected := PackedStringArray()
+		for index in p["wiring"][symbol]:
+			connected.append(str(int(index) + 1))
+		area.add_child(_txt(str(symbol) + "  →  " + ", ".join(connected), 15, COLORS.muted))
+
+func _mission_symbols() -> Array:
+	if str(level["type"]) in ["grid_route", "robot_course"]:
+		return ["S", "U", "R", "D", "L"] if str(level["type"]) == "robot_course" else ["U", "R", "D", "L"]
+	var params: Dictionary = level["layers"][runner.layer]["params"]
+	return params["wiring"].keys() if str(level["type"]) == "toggle_board" else params.get("alphabet", [])
+
+func _command_name(symbol: String) -> String:
+	if str(level["type"]) in ["grid_route", "robot_course"]:
+		return _tr(ROUTE_COMMANDS.get(symbol, symbol))
+	return symbol
 
 func _draw_palette(commands: VBoxContainer) -> void:
-	var panel = HFlowContainer.new()
+	var panel := HFlowContainer.new()
 	panel.add_theme_constant_override("h_separation", 7)
 	panel.add_theme_constant_override("v_separation", 7)
 	commands.add_child(panel)
-	var symbols: Array = []
-	if str(level["type"]) in ["grid_route", "robot_course"]:
-		symbols = ["S", "U", "R", "D", "L"] if str(level["type"]) == "robot_course" else ["U", "R", "D", "L"]
-	elif str(level["type"]) == "toggle_board":
-		symbols = level["layers"][runner.layer]["params"]["wiring"].keys()
-	else:
-		symbols = level["layers"][runner.layer]["params"].get("alphabet", [])
-	for symbol in symbols:
+	for symbol in _mission_symbols():
 		var s: String = str(symbol)
-		var text = s
-		if str(level["type"]) in ["grid_route", "robot_course"]:
-			var names: Dictionary = {"U": "ui.move_up", "D": "ui.move_down", "L": "ui.move_left", "R": "ui.move_right", "S": "ui.scan"}
-			text = _tr(names[s])
-		panel.add_child(_btn(text, func(): _add_command(s), true))
+		var text := _command_name(s)
+		if runner.layer == "system" and text != s:
+			text = s + " · " + text
+		var button := _btn(text, func(): _add_command(s), true)
+		button.set_meta("command", s)
+		panel.add_child(button)
 
-func _persist_attempt() -> void:
-	if level.is_empty() or data.is_empty(): return
-	data["last_attempt"] = {"mission_id": str(level["id"]), "layer": runner.layer, "commands": command_queue.duplicate(), "hint_tier": hint_tier}
-	data["settings"] = preferences
-	store.save_profile(profiles.selected, data)
+func _draw_blocks(commands: VBoxContainer) -> void:
+	commands.add_child(_txt(_tr("ui.block_bench"), 16, _accent()))
+	if command_queue.is_empty():
+		commands.add_child(_txt(_tr("ui.no_command"), 15, COLORS.muted))
+		return
+	var blocks := HFlowContainer.new()
+	commands.add_child(blocks)
+	for i in range(command_queue.size()):
+		var index := i
+		var label := "%d. %s" % [index + 1, _command_name(command_queue[index])]
+		var button := _btn(label, func(): _select_block(index), true)
+		if index == block_index:
+			button.add_theme_stylebox_override("normal", _box_color(COLORS.sea, _accent()))
+			button.text = "◆ " + label
+		blocks.add_child(button)
+	if block_index >= 0:
+		var row := HFlowContainer.new()
+		commands.add_child(row)
+		var earlier := _btn(_tr("ui.block_left"), func(): _move_block(-1), true)
+		earlier.disabled = block_index == 0
+		row.add_child(earlier)
+		var later := _btn(_tr("ui.block_right"), func(): _move_block(1), true)
+		later.disabled = block_index == command_queue.size() - 1
+		row.add_child(later)
 
-func _add_command(symbol: String) -> void:
-	if command_queue.size() >= 40: return
-	command_queue.append(symbol)
+func _select_block(index: int) -> void:
+	block_index = index
+	_render_mission()
+
+func _move_block(offset: int) -> void:
+	var target := block_index + offset
+	if block_index < 0 or target < 0 or target >= command_queue.size():
+		return
+	var command = command_queue.pop_at(block_index)
+	command_queue.insert(target, command)
+	block_index = target
+	trace_index = 0
 	feedback = ""
 	_persist_attempt()
 	_render_mission()
 
+func _draw_notebook(commands: VBoxContainer) -> void:
+	commands.add_child(_txt(_tr("ui.code_notebook"), 16, _accent()))
+	var editor := TextEdit.new()
+	editor.name = "CodeNotebook"
+	editor.custom_minimum_size.y = 95
+	editor.wrap_mode = TextEdit.LINE_WRAPPING_BOUNDARY
+	editor.placeholder_text = _tr("ui.code_edit")
+	editor.text = notebook_text
+	editor.add_theme_font_size_override("font_size", 17 + int(preferences.get("text_size", 0)) * 3)
+	commands.add_child(editor)
+	notebook_error = _txt(_tr("ui.code_invalid"), 15, COLORS.light)
+	notebook_error.visible = not _code_queue().get("valid", false)
+	commands.add_child(notebook_error)
+	editor.text_changed.connect(func(): _edit_notebook(editor.text))
+
+func _code_queue() -> Dictionary:
+	if notebook_text.length() > 1024:
+		return {"valid": false}
+	var allowed := _mission_symbols()
+	var cleaned := notebook_text.to_upper().replace("\r", " ").replace("\n", " ").replace("\t", " ").replace(",", " ")
+	var tokens := Array(cleaned.split(" ", false))
+	if tokens.size() > COMMAND_LIMIT:
+		return {"valid": false}
+	for token in tokens:
+		if not allowed.has(token):
+			return {"valid": false}
+	return {"valid": true, "commands": tokens}
+
+func _edit_notebook(draft: String) -> void:
+	notebook_text = draft
+	var parsed := _code_queue()
+	command_queue.assign(parsed.get("commands", []))
+	if is_instance_valid(notebook_error):
+		notebook_error.visible = not parsed["valid"]
+	feedback = ""
+	trace_index = 0
+	_persist_attempt()
+
+func _persist_attempt() -> void:
+	if level.is_empty() or data.is_empty(): return
+	data["last_attempt"] = {"mission_id": str(level["id"]), "layer": runner.layer, "commands": command_queue.duplicate(), "hint_tier": hint_tier}
+	if runner.layer == "system":
+		data["last_attempt"]["draft"] = notebook_text.substr(0, 1025)
+	data["settings"] = preferences
+	store.save_profile(profiles.selected, data)
+
+func _add_command(symbol: String) -> void:
+	if command_queue.size() >= COMMAND_LIMIT:
+		return
+	if runner.layer == "system":
+		_edit_notebook((notebook_text.strip_edges() + " " + symbol).strip_edges())
+	else:
+		command_queue.append(symbol)
+		_persist_attempt()
+	trace_index = 0
+	feedback = ""
+	_render_mission()
+
 func _undo() -> void:
-	if not command_queue.is_empty():
+	if runner.layer == "system":
+		var draft := notebook_text.strip_edges()
+		var cut := maxi(maxi(draft.rfind(" "), draft.rfind(",")), maxi(draft.rfind("\n"), draft.rfind("\t")))
+		_edit_notebook(draft.left(cut) if cut >= 0 else "")
+	elif not command_queue.is_empty():
 		command_queue.pop_back()
 		_persist_attempt()
+	block_index = -1
+	trace_index = 0
 	_render_mission()
 
 func _clear_commands() -> void:
 	command_queue.clear()
+	notebook_text = ""
+	block_index = -1
+	trace_index = 0
 	runner.open(level, runner.layer)
 	feedback = ""
 	_persist_attempt()
 	_render_mission()
 
 func _run_commands() -> void:
+	if runner.layer == "system" and not _code_queue()["valid"]:
+		return
+	trace_index = 0
 	var result: Dictionary = runner.submit({"type":"run", "commands": command_queue})
 	if bool(result.get("met", false)):
 		_effect("discover")
@@ -434,6 +626,18 @@ func _run_commands() -> void:
 		feedback = "ui.incomplete"
 	_render_mission()
 
+func _step_commands() -> void:
+	if command_queue.is_empty() or (runner.layer == "system" and not _code_queue()["valid"]):
+		return
+	trace_index = (trace_index % command_queue.size()) + 1
+	var result: Dictionary = runner.submit({"type": "run", "commands": command_queue.slice(0, trace_index)})
+	feedback = ""
+	if result["events"].has("blocked"):
+		feedback = "ui.blocked"
+	elif result["events"].has("limit"):
+		feedback = "ui.limit"
+	_render_mission()
+
 func _take_hint() -> void:
 	_effect("scan")
 	hint_tier = mini(hint_tier + 1, 3)
@@ -455,11 +659,7 @@ func _open_atlas() -> void:
 	screen = "atlas"
 	var body = _frame(_tr("ui.atlas"))
 	body.add_child(_txt(_tr("ui.journey"), 25, _accent()))
-	var scroll = ScrollContainer.new()
-	scroll.size_flags_vertical = Control.SIZE_EXPAND_FILL
-	body.add_child(scroll)
-	var listing = _stack()
-	scroll.add_child(listing)
+	var listing := _scroll_area(body)
 	for world_number in range(1,8):
 		var w: int = world_number
 		var count: int = 0
@@ -481,11 +681,7 @@ func _open_world(w: int) -> void:
 	screen = "missions"
 	var body = _frame(_tr("ui.mission_list"))
 	body.add_child(_txt(_tr(WORLDS[w-1]), 26, _accent()))
-	var scroll = ScrollContainer.new()
-	scroll.size_flags_vertical = Control.SIZE_EXPAND_FILL
-	body.add_child(scroll)
-	var listing = _stack()
-	scroll.add_child(listing)
+	var listing := _scroll_area(body)
 	for act in range(1,6):
 		listing.add_child(_txt(_tr("ui.act") + "  %d" % act, 20, _accent()))
 		for order in range((act-1)*10+1,act*10+1):
@@ -530,8 +726,11 @@ func _change_layer() -> void:
 	var list = ["concrete", "blocks", "system"]
 	preferences["layer"] = list[(list.find(preferences["layer"]) + 1) % 3]
 	_save_preferences()
-	runner.open(level, str(preferences["layer"]))
-	command_queue.clear()
+	_open_settings()
+
+func _change_text_size() -> void:
+	preferences["text_size"] = (int(preferences.get("text_size", 0)) + 1) % 3
+	_save_preferences()
 	_open_settings()
 
 func _cycle_volume(key: String) -> void:
@@ -542,15 +741,13 @@ func _cycle_volume(key: String) -> void:
 func _open_settings() -> void:
 	screen = "settings"
 	var body = _frame(_tr("ui.settings"))
-	var scroll = ScrollContainer.new()
-	scroll.size_flags_vertical = Control.SIZE_EXPAND_FILL
-	body.add_child(scroll)
-	var v = _stack()
-	scroll.add_child(v)
+	var v := _scroll_area(body)
 	v.add_child(_btn(_tr("ui.language") + " : " + str(preferences["language"]).to_upper(), func(): _change_language()))
 	var layer_key = "ui." + str(preferences["layer"])
 	v.add_child(_btn(_tr("ui.layer") + " : " + _tr(layer_key), func(): _change_layer()))
-	for key in ["high_contrast", "large_text", "color_blind_mode", "reduced_motion", "performance"]:
+	v.add_child(_btn(_tr("ui.text_size") + " · " + _tr("ui.text_size_%d" % int(preferences["text_size"])), _change_text_size))
+	v.add_child(_btn(_tr("ui.readable_font") + " · " + ("Atkinson" if preferences["readable_font"] else "Noto Sans"), func(): _flip_setting("readable_font")))
+	for key in ["high_contrast", "color_blind_mode", "reduced_motion", "performance"]:
 		var k: String = key
 		v.add_child(_btn(_tr("ui."+key) + " : " + (_tr("ui.on") if preferences[key] else _tr("ui.off")), func(): _flip_setting(k)))
 	for audio_key in ["music_volume", "sfx_volume"]:
@@ -565,8 +762,7 @@ func _open_settings() -> void:
 func _open_profiles() -> void:
 	screen = "profiles"
 	var body = _frame(_tr("ui.profiles"))
-	var stack = _stack()
-	body.add_child(stack)
+	var stack := _scroll_area(body)
 	for entry in profiles.entries:
 		var id: String = str(entry["id"])
 		var label: String = str(entry["title"]) + ("  *" if id == profiles.selected else "")
@@ -575,7 +771,9 @@ func _open_profiles() -> void:
 	body.add_child(_btn(_tr("ui.back"), func(): _open_mission(mission_order)))
 
 func _choose_profile(id: String) -> void:
-	if not profiles.select_profile(id): return
+	if not profiles.select_profile(id):
+		_show_recovery_error()
+		return
 	data = store.load_profile(id)
 	if data.is_empty():
 		_show_recovery_error()
@@ -587,6 +785,9 @@ func _choose_profile(id: String) -> void:
 
 func _create_profile() -> void:
 	var id: String = profiles.create_profile("Oyuncu " + str(profiles.entries.size()+1))
+	if id.is_empty():
+		_show_recovery_error()
+		return
 	data = store.empty_data(id)
 	preferences = settings_service.normalize({"language": locale.language})
 	data["settings"] = preferences
@@ -607,42 +808,50 @@ func _choose_backup(exporting: bool) -> void:
 		if exporting:
 			feedback = "ui.backup_success" if backups.export_data(data, path) else "ui.backup_failed"
 		else:
-			var imported: Dictionary = backups.import_data(path)
-			if imported.is_empty():
-				feedback = "ui.backup_failed"
-			elif imported.get("profile_id", "") == profiles.selected:
-				var merged: Dictionary = backups.merge(data, imported)
-				if store.save_profile(profiles.selected, merged):
-					data = store.load_profile(profiles.selected)
-					feedback = "ui.backup_restored"
-				else: feedback = "ui.backup_failed"
-			else:
-				# Different immutable ID: preserve a separate local student record.
-				var target: String = str(imported.get("profile_id", ""))
-				feedback = "ui.backup_failed"
-				if target.is_valid_identifier() and target.length() <= 64:
-					var existing: Dictionary = store.load_profile(target)
-					if not existing.is_empty():
-						var merged: Dictionary = backups.merge(existing, imported)
-						if not merged.is_empty() and store.save_profile(target, merged):
-							if not profiles.has_profile(target):
-								profiles.entries.append({"id":target,"title":"Oyuncu " + str(profiles.entries.size()+1)})
-								profiles.persist()
-							feedback = "ui.backup_restored"
+			feedback = "ui.backup_restored" if _restore_backup(path) else "ui.backup_failed"
 		_open_settings()
 	)
 	dialog.canceled.connect(func(): dialog.queue_free())
 	dialog.popup_centered_ratio(0.75)
 
+func _restore_backup(path: String) -> bool:
+	var imported: Dictionary = backups.import_data(path)
+	var target := str(imported.get("profile_id", ""))
+	if not target.is_valid_identifier() or target.length() > 64:
+		return false
+	var active: bool = target == profiles.selected
+	var existing: Dictionary = data if active and not data.is_empty() else store.load_profile(target)
+	if existing.is_empty():
+		return false
+	var merged: Dictionary = backups.merge(existing, imported)
+	if merged.is_empty() or not store.save_profile(target, merged):
+		return false
+	if active:
+		data = merged
+		return true
+	return profiles.register_profile(target, "Oyuncu " + str(profiles.entries.size() + 1))
+
 func _show_recovery_error() -> void:
+	screen = "recovery"
 	preferences = settings_service.normalize({})
 	var body = _frame(_tr("ui.recovery_heading"))
 	body.add_child(_txt(_tr("ui.recovery_warning"), 23, _accent()))
 
 func _unhandled_key_input(event: InputEvent) -> void:
-	if not (event is InputEventKey) or not event.pressed or event.echo or screen != "mission": return
+	if not (event is InputEventKey) or not event.pressed or event.echo:
+		return
+	if event.keycode == KEY_ESCAPE:
+		_go_back()
+		get_viewport().set_input_as_handled()
+		return
+	if screen != "mission":
+		return
 	var cmd: Dictionary = input_actions.from_key(event.keycode)
-	if not cmd.is_empty() and str(level.get("type", "")) == "grid_route":
+	var type := str(level.get("type", ""))
+	if type == "robot_course" and event.keycode == KEY_Q:
+		_add_command("S")
+		get_viewport().set_input_as_handled()
+	elif not cmd.is_empty() and type in ["grid_route", "robot_course"]:
 		_add_command(str(cmd["command"]))
 		get_viewport().set_input_as_handled()
 	elif event.keycode == KEY_BACKSPACE:
@@ -652,12 +861,29 @@ func _unhandled_key_input(event: InputEvent) -> void:
 		_run_commands()
 		get_viewport().set_input_as_handled()
 
+func _go_back() -> void:
+	match screen:
+		"mission", "preview", "missions": _open_atlas()
+		"daily", "competition", "sandbox", "workshop", "collection", "skills": _open_modes()
+		"recovery": _open_profiles()
+		_:
+			if level.is_empty():
+				_show_recovery_error()
+			else:
+				_open_mission(mission_order)
+
 func _notification(what: int) -> void:
+	if what == NOTIFICATION_WM_GO_BACK_REQUEST and is_node_ready():
+		_go_back()
 	if what == NOTIFICATION_APPLICATION_PAUSED and not data.is_empty() and not profiles.selected.is_empty():
 		data["settings"] = preferences
 		store.save_profile(profiles.selected, data)
 
 func _exit_tree() -> void:
+	for player in [music_player, effects_player]:
+		if is_instance_valid(player):
+			player.stop()
+			player.stream = null
 	if not data.is_empty() and not profiles.selected.is_empty():
 		data["settings"] = preferences
 		store.save_profile(profiles.selected, data)
@@ -666,13 +892,12 @@ func _draw_mechanic(area: VBoxContainer) -> void:
 	var p: Dictionary = level["layers"][runner.layer]["params"]
 	var current: Dictionary = runner.state
 	var typ: String = str(level["type"])
-	area.add_child(_txt(_tr("mission." + str(level["id"])), 19, _accent()))
 	match typ:
 		"sort_train":
 			area.add_child(_txt("→  " + _sequence_text(p["goal"]), 17, _accent()))
 			area.add_child(_txt(_sequence_text(current.get("order", p["initial"])), 25, COLORS.paper))
 		"binary_lights":
-			area.add_child(_txt("TARGET  " + _sequence_text(p["goal"]), 16, _accent()))
+			area.add_child(_txt(_tr("ui.target") + "  " + _sequence_text(p["goal"]), 16, _accent()))
 			var bits = HFlowContainer.new()
 			area.add_child(bits)
 			for bit in current.get("bits",p["initial"]):bits.add_child(_light_badge(str(bit), int(bit)==1))
@@ -681,15 +906,21 @@ func _draw_mechanic(area: VBoxContainer) -> void:
 			area.add_child(_txt(_tr("ui.target") + ": " + str(p["encodings"][int(p["goal_shift"])]), 21, _accent()))
 			area.add_child(_txt(_tr("ui.sequence") + ": " + str(p["encodings"][int(current.get("shift",0))]), 19, COLORS.muted))
 		"flowchart":
-			area.add_child(_txt("START   →   ...   →   DONE", 17, _accent()))
+			area.add_child(_txt(_tr("ui.flow_start") + "  →  …  →  " + _tr("ui.flow_end"), 17, _accent()))
 			for code in p["nodes"]:
-				area.add_child(_txt(str(code) + "   ·   " + str(p["labels"][code]), 16, COLORS.muted))
+				area.add_child(_txt(str(code) + "   ·   " + _mechanic_label("flow.step_", str(p["labels"][code])), 16, COLORS.muted))
 			area.add_child(_txt(_sequence_text(current.get("path",[])), 22, COLORS.paper))
 		"logic_gate":
 			area.add_child(_txt("[ A ]  ─┐", 22, COLORS.paper))
-			area.add_child(_txt("         " + str(p["gate"]) + "  ──  " + str(p["goal"]), 24, _accent()))
-			area.add_child(_txt("[ B ]  ─┘", 22, COLORS.paper))
-			area.add_child(_txt("A="+str(current.get("a",0))+"   B="+str(current.get("b",0)), 18, COLORS.muted))
+			area.add_child(_txt(_tr("ui.gate_" + str(p["gate"]).to_lower()), 23, _accent()))
+			var inputs := "A=" + str(current.get("a", 0))
+			if p["gate"] != "NOT":
+				area.add_child(_txt("[ B ]  ─┘", 22, COLORS.paper))
+				inputs += "   B=" + str(current.get("b", 0))
+			area.add_child(_txt(inputs, 18, COLORS.muted))
+			var output: Array = runner.module.evaluate(level, current).get("evidence", [])
+			if not output.is_empty():
+				area.add_child(_txt(_tr("ui.gate_output") % [int(output[0]), int(p["goal"])], 18, COLORS.paper))
 		"pattern_machine":
 			area.add_child(_txt(_tr("ui.start_number") + ": " + str(p["start"]), 18, COLORS.muted))
 			area.add_child(_txt("[ " + str(current.get("value",p["start"])) + " ]   →   [ " + str(p["goal"]) + " ]", 25, _accent()))
@@ -703,7 +934,10 @@ func _draw_mechanic(area: VBoxContainer) -> void:
 			area.add_child(_txt(_tr("ui.target")+":  " + _sequence_text(p["expected"]), 21, _accent()))
 			area.add_child(_txt("T="+str(current.get("threshold",1)) + "   AUTO=" + str(current.get("auto",false)), 19, COLORS.paper))
 		"graph_path":
-			area.add_child(_txt("A  →  " + str(p["goal"]), 20, _accent()))
+			var waypoints: Array = [p["start"]]
+			waypoints.append_array(p.get("via", []))
+			waypoints.append(p["goal"])
+			area.add_child(_txt("  →  ".join(PackedStringArray(waypoints)), 20, _accent()))
 			for node in p["edges"].keys():
 				var options: Array = []
 				for neighbour in p["edges"][node].keys():options.append(str(neighbour) + "(" + str(p["edges"][node][neighbour]) + ")")
@@ -714,8 +948,14 @@ func _draw_mechanic(area: VBoxContainer) -> void:
 			area.add_child(_txt(_tr("ui.target") + ": " + str(p["target"]), 20, _accent()))
 			area.add_child(_txt(str(current.get("sequence","")), 18, COLORS.muted))
 		"state_machine":
-			area.add_child(_txt("OFF  →  READY  →  ACTIVE  →  DONE", 17, COLORS.paper))
-			area.add_child(_txt(str(current.get("mode",p["start"])) + "  /  " + str(p["goal"]), 24, _accent()))
+			var mode := str(current.get("mode", p["start"]))
+			area.add_child(_txt(_tr("ui.machine_state") % [_mechanic_label("machine.state_", mode), _mechanic_label("machine.state_", str(p["goal"]))], 20, _accent()))
+			for origin in p["transitions"]:
+				for action in p["transitions"][origin]:
+					var origin_label := _mechanic_label("machine.state_", str(origin))
+					var event := _mechanic_label("machine.event_", str(action))
+					var destination := _mechanic_label("machine.state_", str(p["transitions"][origin][action]))
+					area.add_child(_txt("%s  ·  %s [%s]  →  %s" % [origin_label, event, action, destination], 16, COLORS.muted))
 		"data_detective":
 			area.add_child(_txt("≥ " + str(p["threshold"]), 23, _accent()))
 			var items = HFlowContainer.new()
@@ -728,8 +968,7 @@ func _open_modes() -> void:
 	screen = "modes"
 	var body = _frame(_tr("ui.mode"))
 	body.add_child(_txt(_tr("ui.journey"), 25, _accent()))
-	var listing = _stack()
-	body.add_child(listing)
+	var listing := _scroll_area(body)
 	listing.add_child(_btn(_tr("ui.daily"), func(): _show_daily()))
 	listing.add_child(_btn(_tr("ui.simulation"), func(): _show_competition()))
 	listing.add_child(_btn(_tr("ui.workshop"), func(): _show_workshop()))
@@ -767,7 +1006,7 @@ func _start_mode_mission(w: int, n: int, mode: String) -> void:
 func _show_competition() -> void:
 	mode_context = "simulation"
 	screen = "competition"
-	var body = _frame(_tr("ui.simulation"))
+	var body := _scroll_area(_frame(_tr("ui.simulation")))
 	body.add_child(_txt(_tr("ui.practice_note"), 18, COLORS.paper))
 	body.add_child(_btn(_tr("ui.timer") + " : " + (_tr("ui.on") if sim_timer_enabled else _tr("ui.off")), func(): _toggle_sim_timer()))
 	if sim_timer_enabled:
@@ -916,7 +1155,7 @@ func _show_skills() -> void:
 
 func _show_workshop() -> void:
 	screen = "workshop"
-	var body = _frame(_tr("ui.workshop"))
+	var body := _scroll_area(_frame(_tr("ui.workshop")))
 	body.add_child(_txt(_tr("ui.workshop_note"), 18, COLORS.paper))
 	var record: Dictionary = data.get("workshop", {"step":0,"choices":[]})
 	var step: int = clampi(int(record.get("step",0)),0,5)
@@ -978,6 +1217,7 @@ func _apply_audio() -> void:
 func _effect(key: String) -> void:
 	if not is_instance_valid(effects_player) or int(preferences.get("sfx_volume",35)) <= 0:return
 	var audio_path: String = "res://varliklar/audio/" + key + ".wav"
+	effects_player.stop()
 	effects_player.stream = load(audio_path)
 	effects_player.play()
 

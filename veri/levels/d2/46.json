@@ -18,7 +18,11 @@
   "layers": {
     "concrete": {
       "params": {
-        "gate": "AND",
+        "gate": "NAND",
+        "initial": [
+          1,
+          1
+        ],
         "goal": 1,
         "alphabet": [
           "A0",
@@ -26,16 +30,19 @@
           "B0",
           "B1"
         ],
-        "max_steps": 4
+        "max_steps": 3
       },
       "witness": [
-        "A1",
-        "B1"
+        "A0"
       ]
     },
     "blocks": {
       "params": {
         "gate": "AND",
+        "initial": [
+          0,
+          0
+        ],
         "goal": 1,
         "alphabet": [
           "A0",
@@ -53,6 +60,10 @@
     "system": {
       "params": {
         "gate": "AND",
+        "initial": [
+          0,
+          0
+        ],
         "goal": 1,
         "alphabet": [
           "A0",

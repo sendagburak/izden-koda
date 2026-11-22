@@ -5,7 +5,7 @@ func _digest(data: Dictionary) -> String:
 	return JSON.stringify(data, "", true).sha256_text()
 
 func export_data(payload: Dictionary, path: String) -> bool:
-	var data: Dictionary = payload.duplicate(true)
+	var data: Dictionary = JSON.parse_string(JSON.stringify(payload, "", true))
 	var profile_id: String = str(data.get("profile_id", ""))
 	if not profile_id.is_valid_identifier() or not profile_id.length() <= 64:
 		return false
@@ -24,7 +24,11 @@ func import_data(path: String) -> Dictionary:
 	var f = FileAccess.open(path, FileAccess.READ)
 	if f == null or f.get_length() > MAX_SIZE:
 		return {}
-	var wrapper = JSON.parse_string(f.get_as_text())
+	var raw := f.get_as_text()
+	var json := JSON.new()
+	if json.parse(raw) != OK:
+		return {}
+	var wrapper = json.data
 	if not (wrapper is Dictionary) or int(wrapper.get("backup_schema", -1)) != 1:
 		return {}
 	var data = wrapper.get("data", {})
@@ -33,10 +37,19 @@ func import_data(path: String) -> Dictionary:
 	var profile_id: String = str(data.get("profile_id", ""))
 	if not profile_id.is_valid_identifier() or not profile_id.length() <= 64:
 		return {}
-	if _digest(data) != wrapper.get("checksum", ""):
-		return {}
+	var checksum := str(wrapper.get("checksum", ""))
+	if _digest(data) != checksum:
+		var prefix := "{\"backup_schema\":1,\"checksum\":" + JSON.stringify(checksum) + ",\"data\":"
+		if not raw.begins_with(prefix) or not raw.ends_with("}") or raw.trim_prefix(prefix).trim_suffix("}").sha256_text() != checksum:
+			return {}
 	if int(data.get("schema_version", -1)) > 1:
 		return {}
+	for key in ["completed_ids", "reward_ids", "daily_history", "skill_events"]:
+		if not (data.get(key, []) is Array):
+			return {}
+	for key in ["settings", "workshop", "workshop_criteria", "last_attempt"]:
+		if not (data.get(key, {}) is Dictionary):
+			return {}
 	return data
 
 func merge(current: Dictionary, incoming: Dictionary) -> Dictionary:
