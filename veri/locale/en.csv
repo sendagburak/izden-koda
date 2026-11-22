@@ -2133,7 +2133,7 @@ ui.act,Act
 ui.active,Active
 ui.add_command,COMMAND DESK
 ui.agent,AGENT FILE
-ui.app,ALGORITHM GAME
+ui.app,İzden Koda
 ui.archive,Save file
 ui.atlas,World Atlas
 ui.back,Back to mission
@@ -2187,10 +2187,10 @@ ui.limit,We can try a shorter route.
 ui.machine_state,State %s · Target %s
 ui.mission_list,Mission files
 ui.mode,Mode
-ui.move_down,DOWN
-ui.move_left,LEFT
-ui.move_right,RIGHT
-ui.move_up,UP
+ui.move_down,↓ DOWN
+ui.move_left,← LEFT
+ui.move_right,→ RIGHT
+ui.move_up,↑ UP
 ui.music_volume,Music volume
 ui.new_profile,New player
 ui.next,Next mission
@@ -2225,7 +2225,7 @@ ui.recovery_warning,The save could not be read. Existing data was not overwritte
 ui.reduced_motion,Reduced motion
 ui.retry,Try another way
 ui.route,Coast map
-ui.run,Send the signal
+ui.run,Run
 ui.sandbox,Free laboratory
 ui.sandbox_explore,The robot stopped here. Explore a different route.
 ui.sandbox_instruction,Tap the board to change rocks. Try commands and start again whenever you like.
@@ -2289,3 +2289,8 @@ ui.workshop_result,A new entry was added to your experiment notebook. Try differ
 ui.world,World
 ui.world_locked,Preview available · Missions not yet open
 ui.world_open,Explore this world
+ui.program_step,Step %d/%d · %s
+ui.route_blocked,A rock or the edge stopped the route. Change the last direction.
+ui.route_budget,Commands %d / %d
+ui.route_limit,The command limit is reached. Draw a shorter route.
+ui.sensor_status,Threshold %d · Automatic %s

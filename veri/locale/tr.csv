@@ -2133,7 +2133,7 @@ ui.act,Perde
 ui.active,Etkin
 ui.add_command,KOMUT MASASI
 ui.agent,AJAN DOSYASI
-ui.app,ALGORİTMA OYUNU
+ui.app,İzden Koda
 ui.archive,Dosyayı kaydet
 ui.atlas,Dünya Atlası
 ui.back,Göreve dön
@@ -2187,10 +2187,10 @@ ui.limit,Daha kısa bir yol deneyebiliriz.
 ui.machine_state,Durum %s · Hedef %s
 ui.mission_list,Görev dosyaları
 ui.mode,Mod
-ui.move_down,AŞAĞI
-ui.move_left,SOL
-ui.move_right,SAĞ
-ui.move_up,YUKARI
+ui.move_down,↓ AŞAĞI
+ui.move_left,← SOL
+ui.move_right,→ SAĞ
+ui.move_up,↑ YUKARI
 ui.music_volume,Müzik seviyesi
 ui.new_profile,Yeni oyuncu
 ui.next,Sonraki görev
@@ -2225,7 +2225,7 @@ ui.recovery_warning,Kayda ulaşılamadı. Var olan veriler üzerine yazılmadı.
 ui.reduced_motion,Azaltılmış hareket
 ui.retry,Yeniden dene
 ui.route,Kıyı haritası
-ui.run,Işıkları gönder
+ui.run,Başlat
 ui.sandbox,Serbest laboratuvar
 ui.sandbox_explore,Robot yolun bu noktasında durdu. Yeni bir rota denemek serbest.
 ui.sandbox_instruction,Haritadaki kayalara dokunarak yolu değiştir. Komutları dene; istediğin kadar yeniden başla.
@@ -2289,3 +2289,8 @@ ui.workshop_result,Deney defterine yeni bir kayıt eklendi. Aynı modeli farklı
 ui.world,Dünya
 ui.world_locked,Önizleme açık · Görevler henüz açılmadı
 ui.world_open,Dünyayı keşfet
+ui.program_step,Adım %d/%d · %s
+ui.route_blocked,Yol kaya veya harita sınırında durdu. Son yönü değiştir.
+ui.route_budget,Komutlar %d / %d
+ui.route_limit,Komut hakkı doldu. Daha kısa bir rota çiz.
+ui.sensor_status,Eşik %d · Otomatik %s

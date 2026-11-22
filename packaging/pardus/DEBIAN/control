@@ -1,11 +1,11 @@
 Package: algoritma-oyunu
-Version: 0.7.0
+Version: 0.8.0
 Section: games
 Priority: optional
 Architecture: amd64
 Depends: libc6 (>= 2.28)
 Recommends: libgl1, libx11-6, libxcursor1, libxinerama1, libxrandr2, libxi6
-Maintainer: Algoritma Oyunu Yerel Paket <paket@localhost>
+Maintainer: İzden Koda Yerel Paket <paket@localhost>
 Description: Çevrimdışı algoritmik düşünme ve kodlama öğrenme oyunu
  Yedi özgün dünya, 350 görev, Türkçe ve İngilizce içerik.
  Bu paket yalnızca Godot dışa aktarımından sonra üretilir.

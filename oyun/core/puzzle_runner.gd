@@ -43,16 +43,23 @@ func submit(action: Dictionary) -> Dictionary:
 		return {"state": state.duplicate(true), "events": ["unavailable"], "met": false}
 	state = module.create_state(level, layer)
 	var events: Array = []
+	var trace: Array = []
+	var capture_trace := bool(action.get("trace", false))
 	for command in action.get("commands", []):
 		var result: Dictionary = module.apply_action(level, state, {"command": command})
 		state = result["state"]
 		var raised: Array = result.get("events", [])
 		events.append_array(raised)
+		if capture_trace:
+			trace.append({"command": str(command), "state": state.duplicate(true), "events": raised.duplicate()})
 		if raised.has("blocked") or raised.has("limit"):
 			break
 	var evaluation: Dictionary = module.evaluate(level, state)
 	completed = bool(evaluation.get("met", false)) and not events.has("blocked") and not events.has("limit")
-	return {"state": state.duplicate(true), "events": events, "met": completed, "criteria": evaluation.get("criteria", {})}
+	var outcome := {"state": state.duplicate(true), "events": events, "met": completed, "criteria": evaluation.get("criteria", {})}
+	if capture_trace:
+		outcome["trace"] = trace
+	return outcome
 
 func get_result() -> Dictionary:
 	return {"state": state.duplicate(true), "met": completed}

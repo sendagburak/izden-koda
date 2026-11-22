@@ -10,6 +10,7 @@ const ProgressScript = preload("res://oyun/core/progress_rules.gd")
 const SettingsScript = preload("res://oyun/core/settings_store.gd")
 const BackupScript = preload("res://oyun/core/backup_io.gd")
 const InputScript = preload("res://oyun/core/input_actions.gd")
+const StageScript = preload("res://oyun/app/mission_stage.gd")
 const STANDARD_FONT = preload("res://varliklar/fonts/NotoSans-Regular.ttf")
 const READABLE_FONT = preload("res://varliklar/fonts/AtkinsonHyperlegibleNext-Regular.ttf")
 const COMMAND_LIMIT := 40
@@ -33,7 +34,8 @@ const CHARACTER_SPRITES = {
 	7: preload("res://varliklar/sprites/character_7.png")
 }
 const WORLD_ACCENTS = {
-	1: Color("#D9A75C"),2:Color("#D3A078"),3:Color("#B8C38B"),4:Color("#B8A483"),5:Color("#D2B58B"),6:Color("#C8A4B3"),7:Color("#C7A183")
+	1: Color("#ffd277"), 2: Color("#efb182"), 3: Color("#a8e5b3"), 4: Color("#f2bb9d"),
+	5: Color("#f3cc98"), 6: Color("#a5dfed"), 7: Color("#bedaff")
 }
 const SPRITES = {
 	"rock": preload("res://varliklar/sprites/rock.png"),
@@ -43,7 +45,7 @@ const SPRITES = {
 	"trail": preload("res://varliklar/sprites/trail.png")
 }
 const WORLDS := ["ui.preview_d1", "ui.preview_d2", "ui.preview_d3", "ui.preview_d4", "ui.preview_d5", "ui.preview_d6", "ui.preview_d7"]
-const COLORS := {"ink": Color("#102B34"), "panel": Color("#163841"), "paper": Color("#E9DBB7"), "muted": Color("#BDD1CC"), "gold": Color("#D9A75C"), "line": Color("#67847B"), "sea": Color("#28545C"), "light": Color("#F7C86D")}
+const COLORS := {"ink": Color("#142638"), "panel": Color("#192e3e"), "paper": Color("#fff0d3"), "muted": Color("#b5cbd0"), "gold": Color("#dfa556"), "line": Color("#597784"), "sea": Color("#2b5060"), "light": Color("#ffd57e")}
 var repository = RepoScript.new()
 var runner = RunnerScript.new()
 var locale = LocaleScript.new()
@@ -77,6 +79,12 @@ var game_scroll: ScrollContainer
 var mission_columns: BoxContainer
 var mission_board: PanelContainer
 var mission_desk: PanelContainer
+var mission_stage: StageScript
+var mission_readouts: VBoxContainer
+var run_status: Label
+var route_budget: Label
+var queued_chips: Array[PanelContainer] = []
+var playback_active := false
 var block_index: int = -1
 var notebook_text: String = ""
 var notebook_error: Label
@@ -141,6 +149,7 @@ func _fit_mission_columns() -> void:
 	mission_columns.vertical = not horizontal
 	mission_board.custom_minimum_size.x = 365.0 if horizontal else 0.0
 	mission_desk.custom_minimum_size.x = 320.0 if horizontal else 0.0
+	mission_board.size_flags_stretch_ratio = 1.75 if horizontal else 1.0
 
 func _tr(key: String) -> String:
 	return locale.text(key)
@@ -166,7 +175,8 @@ func _box_color(shade: Color, edge: Color) -> StyleBoxFlat:
 	box.bg_color = shade
 	box.border_color = edge
 	box.set_border_width_all(2)
-	box.set_content_margin_all(11)
+	box.set_corner_radius_all(5)
+	box.set_content_margin_all(8)
 	return box
 
 func _panel() -> PanelContainer:
@@ -189,17 +199,19 @@ func _btn(message: String, callback: Callable, small: bool = false) -> Button:
 	var button = Button.new()
 	button.text = message
 	button.set_meta("focus_key", message)
-	button.custom_minimum_size = Vector2(78 if small else 130, 53)
+	button.custom_minimum_size = Vector2(74 if small else 130, 44 if small else 49)
 	if not small:
 		button.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
 	button.add_theme_stylebox_override("normal", _box_color(COLORS.ink, COLORS.line))
 	button.add_theme_stylebox_override("hover", _box_color(COLORS.sea, _accent()))
 	button.add_theme_stylebox_override("pressed", _box_color(_accent(), COLORS.paper))
+	button.add_theme_stylebox_override("disabled", _box_color(COLORS.panel, COLORS.line))
 	button.add_theme_stylebox_override("focus", _box_color(Color.TRANSPARENT, _accent()))
 	button.add_theme_color_override("font_color", COLORS.paper)
 	button.add_theme_color_override("font_hover_color", COLORS.paper)
 	button.add_theme_color_override("font_pressed_color", COLORS.ink)
 	button.add_theme_color_override("font_focus_color", COLORS.paper)
+	button.add_theme_color_override("font_disabled_color", COLORS.muted)
 	button.add_theme_font_size_override("font_size", 16 + int(preferences.get("text_size", 0)) * 3)
 	button.focus_mode = Control.FOCUS_ALL
 	button.pressed.connect(func(): _effect("tap"))
@@ -228,7 +240,7 @@ func _frame(subtitle: String, image_world: int = -1) -> VBoxContainer:
 	theme.default_font = READABLE_FONT if preferences.get("readable_font", false) else STANDARD_FONT
 	var img = TextureRect.new()
 	var active_world: int = image_world if image_world > 0 else current_world
-	img.texture = WORLD_BACKDROPS.get(active_world, WORLD_BACKDROPS[1])
+	img.texture = _world_image(active_world)
 	_play_world_music(active_world)
 	img.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	img.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
@@ -237,7 +249,7 @@ func _frame(subtitle: String, image_world: int = -1) -> VBoxContainer:
 	img.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	add_child(img)
 	var tint = ColorRect.new()
-	tint.color = Color(0.03, 0.10, 0.13, 0.76)
+	tint.color = Color(0.02, 0.07, 0.12, 0.70 if preferences.get("high_contrast", false) else 0.62)
 	tint.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	tint.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	add_child(tint)
@@ -250,15 +262,53 @@ func _frame(subtitle: String, image_world: int = -1) -> VBoxContainer:
 	add_child(margin)
 	var body = _stack()
 	margin.add_child(body)
-	body.add_child(_txt(subtitle, 17, _accent()))
 	var top = HFlowContainer.new()
-	top.add_theme_constant_override("h_separation", 9)
+	top.add_theme_constant_override("h_separation", 8)
+	top.add_theme_constant_override("v_separation", 5)
 	body.add_child(top)
+	var title := _heading(_tr("ui.app"), 27, COLORS.light)
+	title.size_flags_horizontal = Control.SIZE_SHRINK_BEGIN
+	title.autowrap_mode = TextServer.AUTOWRAP_OFF
+	title.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
+	top.add_child(title)
 	top.add_child(_btn(_tr("ui.atlas"), func(): _open_atlas(), true))
 	top.add_child(_btn(_tr("ui.mode"), func(): _open_modes(), true))
 	top.add_child(_btn(_tr("ui.profiles"), func(): _open_profiles(), true))
 	top.add_child(_btn(_tr("ui.settings"), func(): _open_settings(), true))
+	if not subtitle.is_empty():
+		body.add_child(_heading(subtitle, 21, _accent()))
 	return body
+
+func _heading(message: String, points: int, color: Color) -> Label:
+	var label := _txt(message, points, color)
+	label.add_theme_color_override("font_outline_color", Color("#07131e"))
+	label.add_theme_constant_override("outline_size", 6)
+	return label
+
+func _world_image(world: int) -> Texture2D:
+	var path := "res://varliklar/sahne/dunya_%02d.webp" % world
+	if ResourceLoader.exists(path):
+		return load(path)
+	return WORLD_BACKDROPS.get(world, WORLD_BACKDROPS[1])
+
+func _stage_art() -> Dictionary:
+	var art := {"explorer": SPRITES["start"], "robot": SPRITES["start"], "rock": SPRITES["rock"],
+		"goal": SPRITES["goal"], "open": SPRITES["goal"], "tree": null, "flowers": null, "relay": null}
+	for key in art:
+		var path := "res://varliklar/sahne/%s.png" % key
+		if ResourceLoader.exists(path):
+			art[key] = load(path)
+	if current_world == 1 and mission_order == 1:
+		var beacon := "res://varliklar/sahne/beacon.png"
+		if ResourceLoader.exists(beacon):
+			art["goal"] = load(beacon)
+			art["open"] = art["goal"]
+	return art
+
+func _route_params() -> Dictionary:
+	if str(level["type"]) in ["grid_route", "robot_course"]:
+		return level["layers"][runner.layer]["params"]
+	return {}
 
 func _open_mission(order: int) -> void:
 	mission_order = clampi(order, 1, 50)
@@ -285,21 +335,25 @@ func _open_mission(order: int) -> void:
 	screen = "mission"
 	game_scroll = null
 	_render_mission()
+	if not bool(preferences.get("reduced_motion", false)) and DisplayServer.get_name() != "headless":
+		mission_stage.modulate.a = 0.68
+		mission_stage.create_tween().tween_property(mission_stage, "modulate:a", 1.0, 0.24)
 
 func _render_mission() -> void:
 	var previous_scroll := game_scroll.scroll_vertical if is_instance_valid(game_scroll) and game_scroll.is_inside_tree() else 0
 	var previous_focus := get_viewport().gui_get_focus_owner()
 	var focus_key := str(previous_focus.get_meta("focus_key", "")) if is_instance_valid(previous_focus) else ""
-	var body := _scroll_area(_frame(_tr("ui.agent")))
+	var body := _scroll_area(_frame(""))
+	queued_chips.clear()
 	game_scroll = body.get_parent()
 	if previous_scroll:
 		game_scroll.set_deferred("scroll_vertical", previous_scroll)
 	if mode_context == "simulation" and sim_timer_enabled:
 		sim_clock_label = _txt("00:00", 20, _accent())
 		body.add_child(sim_clock_label)
-	body.add_child(_txt(_tr(WORLDS[current_world-1]), 24, COLORS.paper))
-	body.add_child(_txt("%02d / 50   ·   %s" % [mission_order, _tr(str(level["locale_key"]))], 23, _accent()))
-	body.add_child(_txt(_tr("mission.desc." + str(level["id"])), 17, COLORS.paper))
+	body.add_child(_heading("%s   ·   %02d / 50" % [_tr(WORLDS[current_world - 1]), mission_order], 15, _accent()))
+	body.add_child(_heading(_tr(str(level["locale_key"])), 26, COLORS.paper))
+	body.add_child(_heading(_tr("mission.desc." + str(level["id"])), 17, COLORS.paper))
 	mission_columns = BoxContainer.new()
 	mission_columns.add_theme_constant_override("separation", 12)
 	mission_columns.size_flags_horizontal = Control.SIZE_EXPAND_FILL
@@ -308,33 +362,46 @@ func _render_mission() -> void:
 	mission_columns.add_child(mission_board)
 	var area = _stack()
 	mission_board.add_child(area)
-	if str(level["type"]) in ["grid_route", "robot_course"]:
-		_draw_grid(area)
-	elif str(level["type"]) == "signal_pattern":
-		_draw_pattern(area)
-	elif str(level["type"]) == "toggle_board":
-		_draw_panel(area)
-	else:
-		_draw_mechanic(area)
+	mission_stage = StageScript.new()
+	mission_stage.name = "MissionStage"
+	area.add_child(mission_stage)
+	var route := _route_params()
+	mission_stage.setup(_world_image(current_world), _stage_art(), route, runner.state,
+		current_world, mission_order, str(level["type"]) == "robot_course", preferences, runner.completed)
+	mission_readouts = _stack()
+	area.add_child(mission_readouts)
+	_refresh_readouts(runner.state)
 	mission_desk = _panel()
 	mission_columns.add_child(mission_desk)
 	_fit_mission_columns()
 	var commands = _stack()
 	mission_desk.add_child(commands)
 	commands.add_child(_txt(_tr("ui.add_command"), 17, _accent()))
+	route_budget = _txt("", 14, COLORS.muted)
+	route_budget.visible = not route.is_empty()
+	commands.add_child(route_budget)
+	_update_route_budget()
+	run_status = _txt("", 15, COLORS.light)
+	run_status.hide()
+	commands.add_child(run_status)
 	_draw_palette(commands)
 	match runner.layer:
 		"system": _draw_notebook(commands)
 		"blocks": _draw_blocks(commands)
-		_:
-			commands.add_child(_txt(_tr("ui.sequence") + ": " + (_sequence_text(command_queue) if not command_queue.is_empty() else _tr("ui.no_command")), 15, COLORS.paper))
+		_: _draw_concrete_queue(commands)
+	var run := _btn(_tr("ui.run"), func(): _run_commands())
+	run.add_theme_stylebox_override("normal", _box_color(COLORS.light, Color("#9a642f")))
+	run.add_theme_stylebox_override("hover", _box_color(Color("#ffe6a6"), COLORS.gold))
+	run.add_theme_color_override("font_color", COLORS.ink)
+	run.add_theme_color_override("font_hover_color", COLORS.ink)
+	run.add_theme_color_override("font_focus_color", COLORS.ink)
+	commands.add_child(run)
 	var row = HFlowContainer.new()
 	row.add_theme_constant_override("h_separation", 6)
 	commands.add_child(row)
 	row.add_child(_btn(_tr("ui.undo"), func(): _undo(), true))
 	row.add_child(_btn(_tr("ui.clear"), func(): _clear_commands(), true))
 	row.add_child(_btn(_tr("ui.step"), func(): _step_commands(), true))
-	commands.add_child(_btn(_tr("ui.run"), func(): _run_commands()))
 	var hint_button := _btn(_tr("ui.hint") + "  %d/3" % hint_tier, func(): _take_hint())
 	hint_button.set_meta("focus_key", "mission_hint")
 	commands.add_child(hint_button)
@@ -366,47 +433,27 @@ func _restore_mission_focus(focus_key: String) -> void:
 			control.grab_focus()
 			return
 
-func _square(surface: Container, image_key: String, cell: int) -> void:
-	var cell_node = PanelContainer.new()
-	cell_node.custom_minimum_size = Vector2(cell, cell)
-	var surface_style := _box_color(COLORS.sea, COLORS.line)
-	surface_style.set_content_margin_all(4)
-	cell_node.add_theme_stylebox_override("panel", surface_style)
-	surface.add_child(cell_node)
-	var texture = TextureRect.new()
-	texture.texture = SPRITES[image_key]
-	texture.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
-	texture.stretch_mode = TextureRect.STRETCH_SCALE
-	texture.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
-	texture.mouse_filter = Control.MOUSE_FILTER_IGNORE
-	cell_node.add_child(texture)
+func _refresh_readouts(snapshot: Dictionary) -> void:
+	for child in mission_readouts.get_children():
+		mission_readouts.remove_child(child)
+		child.queue_free()
+	match str(level["type"]):
+		"grid_route":
+			if str(level["id"]) == "d1-p1-001":
+				mission_readouts.add_child(_txt(_tr("ui.prologue"), 14, COLORS.muted))
+		"robot_course":
+			var key := "ui.sensor_scanned" if snapshot.get("scanned", false) else "ui.sensor_waiting"
+			mission_readouts.add_child(_txt(_tr(key), 15, COLORS.muted))
+		"signal_pattern": _draw_pattern(mission_readouts, snapshot)
+		"toggle_board": _draw_panel(mission_readouts, snapshot)
+		_: _draw_mechanic(mission_readouts, snapshot)
 
-func _draw_grid(area: VBoxContainer) -> void:
-	area.add_child(_txt(_tr("ui.route"), 18, _accent()))
-	var p: Dictionary = level["layers"][runner.layer]["params"]
-	var w: int = int(p["size"][0])
-	var h: int = int(p["size"][1])
-	var cell := mini(46, 324 / maxi(w, 1))
-	var grid = GridContainer.new()
-	grid.columns = w
-	grid.size_flags_horizontal = Control.SIZE_SHRINK_CENTER
-	grid.add_theme_constant_override("h_separation", 1)
-	grid.add_theme_constant_override("v_separation", 1)
-	area.add_child(grid)
-	var at: Array = runner.state.get("position", p["start"])
-	var trail: Array = runner.state.get("trail", [])
-	for y in range(h):
-		for x in range(w):
-			var key = "floor"
-			if p.get("rocks", []).has([x, y]): key = "rock"
-			elif at == [x, y]: key = "start"
-			elif p["goal"] == [x, y]: key = "goal"
-			elif trail.has([x, y]): key = "trail"
-			_square(grid,key,cell)
-	if str(level["type"]) == "robot_course":
-		area.add_child(_txt(_tr("ui.sensor_scanned" if runner.state.get("scanned", false) else "ui.sensor_waiting"), 16, COLORS.muted))
-	elif str(level["id"]) == "d1-p1-001":
-		area.add_child(_txt(_tr("ui.prologue"), 15, COLORS.muted))
+func _update_route_budget() -> void:
+	if not is_instance_valid(route_budget) or not route_budget.visible:
+		return
+	var limit := int(_route_params().get("max_steps", COMMAND_LIMIT))
+	route_budget.text = _tr("ui.route_budget") % [command_queue.size(), limit]
+	route_budget.add_theme_color_override("font_color", COLORS.light if command_queue.size() > limit else COLORS.muted)
 
 func _light_badge(letter: String, lit: bool) -> PanelContainer:
 	var shell = PanelContainer.new()
@@ -417,7 +464,7 @@ func _light_badge(letter: String, lit: bool) -> PanelContainer:
 	shell.add_child(_txt(letter, 23, COLORS.ink if lit else COLORS.paper))
 	return shell
 
-func _draw_pattern(area: VBoxContainer) -> void:
+func _draw_pattern(area: VBoxContainer, snapshot: Dictionary) -> void:
 	area.add_child(_txt(_tr("ui.signal") + " / " + _tr("ui.target"), 18, _accent()))
 	var p: Dictionary = level["layers"][runner.layer]["params"]
 	var target = HFlowContainer.new()
@@ -429,10 +476,10 @@ func _draw_pattern(area: VBoxContainer) -> void:
 	var chosen = HFlowContainer.new()
 	chosen.add_theme_constant_override("h_separation", 7)
 	area.add_child(chosen)
-	for symbol in runner.state.get("sequence", []):
+	for symbol in snapshot.get("sequence", []):
 		chosen.add_child(_light_badge(str(symbol), true))
 
-func _draw_panel(area: VBoxContainer) -> void:
+func _draw_panel(area: VBoxContainer, snapshot: Dictionary) -> void:
 	area.add_child(_txt(_tr("ui.panel"), 18, _accent()))
 	var p: Dictionary = level["layers"][runner.layer]["params"]
 	area.add_child(_txt(_tr("ui.target"), 16, COLORS.muted))
@@ -444,7 +491,7 @@ func _draw_panel(area: VBoxContainer) -> void:
 	area.add_child(_txt(_tr("ui.sequence"), 16, COLORS.muted))
 	var actual = HFlowContainer.new()
 	area.add_child(actual)
-	var lamps: Array = runner.state.get("lamps", p["initial"])
+	var lamps: Array = snapshot.get("lamps", p["initial"])
 	for index in range(lamps.size()):
 		actual.add_child(_light_badge("%d·%d" % [index + 1, lamps[index]], lamps[index] == 1))
 	for symbol in p["wiring"]:
@@ -476,7 +523,30 @@ func _draw_palette(commands: VBoxContainer) -> void:
 			text = s + " · " + text
 		var button := _btn(text, func(): _add_command(s), true)
 		button.set_meta("command", s)
+		button.add_theme_stylebox_override("normal", _box_color(COLORS.sea, COLORS.line))
 		panel.add_child(button)
+
+func _draw_concrete_queue(commands: VBoxContainer) -> void:
+	if command_queue.is_empty():
+		commands.add_child(_txt(_tr("ui.no_command"), 14, COLORS.muted))
+		return
+	var strip := HFlowContainer.new()
+	strip.add_theme_constant_override("h_separation", 4)
+	strip.add_theme_constant_override("v_separation", 4)
+	commands.add_child(strip)
+	var direction_icons := {"U": "↑", "R": "→", "D": "↓", "L": "←", "S": "⌁"} if not _route_params().is_empty() else {}
+	for token in command_queue:
+		var chip := PanelContainer.new()
+		var chip_style := _box_color(Color("#223c4a"), COLORS.line)
+		chip_style.set_content_margin_all(4)
+		chip.add_theme_stylebox_override("panel", chip_style)
+		var text := _txt(str(direction_icons.get(token, token)), 16, COLORS.light, false)
+		text.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+		text.custom_minimum_size.x = 20
+		chip.tooltip_text = _command_name(str(token))
+		chip.add_child(text)
+		strip.add_child(chip)
+		queued_chips.append(chip)
 
 func _draw_blocks(commands: VBoxContainer) -> void:
 	commands.add_child(_txt(_tr("ui.block_bench"), 16, _accent()))
@@ -553,6 +623,7 @@ func _edit_notebook(draft: String) -> void:
 	command_queue.assign(parsed.get("commands", []))
 	if is_instance_valid(notebook_error):
 		notebook_error.visible = not parsed["valid"]
+	_update_route_budget()
 	feedback = ""
 	trace_index = 0
 	_persist_attempt()
@@ -600,12 +671,13 @@ func _clear_commands() -> void:
 	_render_mission()
 
 func _run_commands() -> void:
-	if runner.layer == "system" and not _code_queue()["valid"]:
+	if playback_active or (runner.layer == "system" and not _code_queue()["valid"]):
 		return
 	trace_index = 0
-	var result: Dictionary = runner.submit({"type":"run", "commands": command_queue})
+	var animate := DisplayServer.get_name() != "headless" and not command_queue.is_empty()
+	var initial: Dictionary = runner.module.create_state(level, runner.layer) if animate else {}
+	var result: Dictionary = runner.submit({"type": "run", "commands": command_queue, "trace": animate})
 	if bool(result.get("met", false)):
-		_effect("discover")
 		data = progress.complete(data, str(level["id"]))
 		if mode_context == "daily":
 			var history: Array = data.get("daily_history",[])
@@ -618,24 +690,67 @@ func _run_commands() -> void:
 			feedback = "ui.backup_failed"
 		else:
 			feedback = "result." + str(level["id"])
-	elif result.get("events", []).has("blocked"):
-		feedback = "ui.blocked"
-	elif result.get("events", []).has("limit"):
-		feedback = "ui.limit"
 	else:
-		feedback = "ui.incomplete"
+		feedback = _failure_key(result)
+		if feedback.is_empty():
+			feedback = "ui.incomplete"
+	if animate:
+		await _play_program(initial, result)
+	elif result["met"]:
+		_effect("discover")
 	_render_mission()
+
+func _failure_key(result: Dictionary) -> String:
+	var events: Array = result["events"]
+	var route := not _route_params().is_empty()
+	if events.has("blocked"):
+		if str(level["type"]) == "robot_course" and not result["state"].get("scanned", false):
+			return "ui.sensor_waiting"
+		return "ui.route_blocked" if route else "ui.blocked"
+	if events.has("limit"):
+		return "ui.route_limit" if route else "ui.limit"
+	return ""
+
+func _play_program(initial: Dictionary, result: Dictionary) -> void:
+	playback_active = true
+	for item in find_children("*", "Button", true, false):
+		item.disabled = true
+	for item in find_children("CodeNotebook", "TextEdit", true, false):
+		item.editable = false
+	mission_stage.reset_trace(initial)
+	_refresh_readouts(initial)
+	run_status.show()
+	var steps: Array = result["trace"]
+	var duration := minf(0.23, 4.8 / maxf(float(steps.size()), 1.0))
+	var active_chip := _box_color(COLORS.sea, COLORS.light)
+	active_chip.set_content_margin_all(4)
+	var resting_chip := _box_color(Color("#223c4a"), COLORS.line)
+	resting_chip.set_content_margin_all(4)
+	for index in range(steps.size()):
+		var step: Dictionary = steps[index]
+		run_status.text = _tr("ui.program_step") % [index + 1, steps.size(), _command_name(step["command"])]
+		if index > 0 and index - 1 < queued_chips.size():
+			queued_chips[index - 1].add_theme_stylebox_override("panel", resting_chip)
+		if index < queued_chips.size():
+			queued_chips[index].add_theme_stylebox_override("panel", active_chip)
+		var events: Array = step["events"]
+		if events.has("blocked") or events.has("limit") or events.has("scanned"):
+			_effect("scan")
+		else:
+			_effect("tap")
+		await mission_stage.play_step(step["state"], events, step["command"], duration)
+		_refresh_readouts(step["state"])
+	if bool(result["met"]):
+		_effect("discover")
+	await mission_stage.play_outcome(bool(result["met"]))
+	playback_active = false
 
 func _step_commands() -> void:
 	if command_queue.is_empty() or (runner.layer == "system" and not _code_queue()["valid"]):
 		return
 	trace_index = (trace_index % command_queue.size()) + 1
 	var result: Dictionary = runner.submit({"type": "run", "commands": command_queue.slice(0, trace_index)})
-	feedback = ""
-	if result["events"].has("blocked"):
-		feedback = "ui.blocked"
-	elif result["events"].has("limit"):
-		feedback = "ui.limit"
+	feedback = _failure_key(result)
 	_render_mission()
 
 func _take_hint() -> void:
@@ -840,6 +955,9 @@ func _show_recovery_error() -> void:
 func _unhandled_key_input(event: InputEvent) -> void:
 	if not (event is InputEventKey) or not event.pressed or event.echo:
 		return
+	if playback_active:
+		get_viewport().set_input_as_handled()
+		return
 	if event.keycode == KEY_ESCAPE:
 		_go_back()
 		get_viewport().set_input_as_handled()
@@ -862,6 +980,8 @@ func _unhandled_key_input(event: InputEvent) -> void:
 		get_viewport().set_input_as_handled()
 
 func _go_back() -> void:
+	if playback_active:
+		return
 	match screen:
 		"mission", "preview", "missions": _open_atlas()
 		"daily", "competition", "sandbox", "workshop", "collection", "skills": _open_modes()
@@ -888,9 +1008,8 @@ func _exit_tree() -> void:
 		data["settings"] = preferences
 		store.save_profile(profiles.selected, data)
 
-func _draw_mechanic(area: VBoxContainer) -> void:
+func _draw_mechanic(area: VBoxContainer, current: Dictionary) -> void:
 	var p: Dictionary = level["layers"][runner.layer]["params"]
-	var current: Dictionary = runner.state
 	var typ: String = str(level["type"])
 	match typ:
 		"sort_train":
@@ -930,9 +1049,14 @@ func _draw_mechanic(area: VBoxContainer) -> void:
 				area.add_child(_txt(str(item) + "   ·   " + str(p["benefits"][item]) + " +  /  " + str(p["costs"][item]) + " −", 16, COLORS.paper))
 			area.add_child(_txt(_sequence_text(current.get("chosen",[])), 19, COLORS.muted))
 		"sensor_lab":
-			area.add_child(_txt(_tr("ui.data") + ": " + _sequence_text(p["samples"]), 17, COLORS.muted))
-			area.add_child(_txt(_tr("ui.target")+":  " + _sequence_text(p["expected"]), 21, _accent()))
-			area.add_child(_txt("T="+str(current.get("threshold",1)) + "   AUTO=" + str(current.get("auto",false)), 19, COLORS.paper))
+			area.add_child(_txt(_tr("ui.data") + "  ·  " + _tr("ui.target"), 17, COLORS.muted))
+			var lights := HFlowContainer.new()
+			area.add_child(lights)
+			for index in range(p["samples"].size()):
+				var active := int(p["expected"][index]) == 1
+				lights.add_child(_light_badge("%s · %s" % [p["samples"][index], p["expected"][index]], active))
+			var auto := _tr("ui.on") if current.get("auto", false) else _tr("ui.off")
+			area.add_child(_txt(_tr("ui.sensor_status") % [int(current.get("threshold", 1)), auto], 17, COLORS.paper))
 		"graph_path":
 			var waypoints: Array = [p["start"]]
 			waypoints.append_array(p.get("via", []))

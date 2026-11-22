@@ -1,6 +1,6 @@
 [Desktop Entry]
 Version=1.0
-Name=Algoritma Oyunu
+Name=İzden Koda
 Comment=Çevrimdışı algoritmik keşif oyunu
 Exec=/usr/games/algoritma-oyunu
 Icon=algoritma-oyunu

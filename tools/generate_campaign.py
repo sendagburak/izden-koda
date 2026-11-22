@@ -190,8 +190,13 @@ def params_for(t, w, a, j, layer, variation=0):
             path = route_on_grid(width, height, start, goal, rocks)
         if t == "robot_course":
             path = ["S"] + path
+        budget = len(path) + 3 - k
+        if rocks:
+            # Room to visit every walkable tile once, within the command editor's ceiling.
+            walkable_steps = width * height - len(rocks) - 1 + int(t == "robot_course")
+            budget = max(budget, min(40, walkable_steps))
         return {"size": [width, height], "start": list(start), "goal": list(goal),
-                "rocks": [list(pos) for pos in sorted(rocks)], "max_steps": len(path) + 3 - k}, path
+                "rocks": [list(pos) for pos in sorted(rocks)], "max_steps": budget}, path
     if t == "signal_pattern":
         alphabet = ["K", "M", "T", "S"]
         motif = r.sample(alphabet, 2 + (a >= 3) + (k == 2))

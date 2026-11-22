@@ -1,9 +1,11 @@
-; ALGORITMA OYUNU - Godot 4.7.2 stable
+; İzden Koda - Godot 4.7.2 stable
 config_version=5
 
 [application]
-config/name="ALGORİTMA OYUNU"
-config/version="0.7.0"
+config/name="İzden Koda"
+config/version="0.8.0"
+config/use_custom_user_dir=true
+config/custom_user_dir_name="godot/app_userdata/ALGORİTMA OYUNU"
 config/quit_on_go_back=false
 config/description="Çevrimdışı, yedi dünyalı algoritma öğrenme macerası"
 config/icon="res://varliklar/ui/icon.png"

@@ -44,7 +44,7 @@
             4
           ]
         ],
-        "max_steps": 11
+        "max_steps": 27
       },
       "witness": [
         "S",
@@ -77,7 +77,7 @@
             0
           ]
         ],
-        "max_steps": 9
+        "max_steps": 35
       },
       "witness": [
         "S",
@@ -129,7 +129,7 @@
             2
           ]
         ],
-        "max_steps": 8
+        "max_steps": 36
       },
       "witness": [
         "S",

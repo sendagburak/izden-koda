@@ -1,5 +1,5 @@
 extends RefCounted
-const DEFAULT := {"language": "tr", "layer": "concrete", "high_contrast": false, "text_size": 0, "readable_font": false, "color_blind_mode": false, "reduced_motion": true, "performance": true, "music_volume": 0, "sfx_volume": 35}
+const DEFAULT := {"language": "tr", "layer": "concrete", "high_contrast": false, "text_size": 0, "readable_font": false, "color_blind_mode": false, "reduced_motion": false, "performance": true, "music_volume": 0, "sfx_volume": 35}
 func normalize(input: Dictionary) -> Dictionary:
 	var out: Dictionary = DEFAULT.duplicate(true)
 	for key in DEFAULT:

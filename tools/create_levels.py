@@ -18,7 +18,10 @@ def shortest_path(size,start,goal,rocks):
 
 def grid(size,start,goal,rocks):
     path=shortest_path(size,start,goal,rocks)
-    return {'params':dict(size=size,start=start,goal=goal,rocks=rocks,max_steps=len(path)+1),'witness':path}
+    budget = len(path) + 1
+    if rocks:
+        budget = max(budget, min(40, size[0] * size[1] - len(rocks) - 1))
+    return {'params':dict(size=size,start=start,goal=goal,rocks=rocks,max_steps=budget),'witness':path}
 
 def signal(tokens,alphabet): return {'params':{'target':tokens,'alphabet':alphabet,'max_steps':len(tokens)+2},'witness':tokens}
 
