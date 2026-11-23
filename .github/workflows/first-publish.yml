@@ -25,7 +25,7 @@ jobs:
           stage="$RUNNER_TEMP/izden-koda"
           mkdir -p "$stage"
           asset_id="$(gh api --paginate "repos/$GH_REPO/releases" --jq '
-            .[] | select(.draft and .tag_name == "publication-staging") |
+            .[] | select(.draft and .name == "İzden Koda · Yayın aktarımı") |
             .assets[] | select(.name == "Izden_Koda_Yayin_Aktarimi.zip" and .state == "uploaded") | .id
           ')"
           [[ "$asset_id" =~ ^[0-9]+$ ]]
@@ -76,7 +76,7 @@ jobs:
           mapfile -t tags < <(jq -r '.[].tag' "$manifest")
 
           get_releases() {
-            gh api --paginate --slurp "repos/$GH_REPO/releases" | jq 'add // []'
+            gh api --paginate "repos/$GH_REPO/releases" | jq -s 'add // []'
           }
 
           releases="$(get_releases)"
