@@ -1,0 +1,125 @@
+{
+  "schema_version": 1,
+  "id": "d4-p2-013",
+  "world": "d4",
+  "act": 2,
+  "order": 13,
+  "type": "flowchart",
+  "concepts": [
+    "flowchart",
+    "sequence"
+  ],
+  "locale_key": "mission.d4-p2-013",
+  "hints": [
+    "hint.d4-p2-013.1",
+    "hint.d4-p2-013.2",
+    "hint.d4-p2-013.3"
+  ],
+  "layers": {
+    "concrete": {
+      "params": {
+        "nodes": [
+          "A",
+          "B",
+          "C"
+        ],
+        "labels": {
+          "B": "OBSERVE",
+          "A": "PLAN",
+          "C": "ACT"
+        },
+        "goal": [
+          "B",
+          "A",
+          "C"
+        ],
+        "alphabet": [
+          "A",
+          "B",
+          "C"
+        ],
+        "max_steps": 4
+      },
+      "witness": [
+        "B",
+        "A",
+        "C"
+      ]
+    },
+    "blocks": {
+      "params": {
+        "nodes": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "labels": {
+          "A": "OBSERVE",
+          "B": "PLAN",
+          "C": "ACT",
+          "D": "CHECK"
+        },
+        "goal": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "alphabet": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "max_steps": 5
+      },
+      "witness": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ]
+    },
+    "system": {
+      "params": {
+        "nodes": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "labels": {
+          "E": "OBSERVE",
+          "A": "PLAN",
+          "C": "ACT",
+          "B": "CHECK",
+          "D": "REFINE"
+        },
+        "goal": [
+          "E",
+          "A",
+          "C",
+          "B",
+          "D"
+        ],
+        "alphabet": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "max_steps": 6
+      },
+      "witness": [
+        "E",
+        "A",
+        "C",
+        "B",
+        "D"
+      ]
+    }
+  }
+}

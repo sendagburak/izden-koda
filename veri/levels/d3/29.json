@@ -1,0 +1,94 @@
+{
+  "schema_version": 1,
+  "id": "d3-p3-029",
+  "world": "d3",
+  "act": 3,
+  "order": 29,
+  "type": "data_detective",
+  "concepts": [
+    "data",
+    "filtering"
+  ],
+  "locale_key": "mission.d3-p3-029",
+  "hints": [
+    "hint.d3-p3-029.1",
+    "hint.d3-p3-029.2",
+    "hint.d3-p3-029.3"
+  ],
+  "layers": {
+    "concrete": {
+      "params": {
+        "values": [
+          7,
+          9,
+          9,
+          7
+        ],
+        "threshold": 6,
+        "alphabet": [
+          "0",
+          "1",
+          "2",
+          "3"
+        ],
+        "max_steps": 4
+      },
+      "witness": [
+        "0",
+        "1",
+        "2",
+        "3"
+      ]
+    },
+    "blocks": {
+      "params": {
+        "values": [
+          5,
+          5,
+          8,
+          1,
+          1
+        ],
+        "threshold": 6,
+        "alphabet": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "max_steps": 5
+      },
+      "witness": [
+        "2"
+      ]
+    },
+    "system": {
+      "params": {
+        "values": [
+          6,
+          7,
+          3,
+          4,
+          2,
+          6
+        ],
+        "threshold": 6,
+        "alphabet": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4",
+          "5"
+        ],
+        "max_steps": 6
+      },
+      "witness": [
+        "0",
+        "1",
+        "5"
+      ]
+    }
+  }
+}

@@ -1,12 +1,12 @@
 extends RefCounted
 const LEVEL_ROOT := "res://veri/levels/"
-const SUPPORTED_TYPES := ["grid_route", "signal_pattern", "toggle_board"]
+const SUPPORTED_TYPES := ["grid_route", "signal_pattern", "toggle_board", "sort_train", "binary_lights", "cipher_wheel", "flowchart", "logic_gate", "pattern_machine", "resource_plan", "sensor_lab", "robot_course", "graph_path", "function_loops", "state_machine", "data_detective"]
 const LAYERS := ["concrete", "blocks", "system"]
 var last_error: String = ""
 
 func load_level(level_id: String) -> Dictionary:
 	last_error = ""
-	if not level_id.begins_with("d1-p1-") or level_id.length() != 9:
+	if level_id.length() != 9 or not level_id.begins_with("d") or level_id.substr(2, 2) != "-p" or level_id.substr(5, 1) != "-":
 		last_error = "invalid level id"
 		return {}
 	var index = _read_json(LEVEL_ROOT + "index.json")
@@ -40,7 +40,7 @@ func validate_level(level: Dictionary) -> PackedStringArray:
 		return errors
 	if int(level["schema_version"]) != 1 or level["type"] not in SUPPORTED_TYPES:
 		errors.append("unsupported level schema or type")
-	if level["world"] != "d1" or int(level["act"]) != 1:
+	if str(level["world"]) not in ["d1", "d2", "d3", "d4", "d5", "d6", "d7"] or int(level["act"]) < 1 or int(level["act"]) > 5:
 		errors.append("incorrect world/act")
 	if not (level["hints"] is Array) or level["hints"].size() != 3:
 		errors.append("invalid hint tiers")

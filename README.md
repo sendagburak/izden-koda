@@ -1,31 +1,45 @@
-# ALGORİTMA OYUNU · D1 erken dikey dilim
+# ALGORİTMA OYUNU — Yedi Dünya Kaynak Sürümü (v0.5 önizleme)
 
-**Durum:** Godot 4 kaynak projesi / deneysel dikey dilim. Resmî Android APK, Windows .exe veya Pardus .deb hazır değildir. Godot ikilisi bulunmayan geliştirme ortamında motor üzerinden derleme/test yapılamadı. Kurulum ve doğrulama adımları `BUILD.md` dosyasında.
+**Durum: kaynak geliştirme teslimi; çalıştırılabilir uygulama olarak doğrulanmadı.**
 
-## Oyuncu deneyimi
+2–8. sınıf öğrencileri için hesap, reklam, veri toplama, çevrimiçi bağlantı ve cezalandırıcı puanlama olmadan oynanması hedeflenen, Godot 4.7.2 Standard için geliştirilmiş fakat motor içinde henüz derlenmemiş Türkçe/İngilizce piksel sanat algoritma macerası.
 
-- İlk açılışta adsız `Oyuncu 1` profili açılır; form ve internet yoktur.
-- D1 ilk beş görev: kıyı fenerine yol çizme (3 görev), optik işaret örüntüsü (1 görev), bağlı lamba anahtarları (1 görev).
-- Her görev Somut Keşif / Bloklar / Sistem olarak üç parametre katmanında tanımlıdır (15 tanık çözüm).
-- Komutları dokun/fareyle sıraya ekle, sonra `Işıkları gönder` düğmesiyle dene. Ok tuşları rota görevleri için; `Backspace` son komutu alır, `Enter` dener.
-- Üç kademeli ücretsiz ipucu; son ipucunda örnek sıra görüntülenir.
-- Dünya Atlası D1 oynanabilir, diğer altı dünya yalnızca önizlemedir.
-- Yerel çoklu profil, çift kayıt slotu, JSON yedek dosyası ve ödül korumalı birleştirme altyapısı.
-- Türkçe ve İngilizce CSV metinleri. Ekran tasarımında petrol yeşili/kum/kehribar ağırlıklı özgün piksel varlıkları.
+## İçerik
 
-## Kaynak
+- 7 dünya, her birinde 5 perde × 10 görev: **350 görev**.
+- Görev başına 3 uyarlama katmanı: **1.050 önceden hazırlanan örnek çözüm**; Python referans modelinde doğrulandı.
+- 16 bulmaca ailesi: rota, ışık örüntüsü, anahtar, sıralama, ikili gösterim, eğitimsel şifre, akış diyagramı, mantık kapısı, sayı dönüşümü, kaynak planı, sensör, robot rotası, ağırlıklı graf, yordamlar, durum makinesi, veri seçimi.
+- İlk açılışta doğrudan görev, daha sonra ayarlanabilir zorluk katmanı, aynı cihazda çoklu yerel öğrenci profilleri.
+- Üç aşamalı ücretsiz ipucu; son ipucunda örnek çözüm. Tamamlanan görev ve rozetler geri alınmaz.
+- Dünya atlası, önizleme ve bağlantı görevi (önceki dünyanın 40. görevi sonrası yeni dünya açılır), 50 görevlik dünya listeleri.
+- Günlük keşif, isteğe bağlı zaman göstergeli yarışma provası, otomatik çok ölçütlü sera proje atölyesi, serbest deneme, koleksiyon ve beceri haritası.
+- Prosedürel özgün dünya arka planları, küçük karakter çizimleri, 7 kısa orijinal ses döngüsü ve 3 ses efekti.
+- Yerel JSON profil/yedek; Windows/Linux/Android/Pardus dışa aktarma konfigürasyonu.
+- 350 görev için **resmî kazanım kodu uydurulmamış** taslak Maarif eşleşme tablosu.
 
-| Dizin | İçerik |
-|---|---|
-| `oyun/app` | başlangıç ve ekran akışı |
-| `oyun/core` | yerel oyun servisleri, kayıt, profile, backup, dil |
-| `oyun/modules` | üç farklı mekanik; 16'nın tümü henüz yok |
-| `veri/levels/d1` | beş görev ve üç katmanlı çözüm tanıkları |
-| `veri/locale` | iki dilin bütün kullanılan arayüz ve görev anahtarları |
-| `varliklar/sprites` | özgün piksel varlıkları |
-| `tests` | Godot testleri ve bağımsız Python kaynak testleri |
-| `docs` | onaylı GDD, mimari ve test raporu |
+## Önemli teknik sınır
 
-## Bilinen sınırlamalar
+Godot çalıştırıcısı, export templates ve Android SDK bu çalışma ortamında mevcut olmadığından **GDScript henüz gerçek motor tarafından derlenmedi, sahneler oynanmadı, APK/EXE/DEB oluşmadı**. Python testleri Godot motoru yerine geçmez. Oyun grafiklerinin ve UI'nin görsel kalite testi; Android A32, düşük donanım Faz 1 tahtası, klavye/dokunmatik, yedek geri yükleme ve çevrimdışı APK manifest incelemesi gereklidir. Kodu çalıştırmadan “yayınlanmaya hazır” diye sunmuyoruz.
 
-Godot çalıştırıcısı bulunmadığı için GDScript sözdizimi/gerçek sahne/performans denetimi ve Android yedek dosyası SAF testleri henüz yapılamadı. Yerleşik font disleksi alternatifi değildir. Ekran okuyucu/seslendirme henüz yok. Paket/manifest testi ancak gerçek APK çıktısı ile mümkündür. Kodun bir donanım üzerinde çalıştığı iddia edilmez.
+## Dosyalar
+
+- `docs/GDD.md`: onaylanan oyun tasarımı.
+- `veri/levels/d1`…`d7`: 350 görev ve üç katmanlı tanık çözümler.
+- `oyun/modules`: 16 bulmaca GDScript modülü.
+- `oyun/app/main.gd`: ana oyun arayüzleri ve mod akışları.
+- `veri/locale`: tam TR/EN anahtar tabloları.
+- `veri/mufredat_eslesme.csv`: 350 doğrulama bekleyen eşleşme.
+- `varliklar`: özgün dünya/sprite/ses varlıkları.
+- `tools`: veri, sanat ve müzik üretim/denetim betikleri.
+- `tests`: Python veri kontrolleri + Godot engine için hazırlanmış testler.
+- `BUILD.md`, `packaging/`: kurulum adımları ve hedef paketleme.
+
+## Kaynak testleri
+
+```sh
+python3 -m unittest discover -s tests -p 'test_*.py' -v
+python3 tools/campaign_validator.py
+python3 tools/validate_sources.py
+```
+
+Godot 4.7.2 ile gerçek test ve export için **[BUILD.md](BUILD.md)** dosyasını izleyin.

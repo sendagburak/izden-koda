@@ -1,0 +1,155 @@
+{
+  "schema_version": 1,
+  "id": "d4-p3-028",
+  "world": "d4",
+  "act": 3,
+  "order": 28,
+  "type": "cipher_wheel",
+  "concepts": [
+    "encoding",
+    "variables"
+  ],
+  "locale_key": "mission.d4-p3-028",
+  "hints": [
+    "hint.d4-p3-028.1",
+    "hint.d4-p3-028.2",
+    "hint.d4-p3-028.3"
+  ],
+  "layers": {
+    "concrete": {
+      "params": {
+        "source": "VERI",
+        "encodings": [
+          "VERI",
+          "WFSJ",
+          "XGTK",
+          "YHUL",
+          "ZIVM",
+          "AJWN",
+          "BKXO",
+          "CLYP",
+          "DMZQ",
+          "ENAR",
+          "FOBS",
+          "GPCT",
+          "HQDU",
+          "IREV",
+          "JSFW",
+          "KTGX",
+          "LUHY",
+          "MVIZ",
+          "NWJA",
+          "OXKB",
+          "PYLC",
+          "QZMD",
+          "RANE",
+          "SBOF",
+          "TCPG",
+          "UDQH"
+        ],
+        "goal_shift": 3,
+        "alphabet": [
+          "+",
+          "-"
+        ],
+        "max_steps": 10
+      },
+      "witness": [
+        "+",
+        "+",
+        "+"
+      ]
+    },
+    "blocks": {
+      "params": {
+        "source": "VERI",
+        "encodings": [
+          "VERI",
+          "WFSJ",
+          "XGTK",
+          "YHUL",
+          "ZIVM",
+          "AJWN",
+          "BKXO",
+          "CLYP",
+          "DMZQ",
+          "ENAR",
+          "FOBS",
+          "GPCT",
+          "HQDU",
+          "IREV",
+          "JSFW",
+          "KTGX",
+          "LUHY",
+          "MVIZ",
+          "NWJA",
+          "OXKB",
+          "PYLC",
+          "QZMD",
+          "RANE",
+          "SBOF",
+          "TCPG",
+          "UDQH"
+        ],
+        "goal_shift": 4,
+        "alphabet": [
+          "+",
+          "-"
+        ],
+        "max_steps": 10
+      },
+      "witness": [
+        "+",
+        "+",
+        "+",
+        "+"
+      ]
+    },
+    "system": {
+      "params": {
+        "source": "VERI",
+        "encodings": [
+          "VERI",
+          "WFSJ",
+          "XGTK",
+          "YHUL",
+          "ZIVM",
+          "AJWN",
+          "BKXO",
+          "CLYP",
+          "DMZQ",
+          "ENAR",
+          "FOBS",
+          "GPCT",
+          "HQDU",
+          "IREV",
+          "JSFW",
+          "KTGX",
+          "LUHY",
+          "MVIZ",
+          "NWJA",
+          "OXKB",
+          "PYLC",
+          "QZMD",
+          "RANE",
+          "SBOF",
+          "TCPG",
+          "UDQH"
+        ],
+        "goal_shift": 5,
+        "alphabet": [
+          "+",
+          "-"
+        ],
+        "max_steps": 10
+      },
+      "witness": [
+        "+",
+        "+",
+        "+",
+        "+",
+        "+"
+      ]
+    }
+  }
+}

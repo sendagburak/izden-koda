@@ -2,7 +2,20 @@ extends RefCounted
 const MODULES := {
 	"grid_route": preload("res://oyun/modules/grid_route.gd"),
 	"signal_pattern": preload("res://oyun/modules/signal_pattern.gd"),
-	"toggle_board": preload("res://oyun/modules/toggle_board.gd")
+	"toggle_board": preload("res://oyun/modules/toggle_board.gd"),
+	"sort_train": preload("res://oyun/modules/sort_train.gd"),
+	"binary_lights": preload("res://oyun/modules/binary_lights.gd"),
+	"cipher_wheel": preload("res://oyun/modules/cipher_wheel.gd"),
+	"flowchart": preload("res://oyun/modules/flowchart.gd"),
+	"logic_gate": preload("res://oyun/modules/logic_gate.gd"),
+	"pattern_machine": preload("res://oyun/modules/pattern_machine.gd"),
+	"resource_plan": preload("res://oyun/modules/resource_plan.gd"),
+	"sensor_lab": preload("res://oyun/modules/sensor_lab.gd"),
+	"robot_course": preload("res://oyun/modules/robot_course.gd"),
+	"graph_path": preload("res://oyun/modules/graph_path.gd"),
+	"function_loops": preload("res://oyun/modules/function_loops.gd"),
+	"state_machine": preload("res://oyun/modules/state_machine.gd"),
+	"data_detective": preload("res://oyun/modules/data_detective.gd")
 }
 var module: RefCounted
 var level: Dictionary = {}

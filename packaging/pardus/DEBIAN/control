@@ -1,8 +1,9 @@
 Package: algoritma-oyunu
-Version: 0.1.0
+Version: 0.5.0~preview1
 Section: games
 Priority: optional
 Architecture: amd64
-Maintainer: Algoritma Oyunu <local@invalid.example>
-Description: Cevrimdisi algoritmik dusunme egitim oyunu (Godot).
- D1 ilk bes gorevlik erken test surumu.
+Maintainer: Algoritma Oyunu Yerel Paket <paket@localhost>
+Description: Çevrimdışı algoritmik düşünme ve kodlama öğrenme oyunu
+ Yedi özgün dünya, 350 görev, Türkçe ve İngilizce içerik.
+ Bu paket yalnızca Godot dışa aktarımından sonra üretilir.

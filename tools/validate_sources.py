@@ -6,31 +6,11 @@ import json
 import re
 import sys
 from collections import Counter
+from campaign_validator import replay as replay_any
 MOVES={'U':(0,-1),'D':(0,1),'L':(-1,0),'R':(1,0)}
 
 def replay(level,layer):
-    try:
-        entry=level['layers'][layer];p=entry['params'];commands=entry['witness']
-        if not isinstance(commands,list) or not commands: return False
-        if len(commands)>int(p.get('max_steps',99)):return False
-        if level['type']=='grid_route':
-            x,y=map(int,p['start']);w,h=map(int,p['size']);rocks={tuple(z) for z in p.get('rocks',[])}
-            if (x,y) in rocks or tuple(p['goal']) in rocks: return False
-            for cmd in commands:
-                dx,dy=MOVES[cmd];x+=dx;y+=dy
-                if not 0<=x<w or not 0<=y<h or (x,y) in rocks: return False
-            return [x,y]==p['goal']
-        if level['type']=='signal_pattern':
-            return commands==p['target'] and set(commands).issubset(p['alphabet'])
-        if level['type']=='toggle_board':
-            lamps=p['initial'][:]
-            for cmd in commands:
-                for ix in p['wiring'][cmd]:
-                    if not 0<=ix<len(lamps): return False
-                    lamps[ix]=1-int(lamps[ix])
-            return lamps==p['goal']
-    except (KeyError,IndexError,TypeError,ValueError):return False
-    return False
+    return replay_any(level,layer)
 
 def locale_map(path):
     with path.open(encoding='utf-8-sig',newline='') as f:
@@ -42,7 +22,7 @@ def validate(root):
     errors=[]
     idx=json.loads((root/'veri/levels/index.json').read_text(encoding='utf-8'))
     missions=idx.get('missions',[])
-    if len(missions)!=5:errors.append('unexpected mission count')
+    if len(missions)!=350:errors.append('unexpected mission count')
     ids=[m['id'] for m in missions]
     if len(ids)!=len(set(ids)):errors.append('duplicate mission ids')
     locs={};loc_ids={}
@@ -69,7 +49,7 @@ def validate(root):
     source=(root/'oyun/app/main.gd').read_text(encoding='utf-8')
     # Constant UI string keys must exist. Dynamic keys are checked separately via prefixes.
     for key in set(re.findall(r'"(ui\.[a-z_0-9]+)"',source)):
-        if key not in locs['tr']:errors.append('untranslated UI key '+key)
+        if key not in locs['tr'] and not key.endswith('_'):errors.append('untranslated UI key '+key)
     for script in (root/'oyun').rglob('*.gd'):
         code=script.read_text(encoding='utf-8')
         for token in ['HTTPRequest','HTTPClient','MultiplayerAPI','ads_sdk','analytics_sdk']:

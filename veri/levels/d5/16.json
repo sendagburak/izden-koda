@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "id": "d5-p2-016",
+  "world": "d5",
+  "act": 2,
+  "order": 16,
+  "type": "grid_route",
+  "concepts": [
+    "sequence",
+    "direction"
+  ],
+  "locale_key": "mission.d5-p2-016",
+  "hints": [
+    "hint.d5-p2-016.1",
+    "hint.d5-p2-016.2",
+    "hint.d5-p2-016.3"
+  ],
+  "layers": {
+    "concrete": {
+      "params": {
+        "size": [
+          6,
+          5
+        ],
+        "start": [
+          0,
+          2
+        ],
+        "goal": [
+          4,
+          2
+        ],
+        "rocks": [
+          [
+            1,
+            2
+          ]
+        ],
+        "max_steps": 8
+      },
+      "witness": [
+        "U",
+        "R",
+        "R",
+        "R",
+        "R",
+        "D"
+      ]
+    },
+    "blocks": {
+      "params": {
+        "size": [
+          4,
+          5
+        ],
+        "start": [
+          0,
+          2
+        ],
+        "goal": [
+          2,
+          2
+        ],
+        "rocks": [],
+        "max_steps": 4
+      },
+      "witness": [
+        "R",
+        "R"
+      ]
+    },
+    "system": {
+      "params": {
+        "size": [
+          6,
+          5
+        ],
+        "start": [
+          0,
+          2
+        ],
+        "goal": [
+          4,
+          2
+        ],
+        "rocks": [
+          [
+            1,
+            2
+          ]
+        ],
+        "max_steps": 8
+      },
+      "witness": [
+        "U",
+        "R",
+        "R",
+        "R",
+        "R",
+        "D"
+      ]
+    }
+  }
+}

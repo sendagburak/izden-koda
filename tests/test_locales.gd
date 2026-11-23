@@ -6,8 +6,9 @@ func run() -> bool:
 	var loc = Locales.new()
 	var hs = Hints.new()
 	var repo = R.new()
-	for i in range(1, 6):
-		var level: Dictionary = repo.load_level("d1-p1-%03d" % i)
+	var index: Dictionary = repo._read_json("res://veri/levels/index.json")
+	for item in index.get("missions",[]):
+		var level: Dictionary = repo.load_level(str(item["id"]))
 		if not loc.available(str(level.get("locale_key", ""))): return false
 		if not loc.available("result." + str(level.get("id", ""))): return false
 		for n in [1,2,3]:

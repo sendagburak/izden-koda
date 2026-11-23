@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "id": "d6-p1-003",
+  "world": "d6",
+  "act": 1,
+  "order": 3,
+  "type": "signal_pattern",
+  "concepts": [
+    "patterns",
+    "sequence"
+  ],
+  "locale_key": "mission.d6-p1-003",
+  "hints": [
+    "hint.d6-p1-003.1",
+    "hint.d6-p1-003.2",
+    "hint.d6-p1-003.3"
+  ],
+  "layers": {
+    "concrete": {
+      "params": {
+        "alphabet": [
+          "K",
+          "M",
+          "T",
+          "S"
+        ],
+        "target": [
+          "T",
+          "S",
+          "S",
+          "K",
+          "K"
+        ],
+        "max_steps": 6
+      },
+      "witness": [
+        "T",
+        "S",
+        "S",
+        "K",
+        "K"
+      ]
+    },
+    "blocks": {
+      "params": {
+        "alphabet": [
+          "K",
+          "M",
+          "T",
+          "S"
+        ],
+        "target": [
+          "T",
+          "S",
+          "S",
+          "K",
+          "K",
+          "M"
+        ],
+        "max_steps": 7
+      },
+      "witness": [
+        "T",
+        "S",
+        "S",
+        "K",
+        "K",
+        "M"
+      ]
+    },
+    "system": {
+      "params": {
+        "alphabet": [
+          "K",
+          "M",
+          "T",
+          "S"
+        ],
+        "target": [
+          "T",
+          "S",
+          "S",
+          "K",
+          "K",
+          "M",
+          "M"
+        ],
+        "max_steps": 8
+      },
+      "witness": [
+        "T",
+        "S",
+        "S",
+        "K",
+        "K",
+        "M",
+        "M"
+      ]
+    }
+  }
+}

@@ -1,36 +1,351 @@
-﻿taslak_gorev_id,dunya_id,ornek_gorev,oyun_ici_beceri,taslak_sinif_araligi,ilgili_tymm_ders,oneri_eslesme_aciklamasi,resmi_ogrenme_ciktisi_kodu,kod_dogrulama_durumu,ders_ve_sinif_kapsami_kesin_mi,kaynak_url
-D1-01,D1,Fener rotası,"Sıralı komut, yön, adım",2-3,İlkokul Matematik,Yön ve konum temalı bağlantı,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
-D1-02,D1,Ada postası,"Sıralama, güvenli rota",2-3,Hayat Bilgisi,Gündelik işlerde planlama,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
-D1-03,D1,Fener mesajı,İşaretlerin sıralanması,2-4,İlkokul Türkçe,Mesajı düzenleme ve anlamlandırma,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
-D1-04,D1,İki dilli işaret,Temel yönergeler,2-5,İngilizce,Yaşa uygun kısa yönergeler,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
-D1-05,D1,Sinyal deseni,"Örüntü, tekrar",2-4,İlkokul Matematik,Örüntü kurma ve genişletme,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
-D2-01,D2,Saat örüntüsü,Tekrar ve düzen,3-5,Müzik,Ritimde tekrar ve sıralama,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
-D2-02,D2,Çark dizisi,Döngü ve hata ayıklama,5-6,Bilişim Teknolojileri ve Yazılım,Blok tabanlı algoritma ve test,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
-D2-03,D2,Kapı koşulu,Koşul ve mantıksal bağ,5-6,Bilişim Teknolojileri ve Yazılım,Koşullu çözüm geliştirme,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
-D2-04,D2,Zaman çizelgesi,"Sıra, aralık ve olay",4-6,Matematik,"Zaman, sıra ve ilişki",,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
-D2-05,D2,Olay zinciri,Olay tabanlı süreç,5-6,Bilişim Teknolojileri ve Yazılım,Etkinleşme ve tepki tasarımı,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
-D3-01,D3,Nem sensörü,Algılayıcı-eyleyici,5-8,Robotik Kodlama,Algılayıcı verisiyle karar,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
-D3-02,D3,Sera dengesi,Sistem modeli ve gözlem,3-8,Fen Bilimleri,Canlıların çevre gereksinimleri,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
-D3-03,D3,Sıcaklık grafiği,Veri toplama ve yorumlama,3-8,Matematik,Veriyi toplama ve görselleştirme,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
-D3-04,D3,Su kullanımı,Kaynak kullanımı ve model,3-8,Fen Bilimleri,Sistem değişkenlerini karşılaştırma,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
-D3-05,D3,Saksı gözlemi,Gözlem sırası ve kayıt,2-3,Hayat Bilgisi,Çevre gözlemi ve planlama,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
-D4-01,D4,Arşiv rafı,Liste ve düzen,5-6,Bilişim Teknolojileri ve Yazılım,Dijital veri temsiliyle ilişki,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
-D4-02,D4,Mesaj dizisi,Anlamlı sıralama,2-8,Türkçe,Metin parçalarını mantıklı sıraya koyma,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
-D4-03,D4,İkili panel,İkili sistem sezgisi,5-8,Matematik,Sayı temsiline temel bağlantı,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
-D4-04,D4,Arama dizini,Sıralama ve arama stratejisi,5-6,Bilişim Teknolojileri ve Yazılım,Sistematik arama ve sıralama,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
-D4-05,D4,Kısa mesaj,İki dilde yönerge ve anlam,2-8,İngilizce,Görsel destekli metni yorumlama,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
-D5-01,D5,Yol kavşağı,Graf ve yol seçme,4-8,Matematik,Farklı rotaları karşılaştırma,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
-D5-02,D5,Köprü haritası,Harita ve konum,4-7,Sosyal Bilgiler,Mekânsal ilişki ve yön bulma,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
-D5-03,D5,Kısa aktarma,Verimlilik ve planlama,5-8,Matematik,Çoklu ölçüt karşılaştırma,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
-D5-04,D5,Hat planı,Teknolojik sistem tasarımı,5-8,Teknoloji ve Tasarım,Kısıtlarla çözüm tasarımı,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
-D5-05,D5,Güzergâh deneyi,Deney ve sonuç kıyaslama,5-8,Proje Tasarımı ve Uygulamaları,Çözümleri test etme,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
-D6-01,D6,Ritim döngüsü,Örüntü ve tekrar,2-8,Müzik,Ritim örüntüsü düzenleme,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
-D6-02,D6,Piksel damga,Desen ve tekrar birimi,2-8,Görsel Sanatlar,Tekrarlı görsel anlatım,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
-D6-03,D6,Parametreli desen,Fonksiyon ve parametre,5-6,Bilişim Teknolojileri ve Yazılım,Tekrar kullanılabilir komutlar,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
-D6-04,D6,Dallanan motif,Ağaç ve sezgisel özyineleme,5-8,Matematik,Desen dönüşümü ve bağlantılar,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
-D6-05,D6,Kendi üretimin,Kullanıcı odaklı tasarım,5-8,Teknoloji ve Tasarım,Tasarım alternatiflerini deneme,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
-D7-01,D7,Şema masası,Akış diyagramı,5-6,Bilişim Teknolojileri ve Yazılım,Algoritmayı temsil etme,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
-D7-02,D7,Robot parkuru,"Sensör, koşul ve tekrar",5-8,Robotik Kodlama,Robotik kontrol kurgusu,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
-D7-03,D7,Kent simülasyonu,Sistem modeli ve sonuç,3-8,Fen Bilimleri,Değişkenlerin etkilerini izleme,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
-D7-04,D7,Proje atölyesi,Problem-hipotez-test-yorum,5-8,Proje Tasarımı ve Uygulamaları,Proje döngüsü,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
-D7-05,D7,Kaynak planı,Kısıtlar ve optimizasyon,4-8,Matematik,Birden fazla koşulla çözüm,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+﻿gorev_id,dunya,perde,gorev_sirasi,mekanik,oyun_ici_beceriler,taslak_sinif_araligi,onerilen_dersler,oneri_eslesme_aciklamasi,resmi_ogrenme_ciktisi_kodu,kod_dogrulama_durumu,ders_ve_sinif_kapsami_kesin_mi,kaynak_url
+d1-p1-001,d1,1,1,grid_route,sequence;direction,2-8,Matematik;Hayat Bilgisi,"Sıralı yönergeler, yön bulma ve rota seçimi",,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d1-p1-002,d1,1,2,grid_route,sequence;debug,2-8,Matematik;Hayat Bilgisi,"Sıralı yönergeler, yön bulma ve rota seçimi",,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d1-p1-003,d1,1,3,grid_route,planning;efficiency,2-8,Matematik;Hayat Bilgisi,"Sıralı yönergeler, yön bulma ve rota seçimi",,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d1-p1-004,d1,1,4,signal_pattern,pattern;sequence,2-8,Matematik;Müzik,Örüntü ve tekrar ilişkilerini modelleme,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d1-p1-005,d1,1,5,toggle_board,state;cause_effect,2-8,Bilişim Teknolojileri ve Yazılım;Fen Bilimleri,Basit devre bağlantılarındaki neden-sonuç ilişkisi,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d1-p1-006,d1,1,6,flowchart,flowchart;sequence,2-8,Bilişim Teknolojileri ve Yazılım;Türkçe,Süreç sırası ve akış diyagramı okuma,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d1-p1-007,d1,1,7,signal_pattern,patterns;sequence,2-8,Matematik;Müzik,Örüntü ve tekrar ilişkilerini modelleme,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d1-p1-008,d1,1,8,pattern_machine,functions;arithmetic,2-8,Matematik;Bilişim Teknolojileri ve Yazılım,Aritmetik işlemlerin sırası ve fonksiyon fikri,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d1-p1-009,d1,1,9,grid_route,sequence;direction,2-8,Matematik;Hayat Bilgisi,"Sıralı yönergeler, yön bulma ve rota seçimi",,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d1-p1-010,d1,1,10,toggle_board,logic;debug,2-8,Bilişim Teknolojileri ve Yazılım;Fen Bilimleri,Basit devre bağlantılarındaki neden-sonuç ilişkisi,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d1-p2-011,d1,2,11,signal_pattern,patterns;sequence,2-8,Matematik;Müzik,Örüntü ve tekrar ilişkilerini modelleme,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d1-p2-012,d1,2,12,toggle_board,logic;debug,2-8,Bilişim Teknolojileri ve Yazılım;Fen Bilimleri,Basit devre bağlantılarındaki neden-sonuç ilişkisi,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d1-p2-013,d1,2,13,grid_route,sequence;direction,2-8,Matematik;Hayat Bilgisi,"Sıralı yönergeler, yön bulma ve rota seçimi",,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d1-p2-014,d1,2,14,flowchart,flowchart;sequence,2-8,Bilişim Teknolojileri ve Yazılım;Türkçe,Süreç sırası ve akış diyagramı okuma,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d1-p2-015,d1,2,15,signal_pattern,patterns;sequence,2-8,Matematik;Müzik,Örüntü ve tekrar ilişkilerini modelleme,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d1-p2-016,d1,2,16,pattern_machine,functions;arithmetic,2-8,Matematik;Bilişim Teknolojileri ve Yazılım,Aritmetik işlemlerin sırası ve fonksiyon fikri,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d1-p2-017,d1,2,17,grid_route,sequence;direction,2-8,Matematik;Hayat Bilgisi,"Sıralı yönergeler, yön bulma ve rota seçimi",,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d1-p2-018,d1,2,18,toggle_board,logic;debug,2-8,Bilişim Teknolojileri ve Yazılım;Fen Bilimleri,Basit devre bağlantılarındaki neden-sonuç ilişkisi,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d1-p2-019,d1,2,19,grid_route,sequence;direction,2-8,Matematik;Hayat Bilgisi,"Sıralı yönergeler, yön bulma ve rota seçimi",,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d1-p2-020,d1,2,20,grid_route,sequence;direction,2-8,Matematik;Hayat Bilgisi,"Sıralı yönergeler, yön bulma ve rota seçimi",,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d1-p3-021,d1,3,21,grid_route,sequence;direction,2-8,Matematik;Hayat Bilgisi,"Sıralı yönergeler, yön bulma ve rota seçimi",,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d1-p3-022,d1,3,22,flowchart,flowchart;sequence,2-8,Bilişim Teknolojileri ve Yazılım;Türkçe,Süreç sırası ve akış diyagramı okuma,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d1-p3-023,d1,3,23,signal_pattern,patterns;sequence,2-8,Matematik;Müzik,Örüntü ve tekrar ilişkilerini modelleme,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d1-p3-024,d1,3,24,pattern_machine,functions;arithmetic,2-8,Matematik;Bilişim Teknolojileri ve Yazılım,Aritmetik işlemlerin sırası ve fonksiyon fikri,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d1-p3-025,d1,3,25,grid_route,sequence;direction,2-8,Matematik;Hayat Bilgisi,"Sıralı yönergeler, yön bulma ve rota seçimi",,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d1-p3-026,d1,3,26,toggle_board,logic;debug,2-8,Bilişim Teknolojileri ve Yazılım;Fen Bilimleri,Basit devre bağlantılarındaki neden-sonuç ilişkisi,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d1-p3-027,d1,3,27,grid_route,sequence;direction,2-8,Matematik;Hayat Bilgisi,"Sıralı yönergeler, yön bulma ve rota seçimi",,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d1-p3-028,d1,3,28,grid_route,sequence;direction,2-8,Matematik;Hayat Bilgisi,"Sıralı yönergeler, yön bulma ve rota seçimi",,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d1-p3-029,d1,3,29,signal_pattern,patterns;sequence,2-8,Matematik;Müzik,Örüntü ve tekrar ilişkilerini modelleme,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d1-p3-030,d1,3,30,toggle_board,logic;debug,2-8,Bilişim Teknolojileri ve Yazılım;Fen Bilimleri,Basit devre bağlantılarındaki neden-sonuç ilişkisi,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d1-p4-031,d1,4,31,signal_pattern,patterns;sequence,2-8,Matematik;Müzik,Örüntü ve tekrar ilişkilerini modelleme,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d1-p4-032,d1,4,32,pattern_machine,functions;arithmetic,2-8,Matematik;Bilişim Teknolojileri ve Yazılım,Aritmetik işlemlerin sırası ve fonksiyon fikri,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d1-p4-033,d1,4,33,grid_route,sequence;direction,2-8,Matematik;Hayat Bilgisi,"Sıralı yönergeler, yön bulma ve rota seçimi",,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d1-p4-034,d1,4,34,toggle_board,logic;debug,2-8,Bilişim Teknolojileri ve Yazılım;Fen Bilimleri,Basit devre bağlantılarındaki neden-sonuç ilişkisi,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d1-p4-035,d1,4,35,grid_route,sequence;direction,2-8,Matematik;Hayat Bilgisi,"Sıralı yönergeler, yön bulma ve rota seçimi",,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d1-p4-036,d1,4,36,grid_route,sequence;direction,2-8,Matematik;Hayat Bilgisi,"Sıralı yönergeler, yön bulma ve rota seçimi",,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d1-p4-037,d1,4,37,signal_pattern,patterns;sequence,2-8,Matematik;Müzik,Örüntü ve tekrar ilişkilerini modelleme,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d1-p4-038,d1,4,38,toggle_board,logic;debug,2-8,Bilişim Teknolojileri ve Yazılım;Fen Bilimleri,Basit devre bağlantılarındaki neden-sonuç ilişkisi,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d1-p4-039,d1,4,39,grid_route,sequence;direction,2-8,Matematik;Hayat Bilgisi,"Sıralı yönergeler, yön bulma ve rota seçimi",,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d1-p4-040,d1,4,40,flowchart,flowchart;sequence,2-8,Bilişim Teknolojileri ve Yazılım;Türkçe,Süreç sırası ve akış diyagramı okuma,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d1-p5-041,d1,5,41,grid_route,sequence;direction,2-8,Matematik;Hayat Bilgisi,"Sıralı yönergeler, yön bulma ve rota seçimi",,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d1-p5-042,d1,5,42,toggle_board,logic;debug,2-8,Bilişim Teknolojileri ve Yazılım;Fen Bilimleri,Basit devre bağlantılarındaki neden-sonuç ilişkisi,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d1-p5-043,d1,5,43,grid_route,sequence;direction,2-8,Matematik;Hayat Bilgisi,"Sıralı yönergeler, yön bulma ve rota seçimi",,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d1-p5-044,d1,5,44,grid_route,sequence;direction,2-8,Matematik;Hayat Bilgisi,"Sıralı yönergeler, yön bulma ve rota seçimi",,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d1-p5-045,d1,5,45,signal_pattern,patterns;sequence,2-8,Matematik;Müzik,Örüntü ve tekrar ilişkilerini modelleme,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d1-p5-046,d1,5,46,toggle_board,logic;debug,2-8,Bilişim Teknolojileri ve Yazılım;Fen Bilimleri,Basit devre bağlantılarındaki neden-sonuç ilişkisi,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d1-p5-047,d1,5,47,grid_route,sequence;direction,2-8,Matematik;Hayat Bilgisi,"Sıralı yönergeler, yön bulma ve rota seçimi",,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d1-p5-048,d1,5,48,flowchart,flowchart;sequence,2-8,Bilişim Teknolojileri ve Yazılım;Türkçe,Süreç sırası ve akış diyagramı okuma,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d1-p5-049,d1,5,49,signal_pattern,patterns;sequence,2-8,Matematik;Müzik,Örüntü ve tekrar ilişkilerini modelleme,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d1-p5-050,d1,5,50,pattern_machine,functions;arithmetic,2-8,Matematik;Bilişim Teknolojileri ve Yazılım,Aritmetik işlemlerin sırası ve fonksiyon fikri,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d2-p1-001,d2,1,1,signal_pattern,patterns;sequence,2-8,Matematik;Müzik,Örüntü ve tekrar ilişkilerini modelleme,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d2-p1-002,d2,1,2,function_loops,functions;loops,2-8,Bilişim Teknolojileri ve Yazılım;Görsel Sanatlar;Müzik,Tekrar kullanılabilir yordamlarla desen ve ritim oluşturma,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d2-p1-003,d2,1,3,state_machine,states;events,2-8,Bilişim Teknolojileri ve Yazılım;Fen Bilimleri,Olaylar ve durum geçişlerini modelleme,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d2-p1-004,d2,1,4,logic_gate,boolean;conditions,2-8,Bilişim Teknolojileri ve Yazılım;Fen Bilimleri,Mantıksal bağlaç ve elektrik devresi işlemleri,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d2-p1-005,d2,1,5,toggle_board,logic;debug,2-8,Bilişim Teknolojileri ve Yazılım;Fen Bilimleri,Basit devre bağlantılarındaki neden-sonuç ilişkisi,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d2-p1-006,d2,1,6,flowchart,flowchart;sequence,2-8,Bilişim Teknolojileri ve Yazılım;Türkçe,Süreç sırası ve akış diyagramı okuma,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d2-p1-007,d2,1,7,function_loops,functions;loops,2-8,Bilişim Teknolojileri ve Yazılım;Görsel Sanatlar;Müzik,Tekrar kullanılabilir yordamlarla desen ve ritim oluşturma,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d2-p1-008,d2,1,8,logic_gate,boolean;conditions,2-8,Bilişim Teknolojileri ve Yazılım;Fen Bilimleri,Mantıksal bağlaç ve elektrik devresi işlemleri,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d2-p1-009,d2,1,9,state_machine,states;events,2-8,Bilişim Teknolojileri ve Yazılım;Fen Bilimleri,Olaylar ve durum geçişlerini modelleme,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d2-p1-010,d2,1,10,signal_pattern,patterns;sequence,2-8,Matematik;Müzik,Örüntü ve tekrar ilişkilerini modelleme,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d2-p2-011,d2,2,11,state_machine,states;events,2-8,Bilişim Teknolojileri ve Yazılım;Fen Bilimleri,Olaylar ve durum geçişlerini modelleme,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d2-p2-012,d2,2,12,logic_gate,boolean;conditions,2-8,Bilişim Teknolojileri ve Yazılım;Fen Bilimleri,Mantıksal bağlaç ve elektrik devresi işlemleri,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d2-p2-013,d2,2,13,toggle_board,logic;debug,2-8,Bilişim Teknolojileri ve Yazılım;Fen Bilimleri,Basit devre bağlantılarındaki neden-sonuç ilişkisi,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d2-p2-014,d2,2,14,flowchart,flowchart;sequence,2-8,Bilişim Teknolojileri ve Yazılım;Türkçe,Süreç sırası ve akış diyagramı okuma,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d2-p2-015,d2,2,15,function_loops,functions;loops,2-8,Bilişim Teknolojileri ve Yazılım;Görsel Sanatlar;Müzik,Tekrar kullanılabilir yordamlarla desen ve ritim oluşturma,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d2-p2-016,d2,2,16,logic_gate,boolean;conditions,2-8,Bilişim Teknolojileri ve Yazılım;Fen Bilimleri,Mantıksal bağlaç ve elektrik devresi işlemleri,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d2-p2-017,d2,2,17,state_machine,states;events,2-8,Bilişim Teknolojileri ve Yazılım;Fen Bilimleri,Olaylar ve durum geçişlerini modelleme,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d2-p2-018,d2,2,18,signal_pattern,patterns;sequence,2-8,Matematik;Müzik,Örüntü ve tekrar ilişkilerini modelleme,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d2-p2-019,d2,2,19,signal_pattern,patterns;sequence,2-8,Matematik;Müzik,Örüntü ve tekrar ilişkilerini modelleme,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d2-p2-020,d2,2,20,function_loops,functions;loops,2-8,Bilişim Teknolojileri ve Yazılım;Görsel Sanatlar;Müzik,Tekrar kullanılabilir yordamlarla desen ve ritim oluşturma,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d2-p3-021,d2,3,21,toggle_board,logic;debug,2-8,Bilişim Teknolojileri ve Yazılım;Fen Bilimleri,Basit devre bağlantılarındaki neden-sonuç ilişkisi,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d2-p3-022,d2,3,22,flowchart,flowchart;sequence,2-8,Bilişim Teknolojileri ve Yazılım;Türkçe,Süreç sırası ve akış diyagramı okuma,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d2-p3-023,d2,3,23,function_loops,functions;loops,2-8,Bilişim Teknolojileri ve Yazılım;Görsel Sanatlar;Müzik,Tekrar kullanılabilir yordamlarla desen ve ritim oluşturma,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d2-p3-024,d2,3,24,logic_gate,boolean;conditions,2-8,Bilişim Teknolojileri ve Yazılım;Fen Bilimleri,Mantıksal bağlaç ve elektrik devresi işlemleri,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d2-p3-025,d2,3,25,state_machine,states;events,2-8,Bilişim Teknolojileri ve Yazılım;Fen Bilimleri,Olaylar ve durum geçişlerini modelleme,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d2-p3-026,d2,3,26,signal_pattern,patterns;sequence,2-8,Matematik;Müzik,Örüntü ve tekrar ilişkilerini modelleme,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d2-p3-027,d2,3,27,signal_pattern,patterns;sequence,2-8,Matematik;Müzik,Örüntü ve tekrar ilişkilerini modelleme,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d2-p3-028,d2,3,28,function_loops,functions;loops,2-8,Bilişim Teknolojileri ve Yazılım;Görsel Sanatlar;Müzik,Tekrar kullanılabilir yordamlarla desen ve ritim oluşturma,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d2-p3-029,d2,3,29,state_machine,states;events,2-8,Bilişim Teknolojileri ve Yazılım;Fen Bilimleri,Olaylar ve durum geçişlerini modelleme,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d2-p3-030,d2,3,30,logic_gate,boolean;conditions,2-8,Bilişim Teknolojileri ve Yazılım;Fen Bilimleri,Mantıksal bağlaç ve elektrik devresi işlemleri,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d2-p4-031,d2,4,31,function_loops,functions;loops,2-8,Bilişim Teknolojileri ve Yazılım;Görsel Sanatlar;Müzik,Tekrar kullanılabilir yordamlarla desen ve ritim oluşturma,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d2-p4-032,d2,4,32,logic_gate,boolean;conditions,2-8,Bilişim Teknolojileri ve Yazılım;Fen Bilimleri,Mantıksal bağlaç ve elektrik devresi işlemleri,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d2-p4-033,d2,4,33,state_machine,states;events,2-8,Bilişim Teknolojileri ve Yazılım;Fen Bilimleri,Olaylar ve durum geçişlerini modelleme,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d2-p4-034,d2,4,34,signal_pattern,patterns;sequence,2-8,Matematik;Müzik,Örüntü ve tekrar ilişkilerini modelleme,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d2-p4-035,d2,4,35,signal_pattern,patterns;sequence,2-8,Matematik;Müzik,Örüntü ve tekrar ilişkilerini modelleme,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d2-p4-036,d2,4,36,function_loops,functions;loops,2-8,Bilişim Teknolojileri ve Yazılım;Görsel Sanatlar;Müzik,Tekrar kullanılabilir yordamlarla desen ve ritim oluşturma,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d2-p4-037,d2,4,37,state_machine,states;events,2-8,Bilişim Teknolojileri ve Yazılım;Fen Bilimleri,Olaylar ve durum geçişlerini modelleme,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d2-p4-038,d2,4,38,logic_gate,boolean;conditions,2-8,Bilişim Teknolojileri ve Yazılım;Fen Bilimleri,Mantıksal bağlaç ve elektrik devresi işlemleri,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d2-p4-039,d2,4,39,toggle_board,logic;debug,2-8,Bilişim Teknolojileri ve Yazılım;Fen Bilimleri,Basit devre bağlantılarındaki neden-sonuç ilişkisi,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d2-p4-040,d2,4,40,flowchart,flowchart;sequence,2-8,Bilişim Teknolojileri ve Yazılım;Türkçe,Süreç sırası ve akış diyagramı okuma,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d2-p5-041,d2,5,41,state_machine,states;events,2-8,Bilişim Teknolojileri ve Yazılım;Fen Bilimleri,Olaylar ve durum geçişlerini modelleme,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d2-p5-042,d2,5,42,signal_pattern,patterns;sequence,2-8,Matematik;Müzik,Örüntü ve tekrar ilişkilerini modelleme,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d2-p5-043,d2,5,43,signal_pattern,patterns;sequence,2-8,Matematik;Müzik,Örüntü ve tekrar ilişkilerini modelleme,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d2-p5-044,d2,5,44,function_loops,functions;loops,2-8,Bilişim Teknolojileri ve Yazılım;Görsel Sanatlar;Müzik,Tekrar kullanılabilir yordamlarla desen ve ritim oluşturma,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d2-p5-045,d2,5,45,state_machine,states;events,2-8,Bilişim Teknolojileri ve Yazılım;Fen Bilimleri,Olaylar ve durum geçişlerini modelleme,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d2-p5-046,d2,5,46,logic_gate,boolean;conditions,2-8,Bilişim Teknolojileri ve Yazılım;Fen Bilimleri,Mantıksal bağlaç ve elektrik devresi işlemleri,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d2-p5-047,d2,5,47,toggle_board,logic;debug,2-8,Bilişim Teknolojileri ve Yazılım;Fen Bilimleri,Basit devre bağlantılarındaki neden-sonuç ilişkisi,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d2-p5-048,d2,5,48,flowchart,flowchart;sequence,2-8,Bilişim Teknolojileri ve Yazılım;Türkçe,Süreç sırası ve akış diyagramı okuma,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d2-p5-049,d2,5,49,function_loops,functions;loops,2-8,Bilişim Teknolojileri ve Yazılım;Görsel Sanatlar;Müzik,Tekrar kullanılabilir yordamlarla desen ve ritim oluşturma,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d2-p5-050,d2,5,50,logic_gate,boolean;conditions,2-8,Bilişim Teknolojileri ve Yazılım;Fen Bilimleri,Mantıksal bağlaç ve elektrik devresi işlemleri,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d3-p1-001,d3,1,1,sensor_lab,sensors;conditions,2-8,Fen Bilimleri;Robotik Kodlama,Sensör verisine göre otomatik karar verme,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d3-p1-002,d3,1,2,resource_plan,optimization;planning,2-8,Matematik;Teknoloji ve Tasarım,Sınırlı kaynakla çoklu hedef planlama,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d3-p1-003,d3,1,3,data_detective,data;filtering,2-8,Matematik;Fen Bilimleri,Veriyi sınıflandırma ve ölçüme göre yorumlama,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d3-p1-004,d3,1,4,logic_gate,boolean;conditions,2-8,Bilişim Teknolojileri ve Yazılım;Fen Bilimleri,Mantıksal bağlaç ve elektrik devresi işlemleri,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d3-p1-005,d3,1,5,pattern_machine,functions;arithmetic,2-8,Matematik;Bilişim Teknolojileri ve Yazılım,Aritmetik işlemlerin sırası ve fonksiyon fikri,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d3-p1-006,d3,1,6,robot_course,robotics;events,2-8,Robotik Kodlama;Teknoloji ve Tasarım,"Algılayıcı, eyleyici ve program komutlarını birleştirme",,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d3-p1-007,d3,1,7,sensor_lab,sensors;conditions,2-8,Fen Bilimleri;Robotik Kodlama,Sensör verisine göre otomatik karar verme,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d3-p1-008,d3,1,8,data_detective,data;filtering,2-8,Matematik;Fen Bilimleri,Veriyi sınıflandırma ve ölçüme göre yorumlama,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d3-p1-009,d3,1,9,resource_plan,optimization;planning,2-8,Matematik;Teknoloji ve Tasarım,Sınırlı kaynakla çoklu hedef planlama,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d3-p1-010,d3,1,10,robot_course,robotics;events,2-8,Robotik Kodlama;Teknoloji ve Tasarım,"Algılayıcı, eyleyici ve program komutlarını birleştirme",,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d3-p2-011,d3,2,11,data_detective,data;filtering,2-8,Matematik;Fen Bilimleri,Veriyi sınıflandırma ve ölçüme göre yorumlama,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d3-p2-012,d3,2,12,logic_gate,boolean;conditions,2-8,Bilişim Teknolojileri ve Yazılım;Fen Bilimleri,Mantıksal bağlaç ve elektrik devresi işlemleri,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d3-p2-013,d3,2,13,pattern_machine,functions;arithmetic,2-8,Matematik;Bilişim Teknolojileri ve Yazılım,Aritmetik işlemlerin sırası ve fonksiyon fikri,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d3-p2-014,d3,2,14,robot_course,robotics;events,2-8,Robotik Kodlama;Teknoloji ve Tasarım,"Algılayıcı, eyleyici ve program komutlarını birleştirme",,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d3-p2-015,d3,2,15,sensor_lab,sensors;conditions,2-8,Fen Bilimleri;Robotik Kodlama,Sensör verisine göre otomatik karar verme,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d3-p2-016,d3,2,16,data_detective,data;filtering,2-8,Matematik;Fen Bilimleri,Veriyi sınıflandırma ve ölçüme göre yorumlama,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d3-p2-017,d3,2,17,resource_plan,optimization;planning,2-8,Matematik;Teknoloji ve Tasarım,Sınırlı kaynakla çoklu hedef planlama,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d3-p2-018,d3,2,18,robot_course,robotics;events,2-8,Robotik Kodlama;Teknoloji ve Tasarım,"Algılayıcı, eyleyici ve program komutlarını birleştirme",,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d3-p2-019,d3,2,19,sensor_lab,sensors;conditions,2-8,Fen Bilimleri;Robotik Kodlama,Sensör verisine göre otomatik karar verme,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d3-p2-020,d3,2,20,resource_plan,optimization;planning,2-8,Matematik;Teknoloji ve Tasarım,Sınırlı kaynakla çoklu hedef planlama,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d3-p3-021,d3,3,21,pattern_machine,functions;arithmetic,2-8,Matematik;Bilişim Teknolojileri ve Yazılım,Aritmetik işlemlerin sırası ve fonksiyon fikri,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d3-p3-022,d3,3,22,robot_course,robotics;events,2-8,Robotik Kodlama;Teknoloji ve Tasarım,"Algılayıcı, eyleyici ve program komutlarını birleştirme",,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d3-p3-023,d3,3,23,sensor_lab,sensors;conditions,2-8,Fen Bilimleri;Robotik Kodlama,Sensör verisine göre otomatik karar verme,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d3-p3-024,d3,3,24,data_detective,data;filtering,2-8,Matematik;Fen Bilimleri,Veriyi sınıflandırma ve ölçüme göre yorumlama,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d3-p3-025,d3,3,25,resource_plan,optimization;planning,2-8,Matematik;Teknoloji ve Tasarım,Sınırlı kaynakla çoklu hedef planlama,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d3-p3-026,d3,3,26,robot_course,robotics;events,2-8,Robotik Kodlama;Teknoloji ve Tasarım,"Algılayıcı, eyleyici ve program komutlarını birleştirme",,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d3-p3-027,d3,3,27,sensor_lab,sensors;conditions,2-8,Fen Bilimleri;Robotik Kodlama,Sensör verisine göre otomatik karar verme,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d3-p3-028,d3,3,28,resource_plan,optimization;planning,2-8,Matematik;Teknoloji ve Tasarım,Sınırlı kaynakla çoklu hedef planlama,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d3-p3-029,d3,3,29,data_detective,data;filtering,2-8,Matematik;Fen Bilimleri,Veriyi sınıflandırma ve ölçüme göre yorumlama,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d3-p3-030,d3,3,30,logic_gate,boolean;conditions,2-8,Bilişim Teknolojileri ve Yazılım;Fen Bilimleri,Mantıksal bağlaç ve elektrik devresi işlemleri,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d3-p4-031,d3,4,31,sensor_lab,sensors;conditions,2-8,Fen Bilimleri;Robotik Kodlama,Sensör verisine göre otomatik karar verme,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d3-p4-032,d3,4,32,data_detective,data;filtering,2-8,Matematik;Fen Bilimleri,Veriyi sınıflandırma ve ölçüme göre yorumlama,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d3-p4-033,d3,4,33,resource_plan,optimization;planning,2-8,Matematik;Teknoloji ve Tasarım,Sınırlı kaynakla çoklu hedef planlama,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d3-p4-034,d3,4,34,robot_course,robotics;events,2-8,Robotik Kodlama;Teknoloji ve Tasarım,"Algılayıcı, eyleyici ve program komutlarını birleştirme",,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d3-p4-035,d3,4,35,sensor_lab,sensors;conditions,2-8,Fen Bilimleri;Robotik Kodlama,Sensör verisine göre otomatik karar verme,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d3-p4-036,d3,4,36,resource_plan,optimization;planning,2-8,Matematik;Teknoloji ve Tasarım,Sınırlı kaynakla çoklu hedef planlama,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d3-p4-037,d3,4,37,data_detective,data;filtering,2-8,Matematik;Fen Bilimleri,Veriyi sınıflandırma ve ölçüme göre yorumlama,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d3-p4-038,d3,4,38,logic_gate,boolean;conditions,2-8,Bilişim Teknolojileri ve Yazılım;Fen Bilimleri,Mantıksal bağlaç ve elektrik devresi işlemleri,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d3-p4-039,d3,4,39,pattern_machine,functions;arithmetic,2-8,Matematik;Bilişim Teknolojileri ve Yazılım,Aritmetik işlemlerin sırası ve fonksiyon fikri,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d3-p4-040,d3,4,40,robot_course,robotics;events,2-8,Robotik Kodlama;Teknoloji ve Tasarım,"Algılayıcı, eyleyici ve program komutlarını birleştirme",,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d3-p5-041,d3,5,41,resource_plan,optimization;planning,2-8,Matematik;Teknoloji ve Tasarım,Sınırlı kaynakla çoklu hedef planlama,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d3-p5-042,d3,5,42,robot_course,robotics;events,2-8,Robotik Kodlama;Teknoloji ve Tasarım,"Algılayıcı, eyleyici ve program komutlarını birleştirme",,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d3-p5-043,d3,5,43,sensor_lab,sensors;conditions,2-8,Fen Bilimleri;Robotik Kodlama,Sensör verisine göre otomatik karar verme,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d3-p5-044,d3,5,44,resource_plan,optimization;planning,2-8,Matematik;Teknoloji ve Tasarım,Sınırlı kaynakla çoklu hedef planlama,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d3-p5-045,d3,5,45,data_detective,data;filtering,2-8,Matematik;Fen Bilimleri,Veriyi sınıflandırma ve ölçüme göre yorumlama,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d3-p5-046,d3,5,46,logic_gate,boolean;conditions,2-8,Bilişim Teknolojileri ve Yazılım;Fen Bilimleri,Mantıksal bağlaç ve elektrik devresi işlemleri,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d3-p5-047,d3,5,47,pattern_machine,functions;arithmetic,2-8,Matematik;Bilişim Teknolojileri ve Yazılım,Aritmetik işlemlerin sırası ve fonksiyon fikri,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d3-p5-048,d3,5,48,robot_course,robotics;events,2-8,Robotik Kodlama;Teknoloji ve Tasarım,"Algılayıcı, eyleyici ve program komutlarını birleştirme",,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d3-p5-049,d3,5,49,sensor_lab,sensors;conditions,2-8,Fen Bilimleri;Robotik Kodlama,Sensör verisine göre otomatik karar verme,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d3-p5-050,d3,5,50,data_detective,data;filtering,2-8,Matematik;Fen Bilimleri,Veriyi sınıflandırma ve ölçüme göre yorumlama,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d4-p1-001,d4,1,1,binary_lights,binary;encoding,2-8,Bilişim Teknolojileri ve Yazılım;Matematik,İkili sayısal temsil ve kodlama sezgisi,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d4-p1-002,d4,1,2,cipher_wheel,encoding;variables,2-8,Türkçe;Bilişim Teknolojileri ve Yazılım,Metin üzerinde belirli kuralla dönüşüm ve çözümleme,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d4-p1-003,d4,1,3,sort_train,sorting;arrays,2-8,Bilişim Teknolojileri ve Yazılım;Matematik,Liste düzeni ve komşu değişim işlemleri,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d4-p1-004,d4,1,4,data_detective,data;filtering,2-8,Matematik;Fen Bilimleri,Veriyi sınıflandırma ve ölçüme göre yorumlama,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d4-p1-005,d4,1,5,flowchart,flowchart;sequence,2-8,Bilişim Teknolojileri ve Yazılım;Türkçe,Süreç sırası ve akış diyagramı okuma,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d4-p1-006,d4,1,6,binary_lights,binary;encoding,2-8,Bilişim Teknolojileri ve Yazılım;Matematik,İkili sayısal temsil ve kodlama sezgisi,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d4-p1-007,d4,1,7,sort_train,sorting;arrays,2-8,Bilişim Teknolojileri ve Yazılım;Matematik,Liste düzeni ve komşu değişim işlemleri,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d4-p1-008,d4,1,8,cipher_wheel,encoding;variables,2-8,Türkçe;Bilişim Teknolojileri ve Yazılım,Metin üzerinde belirli kuralla dönüşüm ve çözümleme,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d4-p1-009,d4,1,9,data_detective,data;filtering,2-8,Matematik;Fen Bilimleri,Veriyi sınıflandırma ve ölçüme göre yorumlama,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d4-p1-010,d4,1,10,flowchart,flowchart;sequence,2-8,Bilişim Teknolojileri ve Yazılım;Türkçe,Süreç sırası ve akış diyagramı okuma,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d4-p2-011,d4,2,11,sort_train,sorting;arrays,2-8,Bilişim Teknolojileri ve Yazılım;Matematik,Liste düzeni ve komşu değişim işlemleri,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d4-p2-012,d4,2,12,data_detective,data;filtering,2-8,Matematik;Fen Bilimleri,Veriyi sınıflandırma ve ölçüme göre yorumlama,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d4-p2-013,d4,2,13,flowchart,flowchart;sequence,2-8,Bilişim Teknolojileri ve Yazılım;Türkçe,Süreç sırası ve akış diyagramı okuma,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d4-p2-014,d4,2,14,binary_lights,binary;encoding,2-8,Bilişim Teknolojileri ve Yazılım;Matematik,İkili sayısal temsil ve kodlama sezgisi,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d4-p2-015,d4,2,15,sort_train,sorting;arrays,2-8,Bilişim Teknolojileri ve Yazılım;Matematik,Liste düzeni ve komşu değişim işlemleri,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d4-p2-016,d4,2,16,cipher_wheel,encoding;variables,2-8,Türkçe;Bilişim Teknolojileri ve Yazılım,Metin üzerinde belirli kuralla dönüşüm ve çözümleme,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d4-p2-017,d4,2,17,data_detective,data;filtering,2-8,Matematik;Fen Bilimleri,Veriyi sınıflandırma ve ölçüme göre yorumlama,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d4-p2-018,d4,2,18,flowchart,flowchart;sequence,2-8,Bilişim Teknolojileri ve Yazılım;Türkçe,Süreç sırası ve akış diyagramı okuma,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d4-p2-019,d4,2,19,binary_lights,binary;encoding,2-8,Bilişim Teknolojileri ve Yazılım;Matematik,İkili sayısal temsil ve kodlama sezgisi,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d4-p2-020,d4,2,20,cipher_wheel,encoding;variables,2-8,Türkçe;Bilişim Teknolojileri ve Yazılım,Metin üzerinde belirli kuralla dönüşüm ve çözümleme,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d4-p3-021,d4,3,21,flowchart,flowchart;sequence,2-8,Bilişim Teknolojileri ve Yazılım;Türkçe,Süreç sırası ve akış diyagramı okuma,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d4-p3-022,d4,3,22,binary_lights,binary;encoding,2-8,Bilişim Teknolojileri ve Yazılım;Matematik,İkili sayısal temsil ve kodlama sezgisi,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d4-p3-023,d4,3,23,sort_train,sorting;arrays,2-8,Bilişim Teknolojileri ve Yazılım;Matematik,Liste düzeni ve komşu değişim işlemleri,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d4-p3-024,d4,3,24,cipher_wheel,encoding;variables,2-8,Türkçe;Bilişim Teknolojileri ve Yazılım,Metin üzerinde belirli kuralla dönüşüm ve çözümleme,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d4-p3-025,d4,3,25,data_detective,data;filtering,2-8,Matematik;Fen Bilimleri,Veriyi sınıflandırma ve ölçüme göre yorumlama,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d4-p3-026,d4,3,26,flowchart,flowchart;sequence,2-8,Bilişim Teknolojileri ve Yazılım;Türkçe,Süreç sırası ve akış diyagramı okuma,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d4-p3-027,d4,3,27,binary_lights,binary;encoding,2-8,Bilişim Teknolojileri ve Yazılım;Matematik,İkili sayısal temsil ve kodlama sezgisi,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d4-p3-028,d4,3,28,cipher_wheel,encoding;variables,2-8,Türkçe;Bilişim Teknolojileri ve Yazılım,Metin üzerinde belirli kuralla dönüşüm ve çözümleme,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d4-p3-029,d4,3,29,sort_train,sorting;arrays,2-8,Bilişim Teknolojileri ve Yazılım;Matematik,Liste düzeni ve komşu değişim işlemleri,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d4-p3-030,d4,3,30,data_detective,data;filtering,2-8,Matematik;Fen Bilimleri,Veriyi sınıflandırma ve ölçüme göre yorumlama,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d4-p4-031,d4,4,31,sort_train,sorting;arrays,2-8,Bilişim Teknolojileri ve Yazılım;Matematik,Liste düzeni ve komşu değişim işlemleri,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d4-p4-032,d4,4,32,cipher_wheel,encoding;variables,2-8,Türkçe;Bilişim Teknolojileri ve Yazılım,Metin üzerinde belirli kuralla dönüşüm ve çözümleme,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d4-p4-033,d4,4,33,data_detective,data;filtering,2-8,Matematik;Fen Bilimleri,Veriyi sınıflandırma ve ölçüme göre yorumlama,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d4-p4-034,d4,4,34,flowchart,flowchart;sequence,2-8,Bilişim Teknolojileri ve Yazılım;Türkçe,Süreç sırası ve akış diyagramı okuma,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d4-p4-035,d4,4,35,binary_lights,binary;encoding,2-8,Bilişim Teknolojileri ve Yazılım;Matematik,İkili sayısal temsil ve kodlama sezgisi,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d4-p4-036,d4,4,36,cipher_wheel,encoding;variables,2-8,Türkçe;Bilişim Teknolojileri ve Yazılım,Metin üzerinde belirli kuralla dönüşüm ve çözümleme,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d4-p4-037,d4,4,37,sort_train,sorting;arrays,2-8,Bilişim Teknolojileri ve Yazılım;Matematik,Liste düzeni ve komşu değişim işlemleri,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d4-p4-038,d4,4,38,data_detective,data;filtering,2-8,Matematik;Fen Bilimleri,Veriyi sınıflandırma ve ölçüme göre yorumlama,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d4-p4-039,d4,4,39,flowchart,flowchart;sequence,2-8,Bilişim Teknolojileri ve Yazılım;Türkçe,Süreç sırası ve akış diyagramı okuma,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d4-p4-040,d4,4,40,binary_lights,binary;encoding,2-8,Bilişim Teknolojileri ve Yazılım;Matematik,İkili sayısal temsil ve kodlama sezgisi,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d4-p5-041,d4,5,41,data_detective,data;filtering,2-8,Matematik;Fen Bilimleri,Veriyi sınıflandırma ve ölçüme göre yorumlama,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d4-p5-042,d4,5,42,flowchart,flowchart;sequence,2-8,Bilişim Teknolojileri ve Yazılım;Türkçe,Süreç sırası ve akış diyagramı okuma,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d4-p5-043,d4,5,43,binary_lights,binary;encoding,2-8,Bilişim Teknolojileri ve Yazılım;Matematik,İkili sayısal temsil ve kodlama sezgisi,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d4-p5-044,d4,5,44,cipher_wheel,encoding;variables,2-8,Türkçe;Bilişim Teknolojileri ve Yazılım,Metin üzerinde belirli kuralla dönüşüm ve çözümleme,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d4-p5-045,d4,5,45,sort_train,sorting;arrays,2-8,Bilişim Teknolojileri ve Yazılım;Matematik,Liste düzeni ve komşu değişim işlemleri,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d4-p5-046,d4,5,46,data_detective,data;filtering,2-8,Matematik;Fen Bilimleri,Veriyi sınıflandırma ve ölçüme göre yorumlama,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d4-p5-047,d4,5,47,flowchart,flowchart;sequence,2-8,Bilişim Teknolojileri ve Yazılım;Türkçe,Süreç sırası ve akış diyagramı okuma,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d4-p5-048,d4,5,48,binary_lights,binary;encoding,2-8,Bilişim Teknolojileri ve Yazılım;Matematik,İkili sayısal temsil ve kodlama sezgisi,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d4-p5-049,d4,5,49,sort_train,sorting;arrays,2-8,Bilişim Teknolojileri ve Yazılım;Matematik,Liste düzeni ve komşu değişim işlemleri,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d4-p5-050,d4,5,50,cipher_wheel,encoding;variables,2-8,Türkçe;Bilişim Teknolojileri ve Yazılım,Metin üzerinde belirli kuralla dönüşüm ve çözümleme,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d5-p1-001,d5,1,1,graph_path,graphs;efficiency,2-8,Matematik;Sosyal Bilgiler,"Ağ yapısı, harita ve maliyetle rota bulma",,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d5-p1-002,d5,1,2,grid_route,sequence;direction,2-8,Matematik;Hayat Bilgisi,"Sıralı yönergeler, yön bulma ve rota seçimi",,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d5-p1-003,d5,1,3,resource_plan,optimization;planning,2-8,Matematik;Teknoloji ve Tasarım,Sınırlı kaynakla çoklu hedef planlama,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d5-p1-004,d5,1,4,robot_course,robotics;events,2-8,Robotik Kodlama;Teknoloji ve Tasarım,"Algılayıcı, eyleyici ve program komutlarını birleştirme",,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d5-p1-005,d5,1,5,sort_train,sorting;arrays,2-8,Bilişim Teknolojileri ve Yazılım;Matematik,Liste düzeni ve komşu değişim işlemleri,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d5-p1-006,d5,1,6,graph_path,graphs;efficiency,2-8,Matematik;Sosyal Bilgiler,"Ağ yapısı, harita ve maliyetle rota bulma",,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d5-p1-007,d5,1,7,resource_plan,optimization;planning,2-8,Matematik;Teknoloji ve Tasarım,Sınırlı kaynakla çoklu hedef planlama,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d5-p1-008,d5,1,8,grid_route,sequence;direction,2-8,Matematik;Hayat Bilgisi,"Sıralı yönergeler, yön bulma ve rota seçimi",,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d5-p1-009,d5,1,9,graph_path,graphs;efficiency,2-8,Matematik;Sosyal Bilgiler,"Ağ yapısı, harita ve maliyetle rota bulma",,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d5-p1-010,d5,1,10,robot_course,robotics;events,2-8,Robotik Kodlama;Teknoloji ve Tasarım,"Algılayıcı, eyleyici ve program komutlarını birleştirme",,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d5-p2-011,d5,2,11,resource_plan,optimization;planning,2-8,Matematik;Teknoloji ve Tasarım,Sınırlı kaynakla çoklu hedef planlama,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d5-p2-012,d5,2,12,robot_course,robotics;events,2-8,Robotik Kodlama;Teknoloji ve Tasarım,"Algılayıcı, eyleyici ve program komutlarını birleştirme",,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d5-p2-013,d5,2,13,sort_train,sorting;arrays,2-8,Bilişim Teknolojileri ve Yazılım;Matematik,Liste düzeni ve komşu değişim işlemleri,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d5-p2-014,d5,2,14,graph_path,graphs;efficiency,2-8,Matematik;Sosyal Bilgiler,"Ağ yapısı, harita ve maliyetle rota bulma",,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d5-p2-015,d5,2,15,resource_plan,optimization;planning,2-8,Matematik;Teknoloji ve Tasarım,Sınırlı kaynakla çoklu hedef planlama,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d5-p2-016,d5,2,16,grid_route,sequence;direction,2-8,Matematik;Hayat Bilgisi,"Sıralı yönergeler, yön bulma ve rota seçimi",,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d5-p2-017,d5,2,17,graph_path,graphs;efficiency,2-8,Matematik;Sosyal Bilgiler,"Ağ yapısı, harita ve maliyetle rota bulma",,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d5-p2-018,d5,2,18,robot_course,robotics;events,2-8,Robotik Kodlama;Teknoloji ve Tasarım,"Algılayıcı, eyleyici ve program komutlarını birleştirme",,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d5-p2-019,d5,2,19,graph_path,graphs;efficiency,2-8,Matematik;Sosyal Bilgiler,"Ağ yapısı, harita ve maliyetle rota bulma",,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d5-p2-020,d5,2,20,grid_route,sequence;direction,2-8,Matematik;Hayat Bilgisi,"Sıralı yönergeler, yön bulma ve rota seçimi",,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d5-p3-021,d5,3,21,sort_train,sorting;arrays,2-8,Bilişim Teknolojileri ve Yazılım;Matematik,Liste düzeni ve komşu değişim işlemleri,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d5-p3-022,d5,3,22,graph_path,graphs;efficiency,2-8,Matematik;Sosyal Bilgiler,"Ağ yapısı, harita ve maliyetle rota bulma",,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d5-p3-023,d5,3,23,resource_plan,optimization;planning,2-8,Matematik;Teknoloji ve Tasarım,Sınırlı kaynakla çoklu hedef planlama,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d5-p3-024,d5,3,24,grid_route,sequence;direction,2-8,Matematik;Hayat Bilgisi,"Sıralı yönergeler, yön bulma ve rota seçimi",,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d5-p3-025,d5,3,25,graph_path,graphs;efficiency,2-8,Matematik;Sosyal Bilgiler,"Ağ yapısı, harita ve maliyetle rota bulma",,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d5-p3-026,d5,3,26,robot_course,robotics;events,2-8,Robotik Kodlama;Teknoloji ve Tasarım,"Algılayıcı, eyleyici ve program komutlarını birleştirme",,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d5-p3-027,d5,3,27,graph_path,graphs;efficiency,2-8,Matematik;Sosyal Bilgiler,"Ağ yapısı, harita ve maliyetle rota bulma",,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d5-p3-028,d5,3,28,grid_route,sequence;direction,2-8,Matematik;Hayat Bilgisi,"Sıralı yönergeler, yön bulma ve rota seçimi",,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d5-p3-029,d5,3,29,resource_plan,optimization;planning,2-8,Matematik;Teknoloji ve Tasarım,Sınırlı kaynakla çoklu hedef planlama,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d5-p3-030,d5,3,30,robot_course,robotics;events,2-8,Robotik Kodlama;Teknoloji ve Tasarım,"Algılayıcı, eyleyici ve program komutlarını birleştirme",,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d5-p4-031,d5,4,31,resource_plan,optimization;planning,2-8,Matematik;Teknoloji ve Tasarım,Sınırlı kaynakla çoklu hedef planlama,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d5-p4-032,d5,4,32,grid_route,sequence;direction,2-8,Matematik;Hayat Bilgisi,"Sıralı yönergeler, yön bulma ve rota seçimi",,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d5-p4-033,d5,4,33,graph_path,graphs;efficiency,2-8,Matematik;Sosyal Bilgiler,"Ağ yapısı, harita ve maliyetle rota bulma",,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d5-p4-034,d5,4,34,robot_course,robotics;events,2-8,Robotik Kodlama;Teknoloji ve Tasarım,"Algılayıcı, eyleyici ve program komutlarını birleştirme",,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d5-p4-035,d5,4,35,graph_path,graphs;efficiency,2-8,Matematik;Sosyal Bilgiler,"Ağ yapısı, harita ve maliyetle rota bulma",,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d5-p4-036,d5,4,36,grid_route,sequence;direction,2-8,Matematik;Hayat Bilgisi,"Sıralı yönergeler, yön bulma ve rota seçimi",,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d5-p4-037,d5,4,37,resource_plan,optimization;planning,2-8,Matematik;Teknoloji ve Tasarım,Sınırlı kaynakla çoklu hedef planlama,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d5-p4-038,d5,4,38,robot_course,robotics;events,2-8,Robotik Kodlama;Teknoloji ve Tasarım,"Algılayıcı, eyleyici ve program komutlarını birleştirme",,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d5-p4-039,d5,4,39,sort_train,sorting;arrays,2-8,Bilişim Teknolojileri ve Yazılım;Matematik,Liste düzeni ve komşu değişim işlemleri,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d5-p4-040,d5,4,40,graph_path,graphs;efficiency,2-8,Matematik;Sosyal Bilgiler,"Ağ yapısı, harita ve maliyetle rota bulma",,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d5-p5-041,d5,5,41,graph_path,graphs;efficiency,2-8,Matematik;Sosyal Bilgiler,"Ağ yapısı, harita ve maliyetle rota bulma",,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d5-p5-042,d5,5,42,robot_course,robotics;events,2-8,Robotik Kodlama;Teknoloji ve Tasarım,"Algılayıcı, eyleyici ve program komutlarını birleştirme",,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d5-p5-043,d5,5,43,graph_path,graphs;efficiency,2-8,Matematik;Sosyal Bilgiler,"Ağ yapısı, harita ve maliyetle rota bulma",,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d5-p5-044,d5,5,44,grid_route,sequence;direction,2-8,Matematik;Hayat Bilgisi,"Sıralı yönergeler, yön bulma ve rota seçimi",,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d5-p5-045,d5,5,45,resource_plan,optimization;planning,2-8,Matematik;Teknoloji ve Tasarım,Sınırlı kaynakla çoklu hedef planlama,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d5-p5-046,d5,5,46,robot_course,robotics;events,2-8,Robotik Kodlama;Teknoloji ve Tasarım,"Algılayıcı, eyleyici ve program komutlarını birleştirme",,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d5-p5-047,d5,5,47,sort_train,sorting;arrays,2-8,Bilişim Teknolojileri ve Yazılım;Matematik,Liste düzeni ve komşu değişim işlemleri,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d5-p5-048,d5,5,48,graph_path,graphs;efficiency,2-8,Matematik;Sosyal Bilgiler,"Ağ yapısı, harita ve maliyetle rota bulma",,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d5-p5-049,d5,5,49,resource_plan,optimization;planning,2-8,Matematik;Teknoloji ve Tasarım,Sınırlı kaynakla çoklu hedef planlama,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d5-p5-050,d5,5,50,grid_route,sequence;direction,2-8,Matematik;Hayat Bilgisi,"Sıralı yönergeler, yön bulma ve rota seçimi",,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d6-p1-001,d6,1,1,function_loops,functions;loops,2-8,Bilişim Teknolojileri ve Yazılım;Görsel Sanatlar;Müzik,Tekrar kullanılabilir yordamlarla desen ve ritim oluşturma,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d6-p1-002,d6,1,2,pattern_machine,functions;arithmetic,2-8,Matematik;Bilişim Teknolojileri ve Yazılım,Aritmetik işlemlerin sırası ve fonksiyon fikri,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d6-p1-003,d6,1,3,signal_pattern,patterns;sequence,2-8,Matematik;Müzik,Örüntü ve tekrar ilişkilerini modelleme,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d6-p1-004,d6,1,4,flowchart,flowchart;sequence,2-8,Bilişim Teknolojileri ve Yazılım;Türkçe,Süreç sırası ve akış diyagramı okuma,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d6-p1-005,d6,1,5,binary_lights,binary;encoding,2-8,Bilişim Teknolojileri ve Yazılım;Matematik,İkili sayısal temsil ve kodlama sezgisi,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d6-p1-006,d6,1,6,function_loops,functions;loops,2-8,Bilişim Teknolojileri ve Yazılım;Görsel Sanatlar;Müzik,Tekrar kullanılabilir yordamlarla desen ve ritim oluşturma,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d6-p1-007,d6,1,7,pattern_machine,functions;arithmetic,2-8,Matematik;Bilişim Teknolojileri ve Yazılım,Aritmetik işlemlerin sırası ve fonksiyon fikri,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d6-p1-008,d6,1,8,flowchart,flowchart;sequence,2-8,Bilişim Teknolojileri ve Yazılım;Türkçe,Süreç sırası ve akış diyagramı okuma,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d6-p1-009,d6,1,9,function_loops,functions;loops,2-8,Bilişim Teknolojileri ve Yazılım;Görsel Sanatlar;Müzik,Tekrar kullanılabilir yordamlarla desen ve ritim oluşturma,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d6-p1-010,d6,1,10,signal_pattern,patterns;sequence,2-8,Matematik;Müzik,Örüntü ve tekrar ilişkilerini modelleme,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d6-p2-011,d6,2,11,signal_pattern,patterns;sequence,2-8,Matematik;Müzik,Örüntü ve tekrar ilişkilerini modelleme,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d6-p2-012,d6,2,12,flowchart,flowchart;sequence,2-8,Bilişim Teknolojileri ve Yazılım;Türkçe,Süreç sırası ve akış diyagramı okuma,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d6-p2-013,d6,2,13,binary_lights,binary;encoding,2-8,Bilişim Teknolojileri ve Yazılım;Matematik,İkili sayısal temsil ve kodlama sezgisi,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d6-p2-014,d6,2,14,function_loops,functions;loops,2-8,Bilişim Teknolojileri ve Yazılım;Görsel Sanatlar;Müzik,Tekrar kullanılabilir yordamlarla desen ve ritim oluşturma,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d6-p2-015,d6,2,15,pattern_machine,functions;arithmetic,2-8,Matematik;Bilişim Teknolojileri ve Yazılım,Aritmetik işlemlerin sırası ve fonksiyon fikri,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d6-p2-016,d6,2,16,flowchart,flowchart;sequence,2-8,Bilişim Teknolojileri ve Yazılım;Türkçe,Süreç sırası ve akış diyagramı okuma,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d6-p2-017,d6,2,17,function_loops,functions;loops,2-8,Bilişim Teknolojileri ve Yazılım;Görsel Sanatlar;Müzik,Tekrar kullanılabilir yordamlarla desen ve ritim oluşturma,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d6-p2-018,d6,2,18,signal_pattern,patterns;sequence,2-8,Matematik;Müzik,Örüntü ve tekrar ilişkilerini modelleme,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d6-p2-019,d6,2,19,function_loops,functions;loops,2-8,Bilişim Teknolojileri ve Yazılım;Görsel Sanatlar;Müzik,Tekrar kullanılabilir yordamlarla desen ve ritim oluşturma,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d6-p2-020,d6,2,20,pattern_machine,functions;arithmetic,2-8,Matematik;Bilişim Teknolojileri ve Yazılım,Aritmetik işlemlerin sırası ve fonksiyon fikri,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d6-p3-021,d6,3,21,binary_lights,binary;encoding,2-8,Bilişim Teknolojileri ve Yazılım;Matematik,İkili sayısal temsil ve kodlama sezgisi,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d6-p3-022,d6,3,22,function_loops,functions;loops,2-8,Bilişim Teknolojileri ve Yazılım;Görsel Sanatlar;Müzik,Tekrar kullanılabilir yordamlarla desen ve ritim oluşturma,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d6-p3-023,d6,3,23,pattern_machine,functions;arithmetic,2-8,Matematik;Bilişim Teknolojileri ve Yazılım,Aritmetik işlemlerin sırası ve fonksiyon fikri,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d6-p3-024,d6,3,24,flowchart,flowchart;sequence,2-8,Bilişim Teknolojileri ve Yazılım;Türkçe,Süreç sırası ve akış diyagramı okuma,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d6-p3-025,d6,3,25,function_loops,functions;loops,2-8,Bilişim Teknolojileri ve Yazılım;Görsel Sanatlar;Müzik,Tekrar kullanılabilir yordamlarla desen ve ritim oluşturma,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d6-p3-026,d6,3,26,signal_pattern,patterns;sequence,2-8,Matematik;Müzik,Örüntü ve tekrar ilişkilerini modelleme,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d6-p3-027,d6,3,27,function_loops,functions;loops,2-8,Bilişim Teknolojileri ve Yazılım;Görsel Sanatlar;Müzik,Tekrar kullanılabilir yordamlarla desen ve ritim oluşturma,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d6-p3-028,d6,3,28,pattern_machine,functions;arithmetic,2-8,Matematik;Bilişim Teknolojileri ve Yazılım,Aritmetik işlemlerin sırası ve fonksiyon fikri,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d6-p3-029,d6,3,29,signal_pattern,patterns;sequence,2-8,Matematik;Müzik,Örüntü ve tekrar ilişkilerini modelleme,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d6-p3-030,d6,3,30,flowchart,flowchart;sequence,2-8,Bilişim Teknolojileri ve Yazılım;Türkçe,Süreç sırası ve akış diyagramı okuma,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d6-p4-031,d6,4,31,pattern_machine,functions;arithmetic,2-8,Matematik;Bilişim Teknolojileri ve Yazılım,Aritmetik işlemlerin sırası ve fonksiyon fikri,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d6-p4-032,d6,4,32,flowchart,flowchart;sequence,2-8,Bilişim Teknolojileri ve Yazılım;Türkçe,Süreç sırası ve akış diyagramı okuma,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d6-p4-033,d6,4,33,function_loops,functions;loops,2-8,Bilişim Teknolojileri ve Yazılım;Görsel Sanatlar;Müzik,Tekrar kullanılabilir yordamlarla desen ve ritim oluşturma,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d6-p4-034,d6,4,34,signal_pattern,patterns;sequence,2-8,Matematik;Müzik,Örüntü ve tekrar ilişkilerini modelleme,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d6-p4-035,d6,4,35,function_loops,functions;loops,2-8,Bilişim Teknolojileri ve Yazılım;Görsel Sanatlar;Müzik,Tekrar kullanılabilir yordamlarla desen ve ritim oluşturma,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d6-p4-036,d6,4,36,pattern_machine,functions;arithmetic,2-8,Matematik;Bilişim Teknolojileri ve Yazılım,Aritmetik işlemlerin sırası ve fonksiyon fikri,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d6-p4-037,d6,4,37,signal_pattern,patterns;sequence,2-8,Matematik;Müzik,Örüntü ve tekrar ilişkilerini modelleme,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d6-p4-038,d6,4,38,flowchart,flowchart;sequence,2-8,Bilişim Teknolojileri ve Yazılım;Türkçe,Süreç sırası ve akış diyagramı okuma,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d6-p4-039,d6,4,39,binary_lights,binary;encoding,2-8,Bilişim Teknolojileri ve Yazılım;Matematik,İkili sayısal temsil ve kodlama sezgisi,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d6-p4-040,d6,4,40,function_loops,functions;loops,2-8,Bilişim Teknolojileri ve Yazılım;Görsel Sanatlar;Müzik,Tekrar kullanılabilir yordamlarla desen ve ritim oluşturma,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d6-p5-041,d6,5,41,function_loops,functions;loops,2-8,Bilişim Teknolojileri ve Yazılım;Görsel Sanatlar;Müzik,Tekrar kullanılabilir yordamlarla desen ve ritim oluşturma,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d6-p5-042,d6,5,42,signal_pattern,patterns;sequence,2-8,Matematik;Müzik,Örüntü ve tekrar ilişkilerini modelleme,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d6-p5-043,d6,5,43,function_loops,functions;loops,2-8,Bilişim Teknolojileri ve Yazılım;Görsel Sanatlar;Müzik,Tekrar kullanılabilir yordamlarla desen ve ritim oluşturma,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d6-p5-044,d6,5,44,pattern_machine,functions;arithmetic,2-8,Matematik;Bilişim Teknolojileri ve Yazılım,Aritmetik işlemlerin sırası ve fonksiyon fikri,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d6-p5-045,d6,5,45,signal_pattern,patterns;sequence,2-8,Matematik;Müzik,Örüntü ve tekrar ilişkilerini modelleme,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d6-p5-046,d6,5,46,flowchart,flowchart;sequence,2-8,Bilişim Teknolojileri ve Yazılım;Türkçe,Süreç sırası ve akış diyagramı okuma,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d6-p5-047,d6,5,47,binary_lights,binary;encoding,2-8,Bilişim Teknolojileri ve Yazılım;Matematik,İkili sayısal temsil ve kodlama sezgisi,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d6-p5-048,d6,5,48,function_loops,functions;loops,2-8,Bilişim Teknolojileri ve Yazılım;Görsel Sanatlar;Müzik,Tekrar kullanılabilir yordamlarla desen ve ritim oluşturma,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d6-p5-049,d6,5,49,pattern_machine,functions;arithmetic,2-8,Matematik;Bilişim Teknolojileri ve Yazılım,Aritmetik işlemlerin sırası ve fonksiyon fikri,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d6-p5-050,d6,5,50,flowchart,flowchart;sequence,2-8,Bilişim Teknolojileri ve Yazılım;Türkçe,Süreç sırası ve akış diyagramı okuma,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d7-p1-001,d7,1,1,robot_course,robotics;events,2-8,Robotik Kodlama;Teknoloji ve Tasarım,"Algılayıcı, eyleyici ve program komutlarını birleştirme",,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d7-p1-002,d7,1,2,logic_gate,boolean;conditions,2-8,Bilişim Teknolojileri ve Yazılım;Fen Bilimleri,Mantıksal bağlaç ve elektrik devresi işlemleri,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d7-p1-003,d7,1,3,sensor_lab,sensors;conditions,2-8,Fen Bilimleri;Robotik Kodlama,Sensör verisine göre otomatik karar verme,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d7-p1-004,d7,1,4,flowchart,flowchart;sequence,2-8,Bilişim Teknolojileri ve Yazılım;Türkçe,Süreç sırası ve akış diyagramı okuma,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d7-p1-005,d7,1,5,graph_path,graphs;efficiency,2-8,Matematik;Sosyal Bilgiler,"Ağ yapısı, harita ve maliyetle rota bulma",,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d7-p1-006,d7,1,6,state_machine,states;events,2-8,Bilişim Teknolojileri ve Yazılım;Fen Bilimleri,Olaylar ve durum geçişlerini modelleme,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d7-p1-007,d7,1,7,resource_plan,optimization;planning,2-8,Matematik;Teknoloji ve Tasarım,Sınırlı kaynakla çoklu hedef planlama,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d7-p1-008,d7,1,8,data_detective,data;filtering,2-8,Matematik;Fen Bilimleri,Veriyi sınıflandırma ve ölçüme göre yorumlama,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d7-p1-009,d7,1,9,robot_course,robotics;events,2-8,Robotik Kodlama;Teknoloji ve Tasarım,"Algılayıcı, eyleyici ve program komutlarını birleştirme",,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d7-p1-010,d7,1,10,graph_path,graphs;efficiency,2-8,Matematik;Sosyal Bilgiler,"Ağ yapısı, harita ve maliyetle rota bulma",,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d7-p2-011,d7,2,11,sensor_lab,sensors;conditions,2-8,Fen Bilimleri;Robotik Kodlama,Sensör verisine göre otomatik karar verme,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d7-p2-012,d7,2,12,flowchart,flowchart;sequence,2-8,Bilişim Teknolojileri ve Yazılım;Türkçe,Süreç sırası ve akış diyagramı okuma,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d7-p2-013,d7,2,13,graph_path,graphs;efficiency,2-8,Matematik;Sosyal Bilgiler,"Ağ yapısı, harita ve maliyetle rota bulma",,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d7-p2-014,d7,2,14,state_machine,states;events,2-8,Bilişim Teknolojileri ve Yazılım;Fen Bilimleri,Olaylar ve durum geçişlerini modelleme,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d7-p2-015,d7,2,15,resource_plan,optimization;planning,2-8,Matematik;Teknoloji ve Tasarım,Sınırlı kaynakla çoklu hedef planlama,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d7-p2-016,d7,2,16,data_detective,data;filtering,2-8,Matematik;Fen Bilimleri,Veriyi sınıflandırma ve ölçüme göre yorumlama,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d7-p2-017,d7,2,17,robot_course,robotics;events,2-8,Robotik Kodlama;Teknoloji ve Tasarım,"Algılayıcı, eyleyici ve program komutlarını birleştirme",,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d7-p2-018,d7,2,18,graph_path,graphs;efficiency,2-8,Matematik;Sosyal Bilgiler,"Ağ yapısı, harita ve maliyetle rota bulma",,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d7-p2-019,d7,2,19,robot_course,robotics;events,2-8,Robotik Kodlama;Teknoloji ve Tasarım,"Algılayıcı, eyleyici ve program komutlarını birleştirme",,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d7-p2-020,d7,2,20,logic_gate,boolean;conditions,2-8,Bilişim Teknolojileri ve Yazılım;Fen Bilimleri,Mantıksal bağlaç ve elektrik devresi işlemleri,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d7-p3-021,d7,3,21,graph_path,graphs;efficiency,2-8,Matematik;Sosyal Bilgiler,"Ağ yapısı, harita ve maliyetle rota bulma",,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d7-p3-022,d7,3,22,state_machine,states;events,2-8,Bilişim Teknolojileri ve Yazılım;Fen Bilimleri,Olaylar ve durum geçişlerini modelleme,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d7-p3-023,d7,3,23,resource_plan,optimization;planning,2-8,Matematik;Teknoloji ve Tasarım,Sınırlı kaynakla çoklu hedef planlama,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d7-p3-024,d7,3,24,data_detective,data;filtering,2-8,Matematik;Fen Bilimleri,Veriyi sınıflandırma ve ölçüme göre yorumlama,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d7-p3-025,d7,3,25,robot_course,robotics;events,2-8,Robotik Kodlama;Teknoloji ve Tasarım,"Algılayıcı, eyleyici ve program komutlarını birleştirme",,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d7-p3-026,d7,3,26,graph_path,graphs;efficiency,2-8,Matematik;Sosyal Bilgiler,"Ağ yapısı, harita ve maliyetle rota bulma",,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d7-p3-027,d7,3,27,robot_course,robotics;events,2-8,Robotik Kodlama;Teknoloji ve Tasarım,"Algılayıcı, eyleyici ve program komutlarını birleştirme",,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d7-p3-028,d7,3,28,logic_gate,boolean;conditions,2-8,Bilişim Teknolojileri ve Yazılım;Fen Bilimleri,Mantıksal bağlaç ve elektrik devresi işlemleri,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d7-p3-029,d7,3,29,sensor_lab,sensors;conditions,2-8,Fen Bilimleri;Robotik Kodlama,Sensör verisine göre otomatik karar verme,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d7-p3-030,d7,3,30,flowchart,flowchart;sequence,2-8,Bilişim Teknolojileri ve Yazılım;Türkçe,Süreç sırası ve akış diyagramı okuma,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d7-p4-031,d7,4,31,resource_plan,optimization;planning,2-8,Matematik;Teknoloji ve Tasarım,Sınırlı kaynakla çoklu hedef planlama,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d7-p4-032,d7,4,32,data_detective,data;filtering,2-8,Matematik;Fen Bilimleri,Veriyi sınıflandırma ve ölçüme göre yorumlama,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d7-p4-033,d7,4,33,robot_course,robotics;events,2-8,Robotik Kodlama;Teknoloji ve Tasarım,"Algılayıcı, eyleyici ve program komutlarını birleştirme",,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d7-p4-034,d7,4,34,graph_path,graphs;efficiency,2-8,Matematik;Sosyal Bilgiler,"Ağ yapısı, harita ve maliyetle rota bulma",,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d7-p4-035,d7,4,35,robot_course,robotics;events,2-8,Robotik Kodlama;Teknoloji ve Tasarım,"Algılayıcı, eyleyici ve program komutlarını birleştirme",,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d7-p4-036,d7,4,36,logic_gate,boolean;conditions,2-8,Bilişim Teknolojileri ve Yazılım;Fen Bilimleri,Mantıksal bağlaç ve elektrik devresi işlemleri,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d7-p4-037,d7,4,37,sensor_lab,sensors;conditions,2-8,Fen Bilimleri;Robotik Kodlama,Sensör verisine göre otomatik karar verme,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d7-p4-038,d7,4,38,flowchart,flowchart;sequence,2-8,Bilişim Teknolojileri ve Yazılım;Türkçe,Süreç sırası ve akış diyagramı okuma,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d7-p4-039,d7,4,39,graph_path,graphs;efficiency,2-8,Matematik;Sosyal Bilgiler,"Ağ yapısı, harita ve maliyetle rota bulma",,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d7-p4-040,d7,4,40,state_machine,states;events,2-8,Bilişim Teknolojileri ve Yazılım;Fen Bilimleri,Olaylar ve durum geçişlerini modelleme,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d7-p5-041,d7,5,41,robot_course,robotics;events,2-8,Robotik Kodlama;Teknoloji ve Tasarım,"Algılayıcı, eyleyici ve program komutlarını birleştirme",,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d7-p5-042,d7,5,42,graph_path,graphs;efficiency,2-8,Matematik;Sosyal Bilgiler,"Ağ yapısı, harita ve maliyetle rota bulma",,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d7-p5-043,d7,5,43,robot_course,robotics;events,2-8,Robotik Kodlama;Teknoloji ve Tasarım,"Algılayıcı, eyleyici ve program komutlarını birleştirme",,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d7-p5-044,d7,5,44,logic_gate,boolean;conditions,2-8,Bilişim Teknolojileri ve Yazılım;Fen Bilimleri,Mantıksal bağlaç ve elektrik devresi işlemleri,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d7-p5-045,d7,5,45,sensor_lab,sensors;conditions,2-8,Fen Bilimleri;Robotik Kodlama,Sensör verisine göre otomatik karar verme,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d7-p5-046,d7,5,46,flowchart,flowchart;sequence,2-8,Bilişim Teknolojileri ve Yazılım;Türkçe,Süreç sırası ve akış diyagramı okuma,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d7-p5-047,d7,5,47,graph_path,graphs;efficiency,2-8,Matematik;Sosyal Bilgiler,"Ağ yapısı, harita ve maliyetle rota bulma",,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d7-p5-048,d7,5,48,state_machine,states;events,2-8,Bilişim Teknolojileri ve Yazılım;Fen Bilimleri,Olaylar ve durum geçişlerini modelleme,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d7-p5-049,d7,5,49,resource_plan,optimization;planning,2-8,Matematik;Teknoloji ve Tasarım,Sınırlı kaynakla çoklu hedef planlama,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+d7-p5-050,d7,5,50,data_detective,data;filtering,2-8,Matematik;Fen Bilimleri,Veriyi sınıflandırma ve ölçüme göre yorumlama,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx

@@ -1,0 +1,103 @@
+{
+  "schema_version": 1,
+  "id": "d5-p5-047",
+  "world": "d5",
+  "act": 5,
+  "order": 47,
+  "type": "sort_train",
+  "concepts": [
+    "sorting",
+    "arrays"
+  ],
+  "locale_key": "mission.d5-p5-047",
+  "hints": [
+    "hint.d5-p5-047.1",
+    "hint.d5-p5-047.2",
+    "hint.d5-p5-047.3"
+  ],
+  "layers": {
+    "concrete": {
+      "params": {
+        "initial": [
+          2,
+          1,
+          3
+        ],
+        "goal": [
+          1,
+          2,
+          3
+        ],
+        "alphabet": [
+          "0",
+          "1"
+        ],
+        "max_steps": 3
+      },
+      "witness": [
+        "0"
+      ]
+    },
+    "blocks": {
+      "params": {
+        "initial": [
+          2,
+          3,
+          4,
+          1
+        ],
+        "goal": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "alphabet": [
+          "0",
+          "1",
+          "2"
+        ],
+        "max_steps": 5
+      },
+      "witness": [
+        "2",
+        "1",
+        "0"
+      ]
+    },
+    "system": {
+      "params": {
+        "initial": [
+          4,
+          2,
+          5,
+          3,
+          1
+        ],
+        "goal": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "alphabet": [
+          "0",
+          "1",
+          "2",
+          "3"
+        ],
+        "max_steps": 9
+      },
+      "witness": [
+        "0",
+        "2",
+        "3",
+        "1",
+        "2",
+        "1",
+        "0"
+      ]
+    }
+  }
+}

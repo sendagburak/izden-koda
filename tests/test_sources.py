@@ -7,8 +7,8 @@ import validate_sources
 class ContentTests(unittest.TestCase):
     def test_all_witnesses_reach_destination(self):
         report=validate_sources.validate(BASE)
-        self.assertEqual(report['missions'],5)
-        self.assertEqual(report['valid_witnesses'],15)
+        self.assertEqual(report['missions'],350)
+        self.assertEqual(report['valid_witnesses'],1050)
         self.assertEqual(report['errors'],[])
     def test_all_missions_have_distinct_outcome_messages(self):
         tr,_=validate_sources.locale_map(BASE/'veri/locale/tr.csv')

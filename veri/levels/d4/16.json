@@ -1,0 +1,149 @@
+{
+  "schema_version": 1,
+  "id": "d4-p2-016",
+  "world": "d4",
+  "act": 2,
+  "order": 16,
+  "type": "cipher_wheel",
+  "concepts": [
+    "encoding",
+    "variables"
+  ],
+  "locale_key": "mission.d4-p2-016",
+  "hints": [
+    "hint.d4-p2-016.1",
+    "hint.d4-p2-016.2",
+    "hint.d4-p2-016.3"
+  ],
+  "layers": {
+    "concrete": {
+      "params": {
+        "source": "ADA",
+        "encodings": [
+          "ADA",
+          "BEB",
+          "CFC",
+          "DGD",
+          "EHE",
+          "FIF",
+          "GJG",
+          "HKH",
+          "ILI",
+          "JMJ",
+          "KNK",
+          "LOL",
+          "MPM",
+          "NQN",
+          "ORO",
+          "PSP",
+          "QTQ",
+          "RUR",
+          "SVS",
+          "TWT",
+          "UXU",
+          "VYV",
+          "WZW",
+          "XAX",
+          "YBY",
+          "ZCZ"
+        ],
+        "goal_shift": 1,
+        "alphabet": [
+          "+",
+          "-"
+        ],
+        "max_steps": 10
+      },
+      "witness": [
+        "+"
+      ]
+    },
+    "blocks": {
+      "params": {
+        "source": "ADA",
+        "encodings": [
+          "ADA",
+          "BEB",
+          "CFC",
+          "DGD",
+          "EHE",
+          "FIF",
+          "GJG",
+          "HKH",
+          "ILI",
+          "JMJ",
+          "KNK",
+          "LOL",
+          "MPM",
+          "NQN",
+          "ORO",
+          "PSP",
+          "QTQ",
+          "RUR",
+          "SVS",
+          "TWT",
+          "UXU",
+          "VYV",
+          "WZW",
+          "XAX",
+          "YBY",
+          "ZCZ"
+        ],
+        "goal_shift": 2,
+        "alphabet": [
+          "+",
+          "-"
+        ],
+        "max_steps": 10
+      },
+      "witness": [
+        "+",
+        "+"
+      ]
+    },
+    "system": {
+      "params": {
+        "source": "ADA",
+        "encodings": [
+          "ADA",
+          "BEB",
+          "CFC",
+          "DGD",
+          "EHE",
+          "FIF",
+          "GJG",
+          "HKH",
+          "ILI",
+          "JMJ",
+          "KNK",
+          "LOL",
+          "MPM",
+          "NQN",
+          "ORO",
+          "PSP",
+          "QTQ",
+          "RUR",
+          "SVS",
+          "TWT",
+          "UXU",
+          "VYV",
+          "WZW",
+          "XAX",
+          "YBY",
+          "ZCZ"
+        ],
+        "goal_shift": 3,
+        "alphabet": [
+          "+",
+          "-"
+        ],
+        "max_steps": 10
+      },
+      "witness": [
+        "+",
+        "+",
+        "+"
+      ]
+    }
+  }
+}

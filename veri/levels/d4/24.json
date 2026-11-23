@@ -1,0 +1,153 @@
+{
+  "schema_version": 1,
+  "id": "d4-p3-024",
+  "world": "d4",
+  "act": 3,
+  "order": 24,
+  "type": "cipher_wheel",
+  "concepts": [
+    "encoding",
+    "variables"
+  ],
+  "locale_key": "mission.d4-p3-024",
+  "hints": [
+    "hint.d4-p3-024.1",
+    "hint.d4-p3-024.2",
+    "hint.d4-p3-024.3"
+  ],
+  "layers": {
+    "concrete": {
+      "params": {
+        "source": "KOD",
+        "encodings": [
+          "KOD",
+          "LPE",
+          "MQF",
+          "NRG",
+          "OSH",
+          "PTI",
+          "QUJ",
+          "RVK",
+          "SWL",
+          "TXM",
+          "UYN",
+          "VZO",
+          "WAP",
+          "XBQ",
+          "YCR",
+          "ZDS",
+          "AET",
+          "BFU",
+          "CGV",
+          "DHW",
+          "EIX",
+          "FJY",
+          "GKZ",
+          "HLA",
+          "IMB",
+          "JNC"
+        ],
+        "goal_shift": 4,
+        "alphabet": [
+          "+",
+          "-"
+        ],
+        "max_steps": 10
+      },
+      "witness": [
+        "+",
+        "+",
+        "+",
+        "+"
+      ]
+    },
+    "blocks": {
+      "params": {
+        "source": "KOD",
+        "encodings": [
+          "KOD",
+          "LPE",
+          "MQF",
+          "NRG",
+          "OSH",
+          "PTI",
+          "QUJ",
+          "RVK",
+          "SWL",
+          "TXM",
+          "UYN",
+          "VZO",
+          "WAP",
+          "XBQ",
+          "YCR",
+          "ZDS",
+          "AET",
+          "BFU",
+          "CGV",
+          "DHW",
+          "EIX",
+          "FJY",
+          "GKZ",
+          "HLA",
+          "IMB",
+          "JNC"
+        ],
+        "goal_shift": 5,
+        "alphabet": [
+          "+",
+          "-"
+        ],
+        "max_steps": 10
+      },
+      "witness": [
+        "+",
+        "+",
+        "+",
+        "+",
+        "+"
+      ]
+    },
+    "system": {
+      "params": {
+        "source": "KOD",
+        "encodings": [
+          "KOD",
+          "LPE",
+          "MQF",
+          "NRG",
+          "OSH",
+          "PTI",
+          "QUJ",
+          "RVK",
+          "SWL",
+          "TXM",
+          "UYN",
+          "VZO",
+          "WAP",
+          "XBQ",
+          "YCR",
+          "ZDS",
+          "AET",
+          "BFU",
+          "CGV",
+          "DHW",
+          "EIX",
+          "FJY",
+          "GKZ",
+          "HLA",
+          "IMB",
+          "JNC"
+        ],
+        "goal_shift": 1,
+        "alphabet": [
+          "+",
+          "-"
+        ],
+        "max_steps": 10
+      },
+      "witness": [
+        "+"
+      ]
+    }
+  }
+}

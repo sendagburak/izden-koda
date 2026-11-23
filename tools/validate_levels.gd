@@ -8,13 +8,14 @@ func _initialize() -> void:
 	var locale = Locale.new()
 	var errors: Array = []
 	var validated: int = 0
-	for i in range(1, 6):
-		var id: String = "d1-p1-%03d" % i
+	var index: Dictionary = repo._read_json("res://veri/levels/index.json")
+	for item in index.get("missions",[]):
+		var id: String = str(item["id"])
 		var level: Dictionary = repo.load_level(id)
 		if level.is_empty():
 			errors.append(id + " missing")
 			continue
-		for key in [str(level.get("locale_key","")), "mission.desc." + id] + level.get("hints", []):
+		for key in [str(level.get("locale_key","")), "mission.desc." + id, "result." + id] + level.get("hints", []):
 			if not locale.available(key):
 				errors.append("missing localization " + key)
 		for layer in ["concrete", "blocks", "system"]:
@@ -24,5 +25,5 @@ func _initialize() -> void:
 				validated += 1
 	for problem in errors:
 		printerr(problem)
-	print("Godot witness checker: ", validated, " / 15; errors=", errors.size())
+	print("Godot witness checker: ", validated, " / 1050; errors=", errors.size())
 	quit(0 if errors.is_empty() else 1)

@@ -13,7 +13,7 @@ class TestVerticalSlice(unittest.TestCase):
         self.assertTrue((ROOT/'oyun/app/main.tscn').is_file())
     def test_first_five_have_all_layers(self):
         idx=json.loads((ROOT/'veri/levels/index.json').read_text(encoding='utf-8'))
-        self.assertEqual(len(idx['missions']),5)
+        self.assertEqual(len(idx['missions']),350)
         for item in idx['missions']:
             level=json.loads((ROOT/item['file']).read_text(encoding='utf-8'))
             self.assertEqual(set(level['layers']),{'concrete','blocks','system'})

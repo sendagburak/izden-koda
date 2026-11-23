@@ -1,0 +1,143 @@
+{
+  "schema_version": 1,
+  "id": "d7-p1-005",
+  "world": "d7",
+  "act": 1,
+  "order": 5,
+  "type": "graph_path",
+  "concepts": [
+    "graphs",
+    "efficiency"
+  ],
+  "locale_key": "mission.d7-p1-005",
+  "hints": [
+    "hint.d7-p1-005.1",
+    "hint.d7-p1-005.2",
+    "hint.d7-p1-005.3"
+  ],
+  "layers": {
+    "concrete": {
+      "params": {
+        "edges": {
+          "A": {
+            "B": 2,
+            "C": 5
+          },
+          "B": {
+            "A": 2,
+            "D": 1
+          },
+          "C": {
+            "A": 5,
+            "E": 2
+          },
+          "E": {
+            "C": 2,
+            "D": 2
+          },
+          "D": {
+            "B": 1,
+            "E": 2
+          }
+        },
+        "start": "A",
+        "goal": "D",
+        "max_cost": 3,
+        "max_steps": 5,
+        "alphabet": [
+          "B",
+          "C",
+          "D",
+          "E",
+          "A"
+        ]
+      },
+      "witness": [
+        "B",
+        "D"
+      ]
+    },
+    "blocks": {
+      "params": {
+        "edges": {
+          "A": {
+            "B": 3,
+            "C": 6
+          },
+          "B": {
+            "A": 3,
+            "D": 2
+          },
+          "C": {
+            "A": 6,
+            "E": 2
+          },
+          "E": {
+            "C": 2,
+            "D": 2
+          },
+          "D": {
+            "B": 2,
+            "E": 2
+          }
+        },
+        "start": "A",
+        "goal": "D",
+        "max_cost": 5,
+        "max_steps": 5,
+        "alphabet": [
+          "B",
+          "C",
+          "D",
+          "E",
+          "A"
+        ]
+      },
+      "witness": [
+        "B",
+        "D"
+      ]
+    },
+    "system": {
+      "params": {
+        "edges": {
+          "A": {
+            "B": 1,
+            "C": 4
+          },
+          "B": {
+            "A": 1,
+            "D": 3
+          },
+          "C": {
+            "A": 4,
+            "E": 2
+          },
+          "E": {
+            "C": 2,
+            "D": 2
+          },
+          "D": {
+            "B": 3,
+            "E": 2
+          }
+        },
+        "start": "A",
+        "goal": "D",
+        "max_cost": 4,
+        "max_steps": 5,
+        "alphabet": [
+          "B",
+          "C",
+          "D",
+          "E",
+          "A"
+        ]
+      },
+      "witness": [
+        "B",
+        "D"
+      ]
+    }
+  }
+}
