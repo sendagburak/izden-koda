@@ -1,0 +1,124 @@
+{
+  "schema_version": 1,
+  "id": "d2-p5-041",
+  "world": "d2",
+  "act": 5,
+  "order": 41,
+  "type": "state_machine",
+  "concepts": [
+    "states",
+    "events"
+  ],
+  "locale_key": "mission.d2-p5-041",
+  "hints": [
+    "hint.d2-p5-041.1",
+    "hint.d2-p5-041.2",
+    "hint.d2-p5-041.3"
+  ],
+  "layers": {
+    "concrete": {
+      "params": {
+        "transitions": {
+          "OFF": {
+            "START": "READY"
+          },
+          "READY": {
+            "CHECK": "ACTIVE",
+            "RESET": "OFF"
+          },
+          "ACTIVE": {
+            "SEND": "DONE"
+          },
+          "DONE": {
+            "RESET": "OFF"
+          }
+        },
+        "start": "OFF",
+        "goal": "DONE",
+        "alphabet": [
+          "CHECK",
+          "RESET",
+          "SEND",
+          "START"
+        ],
+        "max_steps": 6
+      },
+      "witness": [
+        "START",
+        "CHECK",
+        "SEND"
+      ]
+    },
+    "blocks": {
+      "params": {
+        "transitions": {
+          "OFF": {
+            "START": "READY"
+          },
+          "READY": {
+            "CHECK": "ACTIVE"
+          },
+          "ACTIVE": {
+            "SEND": "DONE",
+            "RESET": "OFF"
+          },
+          "DONE": {
+            "RESET": "OFF"
+          }
+        },
+        "start": "OFF",
+        "goal": "DONE",
+        "alphabet": [
+          "CHECK",
+          "RESET",
+          "SEND",
+          "START"
+        ],
+        "max_steps": 5
+      },
+      "witness": [
+        "START",
+        "CHECK",
+        "SEND"
+      ]
+    },
+    "system": {
+      "params": {
+        "transitions": {
+          "OFF": {
+            "START": "WARMING"
+          },
+          "WARMING": {
+            "TICK": "READY",
+            "RESET": "OFF"
+          },
+          "READY": {
+            "TICK": "ACTIVE"
+          },
+          "ACTIVE": {
+            "SEND": "DONE",
+            "RESET": "OFF"
+          },
+          "DONE": {
+            "RESET": "OFF"
+          }
+        },
+        "start": "OFF",
+        "goal": "DONE",
+        "alphabet": [
+          "RESET",
+          "SEND",
+          "START",
+          "TICK"
+        ],
+        "max_steps": 5
+      },
+      "witness": [
+        "START",
+        "TICK",
+        "TICK",
+        "SEND"
+      ]
+    }
+  }
+}

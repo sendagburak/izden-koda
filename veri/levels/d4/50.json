@@ -1,0 +1,157 @@
+{
+  "schema_version": 1,
+  "id": "d4-p5-050",
+  "world": "d4",
+  "act": 5,
+  "order": 50,
+  "type": "cipher_wheel",
+  "concepts": [
+    "encoding",
+    "variables"
+  ],
+  "locale_key": "mission.d4-p5-050",
+  "hints": [
+    "hint.d4-p5-050.1",
+    "hint.d4-p5-050.2",
+    "hint.d4-p5-050.3"
+  ],
+  "layers": {
+    "concrete": {
+      "params": {
+        "source": "HAVUZ",
+        "encodings": [
+          "HAVUZ",
+          "IBWVA",
+          "JCXWB",
+          "KDYXC",
+          "LEZYD",
+          "MFAZE",
+          "NGBAF",
+          "OHCBG",
+          "PIDCH",
+          "QJEDI",
+          "RKFEJ",
+          "SLGFK",
+          "TMHGL",
+          "UNIHM",
+          "VOJIN",
+          "WPKJO",
+          "XQLKP",
+          "YRMLQ",
+          "ZSNMR",
+          "ATONS",
+          "BUPOT",
+          "CVQPU",
+          "DWRQV",
+          "EXSRW",
+          "FYTSX",
+          "GZUTY"
+        ],
+        "goal_shift": 1,
+        "alphabet": [
+          "+",
+          "-"
+        ],
+        "max_steps": 3
+      },
+      "witness": [
+        "+"
+      ]
+    },
+    "blocks": {
+      "params": {
+        "source": "HARITA",
+        "encodings": [
+          "HARITA",
+          "IBSJUB",
+          "JCTKVC",
+          "KDULWD",
+          "LEVMXE",
+          "MFWNYF",
+          "NGXOZG",
+          "OHYPAH",
+          "PIZQBI",
+          "QJARCJ",
+          "RKBSDK",
+          "SLCTEL",
+          "TMDUFM",
+          "UNEVGN",
+          "VOFWHO",
+          "WPGXIP",
+          "XQHYJQ",
+          "YRIZKR",
+          "ZSJALS",
+          "ATKBMT",
+          "BULCNU",
+          "CVMDOV",
+          "DWNEPW",
+          "EXOFQX",
+          "FYPGRY",
+          "GZQHSZ"
+        ],
+        "goal_shift": 21,
+        "alphabet": [
+          "+",
+          "-"
+        ],
+        "max_steps": 7
+      },
+      "witness": [
+        "-",
+        "-",
+        "-",
+        "-",
+        "-"
+      ]
+    },
+    "system": {
+      "params": {
+        "source": "RITIM",
+        "encodings": [
+          "RITIM",
+          "SJUJN",
+          "TKVKO",
+          "ULWLP",
+          "VMXMQ",
+          "WNYNR",
+          "XOZOS",
+          "YPAPT",
+          "ZQBQU",
+          "ARCRV",
+          "BSDSW",
+          "CTETX",
+          "DUFUY",
+          "EVGVZ",
+          "FWHWA",
+          "GXIXB",
+          "HYJYC",
+          "IZKZD",
+          "JALAE",
+          "KBMBF",
+          "LCNCG",
+          "MDODH",
+          "NEPEI",
+          "OFQFJ",
+          "PGRGK",
+          "QHSHL"
+        ],
+        "goal_shift": 18,
+        "alphabet": [
+          "+",
+          "-"
+        ],
+        "max_steps": 10
+      },
+      "witness": [
+        "-",
+        "-",
+        "-",
+        "-",
+        "-",
+        "-",
+        "-",
+        "-"
+      ]
+    }
+  }
+}

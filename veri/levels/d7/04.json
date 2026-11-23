@@ -1,0 +1,125 @@
+{
+  "schema_version": 1,
+  "id": "d7-p1-004",
+  "world": "d7",
+  "act": 1,
+  "order": 4,
+  "type": "flowchart",
+  "concepts": [
+    "flowchart",
+    "sequence"
+  ],
+  "locale_key": "mission.d7-p1-004",
+  "hints": [
+    "hint.d7-p1-004.1",
+    "hint.d7-p1-004.2",
+    "hint.d7-p1-004.3"
+  ],
+  "layers": {
+    "concrete": {
+      "params": {
+        "nodes": [
+          "A",
+          "B",
+          "C"
+        ],
+        "labels": {
+          "C": "OBSERVE",
+          "A": "PLAN",
+          "B": "ACT"
+        },
+        "goal": [
+          "C",
+          "A",
+          "B"
+        ],
+        "alphabet": [
+          "A",
+          "B",
+          "C"
+        ],
+        "max_steps": 4
+      },
+      "witness": [
+        "C",
+        "A",
+        "B"
+      ]
+    },
+    "blocks": {
+      "params": {
+        "nodes": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "labels": {
+          "D": "MEASURE",
+          "B": "RECORD",
+          "A": "COMPARE",
+          "C": "CHECK"
+        },
+        "goal": [
+          "D",
+          "B",
+          "A",
+          "C"
+        ],
+        "alphabet": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "max_steps": 5
+      },
+      "witness": [
+        "D",
+        "B",
+        "A",
+        "C"
+      ]
+    },
+    "system": {
+      "params": {
+        "nodes": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "labels": {
+          "A": "MEASURE",
+          "E": "RECORD",
+          "D": "COMPARE",
+          "C": "CHECK",
+          "B": "REFINE"
+        },
+        "goal": [
+          "A",
+          "E",
+          "D",
+          "C",
+          "B"
+        ],
+        "alphabet": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "max_steps": 6
+      },
+      "witness": [
+        "A",
+        "E",
+        "D",
+        "C",
+        "B"
+      ]
+    }
+  }
+}

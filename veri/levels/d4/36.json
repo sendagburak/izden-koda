@@ -1,0 +1,153 @@
+{
+  "schema_version": 1,
+  "id": "d4-p4-036",
+  "world": "d4",
+  "act": 4,
+  "order": 36,
+  "type": "cipher_wheel",
+  "concepts": [
+    "encoding",
+    "variables"
+  ],
+  "locale_key": "mission.d4-p4-036",
+  "hints": [
+    "hint.d4-p4-036.1",
+    "hint.d4-p4-036.2",
+    "hint.d4-p4-036.3"
+  ],
+  "layers": {
+    "concrete": {
+      "params": {
+        "source": "DENGE",
+        "encodings": [
+          "DENGE",
+          "EFOHF",
+          "FGPIG",
+          "GHQJH",
+          "HIRKI",
+          "IJSLJ",
+          "JKTMK",
+          "KLUNL",
+          "LMVOM",
+          "MNWPN",
+          "NOXQO",
+          "OPYRP",
+          "PQZSQ",
+          "QRATR",
+          "RSBUS",
+          "STCVT",
+          "TUDWU",
+          "UVEXV",
+          "VWFYW",
+          "WXGZX",
+          "XYHAY",
+          "YZIBZ",
+          "ZAJCA",
+          "ABKDB",
+          "BCLEC",
+          "CDMFD"
+        ],
+        "goal_shift": 22,
+        "alphabet": [
+          "+",
+          "-"
+        ],
+        "max_steps": 6
+      },
+      "witness": [
+        "-",
+        "-",
+        "-",
+        "-"
+      ]
+    },
+    "blocks": {
+      "params": {
+        "source": "DEVRE",
+        "encodings": [
+          "DEVRE",
+          "EFWSF",
+          "FGXTG",
+          "GHYUH",
+          "HIZVI",
+          "IJAWJ",
+          "JKBXK",
+          "KLCYL",
+          "LMDZM",
+          "MNEAN",
+          "NOFBO",
+          "OPGCP",
+          "PQHDQ",
+          "QRIER",
+          "RSJFS",
+          "STKGT",
+          "TULHU",
+          "UVMIV",
+          "VWNJW",
+          "WXOKX",
+          "XYPLY",
+          "YZQMZ",
+          "ZARNA",
+          "ABSOB",
+          "BCTPC",
+          "CDUQD"
+        ],
+        "goal_shift": 2,
+        "alphabet": [
+          "+",
+          "-"
+        ],
+        "max_steps": 4
+      },
+      "witness": [
+        "+",
+        "+"
+      ]
+    },
+    "system": {
+      "params": {
+        "source": "HARITA",
+        "encodings": [
+          "HARITA",
+          "IBSJUB",
+          "JCTKVC",
+          "KDULWD",
+          "LEVMXE",
+          "MFWNYF",
+          "NGXOZG",
+          "OHYPAH",
+          "PIZQBI",
+          "QJARCJ",
+          "RKBSDK",
+          "SLCTEL",
+          "TMDUFM",
+          "UNEVGN",
+          "VOFWHO",
+          "WPGXIP",
+          "XQHYJQ",
+          "YRIZKR",
+          "ZSJALS",
+          "ATKBMT",
+          "BULCNU",
+          "CVMDOV",
+          "DWNEPW",
+          "EXOFQX",
+          "FYPGRY",
+          "GZQHSZ"
+        ],
+        "goal_shift": 4,
+        "alphabet": [
+          "+",
+          "-"
+        ],
+        "max_steps": 6
+      },
+      "witness": [
+        "+",
+        "+",
+        "+",
+        "+"
+      ]
+    }
+  }
+}

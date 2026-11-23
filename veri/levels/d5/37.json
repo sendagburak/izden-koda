@@ -1,0 +1,112 @@
+{
+  "schema_version": 1,
+  "id": "d5-p4-037",
+  "world": "d5",
+  "act": 4,
+  "order": 37,
+  "type": "resource_plan",
+  "concepts": [
+    "optimization",
+    "planning"
+  ],
+  "locale_key": "mission.d5-p4-037",
+  "hints": [
+    "hint.d5-p4-037.1",
+    "hint.d5-p4-037.2",
+    "hint.d5-p4-037.3"
+  ],
+  "layers": {
+    "concrete": {
+      "params": {
+        "costs": {
+          "A": 1,
+          "B": 4,
+          "C": 3,
+          "D": 4
+        },
+        "benefits": {
+          "A": 3,
+          "B": 3,
+          "C": 2,
+          "D": 2
+        },
+        "goal": 4,
+        "budget": 7,
+        "max_steps": 3,
+        "alphabet": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ]
+      },
+      "witness": [
+        "C",
+        "D"
+      ]
+    },
+    "blocks": {
+      "params": {
+        "costs": {
+          "A": 1,
+          "B": 6,
+          "C": 6,
+          "D": 1
+        },
+        "benefits": {
+          "A": 6,
+          "B": 3,
+          "C": 1,
+          "D": 4
+        },
+        "goal": 8,
+        "budget": 13,
+        "max_steps": 4,
+        "alphabet": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ]
+      },
+      "witness": [
+        "B",
+        "C",
+        "D"
+      ]
+    },
+    "system": {
+      "params": {
+        "costs": {
+          "A": 3,
+          "B": 2,
+          "C": 7,
+          "D": 1,
+          "E": 5
+        },
+        "benefits": {
+          "A": 3,
+          "B": 3,
+          "C": 9,
+          "D": 5,
+          "E": 6
+        },
+        "goal": 18,
+        "budget": 14,
+        "max_steps": 4,
+        "alphabet": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      },
+      "witness": [
+        "B",
+        "C",
+        "E"
+      ]
+    }
+  }
+}

@@ -1,0 +1,119 @@
+{
+  "schema_version": 1,
+  "id": "d4-p4-037",
+  "world": "d4",
+  "act": 4,
+  "order": 37,
+  "type": "sort_train",
+  "concepts": [
+    "sorting",
+    "arrays"
+  ],
+  "locale_key": "mission.d4-p4-037",
+  "hints": [
+    "hint.d4-p4-037.1",
+    "hint.d4-p4-037.2",
+    "hint.d4-p4-037.3"
+  ],
+  "layers": {
+    "concrete": {
+      "params": {
+        "initial": [
+          1,
+          5,
+          8,
+          4
+        ],
+        "goal": [
+          1,
+          4,
+          5,
+          8
+        ],
+        "alphabet": [
+          "0",
+          "1",
+          "2"
+        ],
+        "max_steps": 4
+      },
+      "witness": [
+        "2",
+        "1"
+      ]
+    },
+    "blocks": {
+      "params": {
+        "initial": [
+          8,
+          11,
+          3,
+          10,
+          1
+        ],
+        "goal": [
+          1,
+          3,
+          8,
+          10,
+          11
+        ],
+        "alphabet": [
+          "0",
+          "1",
+          "2",
+          "3"
+        ],
+        "max_steps": 9
+      },
+      "witness": [
+        "1",
+        "2",
+        "3",
+        "0",
+        "2",
+        "1",
+        "0"
+      ]
+    },
+    "system": {
+      "params": {
+        "initial": [
+          11,
+          9,
+          4,
+          2,
+          13,
+          14
+        ],
+        "goal": [
+          14,
+          13,
+          11,
+          9,
+          4,
+          2
+        ],
+        "alphabet": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "max_steps": 11
+      },
+      "witness": [
+        "3",
+        "4",
+        "2",
+        "3",
+        "1",
+        "2",
+        "0",
+        "1",
+        "0"
+      ]
+    }
+  }
+}

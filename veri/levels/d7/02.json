@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "id": "d7-p1-002",
+  "world": "d7",
+  "act": 1,
+  "order": 2,
+  "type": "logic_gate",
+  "concepts": [
+    "boolean",
+    "conditions"
+  ],
+  "locale_key": "mission.d7-p1-002",
+  "hints": [
+    "hint.d7-p1-002.1",
+    "hint.d7-p1-002.2",
+    "hint.d7-p1-002.3"
+  ],
+  "layers": {
+    "concrete": {
+      "params": {
+        "gate": "OR",
+        "initial": [
+          0,
+          0
+        ],
+        "goal": 1,
+        "alphabet": [
+          "A0",
+          "A1",
+          "B0",
+          "B1"
+        ],
+        "max_steps": 3
+      },
+      "witness": [
+        "A1"
+      ]
+    },
+    "blocks": {
+      "params": {
+        "gate": "OR",
+        "initial": [
+          0,
+          0
+        ],
+        "goal": 1,
+        "alphabet": [
+          "A0",
+          "A1",
+          "B0",
+          "B1"
+        ],
+        "max_steps": 3
+      },
+      "witness": [
+        "B1"
+      ]
+    },
+    "system": {
+      "params": {
+        "gate": "AND",
+        "initial": [
+          1,
+          1
+        ],
+        "goal": 0,
+        "alphabet": [
+          "A0",
+          "A1",
+          "B0",
+          "B1"
+        ],
+        "max_steps": 3
+      },
+      "witness": [
+        "A0"
+      ]
+    }
+  }
+}

@@ -1,0 +1,137 @@
+{
+  "schema_version": 1,
+  "id": "d7-p4-035",
+  "world": "d7",
+  "act": 4,
+  "order": 35,
+  "type": "robot_course",
+  "concepts": [
+    "robotics",
+    "events"
+  ],
+  "locale_key": "mission.d7-p4-035",
+  "hints": [
+    "hint.d7-p4-035.1",
+    "hint.d7-p4-035.2",
+    "hint.d7-p4-035.3"
+  ],
+  "layers": {
+    "concrete": {
+      "params": {
+        "size": [
+          5,
+          5
+        ],
+        "start": [
+          0,
+          0
+        ],
+        "goal": [
+          3,
+          2
+        ],
+        "rocks": [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            4,
+            1
+          ]
+        ],
+        "max_steps": 22
+      },
+      "witness": [
+        "S",
+        "R",
+        "R",
+        "R",
+        "D",
+        "D"
+      ]
+    },
+    "blocks": {
+      "params": {
+        "size": [
+          7,
+          6
+        ],
+        "start": [
+          0,
+          5
+        ],
+        "goal": [
+          5,
+          5
+        ],
+        "rocks": [
+          [
+            0,
+            2
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            3,
+            2
+          ]
+        ],
+        "max_steps": 38
+      },
+      "witness": [
+        "S",
+        "R",
+        "R",
+        "R",
+        "R",
+        "R"
+      ]
+    },
+    "system": {
+      "params": {
+        "size": [
+          7,
+          6
+        ],
+        "start": [
+          0,
+          4
+        ],
+        "goal": [
+          5,
+          4
+        ],
+        "rocks": [
+          [
+            4,
+            0
+          ],
+          [
+            5,
+            0
+          ]
+        ],
+        "max_steps": 40
+      },
+      "witness": [
+        "S",
+        "R",
+        "R",
+        "R",
+        "R",
+        "R"
+      ]
+    }
+  }
+}

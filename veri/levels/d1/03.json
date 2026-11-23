@@ -1,0 +1,167 @@
+{
+  "schema_version": 1,
+  "id": "d1-p1-003",
+  "world": "d1",
+  "act": 1,
+  "order": 3,
+  "type": "grid_route",
+  "concepts": [
+    "planning",
+    "efficiency"
+  ],
+  "locale_key": "mission.d1-p1-003",
+  "hints": [
+    "hint.d1-p1-003.1",
+    "hint.d1-p1-003.2",
+    "hint.d1-p1-003.3"
+  ],
+  "layers": {
+    "concrete": {
+      "params": {
+        "size": [
+          5,
+          5
+        ],
+        "start": [
+          0,
+          0
+        ],
+        "goal": [
+          4,
+          4
+        ],
+        "rocks": [
+          [
+            2,
+            0
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            2,
+            2
+          ]
+        ],
+        "max_steps": 21
+      },
+      "witness": [
+        "R",
+        "D",
+        "D",
+        "D",
+        "R",
+        "R",
+        "R",
+        "D"
+      ]
+    },
+    "blocks": {
+      "params": {
+        "size": [
+          6,
+          5
+        ],
+        "start": [
+          0,
+          0
+        ],
+        "goal": [
+          5,
+          0
+        ],
+        "rocks": [
+          [
+            2,
+            0
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        "max_steps": 25
+      },
+      "witness": [
+        "R",
+        "D",
+        "D",
+        "D",
+        "D",
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "U",
+        "R",
+        "R"
+      ]
+    },
+    "system": {
+      "params": {
+        "size": [
+          6,
+          6
+        ],
+        "start": [
+          0,
+          0
+        ],
+        "goal": [
+          5,
+          0
+        ],
+        "rocks": [
+          [
+            2,
+            0
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            2,
+            4
+          ]
+        ],
+        "max_steps": 30
+      },
+      "witness": [
+        "R",
+        "D",
+        "D",
+        "D",
+        "D",
+        "D",
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "U",
+        "U",
+        "R",
+        "R"
+      ]
+    }
+  }
+}

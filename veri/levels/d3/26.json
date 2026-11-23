@@ -1,0 +1,137 @@
+{
+  "schema_version": 1,
+  "id": "d3-p3-026",
+  "world": "d3",
+  "act": 3,
+  "order": 26,
+  "type": "robot_course",
+  "concepts": [
+    "robotics",
+    "events"
+  ],
+  "locale_key": "mission.d3-p3-026",
+  "hints": [
+    "hint.d3-p3-026.1",
+    "hint.d3-p3-026.2",
+    "hint.d3-p3-026.3"
+  ],
+  "layers": {
+    "concrete": {
+      "params": {
+        "size": [
+          5,
+          4
+        ],
+        "start": [
+          0,
+          1
+        ],
+        "goal": [
+          3,
+          0
+        ],
+        "rocks": [
+          [
+            1,
+            1
+          ]
+        ],
+        "max_steps": 19
+      },
+      "witness": [
+        "S",
+        "U",
+        "R",
+        "R",
+        "R"
+      ]
+    },
+    "blocks": {
+      "params": {
+        "size": [
+          7,
+          5
+        ],
+        "start": [
+          0,
+          2
+        ],
+        "goal": [
+          5,
+          2
+        ],
+        "rocks": [
+          [
+            2,
+            0
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            6,
+            0
+          ]
+        ],
+        "max_steps": 31
+      },
+      "witness": [
+        "S",
+        "U",
+        "R",
+        "R",
+        "R",
+        "R",
+        "R",
+        "D"
+      ]
+    },
+    "system": {
+      "params": {
+        "size": [
+          7,
+          5
+        ],
+        "start": [
+          0,
+          3
+        ],
+        "goal": [
+          5,
+          4
+        ],
+        "rocks": [
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            3
+          ],
+          [
+            6,
+            1
+          ]
+        ],
+        "max_steps": 32
+      },
+      "witness": [
+        "S",
+        "U",
+        "R",
+        "R",
+        "R",
+        "R",
+        "R",
+        "D",
+        "D"
+      ]
+    }
+  }
+}

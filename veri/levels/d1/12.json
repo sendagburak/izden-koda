@@ -1,0 +1,135 @@
+{
+  "schema_version": 1,
+  "id": "d1-p2-012",
+  "world": "d1",
+  "act": 2,
+  "order": 12,
+  "type": "toggle_board",
+  "concepts": [
+    "logic",
+    "debug"
+  ],
+  "locale_key": "mission.d1-p2-012",
+  "hints": [
+    "hint.d1-p2-012.1",
+    "hint.d1-p2-012.2",
+    "hint.d1-p2-012.3"
+  ],
+  "layers": {
+    "concrete": {
+      "params": {
+        "initial": [
+          0,
+          1,
+          1
+        ],
+        "goal": [
+          1,
+          0,
+          1
+        ],
+        "wiring": {
+          "S0": [
+            0,
+            1
+          ],
+          "S1": [
+            1,
+            2
+          ],
+          "S2": [
+            2,
+            1
+          ]
+        },
+        "max_steps": 3
+      },
+      "witness": [
+        "S0"
+      ]
+    },
+    "blocks": {
+      "params": {
+        "initial": [
+          0,
+          0,
+          1,
+          1
+        ],
+        "goal": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "wiring": {
+          "S0": [
+            0,
+            1
+          ],
+          "S1": [
+            1,
+            2
+          ],
+          "S2": [
+            2,
+            3
+          ],
+          "S3": [
+            3,
+            2
+          ]
+        },
+        "max_steps": 3
+      },
+      "witness": [
+        "S0"
+      ]
+    },
+    "system": {
+      "params": {
+        "initial": [
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "goal": [
+          1,
+          1,
+          0,
+          1,
+          0
+        ],
+        "wiring": {
+          "S0": [
+            0,
+            4
+          ],
+          "S1": [
+            1,
+            2
+          ],
+          "S2": [
+            2,
+            0
+          ],
+          "S3": [
+            3,
+            1
+          ],
+          "S4": [
+            4,
+            0
+          ]
+        },
+        "max_steps": 4
+      },
+      "witness": [
+        "S1",
+        "S2"
+      ]
+    }
+  }
+}

@@ -1,0 +1,158 @@
+{
+  "schema_version": 1,
+  "id": "d4-p3-024",
+  "world": "d4",
+  "act": 3,
+  "order": 24,
+  "type": "cipher_wheel",
+  "concepts": [
+    "encoding",
+    "variables"
+  ],
+  "locale_key": "mission.d4-p3-024",
+  "hints": [
+    "hint.d4-p3-024.1",
+    "hint.d4-p3-024.2",
+    "hint.d4-p3-024.3"
+  ],
+  "layers": {
+    "concrete": {
+      "params": {
+        "source": "DEVRE",
+        "encodings": [
+          "DEVRE",
+          "EFWSF",
+          "FGXTG",
+          "GHYUH",
+          "HIZVI",
+          "IJAWJ",
+          "JKBXK",
+          "KLCYL",
+          "LMDZM",
+          "MNEAN",
+          "NOFBO",
+          "OPGCP",
+          "PQHDQ",
+          "QRIER",
+          "RSJFS",
+          "STKGT",
+          "TULHU",
+          "UVMIV",
+          "VWNJW",
+          "WXOKX",
+          "XYPLY",
+          "YZQMZ",
+          "ZARNA",
+          "ABSOB",
+          "BCTPC",
+          "CDUQD"
+        ],
+        "goal_shift": 6,
+        "alphabet": [
+          "+",
+          "-"
+        ],
+        "max_steps": 8
+      },
+      "witness": [
+        "+",
+        "+",
+        "+",
+        "+",
+        "+",
+        "+"
+      ]
+    },
+    "blocks": {
+      "params": {
+        "source": "HARITA",
+        "encodings": [
+          "HARITA",
+          "IBSJUB",
+          "JCTKVC",
+          "KDULWD",
+          "LEVMXE",
+          "MFWNYF",
+          "NGXOZG",
+          "OHYPAH",
+          "PIZQBI",
+          "QJARCJ",
+          "RKBSDK",
+          "SLCTEL",
+          "TMDUFM",
+          "UNEVGN",
+          "VOFWHO",
+          "WPGXIP",
+          "XQHYJQ",
+          "YRIZKR",
+          "ZSJALS",
+          "ATKBMT",
+          "BULCNU",
+          "CVMDOV",
+          "DWNEPW",
+          "EXOFQX",
+          "FYPGRY",
+          "GZQHSZ"
+        ],
+        "goal_shift": 24,
+        "alphabet": [
+          "+",
+          "-"
+        ],
+        "max_steps": 4
+      },
+      "witness": [
+        "-",
+        "-"
+      ]
+    },
+    "system": {
+      "params": {
+        "source": "KAPI",
+        "encodings": [
+          "KAPI",
+          "LBQJ",
+          "MCRK",
+          "NDSL",
+          "OETM",
+          "PFUN",
+          "QGVO",
+          "RHWP",
+          "SIXQ",
+          "TJYR",
+          "UKZS",
+          "VLAT",
+          "WMBU",
+          "XNCV",
+          "YODW",
+          "ZPEX",
+          "AQFY",
+          "BRGZ",
+          "CSHA",
+          "DTIB",
+          "EUJC",
+          "FVKD",
+          "GWLE",
+          "HXMF",
+          "IYNG",
+          "JZOH"
+        ],
+        "goal_shift": 7,
+        "alphabet": [
+          "+",
+          "-"
+        ],
+        "max_steps": 9
+      },
+      "witness": [
+        "+",
+        "+",
+        "+",
+        "+",
+        "+",
+        "+",
+        "+"
+      ]
+    }
+  }
+}

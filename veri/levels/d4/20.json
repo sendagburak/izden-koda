@@ -1,0 +1,153 @@
+{
+  "schema_version": 1,
+  "id": "d4-p2-020",
+  "world": "d4",
+  "act": 2,
+  "order": 20,
+  "type": "cipher_wheel",
+  "concepts": [
+    "encoding",
+    "variables"
+  ],
+  "locale_key": "mission.d4-p2-020",
+  "hints": [
+    "hint.d4-p2-020.1",
+    "hint.d4-p2-020.2",
+    "hint.d4-p2-020.3"
+  ],
+  "layers": {
+    "concrete": {
+      "params": {
+        "source": "ADA",
+        "encodings": [
+          "ADA",
+          "BEB",
+          "CFC",
+          "DGD",
+          "EHE",
+          "FIF",
+          "GJG",
+          "HKH",
+          "ILI",
+          "JMJ",
+          "KNK",
+          "LOL",
+          "MPM",
+          "NQN",
+          "ORO",
+          "PSP",
+          "QTQ",
+          "RUR",
+          "SVS",
+          "TWT",
+          "UXU",
+          "VYV",
+          "WZW",
+          "XAX",
+          "YBY",
+          "ZCZ"
+        ],
+        "goal_shift": 1,
+        "alphabet": [
+          "+",
+          "-"
+        ],
+        "max_steps": 3
+      },
+      "witness": [
+        "+"
+      ]
+    },
+    "blocks": {
+      "params": {
+        "source": "DESEN",
+        "encodings": [
+          "DESEN",
+          "EFTFO",
+          "FGUGP",
+          "GHVHQ",
+          "HIWIR",
+          "IJXJS",
+          "JKYKT",
+          "KLZLU",
+          "LMAMV",
+          "MNBNW",
+          "NOCOX",
+          "OPDPY",
+          "PQEQZ",
+          "QRFRA",
+          "RSGSB",
+          "STHTC",
+          "TUIUD",
+          "UVJVE",
+          "VWKWF",
+          "WXLXG",
+          "XYMYH",
+          "YZNZI",
+          "ZAOAJ",
+          "ABPBK",
+          "BCQCL",
+          "CDRDM"
+        ],
+        "goal_shift": 6,
+        "alphabet": [
+          "+",
+          "-"
+        ],
+        "max_steps": 8
+      },
+      "witness": [
+        "+",
+        "+",
+        "+",
+        "+",
+        "+",
+        "+"
+      ]
+    },
+    "system": {
+      "params": {
+        "source": "DEVRE",
+        "encodings": [
+          "DEVRE",
+          "EFWSF",
+          "FGXTG",
+          "GHYUH",
+          "HIZVI",
+          "IJAWJ",
+          "JKBXK",
+          "KLCYL",
+          "LMDZM",
+          "MNEAN",
+          "NOFBO",
+          "OPGCP",
+          "PQHDQ",
+          "QRIER",
+          "RSJFS",
+          "STKGT",
+          "TULHU",
+          "UVMIV",
+          "VWNJW",
+          "WXOKX",
+          "XYPLY",
+          "YZQMZ",
+          "ZARNA",
+          "ABSOB",
+          "BCTPC",
+          "CDUQD"
+        ],
+        "goal_shift": 3,
+        "alphabet": [
+          "+",
+          "-"
+        ],
+        "max_steps": 5
+      },
+      "witness": [
+        "+",
+        "+",
+        "+"
+      ]
+    }
+  }
+}

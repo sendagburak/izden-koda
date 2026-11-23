@@ -1,0 +1,151 @@
+{
+  "schema_version": 1,
+  "id": "d4-p3-028",
+  "world": "d4",
+  "act": 3,
+  "order": 28,
+  "type": "cipher_wheel",
+  "concepts": [
+    "encoding",
+    "variables"
+  ],
+  "locale_key": "mission.d4-p3-028",
+  "hints": [
+    "hint.d4-p3-028.1",
+    "hint.d4-p3-028.2",
+    "hint.d4-p3-028.3"
+  ],
+  "layers": {
+    "concrete": {
+      "params": {
+        "source": "KAYIT",
+        "encodings": [
+          "KAYIT",
+          "LBZJU",
+          "MCAKV",
+          "NDBLW",
+          "OECMX",
+          "PFDNY",
+          "QGEOZ",
+          "RHFPA",
+          "SIGQB",
+          "TJHRC",
+          "UKISD",
+          "VLJTE",
+          "WMKUF",
+          "XNLVG",
+          "YOMWH",
+          "ZPNXI",
+          "AQOYJ",
+          "BRPZK",
+          "CSQAL",
+          "DTRBM",
+          "EUSCN",
+          "FVTDO",
+          "GWUEP",
+          "HXVFQ",
+          "IYWGR",
+          "JZXHS"
+        ],
+        "goal_shift": 2,
+        "alphabet": [
+          "+",
+          "-"
+        ],
+        "max_steps": 4
+      },
+      "witness": [
+        "+",
+        "+"
+      ]
+    },
+    "blocks": {
+      "params": {
+        "source": "HAVUZ",
+        "encodings": [
+          "HAVUZ",
+          "IBWVA",
+          "JCXWB",
+          "KDYXC",
+          "LEZYD",
+          "MFAZE",
+          "NGBAF",
+          "OHCBG",
+          "PIDCH",
+          "QJEDI",
+          "RKFEJ",
+          "SLGFK",
+          "TMHGL",
+          "UNIHM",
+          "VOJIN",
+          "WPKJO",
+          "XQLKP",
+          "YRMLQ",
+          "ZSNMR",
+          "ATONS",
+          "BUPOT",
+          "CVQPU",
+          "DWRQV",
+          "EXSRW",
+          "FYTSX",
+          "GZUTY"
+        ],
+        "goal_shift": 2,
+        "alphabet": [
+          "+",
+          "-"
+        ],
+        "max_steps": 4
+      },
+      "witness": [
+        "+",
+        "+"
+      ]
+    },
+    "system": {
+      "params": {
+        "source": "ISKELE",
+        "encodings": [
+          "ISKELE",
+          "JTLFMF",
+          "KUMGNG",
+          "LVNHOH",
+          "MWOIPI",
+          "NXPJQJ",
+          "OYQKRK",
+          "PZRLSL",
+          "QASMTM",
+          "RBTNUN",
+          "SCUOVO",
+          "TDVPWP",
+          "UEWQXQ",
+          "VFXRYR",
+          "WGYSZS",
+          "XHZTAT",
+          "YIAUBU",
+          "ZJBVCV",
+          "AKCWDW",
+          "BLDXEX",
+          "CMEYFY",
+          "DNFZGZ",
+          "EOGAHA",
+          "FPHBIB",
+          "GQICJC",
+          "HRJDKD"
+        ],
+        "goal_shift": 22,
+        "alphabet": [
+          "+",
+          "-"
+        ],
+        "max_steps": 6
+      },
+      "witness": [
+        "-",
+        "-",
+        "-",
+        "-"
+      ]
+    }
+  }
+}

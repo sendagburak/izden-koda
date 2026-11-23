@@ -1,0 +1,162 @@
+{
+  "schema_version": 1,
+  "id": "d4-p4-032",
+  "world": "d4",
+  "act": 4,
+  "order": 32,
+  "type": "cipher_wheel",
+  "concepts": [
+    "encoding",
+    "variables"
+  ],
+  "locale_key": "mission.d4-p4-032",
+  "hints": [
+    "hint.d4-p4-032.1",
+    "hint.d4-p4-032.2",
+    "hint.d4-p4-032.3"
+  ],
+  "layers": {
+    "concrete": {
+      "params": {
+        "source": "ISIK",
+        "encodings": [
+          "ISIK",
+          "JTJL",
+          "KUKM",
+          "LVLN",
+          "MWMO",
+          "NXNP",
+          "OYOQ",
+          "PZPR",
+          "QAQS",
+          "RBRT",
+          "SCSU",
+          "TDTV",
+          "UEUW",
+          "VFVX",
+          "WGWY",
+          "XHXZ",
+          "YIYA",
+          "ZJZB",
+          "AKAC",
+          "BLBD",
+          "CMCE",
+          "DNDF",
+          "EOEG",
+          "FPFH",
+          "GQGI",
+          "HRHJ"
+        ],
+        "goal_shift": 20,
+        "alphabet": [
+          "+",
+          "-"
+        ],
+        "max_steps": 8
+      },
+      "witness": [
+        "-",
+        "-",
+        "-",
+        "-",
+        "-",
+        "-"
+      ]
+    },
+    "blocks": {
+      "params": {
+        "source": "ADA",
+        "encodings": [
+          "ADA",
+          "BEB",
+          "CFC",
+          "DGD",
+          "EHE",
+          "FIF",
+          "GJG",
+          "HKH",
+          "ILI",
+          "JMJ",
+          "KNK",
+          "LOL",
+          "MPM",
+          "NQN",
+          "ORO",
+          "PSP",
+          "QTQ",
+          "RUR",
+          "SVS",
+          "TWT",
+          "UXU",
+          "VYV",
+          "WZW",
+          "XAX",
+          "YBY",
+          "ZCZ"
+        ],
+        "goal_shift": 22,
+        "alphabet": [
+          "+",
+          "-"
+        ],
+        "max_steps": 6
+      },
+      "witness": [
+        "-",
+        "-",
+        "-",
+        "-"
+      ]
+    },
+    "system": {
+      "params": {
+        "source": "HAVUZ",
+        "encodings": [
+          "HAVUZ",
+          "IBWVA",
+          "JCXWB",
+          "KDYXC",
+          "LEZYD",
+          "MFAZE",
+          "NGBAF",
+          "OHCBG",
+          "PIDCH",
+          "QJEDI",
+          "RKFEJ",
+          "SLGFK",
+          "TMHGL",
+          "UNIHM",
+          "VOJIN",
+          "WPKJO",
+          "XQLKP",
+          "YRMLQ",
+          "ZSNMR",
+          "ATONS",
+          "BUPOT",
+          "CVQPU",
+          "DWRQV",
+          "EXSRW",
+          "FYTSX",
+          "GZUTY"
+        ],
+        "goal_shift": 17,
+        "alphabet": [
+          "+",
+          "-"
+        ],
+        "max_steps": 11
+      },
+      "witness": [
+        "-",
+        "-",
+        "-",
+        "-",
+        "-",
+        "-",
+        "-",
+        "-",
+        "-"
+      ]
+    }
+  }
+}

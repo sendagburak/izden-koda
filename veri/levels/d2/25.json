@@ -1,0 +1,130 @@
+{
+  "schema_version": 1,
+  "id": "d2-p3-025",
+  "world": "d2",
+  "act": 3,
+  "order": 25,
+  "type": "state_machine",
+  "concepts": [
+    "states",
+    "events"
+  ],
+  "locale_key": "mission.d2-p3-025",
+  "hints": [
+    "hint.d2-p3-025.1",
+    "hint.d2-p3-025.2",
+    "hint.d2-p3-025.3"
+  ],
+  "layers": {
+    "concrete": {
+      "params": {
+        "transitions": {
+          "OFF": {
+            "START": "READY"
+          },
+          "READY": {
+            "CHECK": "ACTIVE",
+            "RESET": "OFF"
+          },
+          "ACTIVE": {
+            "SEND": "DONE"
+          },
+          "DONE": {
+            "RESET": "OFF"
+          }
+        },
+        "start": "OFF",
+        "goal": "DONE",
+        "alphabet": [
+          "CHECK",
+          "RESET",
+          "SEND",
+          "START"
+        ],
+        "max_steps": 6
+      },
+      "witness": [
+        "START",
+        "CHECK",
+        "SEND"
+      ]
+    },
+    "blocks": {
+      "params": {
+        "transitions": {
+          "IDLE": {
+            "CHECK": "READY"
+          },
+          "READY": {
+            "START": "ACTIVE",
+            "RESET": "IDLE"
+          },
+          "ACTIVE": {
+            "STOP": "COOLING"
+          },
+          "COOLING": {
+            "TICK": "SAFE"
+          },
+          "SAFE": {
+            "RESET": "IDLE"
+          }
+        },
+        "start": "IDLE",
+        "goal": "SAFE",
+        "alphabet": [
+          "CHECK",
+          "RESET",
+          "START",
+          "STOP",
+          "TICK"
+        ],
+        "max_steps": 6
+      },
+      "witness": [
+        "CHECK",
+        "START",
+        "STOP",
+        "TICK"
+      ]
+    },
+    "system": {
+      "params": {
+        "transitions": {
+          "IDLE": {
+            "CHECK": "READY"
+          },
+          "READY": {
+            "START": "ACTIVE"
+          },
+          "ACTIVE": {
+            "STOP": "COOLING",
+            "RESET": "IDLE"
+          },
+          "COOLING": {
+            "TICK": "SAFE",
+            "RESET": "IDLE"
+          },
+          "SAFE": {
+            "RESET": "IDLE"
+          }
+        },
+        "start": "IDLE",
+        "goal": "SAFE",
+        "alphabet": [
+          "CHECK",
+          "RESET",
+          "START",
+          "STOP",
+          "TICK"
+        ],
+        "max_steps": 5
+      },
+      "witness": [
+        "CHECK",
+        "START",
+        "STOP",
+        "TICK"
+      ]
+    }
+  }
+}

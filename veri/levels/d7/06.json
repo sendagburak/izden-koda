@@ -1,0 +1,129 @@
+{
+  "schema_version": 1,
+  "id": "d7-p1-006",
+  "world": "d7",
+  "act": 1,
+  "order": 6,
+  "type": "state_machine",
+  "concepts": [
+    "states",
+    "events"
+  ],
+  "locale_key": "mission.d7-p1-006",
+  "hints": [
+    "hint.d7-p1-006.1",
+    "hint.d7-p1-006.2",
+    "hint.d7-p1-006.3"
+  ],
+  "layers": {
+    "concrete": {
+      "params": {
+        "transitions": {
+          "IDLE": {
+            "START": "WARMING"
+          },
+          "WARMING": {
+            "TICK": "READY"
+          },
+          "READY": {
+            "SEND": "DONE"
+          },
+          "DONE": {
+            "RESET": "IDLE"
+          }
+        },
+        "start": "IDLE",
+        "goal": "DONE",
+        "alphabet": [
+          "RESET",
+          "SEND",
+          "START",
+          "TICK"
+        ],
+        "max_steps": 6
+      },
+      "witness": [
+        "START",
+        "TICK",
+        "SEND"
+      ]
+    },
+    "blocks": {
+      "params": {
+        "transitions": {
+          "IDLE": {
+            "CHECK": "READY"
+          },
+          "READY": {
+            "START": "ACTIVE"
+          },
+          "ACTIVE": {
+            "STOP": "COOLING"
+          },
+          "COOLING": {
+            "TICK": "SAFE",
+            "RESET": "IDLE"
+          },
+          "SAFE": {
+            "RESET": "IDLE"
+          }
+        },
+        "start": "IDLE",
+        "goal": "SAFE",
+        "alphabet": [
+          "CHECK",
+          "RESET",
+          "START",
+          "STOP",
+          "TICK"
+        ],
+        "max_steps": 6
+      },
+      "witness": [
+        "CHECK",
+        "START",
+        "STOP",
+        "TICK"
+      ]
+    },
+    "system": {
+      "params": {
+        "transitions": {
+          "IDLE": {
+            "CHECK": "READY"
+          },
+          "READY": {
+            "START": "ACTIVE",
+            "RESET": "IDLE"
+          },
+          "ACTIVE": {
+            "STOP": "COOLING"
+          },
+          "COOLING": {
+            "TICK": "SAFE",
+            "RESET": "IDLE"
+          },
+          "SAFE": {
+            "RESET": "IDLE"
+          }
+        },
+        "start": "IDLE",
+        "goal": "SAFE",
+        "alphabet": [
+          "CHECK",
+          "RESET",
+          "START",
+          "STOP",
+          "TICK"
+        ],
+        "max_steps": 5
+      },
+      "witness": [
+        "CHECK",
+        "START",
+        "STOP",
+        "TICK"
+      ]
+    }
+  }
+}

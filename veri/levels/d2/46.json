@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "id": "d2-p5-046",
+  "world": "d2",
+  "act": 5,
+  "order": 46,
+  "type": "logic_gate",
+  "concepts": [
+    "boolean",
+    "conditions"
+  ],
+  "locale_key": "mission.d2-p5-046",
+  "hints": [
+    "hint.d2-p5-046.1",
+    "hint.d2-p5-046.2",
+    "hint.d2-p5-046.3"
+  ],
+  "layers": {
+    "concrete": {
+      "params": {
+        "gate": "NAND",
+        "initial": [
+          1,
+          1
+        ],
+        "goal": 1,
+        "alphabet": [
+          "A0",
+          "A1",
+          "B0",
+          "B1"
+        ],
+        "max_steps": 3
+      },
+      "witness": [
+        "A0"
+      ]
+    },
+    "blocks": {
+      "params": {
+        "gate": "AND",
+        "initial": [
+          0,
+          0
+        ],
+        "goal": 1,
+        "alphabet": [
+          "A0",
+          "A1",
+          "B0",
+          "B1"
+        ],
+        "max_steps": 4
+      },
+      "witness": [
+        "A1",
+        "B1"
+      ]
+    },
+    "system": {
+      "params": {
+        "gate": "AND",
+        "initial": [
+          0,
+          0
+        ],
+        "goal": 1,
+        "alphabet": [
+          "A0",
+          "A1",
+          "B0",
+          "B1"
+        ],
+        "max_steps": 4
+      },
+      "witness": [
+        "A1",
+        "B1"
+      ]
+    }
+  }
+}

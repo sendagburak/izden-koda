@@ -1,0 +1,181 @@
+{
+  "schema_version": 1,
+  "id": "d5-p5-041",
+  "world": "d5",
+  "act": 5,
+  "order": 41,
+  "type": "graph_path",
+  "concepts": [
+    "graphs",
+    "efficiency"
+  ],
+  "locale_key": "mission.d5-p5-041",
+  "hints": [
+    "hint.d5-p5-041.1",
+    "hint.d5-p5-041.2",
+    "hint.d5-p5-041.3"
+  ],
+  "layers": {
+    "concrete": {
+      "params": {
+        "edges": {
+          "A": {
+            "C": 2,
+            "E": 1,
+            "D": 3
+          },
+          "B": {
+            "C": 3,
+            "D": 3
+          },
+          "C": {
+            "B": 3,
+            "A": 2
+          },
+          "D": {
+            "E": 1,
+            "B": 3,
+            "A": 3
+          },
+          "E": {
+            "A": 1,
+            "D": 1
+          }
+        },
+        "start": "B",
+        "goal": "D",
+        "via": [
+          "C"
+        ],
+        "max_cost": 9,
+        "max_steps": 6,
+        "alphabet": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      },
+      "witness": [
+        "C",
+        "A",
+        "E",
+        "D"
+      ]
+    },
+    "blocks": {
+      "params": {
+        "edges": {
+          "A": {
+            "F": 3,
+            "E": 1
+          },
+          "B": {
+            "D": 4,
+            "C": 2
+          },
+          "C": {
+            "F": 1,
+            "B": 2,
+            "D": 3,
+            "E": 4
+          },
+          "D": {
+            "E": 2,
+            "B": 4,
+            "C": 3
+          },
+          "E": {
+            "A": 1,
+            "D": 2,
+            "C": 4
+          },
+          "F": {
+            "C": 1,
+            "A": 3
+          }
+        },
+        "start": "A",
+        "goal": "B",
+        "via": [
+          "E",
+          "D"
+        ],
+        "max_cost": 8,
+        "max_steps": 5,
+        "alphabet": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E",
+          "F"
+        ]
+      },
+      "witness": [
+        "E",
+        "D",
+        "B"
+      ]
+    },
+    "system": {
+      "params": {
+        "edges": {
+          "A": {
+            "F": 2,
+            "C": 3
+          },
+          "B": {
+            "F": 1,
+            "E": 4,
+            "D": 5
+          },
+          "C": {
+            "D": 3,
+            "A": 3,
+            "F": 5
+          },
+          "D": {
+            "E": 4,
+            "C": 3,
+            "B": 5
+          },
+          "E": {
+            "B": 4,
+            "D": 4,
+            "F": 5
+          },
+          "F": {
+            "A": 2,
+            "B": 1,
+            "C": 5,
+            "E": 5
+          }
+        },
+        "start": "F",
+        "goal": "E",
+        "via": [
+          "C",
+          "D"
+        ],
+        "max_cost": 12,
+        "max_steps": 6,
+        "alphabet": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E",
+          "F"
+        ]
+      },
+      "witness": [
+        "A",
+        "C",
+        "D",
+        "E"
+      ]
+    }
+  }
+}

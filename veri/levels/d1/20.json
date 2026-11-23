@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "id": "d1-p2-020",
+  "world": "d1",
+  "act": 2,
+  "order": 20,
+  "type": "grid_route",
+  "concepts": [
+    "sequence",
+    "direction"
+  ],
+  "locale_key": "mission.d1-p2-020",
+  "hints": [
+    "hint.d1-p2-020.1",
+    "hint.d1-p2-020.2",
+    "hint.d1-p2-020.3"
+  ],
+  "layers": {
+    "concrete": {
+      "params": {
+        "size": [
+          4,
+          4
+        ],
+        "start": [
+          0,
+          1
+        ],
+        "goal": [
+          2,
+          0
+        ],
+        "rocks": [
+          [
+            1,
+            2
+          ]
+        ],
+        "max_steps": 14
+      },
+      "witness": [
+        "U",
+        "R",
+        "R"
+      ]
+    },
+    "blocks": {
+      "params": {
+        "size": [
+          5,
+          5
+        ],
+        "start": [
+          0,
+          0
+        ],
+        "goal": [
+          3,
+          1
+        ],
+        "rocks": [
+          [
+            0,
+            1
+          ]
+        ],
+        "max_steps": 23
+      },
+      "witness": [
+        "R",
+        "R",
+        "R",
+        "D"
+      ]
+    },
+    "system": {
+      "params": {
+        "size": [
+          6,
+          5
+        ],
+        "start": [
+          0,
+          2
+        ],
+        "goal": [
+          4,
+          1
+        ],
+        "rocks": [
+          [
+            3,
+            4
+          ]
+        ],
+        "max_steps": 28
+      },
+      "witness": [
+        "U",
+        "R",
+        "R",
+        "R",
+        "R"
+      ]
+    }
+  }
+}

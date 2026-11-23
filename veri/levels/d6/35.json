@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "id": "d6-p4-035",
+  "world": "d6",
+  "act": 4,
+  "order": 35,
+  "type": "function_loops",
+  "concepts": [
+    "functions",
+    "loops"
+  ],
+  "locale_key": "mission.d6-p4-035",
+  "hints": [
+    "hint.d6-p4-035.1",
+    "hint.d6-p4-035.2",
+    "hint.d6-p4-035.3"
+  ],
+  "layers": {
+    "concrete": {
+      "params": {
+        "macros": {
+          "A": "SS",
+          "B": "TS",
+          "C": "TT"
+        },
+        "target": "TTTTTSTS",
+        "alphabet": [
+          "A",
+          "B",
+          "C",
+          "A*2",
+          "B*2",
+          "C*2"
+        ],
+        "max_steps": 5
+      },
+      "witness": [
+        "C*2",
+        "B",
+        "B"
+      ]
+    },
+    "blocks": {
+      "params": {
+        "macros": {
+          "A": "SS",
+          "B": "ST",
+          "C": "MK"
+        },
+        "target": "SSSTSTSTST",
+        "alphabet": [
+          "A",
+          "B",
+          "C",
+          "A*2",
+          "B*2",
+          "C*2"
+        ],
+        "max_steps": 5
+      },
+      "witness": [
+        "A",
+        "B*2",
+        "B*2"
+      ]
+    },
+    "system": {
+      "params": {
+        "macros": {
+          "A": "KM",
+          "B": "TT",
+          "C": "SS"
+        },
+        "target": "TTTTTTSS",
+        "alphabet": [
+          "A",
+          "B",
+          "C",
+          "A*2",
+          "B*2",
+          "C*2",
+          "A*3",
+          "B*3",
+          "C*3"
+        ],
+        "max_steps": 5
+      },
+      "witness": [
+        "B*2",
+        "B",
+        "C"
+      ]
+    }
+  }
+}

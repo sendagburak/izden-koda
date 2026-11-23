@@ -1,0 +1,145 @@
+{
+  "schema_version": 1,
+  "id": "d3-p5-042",
+  "world": "d3",
+  "act": 5,
+  "order": 42,
+  "type": "robot_course",
+  "concepts": [
+    "robotics",
+    "events"
+  ],
+  "locale_key": "mission.d3-p5-042",
+  "hints": [
+    "hint.d3-p5-042.1",
+    "hint.d3-p5-042.2",
+    "hint.d3-p5-042.3"
+  ],
+  "layers": {
+    "concrete": {
+      "params": {
+        "size": [
+          6,
+          5
+        ],
+        "start": [
+          0,
+          1
+        ],
+        "goal": [
+          4,
+          2
+        ],
+        "rocks": [
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            2,
+            4
+          ]
+        ],
+        "max_steps": 27
+      },
+      "witness": [
+        "S",
+        "U",
+        "R",
+        "R",
+        "R",
+        "R",
+        "D",
+        "D"
+      ]
+    },
+    "blocks": {
+      "params": {
+        "size": [
+          6,
+          6
+        ],
+        "start": [
+          0,
+          1
+        ],
+        "goal": [
+          4,
+          3
+        ],
+        "rocks": [
+          [
+            0,
+            0
+          ]
+        ],
+        "max_steps": 35
+      },
+      "witness": [
+        "S",
+        "R",
+        "R",
+        "R",
+        "R",
+        "D",
+        "D"
+      ]
+    },
+    "system": {
+      "params": {
+        "size": [
+          7,
+          6
+        ],
+        "start": [
+          0,
+          2
+        ],
+        "goal": [
+          5,
+          3
+        ],
+        "rocks": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            4,
+            0
+          ],
+          [
+            6,
+            2
+          ]
+        ],
+        "max_steps": 36
+      },
+      "witness": [
+        "S",
+        "R",
+        "R",
+        "R",
+        "R",
+        "R",
+        "D"
+      ]
+    }
+  }
+}

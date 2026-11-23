@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "id": "d4-p2-017",
+  "world": "d4",
+  "act": 2,
+  "order": 17,
+  "type": "data_detective",
+  "concepts": [
+    "data",
+    "filtering"
+  ],
+  "locale_key": "mission.d4-p2-017",
+  "hints": [
+    "hint.d4-p2-017.1",
+    "hint.d4-p2-017.2",
+    "hint.d4-p2-017.3"
+  ],
+  "layers": {
+    "concrete": {
+      "params": {
+        "values": [
+          6,
+          5,
+          5,
+          8
+        ],
+        "threshold": 6,
+        "alphabet": [
+          "0",
+          "1",
+          "2",
+          "3"
+        ],
+        "max_steps": 4
+      },
+      "witness": [
+        "0",
+        "3"
+      ]
+    },
+    "blocks": {
+      "params": {
+        "values": [
+          4,
+          9,
+          4,
+          8,
+          3
+        ],
+        "threshold": 4,
+        "alphabet": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "max_steps": 5
+      },
+      "witness": [
+        "0",
+        "1",
+        "2",
+        "3"
+      ]
+    },
+    "system": {
+      "params": {
+        "values": [
+          5,
+          3,
+          7,
+          2,
+          3,
+          1
+        ],
+        "threshold": 3,
+        "alphabet": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4",
+          "5"
+        ],
+        "max_steps": 6
+      },
+      "witness": [
+        "0",
+        "1",
+        "2",
+        "4"
+      ]
+    }
+  }
+}

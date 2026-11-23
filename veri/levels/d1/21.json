@@ -1,0 +1,143 @@
+{
+  "schema_version": 1,
+  "id": "d1-p3-021",
+  "world": "d1",
+  "act": 3,
+  "order": 21,
+  "type": "grid_route",
+  "concepts": [
+    "sequence",
+    "direction"
+  ],
+  "locale_key": "mission.d1-p3-021",
+  "hints": [
+    "hint.d1-p3-021.1",
+    "hint.d1-p3-021.2",
+    "hint.d1-p3-021.3"
+  ],
+  "layers": {
+    "concrete": {
+      "params": {
+        "size": [
+          5,
+          4
+        ],
+        "start": [
+          0,
+          2
+        ],
+        "goal": [
+          3,
+          2
+        ],
+        "rocks": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        "max_steps": 16
+      },
+      "witness": [
+        "R",
+        "R",
+        "R"
+      ]
+    },
+    "blocks": {
+      "params": {
+        "size": [
+          6,
+          5
+        ],
+        "start": [
+          0,
+          4
+        ],
+        "goal": [
+          4,
+          4
+        ],
+        "rocks": [
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            5,
+            1
+          ]
+        ],
+        "max_steps": 26
+      },
+      "witness": [
+        "U",
+        "R",
+        "R",
+        "R",
+        "R",
+        "D"
+      ]
+    },
+    "system": {
+      "params": {
+        "size": [
+          7,
+          5
+        ],
+        "start": [
+          0,
+          1
+        ],
+        "goal": [
+          5,
+          1
+        ],
+        "rocks": [
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            5,
+            3
+          ],
+          [
+            6,
+            2
+          ]
+        ],
+        "max_steps": 29
+      },
+      "witness": [
+        "U",
+        "R",
+        "R",
+        "R",
+        "R",
+        "R",
+        "D"
+      ]
+    }
+  }
+}

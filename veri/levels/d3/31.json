@@ -1,0 +1,119 @@
+{
+  "schema_version": 1,
+  "id": "d3-p4-031",
+  "world": "d3",
+  "act": 4,
+  "order": 31,
+  "type": "sensor_lab",
+  "concepts": [
+    "sensors",
+    "conditions"
+  ],
+  "locale_key": "mission.d3-p4-031",
+  "hints": [
+    "hint.d3-p4-031.1",
+    "hint.d3-p4-031.2",
+    "hint.d3-p4-031.3"
+  ],
+  "layers": {
+    "concrete": {
+      "params": {
+        "samples": [
+          2,
+          3,
+          5,
+          4,
+          1
+        ],
+        "expected": [
+          1,
+          0,
+          0,
+          0,
+          1
+        ],
+        "goal_threshold": 3,
+        "alphabet": [
+          "T1",
+          "T2",
+          "T3",
+          "T4",
+          "AUTO"
+        ],
+        "max_steps": 3
+      },
+      "witness": [
+        "T3",
+        "AUTO"
+      ]
+    },
+    "blocks": {
+      "params": {
+        "samples": [
+          2,
+          1,
+          5,
+          0,
+          5,
+          2
+        ],
+        "expected": [
+          0,
+          1,
+          0,
+          1,
+          0,
+          0
+        ],
+        "goal_threshold": 2,
+        "alphabet": [
+          "T1",
+          "T2",
+          "T3",
+          "T4",
+          "AUTO"
+        ],
+        "max_steps": 3
+      },
+      "witness": [
+        "T2",
+        "AUTO"
+      ]
+    },
+    "system": {
+      "params": {
+        "samples": [
+          1,
+          5,
+          2,
+          5,
+          5,
+          3,
+          2
+        ],
+        "expected": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "goal_threshold": 2,
+        "alphabet": [
+          "T1",
+          "T2",
+          "T3",
+          "T4",
+          "AUTO"
+        ],
+        "max_steps": 3
+      },
+      "witness": [
+        "T2",
+        "AUTO"
+      ]
+    }
+  }
+}

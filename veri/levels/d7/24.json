@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "id": "d7-p3-024",
+  "world": "d7",
+  "act": 3,
+  "order": 24,
+  "type": "data_detective",
+  "concepts": [
+    "data",
+    "filtering"
+  ],
+  "locale_key": "mission.d7-p3-024",
+  "hints": [
+    "hint.d7-p3-024.1",
+    "hint.d7-p3-024.2",
+    "hint.d7-p3-024.3"
+  ],
+  "layers": {
+    "concrete": {
+      "params": {
+        "values": [
+          3,
+          6,
+          4,
+          3
+        ],
+        "threshold": 4,
+        "alphabet": [
+          "0",
+          "1",
+          "2",
+          "3"
+        ],
+        "max_steps": 4
+      },
+      "witness": [
+        "1",
+        "2"
+      ]
+    },
+    "blocks": {
+      "params": {
+        "values": [
+          5,
+          1,
+          3,
+          5,
+          4
+        ],
+        "threshold": 5,
+        "alphabet": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "max_steps": 5
+      },
+      "witness": [
+        "0",
+        "3"
+      ]
+    },
+    "system": {
+      "params": {
+        "values": [
+          3,
+          9,
+          5,
+          1,
+          6,
+          5
+        ],
+        "threshold": 6,
+        "alphabet": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4",
+          "5"
+        ],
+        "max_steps": 6
+      },
+      "witness": [
+        "1",
+        "4"
+      ]
+    }
+  }
+}

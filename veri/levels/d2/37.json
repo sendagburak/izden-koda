@@ -1,0 +1,120 @@
+{
+  "schema_version": 1,
+  "id": "d2-p4-037",
+  "world": "d2",
+  "act": 4,
+  "order": 37,
+  "type": "state_machine",
+  "concepts": [
+    "states",
+    "events"
+  ],
+  "locale_key": "mission.d2-p4-037",
+  "hints": [
+    "hint.d2-p4-037.1",
+    "hint.d2-p4-037.2",
+    "hint.d2-p4-037.3"
+  ],
+  "layers": {
+    "concrete": {
+      "params": {
+        "transitions": {
+          "OFF": {
+            "START": "READY"
+          },
+          "READY": {
+            "OPEN": "ACTIVE"
+          },
+          "ACTIVE": {
+            "STOP": "SAFE",
+            "RESET": "OFF"
+          },
+          "SAFE": {
+            "RESET": "OFF"
+          }
+        },
+        "start": "OFF",
+        "goal": "SAFE",
+        "alphabet": [
+          "OPEN",
+          "RESET",
+          "START",
+          "STOP"
+        ],
+        "max_steps": 6
+      },
+      "witness": [
+        "START",
+        "OPEN",
+        "STOP"
+      ]
+    },
+    "blocks": {
+      "params": {
+        "transitions": {
+          "OFF": {
+            "START": "READY"
+          },
+          "READY": {
+            "OPEN": "ACTIVE"
+          },
+          "ACTIVE": {
+            "STOP": "SAFE",
+            "RESET": "OFF"
+          },
+          "SAFE": {
+            "RESET": "OFF"
+          }
+        },
+        "start": "OFF",
+        "goal": "SAFE",
+        "alphabet": [
+          "OPEN",
+          "RESET",
+          "START",
+          "STOP"
+        ],
+        "max_steps": 5
+      },
+      "witness": [
+        "START",
+        "OPEN",
+        "STOP"
+      ]
+    },
+    "system": {
+      "params": {
+        "transitions": {
+          "IDLE": {
+            "START": "WARMING"
+          },
+          "WARMING": {
+            "TICK": "READY",
+            "RESET": "IDLE"
+          },
+          "READY": {
+            "SEND": "DONE",
+            "RESET": "IDLE"
+          },
+          "DONE": {
+            "RESET": "IDLE"
+          }
+        },
+        "start": "IDLE",
+        "goal": "DONE",
+        "alphabet": [
+          "RESET",
+          "SEND",
+          "START",
+          "TICK"
+        ],
+        "max_steps": 4
+      },
+      "witness": [
+        "START",
+        "TICK",
+        "SEND"
+      ]
+    }
+  }
+}

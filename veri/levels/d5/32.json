@@ -1,0 +1,148 @@
+{
+  "schema_version": 1,
+  "id": "d5-p4-032",
+  "world": "d5",
+  "act": 4,
+  "order": 32,
+  "type": "grid_route",
+  "concepts": [
+    "sequence",
+    "direction"
+  ],
+  "locale_key": "mission.d5-p4-032",
+  "hints": [
+    "hint.d5-p4-032.1",
+    "hint.d5-p4-032.2",
+    "hint.d5-p4-032.3"
+  ],
+  "layers": {
+    "concrete": {
+      "params": {
+        "size": [
+          5,
+          5
+        ],
+        "start": [
+          0,
+          1
+        ],
+        "goal": [
+          3,
+          1
+        ],
+        "rocks": [
+          [
+            0,
+            4
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            3,
+            0
+          ],
+          [
+            4,
+            3
+          ]
+        ],
+        "max_steps": 20
+      },
+      "witness": [
+        "R",
+        "R",
+        "R"
+      ]
+    },
+    "blocks": {
+      "params": {
+        "size": [
+          7,
+          6
+        ],
+        "start": [
+          0,
+          3
+        ],
+        "goal": [
+          5,
+          5
+        ],
+        "rocks": [
+          [
+            1,
+            2
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            6,
+            3
+          ]
+        ],
+        "max_steps": 38
+      },
+      "witness": [
+        "R",
+        "R",
+        "R",
+        "R",
+        "R",
+        "D",
+        "D"
+      ]
+    },
+    "system": {
+      "params": {
+        "size": [
+          8,
+          6
+        ],
+        "start": [
+          0,
+          1
+        ],
+        "goal": [
+          6,
+          2
+        ],
+        "rocks": [
+          [
+            3,
+            3
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            7,
+            0
+          ],
+          [
+            7,
+            1
+          ],
+          [
+            7,
+            3
+          ]
+        ],
+        "max_steps": 40
+      },
+      "witness": [
+        "R",
+        "R",
+        "R",
+        "R",
+        "R",
+        "R",
+        "D"
+      ]
+    }
+  }
+}

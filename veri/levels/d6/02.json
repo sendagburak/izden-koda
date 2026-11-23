@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "id": "d6-p1-002",
+  "world": "d6",
+  "act": 1,
+  "order": 2,
+  "type": "pattern_machine",
+  "concepts": [
+    "functions",
+    "arithmetic"
+  ],
+  "locale_key": "mission.d6-p1-002",
+  "hints": [
+    "hint.d6-p1-002.1",
+    "hint.d6-p1-002.2",
+    "hint.d6-p1-002.3"
+  ],
+  "layers": {
+    "concrete": {
+      "params": {
+        "start": 1,
+        "goal": 4,
+        "alphabet": [
+          "+2",
+          "+3",
+          "-1",
+          "*2"
+        ],
+        "max_steps": 3
+      },
+      "witness": [
+        "+3"
+      ]
+    },
+    "blocks": {
+      "params": {
+        "start": 1,
+        "goal": 4,
+        "alphabet": [
+          "+2",
+          "+3",
+          "-1",
+          "*2"
+        ],
+        "max_steps": 4
+      },
+      "witness": [
+        "*2",
+        "+2"
+      ]
+    },
+    "system": {
+      "params": {
+        "start": 3,
+        "goal": 5,
+        "alphabet": [
+          "+2",
+          "+3",
+          "-1",
+          "*2"
+        ],
+        "max_steps": 6
+      },
+      "witness": [
+        "-1",
+        "*2",
+        "-1",
+        "+2"
+      ]
+    }
+  }
+}

@@ -1,0 +1,2296 @@
+key,value
+flow.step_act,Uygula
+flow.step_check,Kontrol et
+flow.step_compare,Karşılaştır
+flow.step_measure,Ölç
+flow.step_observe,Gözlemle
+flow.step_plan,Planla
+flow.step_read,Oku
+flow.step_record,Kayda al
+flow.step_refine,İyileştir
+flow.step_save,Kaydet
+flow.step_select,Seç
+flow.step_share,Paylaş
+flow.step_sort,Sırala
+flow.step_verify,Doğrula
+hint.d1-p1-001.1,Işığın başladığı kareden ilerle.
+hint.d1-p1-001.2,"Kayalar varsa, üstlerinden değil yanlarından dolaş."
+hint.d1-p1-001.3,Haritada başlangıçtan hedefe giden taşları sırayla dene.
+hint.d1-p1-002.1,İskeleye varmadan önce yön değiştirmek gerekebilir.
+hint.d1-p1-002.2,Kayanın yanında boş bir hat var mı?
+hint.d1-p1-002.3,"Önce kıyıdan yukarı çık, sonra postaya yaklaş."
+hint.d1-p1-003.1,Uzun duvarın çevresini incele.
+hint.d1-p1-003.2,Geçidin altından dolaşan bir rota var.
+hint.d1-p1-003.3,"Önce duvarın bittiği noktaya in, sonra ilerle."
+hint.d1-p1-004.1,Yukarıdaki örüntüye dikkat et.
+hint.d1-p1-004.2,Işıkların tekrarlanan sırasını oku.
+hint.d1-p1-004.3,Hedef örüntünün ilk işaretinden başla.
+hint.d1-p1-005.1,Bastığın düğme başka lambaları da değiştirir.
+hint.d1-p1-005.2,Her anahtarın bağlı olduğu ışıkları gözle.
+hint.d1-p1-005.3,Düğmeleri birer birer dene; hedefle karşılaştır.
+hint.d1-p1-006.1,"İlk adım veri okumak, gözlem yapmak ya da ölçmektir."
+hint.d1-p1-006.2,"Önce bilgi toplanır, sonra işlenir ve sonunda kontrol edilir."
+hint.d1-p1-006.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d1-p1-007.1,Işık dizisinin tekrar eden parçasını bul.
+hint.d1-p1-007.2,"Küçük parçayı baştan sona kur, sonra dizide yeniden başlat."
+hint.d1-p1-007.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d1-p1-008.1,Başlangıç ile hedef arasındaki farkı bul.
+hint.d1-p1-008.2,Çarpma komutunu erken ve geç uygulayarak sonuçları karşılaştır.
+hint.d1-p1-008.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d1-p1-009.1,Hedefin yönünü bul. Engellere bakmadan komut ekleme.
+hint.d1-p1-009.2,Her komut bir kare ilerletir. Bir engelin çevresinden dolaşabilirsin.
+hint.d1-p1-009.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d1-p1-010.1,Başlangıç ve hedefte farklı olan ışıkları belirle.
+hint.d1-p1-010.2,Bir anahtara iki kez basmak etkisini geri alır.
+hint.d1-p1-010.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d1-p2-011.1,Işık dizisinin tekrar eden parçasını bul.
+hint.d1-p2-011.2,"Küçük parçayı baştan sona kur, sonra dizide yeniden başlat."
+hint.d1-p2-011.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d1-p2-012.1,Başlangıç ve hedefte farklı olan ışıkları belirle.
+hint.d1-p2-012.2,Bir anahtara iki kez basmak etkisini geri alır.
+hint.d1-p2-012.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d1-p2-013.1,Hedefin yönünü bul. Engellere bakmadan komut ekleme.
+hint.d1-p2-013.2,Her komut bir kare ilerletir. Bir engelin çevresinden dolaşabilirsin.
+hint.d1-p2-013.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d1-p2-014.1,"İlk adım veri okumak, gözlem yapmak ya da ölçmektir."
+hint.d1-p2-014.2,"Önce bilgi toplanır, sonra işlenir ve sonunda kontrol edilir."
+hint.d1-p2-014.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d1-p2-015.1,Işık dizisinin tekrar eden parçasını bul.
+hint.d1-p2-015.2,"Küçük parçayı baştan sona kur, sonra dizide yeniden başlat."
+hint.d1-p2-015.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d1-p2-016.1,Başlangıç ile hedef arasındaki farkı bul.
+hint.d1-p2-016.2,Çarpma komutunu erken ve geç uygulayarak sonuçları karşılaştır.
+hint.d1-p2-016.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d1-p2-017.1,Hedefin yönünü bul. Engellere bakmadan komut ekleme.
+hint.d1-p2-017.2,Her komut bir kare ilerletir. Bir engelin çevresinden dolaşabilirsin.
+hint.d1-p2-017.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d1-p2-018.1,Başlangıç ve hedefte farklı olan ışıkları belirle.
+hint.d1-p2-018.2,Bir anahtara iki kez basmak etkisini geri alır.
+hint.d1-p2-018.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d1-p2-019.1,Hedefin yönünü bul. Engellere bakmadan komut ekleme.
+hint.d1-p2-019.2,Her komut bir kare ilerletir. Bir engelin çevresinden dolaşabilirsin.
+hint.d1-p2-019.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d1-p2-020.1,Hedefin yönünü bul. Engellere bakmadan komut ekleme.
+hint.d1-p2-020.2,Her komut bir kare ilerletir. Bir engelin çevresinden dolaşabilirsin.
+hint.d1-p2-020.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d1-p3-021.1,Hedefin yönünü bul. Engellere bakmadan komut ekleme.
+hint.d1-p3-021.2,Her komut bir kare ilerletir. Bir engelin çevresinden dolaşabilirsin.
+hint.d1-p3-021.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d1-p3-022.1,"İlk adım veri okumak, gözlem yapmak ya da ölçmektir."
+hint.d1-p3-022.2,"Önce bilgi toplanır, sonra işlenir ve sonunda kontrol edilir."
+hint.d1-p3-022.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d1-p3-023.1,Işık dizisinin tekrar eden parçasını bul.
+hint.d1-p3-023.2,"Küçük parçayı baştan sona kur, sonra dizide yeniden başlat."
+hint.d1-p3-023.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d1-p3-024.1,Başlangıç ile hedef arasındaki farkı bul.
+hint.d1-p3-024.2,Çarpma komutunu erken ve geç uygulayarak sonuçları karşılaştır.
+hint.d1-p3-024.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d1-p3-025.1,Hedefin yönünü bul. Engellere bakmadan komut ekleme.
+hint.d1-p3-025.2,Her komut bir kare ilerletir. Bir engelin çevresinden dolaşabilirsin.
+hint.d1-p3-025.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d1-p3-026.1,Başlangıç ve hedefte farklı olan ışıkları belirle.
+hint.d1-p3-026.2,Bir anahtara iki kez basmak etkisini geri alır.
+hint.d1-p3-026.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d1-p3-027.1,Hedefin yönünü bul. Engellere bakmadan komut ekleme.
+hint.d1-p3-027.2,Her komut bir kare ilerletir. Bir engelin çevresinden dolaşabilirsin.
+hint.d1-p3-027.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d1-p3-028.1,Hedefin yönünü bul. Engellere bakmadan komut ekleme.
+hint.d1-p3-028.2,Her komut bir kare ilerletir. Bir engelin çevresinden dolaşabilirsin.
+hint.d1-p3-028.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d1-p3-029.1,Işık dizisinin tekrar eden parçasını bul.
+hint.d1-p3-029.2,"Küçük parçayı baştan sona kur, sonra dizide yeniden başlat."
+hint.d1-p3-029.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d1-p3-030.1,Başlangıç ve hedefte farklı olan ışıkları belirle.
+hint.d1-p3-030.2,Bir anahtara iki kez basmak etkisini geri alır.
+hint.d1-p3-030.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d1-p4-031.1,Işık dizisinin tekrar eden parçasını bul.
+hint.d1-p4-031.2,"Küçük parçayı baştan sona kur, sonra dizide yeniden başlat."
+hint.d1-p4-031.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d1-p4-032.1,Başlangıç ile hedef arasındaki farkı bul.
+hint.d1-p4-032.2,Çarpma komutunu erken ve geç uygulayarak sonuçları karşılaştır.
+hint.d1-p4-032.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d1-p4-033.1,Hedefin yönünü bul. Engellere bakmadan komut ekleme.
+hint.d1-p4-033.2,Her komut bir kare ilerletir. Bir engelin çevresinden dolaşabilirsin.
+hint.d1-p4-033.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d1-p4-034.1,Başlangıç ve hedefte farklı olan ışıkları belirle.
+hint.d1-p4-034.2,Bir anahtara iki kez basmak etkisini geri alır.
+hint.d1-p4-034.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d1-p4-035.1,Hedefin yönünü bul. Engellere bakmadan komut ekleme.
+hint.d1-p4-035.2,Her komut bir kare ilerletir. Bir engelin çevresinden dolaşabilirsin.
+hint.d1-p4-035.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d1-p4-036.1,Hedefin yönünü bul. Engellere bakmadan komut ekleme.
+hint.d1-p4-036.2,Her komut bir kare ilerletir. Bir engelin çevresinden dolaşabilirsin.
+hint.d1-p4-036.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d1-p4-037.1,Işık dizisinin tekrar eden parçasını bul.
+hint.d1-p4-037.2,"Küçük parçayı baştan sona kur, sonra dizide yeniden başlat."
+hint.d1-p4-037.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d1-p4-038.1,Başlangıç ve hedefte farklı olan ışıkları belirle.
+hint.d1-p4-038.2,Bir anahtara iki kez basmak etkisini geri alır.
+hint.d1-p4-038.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d1-p4-039.1,Hedefin yönünü bul. Engellere bakmadan komut ekleme.
+hint.d1-p4-039.2,Her komut bir kare ilerletir. Bir engelin çevresinden dolaşabilirsin.
+hint.d1-p4-039.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d1-p4-040.1,"İlk adım veri okumak, gözlem yapmak ya da ölçmektir."
+hint.d1-p4-040.2,"Önce bilgi toplanır, sonra işlenir ve sonunda kontrol edilir."
+hint.d1-p4-040.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d1-p5-041.1,Hedefin yönünü bul. Engellere bakmadan komut ekleme.
+hint.d1-p5-041.2,Her komut bir kare ilerletir. Bir engelin çevresinden dolaşabilirsin.
+hint.d1-p5-041.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d1-p5-042.1,Başlangıç ve hedefte farklı olan ışıkları belirle.
+hint.d1-p5-042.2,Bir anahtara iki kez basmak etkisini geri alır.
+hint.d1-p5-042.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d1-p5-043.1,Hedefin yönünü bul. Engellere bakmadan komut ekleme.
+hint.d1-p5-043.2,Her komut bir kare ilerletir. Bir engelin çevresinden dolaşabilirsin.
+hint.d1-p5-043.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d1-p5-044.1,Hedefin yönünü bul. Engellere bakmadan komut ekleme.
+hint.d1-p5-044.2,Her komut bir kare ilerletir. Bir engelin çevresinden dolaşabilirsin.
+hint.d1-p5-044.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d1-p5-045.1,Işık dizisinin tekrar eden parçasını bul.
+hint.d1-p5-045.2,"Küçük parçayı baştan sona kur, sonra dizide yeniden başlat."
+hint.d1-p5-045.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d1-p5-046.1,Başlangıç ve hedefte farklı olan ışıkları belirle.
+hint.d1-p5-046.2,Bir anahtara iki kez basmak etkisini geri alır.
+hint.d1-p5-046.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d1-p5-047.1,Hedefin yönünü bul. Engellere bakmadan komut ekleme.
+hint.d1-p5-047.2,Her komut bir kare ilerletir. Bir engelin çevresinden dolaşabilirsin.
+hint.d1-p5-047.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d1-p5-048.1,"İlk adım veri okumak, gözlem yapmak ya da ölçmektir."
+hint.d1-p5-048.2,"Önce bilgi toplanır, sonra işlenir ve sonunda kontrol edilir."
+hint.d1-p5-048.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d1-p5-049.1,Işık dizisinin tekrar eden parçasını bul.
+hint.d1-p5-049.2,"Küçük parçayı baştan sona kur, sonra dizide yeniden başlat."
+hint.d1-p5-049.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d1-p5-050.1,Başlangıç ile hedef arasındaki farkı bul.
+hint.d1-p5-050.2,Çarpma komutunu erken ve geç uygulayarak sonuçları karşılaştır.
+hint.d1-p5-050.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d2-p1-001.1,Işık dizisinin tekrar eden parçasını bul.
+hint.d2-p1-001.2,"Küçük parçayı baştan sona kur, sonra dizide yeniden başlat."
+hint.d2-p1-001.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d2-p1-002.1,Hedef dizide bir yordamın ürettiği parçayı ara.
+hint.d2-p1-002.2,Aynı parça art arda geliyorsa varsa tekrar komutunu kullan.
+hint.d2-p1-002.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d2-p1-003.1,Başlangıç durumunda hangi olayların mümkün olduğuna bak.
+hint.d2-p1-003.2,Her olaydan sonra yeni durumu bul. Bir saat adımı gerekiyorsa TICK kullan.
+hint.d2-p1-003.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d2-p1-004.1,Kapının adını ve istenen çıkışı birlikte oku.
+hint.d2-p1-004.2,Girişlerden birini değiştirip çıkışın nasıl değiştiğini incele.
+hint.d2-p1-004.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d2-p1-005.1,Başlangıç ve hedefte farklı olan ışıkları belirle.
+hint.d2-p1-005.2,Bir anahtara iki kez basmak etkisini geri alır.
+hint.d2-p1-005.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d2-p1-006.1,"İlk adım veri okumak, gözlem yapmak ya da ölçmektir."
+hint.d2-p1-006.2,"Önce bilgi toplanır, sonra işlenir ve sonunda kontrol edilir."
+hint.d2-p1-006.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d2-p1-007.1,Hedef dizide bir yordamın ürettiği parçayı ara.
+hint.d2-p1-007.2,Aynı parça art arda geliyorsa varsa tekrar komutunu kullan.
+hint.d2-p1-007.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d2-p1-008.1,Kapının adını ve istenen çıkışı birlikte oku.
+hint.d2-p1-008.2,Girişlerden birini değiştirip çıkışın nasıl değiştiğini incele.
+hint.d2-p1-008.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d2-p1-009.1,Başlangıç durumunda hangi olayların mümkün olduğuna bak.
+hint.d2-p1-009.2,Her olaydan sonra yeni durumu bul. Bir saat adımı gerekiyorsa TICK kullan.
+hint.d2-p1-009.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d2-p1-010.1,Işık dizisinin tekrar eden parçasını bul.
+hint.d2-p1-010.2,"Küçük parçayı baştan sona kur, sonra dizide yeniden başlat."
+hint.d2-p1-010.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d2-p2-011.1,Başlangıç durumunda hangi olayların mümkün olduğuna bak.
+hint.d2-p2-011.2,Her olaydan sonra yeni durumu bul. Bir saat adımı gerekiyorsa TICK kullan.
+hint.d2-p2-011.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d2-p2-012.1,Kapının adını ve istenen çıkışı birlikte oku.
+hint.d2-p2-012.2,Girişlerden birini değiştirip çıkışın nasıl değiştiğini incele.
+hint.d2-p2-012.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d2-p2-013.1,Başlangıç ve hedefte farklı olan ışıkları belirle.
+hint.d2-p2-013.2,Bir anahtara iki kez basmak etkisini geri alır.
+hint.d2-p2-013.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d2-p2-014.1,"İlk adım veri okumak, gözlem yapmak ya da ölçmektir."
+hint.d2-p2-014.2,"Önce bilgi toplanır, sonra işlenir ve sonunda kontrol edilir."
+hint.d2-p2-014.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d2-p2-015.1,Hedef dizide bir yordamın ürettiği parçayı ara.
+hint.d2-p2-015.2,Aynı parça art arda geliyorsa varsa tekrar komutunu kullan.
+hint.d2-p2-015.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d2-p2-016.1,Kapının adını ve istenen çıkışı birlikte oku.
+hint.d2-p2-016.2,Girişlerden birini değiştirip çıkışın nasıl değiştiğini incele.
+hint.d2-p2-016.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d2-p2-017.1,Başlangıç durumunda hangi olayların mümkün olduğuna bak.
+hint.d2-p2-017.2,Her olaydan sonra yeni durumu bul. Bir saat adımı gerekiyorsa TICK kullan.
+hint.d2-p2-017.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d2-p2-018.1,Işık dizisinin tekrar eden parçasını bul.
+hint.d2-p2-018.2,"Küçük parçayı baştan sona kur, sonra dizide yeniden başlat."
+hint.d2-p2-018.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d2-p2-019.1,Işık dizisinin tekrar eden parçasını bul.
+hint.d2-p2-019.2,"Küçük parçayı baştan sona kur, sonra dizide yeniden başlat."
+hint.d2-p2-019.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d2-p2-020.1,Hedef dizide bir yordamın ürettiği parçayı ara.
+hint.d2-p2-020.2,Aynı parça art arda geliyorsa varsa tekrar komutunu kullan.
+hint.d2-p2-020.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d2-p3-021.1,Başlangıç ve hedefte farklı olan ışıkları belirle.
+hint.d2-p3-021.2,Bir anahtara iki kez basmak etkisini geri alır.
+hint.d2-p3-021.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d2-p3-022.1,"İlk adım veri okumak, gözlem yapmak ya da ölçmektir."
+hint.d2-p3-022.2,"Önce bilgi toplanır, sonra işlenir ve sonunda kontrol edilir."
+hint.d2-p3-022.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d2-p3-023.1,Hedef dizide bir yordamın ürettiği parçayı ara.
+hint.d2-p3-023.2,Aynı parça art arda geliyorsa varsa tekrar komutunu kullan.
+hint.d2-p3-023.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d2-p3-024.1,Kapının adını ve istenen çıkışı birlikte oku.
+hint.d2-p3-024.2,Girişlerden birini değiştirip çıkışın nasıl değiştiğini incele.
+hint.d2-p3-024.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d2-p3-025.1,Başlangıç durumunda hangi olayların mümkün olduğuna bak.
+hint.d2-p3-025.2,Her olaydan sonra yeni durumu bul. Bir saat adımı gerekiyorsa TICK kullan.
+hint.d2-p3-025.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d2-p3-026.1,Işık dizisinin tekrar eden parçasını bul.
+hint.d2-p3-026.2,"Küçük parçayı baştan sona kur, sonra dizide yeniden başlat."
+hint.d2-p3-026.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d2-p3-027.1,Işık dizisinin tekrar eden parçasını bul.
+hint.d2-p3-027.2,"Küçük parçayı baştan sona kur, sonra dizide yeniden başlat."
+hint.d2-p3-027.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d2-p3-028.1,Hedef dizide bir yordamın ürettiği parçayı ara.
+hint.d2-p3-028.2,Aynı parça art arda geliyorsa varsa tekrar komutunu kullan.
+hint.d2-p3-028.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d2-p3-029.1,Başlangıç durumunda hangi olayların mümkün olduğuna bak.
+hint.d2-p3-029.2,Her olaydan sonra yeni durumu bul. Bir saat adımı gerekiyorsa TICK kullan.
+hint.d2-p3-029.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d2-p3-030.1,Kapının adını ve istenen çıkışı birlikte oku.
+hint.d2-p3-030.2,Girişlerden birini değiştirip çıkışın nasıl değiştiğini incele.
+hint.d2-p3-030.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d2-p4-031.1,Hedef dizide bir yordamın ürettiği parçayı ara.
+hint.d2-p4-031.2,Aynı parça art arda geliyorsa varsa tekrar komutunu kullan.
+hint.d2-p4-031.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d2-p4-032.1,Kapının adını ve istenen çıkışı birlikte oku.
+hint.d2-p4-032.2,Girişlerden birini değiştirip çıkışın nasıl değiştiğini incele.
+hint.d2-p4-032.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d2-p4-033.1,Başlangıç durumunda hangi olayların mümkün olduğuna bak.
+hint.d2-p4-033.2,Her olaydan sonra yeni durumu bul. Bir saat adımı gerekiyorsa TICK kullan.
+hint.d2-p4-033.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d2-p4-034.1,Işık dizisinin tekrar eden parçasını bul.
+hint.d2-p4-034.2,"Küçük parçayı baştan sona kur, sonra dizide yeniden başlat."
+hint.d2-p4-034.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d2-p4-035.1,Işık dizisinin tekrar eden parçasını bul.
+hint.d2-p4-035.2,"Küçük parçayı baştan sona kur, sonra dizide yeniden başlat."
+hint.d2-p4-035.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d2-p4-036.1,Hedef dizide bir yordamın ürettiği parçayı ara.
+hint.d2-p4-036.2,Aynı parça art arda geliyorsa varsa tekrar komutunu kullan.
+hint.d2-p4-036.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d2-p4-037.1,Başlangıç durumunda hangi olayların mümkün olduğuna bak.
+hint.d2-p4-037.2,Her olaydan sonra yeni durumu bul. Bir saat adımı gerekiyorsa TICK kullan.
+hint.d2-p4-037.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d2-p4-038.1,Kapının adını ve istenen çıkışı birlikte oku.
+hint.d2-p4-038.2,Girişlerden birini değiştirip çıkışın nasıl değiştiğini incele.
+hint.d2-p4-038.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d2-p4-039.1,Başlangıç ve hedefte farklı olan ışıkları belirle.
+hint.d2-p4-039.2,Bir anahtara iki kez basmak etkisini geri alır.
+hint.d2-p4-039.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d2-p4-040.1,"İlk adım veri okumak, gözlem yapmak ya da ölçmektir."
+hint.d2-p4-040.2,"Önce bilgi toplanır, sonra işlenir ve sonunda kontrol edilir."
+hint.d2-p4-040.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d2-p5-041.1,Başlangıç durumunda hangi olayların mümkün olduğuna bak.
+hint.d2-p5-041.2,Her olaydan sonra yeni durumu bul. Bir saat adımı gerekiyorsa TICK kullan.
+hint.d2-p5-041.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d2-p5-042.1,Işık dizisinin tekrar eden parçasını bul.
+hint.d2-p5-042.2,"Küçük parçayı baştan sona kur, sonra dizide yeniden başlat."
+hint.d2-p5-042.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d2-p5-043.1,Işık dizisinin tekrar eden parçasını bul.
+hint.d2-p5-043.2,"Küçük parçayı baştan sona kur, sonra dizide yeniden başlat."
+hint.d2-p5-043.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d2-p5-044.1,Hedef dizide bir yordamın ürettiği parçayı ara.
+hint.d2-p5-044.2,Aynı parça art arda geliyorsa varsa tekrar komutunu kullan.
+hint.d2-p5-044.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d2-p5-045.1,Başlangıç durumunda hangi olayların mümkün olduğuna bak.
+hint.d2-p5-045.2,Her olaydan sonra yeni durumu bul. Bir saat adımı gerekiyorsa TICK kullan.
+hint.d2-p5-045.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d2-p5-046.1,Kapının adını ve istenen çıkışı birlikte oku.
+hint.d2-p5-046.2,Girişlerden birini değiştirip çıkışın nasıl değiştiğini incele.
+hint.d2-p5-046.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d2-p5-047.1,Başlangıç ve hedefte farklı olan ışıkları belirle.
+hint.d2-p5-047.2,Bir anahtara iki kez basmak etkisini geri alır.
+hint.d2-p5-047.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d2-p5-048.1,"İlk adım veri okumak, gözlem yapmak ya da ölçmektir."
+hint.d2-p5-048.2,"Önce bilgi toplanır, sonra işlenir ve sonunda kontrol edilir."
+hint.d2-p5-048.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d2-p5-049.1,Hedef dizide bir yordamın ürettiği parçayı ara.
+hint.d2-p5-049.2,Aynı parça art arda geliyorsa varsa tekrar komutunu kullan.
+hint.d2-p5-049.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d2-p5-050.1,Kapının adını ve istenen çıkışı birlikte oku.
+hint.d2-p5-050.2,Girişlerden birini değiştirip çıkışın nasıl değiştiğini incele.
+hint.d2-p5-050.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d3-p1-001.1,Hedefte 1 olan ölçümler için eşiği düşün.
+hint.d3-p1-001.2,Sensör eşikten küçük ölçümlere yanıt verir. Sonra AUTO komutuyla denetimi aç.
+hint.d3-p1-001.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d3-p1-002.1,En yüksek katkıyı veren seçeneğin maliyetini kontrol et.
+hint.d3-p1-002.2,İki seçeneğin maliyet ve katkı toplamını ayrı ayrı hesapla.
+hint.d3-p1-002.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d3-p1-003.1,Ölçümlerin sıra numarasını ve eşik değerini ayırt et.
+hint.d3-p1-003.2,Eşiğe eşit ölçümleri de seç.
+hint.d3-p1-003.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d3-p1-004.1,Kapının adını ve istenen çıkışı birlikte oku.
+hint.d3-p1-004.2,Girişlerden birini değiştirip çıkışın nasıl değiştiğini incele.
+hint.d3-p1-004.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d3-p1-005.1,Başlangıç ile hedef arasındaki farkı bul.
+hint.d3-p1-005.2,Çarpma komutunu erken ve geç uygulayarak sonuçları karşılaştır.
+hint.d3-p1-005.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d3-p1-006.1,Robot hareket etmeden önce çevresini taramalı.
+hint.d3-p1-006.2,Taramadan sonra engellerin çevresinden geçecek bir yön sırası kur.
+hint.d3-p1-006.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d3-p1-007.1,Hedefte 1 olan ölçümler için eşiği düşün.
+hint.d3-p1-007.2,Sensör eşikten küçük ölçümlere yanıt verir. Sonra AUTO komutuyla denetimi aç.
+hint.d3-p1-007.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d3-p1-008.1,Ölçümlerin sıra numarasını ve eşik değerini ayırt et.
+hint.d3-p1-008.2,Eşiğe eşit ölçümleri de seç.
+hint.d3-p1-008.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d3-p1-009.1,En yüksek katkıyı veren seçeneğin maliyetini kontrol et.
+hint.d3-p1-009.2,İki seçeneğin maliyet ve katkı toplamını ayrı ayrı hesapla.
+hint.d3-p1-009.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d3-p1-010.1,Robot hareket etmeden önce çevresini taramalı.
+hint.d3-p1-010.2,Taramadan sonra engellerin çevresinden geçecek bir yön sırası kur.
+hint.d3-p1-010.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d3-p2-011.1,Ölçümlerin sıra numarasını ve eşik değerini ayırt et.
+hint.d3-p2-011.2,Eşiğe eşit ölçümleri de seç.
+hint.d3-p2-011.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d3-p2-012.1,Kapının adını ve istenen çıkışı birlikte oku.
+hint.d3-p2-012.2,Girişlerden birini değiştirip çıkışın nasıl değiştiğini incele.
+hint.d3-p2-012.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d3-p2-013.1,Başlangıç ile hedef arasındaki farkı bul.
+hint.d3-p2-013.2,Çarpma komutunu erken ve geç uygulayarak sonuçları karşılaştır.
+hint.d3-p2-013.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d3-p2-014.1,Robot hareket etmeden önce çevresini taramalı.
+hint.d3-p2-014.2,Taramadan sonra engellerin çevresinden geçecek bir yön sırası kur.
+hint.d3-p2-014.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d3-p2-015.1,Hedefte 1 olan ölçümler için eşiği düşün.
+hint.d3-p2-015.2,Sensör eşikten küçük ölçümlere yanıt verir. Sonra AUTO komutuyla denetimi aç.
+hint.d3-p2-015.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d3-p2-016.1,Ölçümlerin sıra numarasını ve eşik değerini ayırt et.
+hint.d3-p2-016.2,Eşiğe eşit ölçümleri de seç.
+hint.d3-p2-016.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d3-p2-017.1,En yüksek katkıyı veren seçeneğin maliyetini kontrol et.
+hint.d3-p2-017.2,İki seçeneğin maliyet ve katkı toplamını ayrı ayrı hesapla.
+hint.d3-p2-017.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d3-p2-018.1,Robot hareket etmeden önce çevresini taramalı.
+hint.d3-p2-018.2,Taramadan sonra engellerin çevresinden geçecek bir yön sırası kur.
+hint.d3-p2-018.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d3-p2-019.1,Hedefte 1 olan ölçümler için eşiği düşün.
+hint.d3-p2-019.2,Sensör eşikten küçük ölçümlere yanıt verir. Sonra AUTO komutuyla denetimi aç.
+hint.d3-p2-019.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d3-p2-020.1,En yüksek katkıyı veren seçeneğin maliyetini kontrol et.
+hint.d3-p2-020.2,İki seçeneğin maliyet ve katkı toplamını ayrı ayrı hesapla.
+hint.d3-p2-020.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d3-p3-021.1,Başlangıç ile hedef arasındaki farkı bul.
+hint.d3-p3-021.2,Çarpma komutunu erken ve geç uygulayarak sonuçları karşılaştır.
+hint.d3-p3-021.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d3-p3-022.1,Robot hareket etmeden önce çevresini taramalı.
+hint.d3-p3-022.2,Taramadan sonra engellerin çevresinden geçecek bir yön sırası kur.
+hint.d3-p3-022.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d3-p3-023.1,Hedefte 1 olan ölçümler için eşiği düşün.
+hint.d3-p3-023.2,Sensör eşikten küçük ölçümlere yanıt verir. Sonra AUTO komutuyla denetimi aç.
+hint.d3-p3-023.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d3-p3-024.1,Ölçümlerin sıra numarasını ve eşik değerini ayırt et.
+hint.d3-p3-024.2,Eşiğe eşit ölçümleri de seç.
+hint.d3-p3-024.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d3-p3-025.1,En yüksek katkıyı veren seçeneğin maliyetini kontrol et.
+hint.d3-p3-025.2,İki seçeneğin maliyet ve katkı toplamını ayrı ayrı hesapla.
+hint.d3-p3-025.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d3-p3-026.1,Robot hareket etmeden önce çevresini taramalı.
+hint.d3-p3-026.2,Taramadan sonra engellerin çevresinden geçecek bir yön sırası kur.
+hint.d3-p3-026.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d3-p3-027.1,Hedefte 1 olan ölçümler için eşiği düşün.
+hint.d3-p3-027.2,Sensör eşikten küçük ölçümlere yanıt verir. Sonra AUTO komutuyla denetimi aç.
+hint.d3-p3-027.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d3-p3-028.1,En yüksek katkıyı veren seçeneğin maliyetini kontrol et.
+hint.d3-p3-028.2,İki seçeneğin maliyet ve katkı toplamını ayrı ayrı hesapla.
+hint.d3-p3-028.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d3-p3-029.1,Ölçümlerin sıra numarasını ve eşik değerini ayırt et.
+hint.d3-p3-029.2,Eşiğe eşit ölçümleri de seç.
+hint.d3-p3-029.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d3-p3-030.1,Kapının adını ve istenen çıkışı birlikte oku.
+hint.d3-p3-030.2,Girişlerden birini değiştirip çıkışın nasıl değiştiğini incele.
+hint.d3-p3-030.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d3-p4-031.1,Hedefte 1 olan ölçümler için eşiği düşün.
+hint.d3-p4-031.2,Sensör eşikten küçük ölçümlere yanıt verir. Sonra AUTO komutuyla denetimi aç.
+hint.d3-p4-031.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d3-p4-032.1,Ölçümlerin sıra numarasını ve eşik değerini ayırt et.
+hint.d3-p4-032.2,Eşiğe eşit ölçümleri de seç.
+hint.d3-p4-032.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d3-p4-033.1,En yüksek katkıyı veren seçeneğin maliyetini kontrol et.
+hint.d3-p4-033.2,İki seçeneğin maliyet ve katkı toplamını ayrı ayrı hesapla.
+hint.d3-p4-033.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d3-p4-034.1,Robot hareket etmeden önce çevresini taramalı.
+hint.d3-p4-034.2,Taramadan sonra engellerin çevresinden geçecek bir yön sırası kur.
+hint.d3-p4-034.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d3-p4-035.1,Hedefte 1 olan ölçümler için eşiği düşün.
+hint.d3-p4-035.2,Sensör eşikten küçük ölçümlere yanıt verir. Sonra AUTO komutuyla denetimi aç.
+hint.d3-p4-035.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d3-p4-036.1,En yüksek katkıyı veren seçeneğin maliyetini kontrol et.
+hint.d3-p4-036.2,İki seçeneğin maliyet ve katkı toplamını ayrı ayrı hesapla.
+hint.d3-p4-036.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d3-p4-037.1,Ölçümlerin sıra numarasını ve eşik değerini ayırt et.
+hint.d3-p4-037.2,Eşiğe eşit ölçümleri de seç.
+hint.d3-p4-037.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d3-p4-038.1,Kapının adını ve istenen çıkışı birlikte oku.
+hint.d3-p4-038.2,Girişlerden birini değiştirip çıkışın nasıl değiştiğini incele.
+hint.d3-p4-038.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d3-p4-039.1,Başlangıç ile hedef arasındaki farkı bul.
+hint.d3-p4-039.2,Çarpma komutunu erken ve geç uygulayarak sonuçları karşılaştır.
+hint.d3-p4-039.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d3-p4-040.1,Robot hareket etmeden önce çevresini taramalı.
+hint.d3-p4-040.2,Taramadan sonra engellerin çevresinden geçecek bir yön sırası kur.
+hint.d3-p4-040.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d3-p5-041.1,En yüksek katkıyı veren seçeneğin maliyetini kontrol et.
+hint.d3-p5-041.2,İki seçeneğin maliyet ve katkı toplamını ayrı ayrı hesapla.
+hint.d3-p5-041.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d3-p5-042.1,Robot hareket etmeden önce çevresini taramalı.
+hint.d3-p5-042.2,Taramadan sonra engellerin çevresinden geçecek bir yön sırası kur.
+hint.d3-p5-042.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d3-p5-043.1,Hedefte 1 olan ölçümler için eşiği düşün.
+hint.d3-p5-043.2,Sensör eşikten küçük ölçümlere yanıt verir. Sonra AUTO komutuyla denetimi aç.
+hint.d3-p5-043.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d3-p5-044.1,En yüksek katkıyı veren seçeneğin maliyetini kontrol et.
+hint.d3-p5-044.2,İki seçeneğin maliyet ve katkı toplamını ayrı ayrı hesapla.
+hint.d3-p5-044.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d3-p5-045.1,Ölçümlerin sıra numarasını ve eşik değerini ayırt et.
+hint.d3-p5-045.2,Eşiğe eşit ölçümleri de seç.
+hint.d3-p5-045.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d3-p5-046.1,Kapının adını ve istenen çıkışı birlikte oku.
+hint.d3-p5-046.2,Girişlerden birini değiştirip çıkışın nasıl değiştiğini incele.
+hint.d3-p5-046.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d3-p5-047.1,Başlangıç ile hedef arasındaki farkı bul.
+hint.d3-p5-047.2,Çarpma komutunu erken ve geç uygulayarak sonuçları karşılaştır.
+hint.d3-p5-047.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d3-p5-048.1,Robot hareket etmeden önce çevresini taramalı.
+hint.d3-p5-048.2,Taramadan sonra engellerin çevresinden geçecek bir yön sırası kur.
+hint.d3-p5-048.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d3-p5-049.1,Hedefte 1 olan ölçümler için eşiği düşün.
+hint.d3-p5-049.2,Sensör eşikten küçük ölçümlere yanıt verir. Sonra AUTO komutuyla denetimi aç.
+hint.d3-p5-049.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d3-p5-050.1,Ölçümlerin sıra numarasını ve eşik değerini ayırt et.
+hint.d3-p5-050.2,Eşiğe eşit ölçümleri de seç.
+hint.d3-p5-050.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d4-p1-001.1,Başlangıç ve hedefi aynı konumdaki bitleri eşleştirerek oku.
+hint.d4-p1-001.2,Yalnızca hedefinden farklı olan bitleri değiştir.
+hint.d4-p1-001.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d4-p1-002.1,İlk harfin başlangıç ve hedefini karşılaştır.
+hint.d4-p1-002.2,Çark her adımda bütün harfleri aynı yöne kaydırır.
+hint.d4-p1-002.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d4-p1-003.1,Hedefte hangi vagonun sıranın başında olduğuna bak.
+hint.d4-p1-003.2,İki komşu vagonu değiştirerek yanlış sıradaki sayıyı hedefe yaklaştır.
+hint.d4-p1-003.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d4-p1-004.1,Ölçümlerin sıra numarasını ve eşik değerini ayırt et.
+hint.d4-p1-004.2,Eşiğe eşit ölçümleri de seç.
+hint.d4-p1-004.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d4-p1-005.1,"İlk adım veri okumak, gözlem yapmak ya da ölçmektir."
+hint.d4-p1-005.2,"Önce bilgi toplanır, sonra işlenir ve sonunda kontrol edilir."
+hint.d4-p1-005.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d4-p1-006.1,Başlangıç ve hedefi aynı konumdaki bitleri eşleştirerek oku.
+hint.d4-p1-006.2,Yalnızca hedefinden farklı olan bitleri değiştir.
+hint.d4-p1-006.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d4-p1-007.1,Hedefte hangi vagonun sıranın başında olduğuna bak.
+hint.d4-p1-007.2,İki komşu vagonu değiştirerek yanlış sıradaki sayıyı hedefe yaklaştır.
+hint.d4-p1-007.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d4-p1-008.1,İlk harfin başlangıç ve hedefini karşılaştır.
+hint.d4-p1-008.2,Çark her adımda bütün harfleri aynı yöne kaydırır.
+hint.d4-p1-008.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d4-p1-009.1,Ölçümlerin sıra numarasını ve eşik değerini ayırt et.
+hint.d4-p1-009.2,Eşiğe eşit ölçümleri de seç.
+hint.d4-p1-009.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d4-p1-010.1,"İlk adım veri okumak, gözlem yapmak ya da ölçmektir."
+hint.d4-p1-010.2,"Önce bilgi toplanır, sonra işlenir ve sonunda kontrol edilir."
+hint.d4-p1-010.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d4-p2-011.1,Hedefte hangi vagonun sıranın başında olduğuna bak.
+hint.d4-p2-011.2,İki komşu vagonu değiştirerek yanlış sıradaki sayıyı hedefe yaklaştır.
+hint.d4-p2-011.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d4-p2-012.1,Ölçümlerin sıra numarasını ve eşik değerini ayırt et.
+hint.d4-p2-012.2,Eşiğe eşit ölçümleri de seç.
+hint.d4-p2-012.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d4-p2-013.1,"İlk adım veri okumak, gözlem yapmak ya da ölçmektir."
+hint.d4-p2-013.2,"Önce bilgi toplanır, sonra işlenir ve sonunda kontrol edilir."
+hint.d4-p2-013.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d4-p2-014.1,Başlangıç ve hedefi aynı konumdaki bitleri eşleştirerek oku.
+hint.d4-p2-014.2,Yalnızca hedefinden farklı olan bitleri değiştir.
+hint.d4-p2-014.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d4-p2-015.1,Hedefte hangi vagonun sıranın başında olduğuna bak.
+hint.d4-p2-015.2,İki komşu vagonu değiştirerek yanlış sıradaki sayıyı hedefe yaklaştır.
+hint.d4-p2-015.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d4-p2-016.1,İlk harfin başlangıç ve hedefini karşılaştır.
+hint.d4-p2-016.2,Çark her adımda bütün harfleri aynı yöne kaydırır.
+hint.d4-p2-016.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d4-p2-017.1,Ölçümlerin sıra numarasını ve eşik değerini ayırt et.
+hint.d4-p2-017.2,Eşiğe eşit ölçümleri de seç.
+hint.d4-p2-017.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d4-p2-018.1,"İlk adım veri okumak, gözlem yapmak ya da ölçmektir."
+hint.d4-p2-018.2,"Önce bilgi toplanır, sonra işlenir ve sonunda kontrol edilir."
+hint.d4-p2-018.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d4-p2-019.1,Başlangıç ve hedefi aynı konumdaki bitleri eşleştirerek oku.
+hint.d4-p2-019.2,Yalnızca hedefinden farklı olan bitleri değiştir.
+hint.d4-p2-019.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d4-p2-020.1,İlk harfin başlangıç ve hedefini karşılaştır.
+hint.d4-p2-020.2,Çark her adımda bütün harfleri aynı yöne kaydırır.
+hint.d4-p2-020.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d4-p3-021.1,"İlk adım veri okumak, gözlem yapmak ya da ölçmektir."
+hint.d4-p3-021.2,"Önce bilgi toplanır, sonra işlenir ve sonunda kontrol edilir."
+hint.d4-p3-021.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d4-p3-022.1,Başlangıç ve hedefi aynı konumdaki bitleri eşleştirerek oku.
+hint.d4-p3-022.2,Yalnızca hedefinden farklı olan bitleri değiştir.
+hint.d4-p3-022.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d4-p3-023.1,Hedefte hangi vagonun sıranın başında olduğuna bak.
+hint.d4-p3-023.2,İki komşu vagonu değiştirerek yanlış sıradaki sayıyı hedefe yaklaştır.
+hint.d4-p3-023.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d4-p3-024.1,İlk harfin başlangıç ve hedefini karşılaştır.
+hint.d4-p3-024.2,Çark her adımda bütün harfleri aynı yöne kaydırır.
+hint.d4-p3-024.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d4-p3-025.1,Ölçümlerin sıra numarasını ve eşik değerini ayırt et.
+hint.d4-p3-025.2,Eşiğe eşit ölçümleri de seç.
+hint.d4-p3-025.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d4-p3-026.1,"İlk adım veri okumak, gözlem yapmak ya da ölçmektir."
+hint.d4-p3-026.2,"Önce bilgi toplanır, sonra işlenir ve sonunda kontrol edilir."
+hint.d4-p3-026.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d4-p3-027.1,Başlangıç ve hedefi aynı konumdaki bitleri eşleştirerek oku.
+hint.d4-p3-027.2,Yalnızca hedefinden farklı olan bitleri değiştir.
+hint.d4-p3-027.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d4-p3-028.1,İlk harfin başlangıç ve hedefini karşılaştır.
+hint.d4-p3-028.2,Çark her adımda bütün harfleri aynı yöne kaydırır.
+hint.d4-p3-028.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d4-p3-029.1,Hedefte hangi vagonun sıranın başında olduğuna bak.
+hint.d4-p3-029.2,İki komşu vagonu değiştirerek yanlış sıradaki sayıyı hedefe yaklaştır.
+hint.d4-p3-029.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d4-p3-030.1,Ölçümlerin sıra numarasını ve eşik değerini ayırt et.
+hint.d4-p3-030.2,Eşiğe eşit ölçümleri de seç.
+hint.d4-p3-030.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d4-p4-031.1,Hedefte hangi vagonun sıranın başında olduğuna bak.
+hint.d4-p4-031.2,İki komşu vagonu değiştirerek yanlış sıradaki sayıyı hedefe yaklaştır.
+hint.d4-p4-031.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d4-p4-032.1,İlk harfin başlangıç ve hedefini karşılaştır.
+hint.d4-p4-032.2,Çark her adımda bütün harfleri aynı yöne kaydırır.
+hint.d4-p4-032.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d4-p4-033.1,Ölçümlerin sıra numarasını ve eşik değerini ayırt et.
+hint.d4-p4-033.2,Eşiğe eşit ölçümleri de seç.
+hint.d4-p4-033.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d4-p4-034.1,"İlk adım veri okumak, gözlem yapmak ya da ölçmektir."
+hint.d4-p4-034.2,"Önce bilgi toplanır, sonra işlenir ve sonunda kontrol edilir."
+hint.d4-p4-034.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d4-p4-035.1,Başlangıç ve hedefi aynı konumdaki bitleri eşleştirerek oku.
+hint.d4-p4-035.2,Yalnızca hedefinden farklı olan bitleri değiştir.
+hint.d4-p4-035.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d4-p4-036.1,İlk harfin başlangıç ve hedefini karşılaştır.
+hint.d4-p4-036.2,Çark her adımda bütün harfleri aynı yöne kaydırır.
+hint.d4-p4-036.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d4-p4-037.1,Hedefte hangi vagonun sıranın başında olduğuna bak.
+hint.d4-p4-037.2,İki komşu vagonu değiştirerek yanlış sıradaki sayıyı hedefe yaklaştır.
+hint.d4-p4-037.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d4-p4-038.1,Ölçümlerin sıra numarasını ve eşik değerini ayırt et.
+hint.d4-p4-038.2,Eşiğe eşit ölçümleri de seç.
+hint.d4-p4-038.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d4-p4-039.1,"İlk adım veri okumak, gözlem yapmak ya da ölçmektir."
+hint.d4-p4-039.2,"Önce bilgi toplanır, sonra işlenir ve sonunda kontrol edilir."
+hint.d4-p4-039.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d4-p4-040.1,Başlangıç ve hedefi aynı konumdaki bitleri eşleştirerek oku.
+hint.d4-p4-040.2,Yalnızca hedefinden farklı olan bitleri değiştir.
+hint.d4-p4-040.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d4-p5-041.1,Ölçümlerin sıra numarasını ve eşik değerini ayırt et.
+hint.d4-p5-041.2,Eşiğe eşit ölçümleri de seç.
+hint.d4-p5-041.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d4-p5-042.1,"İlk adım veri okumak, gözlem yapmak ya da ölçmektir."
+hint.d4-p5-042.2,"Önce bilgi toplanır, sonra işlenir ve sonunda kontrol edilir."
+hint.d4-p5-042.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d4-p5-043.1,Başlangıç ve hedefi aynı konumdaki bitleri eşleştirerek oku.
+hint.d4-p5-043.2,Yalnızca hedefinden farklı olan bitleri değiştir.
+hint.d4-p5-043.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d4-p5-044.1,İlk harfin başlangıç ve hedefini karşılaştır.
+hint.d4-p5-044.2,Çark her adımda bütün harfleri aynı yöne kaydırır.
+hint.d4-p5-044.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d4-p5-045.1,Hedefte hangi vagonun sıranın başında olduğuna bak.
+hint.d4-p5-045.2,İki komşu vagonu değiştirerek yanlış sıradaki sayıyı hedefe yaklaştır.
+hint.d4-p5-045.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d4-p5-046.1,Ölçümlerin sıra numarasını ve eşik değerini ayırt et.
+hint.d4-p5-046.2,Eşiğe eşit ölçümleri de seç.
+hint.d4-p5-046.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d4-p5-047.1,"İlk adım veri okumak, gözlem yapmak ya da ölçmektir."
+hint.d4-p5-047.2,"Önce bilgi toplanır, sonra işlenir ve sonunda kontrol edilir."
+hint.d4-p5-047.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d4-p5-048.1,Başlangıç ve hedefi aynı konumdaki bitleri eşleştirerek oku.
+hint.d4-p5-048.2,Yalnızca hedefinden farklı olan bitleri değiştir.
+hint.d4-p5-048.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d4-p5-049.1,Hedefte hangi vagonun sıranın başında olduğuna bak.
+hint.d4-p5-049.2,İki komşu vagonu değiştirerek yanlış sıradaki sayıyı hedefe yaklaştır.
+hint.d4-p5-049.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d4-p5-050.1,İlk harfin başlangıç ve hedefini karşılaştır.
+hint.d4-p5-050.2,Çark her adımda bütün harfleri aynı yöne kaydırır.
+hint.d4-p5-050.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d5-p1-001.1,Başlangıç ile bitiş arasındaki bağlantıları ve varsa uğranacak durakları bul.
+hint.d5-p1-001.2,Her kenarın maliyetini topla ve zorunlu durakları verilen sırayla geç.
+hint.d5-p1-001.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d5-p1-002.1,Hedefin yönünü bul. Engellere bakmadan komut ekleme.
+hint.d5-p1-002.2,Her komut bir kare ilerletir. Bir engelin çevresinden dolaşabilirsin.
+hint.d5-p1-002.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d5-p1-003.1,En yüksek katkıyı veren seçeneğin maliyetini kontrol et.
+hint.d5-p1-003.2,İki seçeneğin maliyet ve katkı toplamını ayrı ayrı hesapla.
+hint.d5-p1-003.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d5-p1-004.1,Robot hareket etmeden önce çevresini taramalı.
+hint.d5-p1-004.2,Taramadan sonra engellerin çevresinden geçecek bir yön sırası kur.
+hint.d5-p1-004.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d5-p1-005.1,Hedefte hangi vagonun sıranın başında olduğuna bak.
+hint.d5-p1-005.2,İki komşu vagonu değiştirerek yanlış sıradaki sayıyı hedefe yaklaştır.
+hint.d5-p1-005.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d5-p1-006.1,Başlangıç ile bitiş arasındaki bağlantıları ve varsa uğranacak durakları bul.
+hint.d5-p1-006.2,Her kenarın maliyetini topla ve zorunlu durakları verilen sırayla geç.
+hint.d5-p1-006.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d5-p1-007.1,En yüksek katkıyı veren seçeneğin maliyetini kontrol et.
+hint.d5-p1-007.2,İki seçeneğin maliyet ve katkı toplamını ayrı ayrı hesapla.
+hint.d5-p1-007.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d5-p1-008.1,Hedefin yönünü bul. Engellere bakmadan komut ekleme.
+hint.d5-p1-008.2,Her komut bir kare ilerletir. Bir engelin çevresinden dolaşabilirsin.
+hint.d5-p1-008.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d5-p1-009.1,Başlangıç ile bitiş arasındaki bağlantıları ve varsa uğranacak durakları bul.
+hint.d5-p1-009.2,Her kenarın maliyetini topla ve zorunlu durakları verilen sırayla geç.
+hint.d5-p1-009.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d5-p1-010.1,Robot hareket etmeden önce çevresini taramalı.
+hint.d5-p1-010.2,Taramadan sonra engellerin çevresinden geçecek bir yön sırası kur.
+hint.d5-p1-010.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d5-p2-011.1,En yüksek katkıyı veren seçeneğin maliyetini kontrol et.
+hint.d5-p2-011.2,İki seçeneğin maliyet ve katkı toplamını ayrı ayrı hesapla.
+hint.d5-p2-011.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d5-p2-012.1,Robot hareket etmeden önce çevresini taramalı.
+hint.d5-p2-012.2,Taramadan sonra engellerin çevresinden geçecek bir yön sırası kur.
+hint.d5-p2-012.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d5-p2-013.1,Hedefte hangi vagonun sıranın başında olduğuna bak.
+hint.d5-p2-013.2,İki komşu vagonu değiştirerek yanlış sıradaki sayıyı hedefe yaklaştır.
+hint.d5-p2-013.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d5-p2-014.1,Başlangıç ile bitiş arasındaki bağlantıları ve varsa uğranacak durakları bul.
+hint.d5-p2-014.2,Her kenarın maliyetini topla ve zorunlu durakları verilen sırayla geç.
+hint.d5-p2-014.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d5-p2-015.1,En yüksek katkıyı veren seçeneğin maliyetini kontrol et.
+hint.d5-p2-015.2,İki seçeneğin maliyet ve katkı toplamını ayrı ayrı hesapla.
+hint.d5-p2-015.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d5-p2-016.1,Hedefin yönünü bul. Engellere bakmadan komut ekleme.
+hint.d5-p2-016.2,Her komut bir kare ilerletir. Bir engelin çevresinden dolaşabilirsin.
+hint.d5-p2-016.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d5-p2-017.1,Başlangıç ile bitiş arasındaki bağlantıları ve varsa uğranacak durakları bul.
+hint.d5-p2-017.2,Her kenarın maliyetini topla ve zorunlu durakları verilen sırayla geç.
+hint.d5-p2-017.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d5-p2-018.1,Robot hareket etmeden önce çevresini taramalı.
+hint.d5-p2-018.2,Taramadan sonra engellerin çevresinden geçecek bir yön sırası kur.
+hint.d5-p2-018.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d5-p2-019.1,Başlangıç ile bitiş arasındaki bağlantıları ve varsa uğranacak durakları bul.
+hint.d5-p2-019.2,Her kenarın maliyetini topla ve zorunlu durakları verilen sırayla geç.
+hint.d5-p2-019.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d5-p2-020.1,Hedefin yönünü bul. Engellere bakmadan komut ekleme.
+hint.d5-p2-020.2,Her komut bir kare ilerletir. Bir engelin çevresinden dolaşabilirsin.
+hint.d5-p2-020.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d5-p3-021.1,Hedefte hangi vagonun sıranın başında olduğuna bak.
+hint.d5-p3-021.2,İki komşu vagonu değiştirerek yanlış sıradaki sayıyı hedefe yaklaştır.
+hint.d5-p3-021.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d5-p3-022.1,Başlangıç ile bitiş arasındaki bağlantıları ve varsa uğranacak durakları bul.
+hint.d5-p3-022.2,Her kenarın maliyetini topla ve zorunlu durakları verilen sırayla geç.
+hint.d5-p3-022.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d5-p3-023.1,En yüksek katkıyı veren seçeneğin maliyetini kontrol et.
+hint.d5-p3-023.2,İki seçeneğin maliyet ve katkı toplamını ayrı ayrı hesapla.
+hint.d5-p3-023.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d5-p3-024.1,Hedefin yönünü bul. Engellere bakmadan komut ekleme.
+hint.d5-p3-024.2,Her komut bir kare ilerletir. Bir engelin çevresinden dolaşabilirsin.
+hint.d5-p3-024.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d5-p3-025.1,Başlangıç ile bitiş arasındaki bağlantıları ve varsa uğranacak durakları bul.
+hint.d5-p3-025.2,Her kenarın maliyetini topla ve zorunlu durakları verilen sırayla geç.
+hint.d5-p3-025.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d5-p3-026.1,Robot hareket etmeden önce çevresini taramalı.
+hint.d5-p3-026.2,Taramadan sonra engellerin çevresinden geçecek bir yön sırası kur.
+hint.d5-p3-026.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d5-p3-027.1,Başlangıç ile bitiş arasındaki bağlantıları ve varsa uğranacak durakları bul.
+hint.d5-p3-027.2,Her kenarın maliyetini topla ve zorunlu durakları verilen sırayla geç.
+hint.d5-p3-027.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d5-p3-028.1,Hedefin yönünü bul. Engellere bakmadan komut ekleme.
+hint.d5-p3-028.2,Her komut bir kare ilerletir. Bir engelin çevresinden dolaşabilirsin.
+hint.d5-p3-028.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d5-p3-029.1,En yüksek katkıyı veren seçeneğin maliyetini kontrol et.
+hint.d5-p3-029.2,İki seçeneğin maliyet ve katkı toplamını ayrı ayrı hesapla.
+hint.d5-p3-029.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d5-p3-030.1,Robot hareket etmeden önce çevresini taramalı.
+hint.d5-p3-030.2,Taramadan sonra engellerin çevresinden geçecek bir yön sırası kur.
+hint.d5-p3-030.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d5-p4-031.1,En yüksek katkıyı veren seçeneğin maliyetini kontrol et.
+hint.d5-p4-031.2,İki seçeneğin maliyet ve katkı toplamını ayrı ayrı hesapla.
+hint.d5-p4-031.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d5-p4-032.1,Hedefin yönünü bul. Engellere bakmadan komut ekleme.
+hint.d5-p4-032.2,Her komut bir kare ilerletir. Bir engelin çevresinden dolaşabilirsin.
+hint.d5-p4-032.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d5-p4-033.1,Başlangıç ile bitiş arasındaki bağlantıları ve varsa uğranacak durakları bul.
+hint.d5-p4-033.2,Her kenarın maliyetini topla ve zorunlu durakları verilen sırayla geç.
+hint.d5-p4-033.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d5-p4-034.1,Robot hareket etmeden önce çevresini taramalı.
+hint.d5-p4-034.2,Taramadan sonra engellerin çevresinden geçecek bir yön sırası kur.
+hint.d5-p4-034.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d5-p4-035.1,Başlangıç ile bitiş arasındaki bağlantıları ve varsa uğranacak durakları bul.
+hint.d5-p4-035.2,Her kenarın maliyetini topla ve zorunlu durakları verilen sırayla geç.
+hint.d5-p4-035.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d5-p4-036.1,Hedefin yönünü bul. Engellere bakmadan komut ekleme.
+hint.d5-p4-036.2,Her komut bir kare ilerletir. Bir engelin çevresinden dolaşabilirsin.
+hint.d5-p4-036.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d5-p4-037.1,En yüksek katkıyı veren seçeneğin maliyetini kontrol et.
+hint.d5-p4-037.2,İki seçeneğin maliyet ve katkı toplamını ayrı ayrı hesapla.
+hint.d5-p4-037.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d5-p4-038.1,Robot hareket etmeden önce çevresini taramalı.
+hint.d5-p4-038.2,Taramadan sonra engellerin çevresinden geçecek bir yön sırası kur.
+hint.d5-p4-038.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d5-p4-039.1,Hedefte hangi vagonun sıranın başında olduğuna bak.
+hint.d5-p4-039.2,İki komşu vagonu değiştirerek yanlış sıradaki sayıyı hedefe yaklaştır.
+hint.d5-p4-039.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d5-p4-040.1,Başlangıç ile bitiş arasındaki bağlantıları ve varsa uğranacak durakları bul.
+hint.d5-p4-040.2,Her kenarın maliyetini topla ve zorunlu durakları verilen sırayla geç.
+hint.d5-p4-040.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d5-p5-041.1,Başlangıç ile bitiş arasındaki bağlantıları ve varsa uğranacak durakları bul.
+hint.d5-p5-041.2,Her kenarın maliyetini topla ve zorunlu durakları verilen sırayla geç.
+hint.d5-p5-041.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d5-p5-042.1,Robot hareket etmeden önce çevresini taramalı.
+hint.d5-p5-042.2,Taramadan sonra engellerin çevresinden geçecek bir yön sırası kur.
+hint.d5-p5-042.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d5-p5-043.1,Başlangıç ile bitiş arasındaki bağlantıları ve varsa uğranacak durakları bul.
+hint.d5-p5-043.2,Her kenarın maliyetini topla ve zorunlu durakları verilen sırayla geç.
+hint.d5-p5-043.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d5-p5-044.1,Hedefin yönünü bul. Engellere bakmadan komut ekleme.
+hint.d5-p5-044.2,Her komut bir kare ilerletir. Bir engelin çevresinden dolaşabilirsin.
+hint.d5-p5-044.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d5-p5-045.1,En yüksek katkıyı veren seçeneğin maliyetini kontrol et.
+hint.d5-p5-045.2,İki seçeneğin maliyet ve katkı toplamını ayrı ayrı hesapla.
+hint.d5-p5-045.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d5-p5-046.1,Robot hareket etmeden önce çevresini taramalı.
+hint.d5-p5-046.2,Taramadan sonra engellerin çevresinden geçecek bir yön sırası kur.
+hint.d5-p5-046.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d5-p5-047.1,Hedefte hangi vagonun sıranın başında olduğuna bak.
+hint.d5-p5-047.2,İki komşu vagonu değiştirerek yanlış sıradaki sayıyı hedefe yaklaştır.
+hint.d5-p5-047.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d5-p5-048.1,Başlangıç ile bitiş arasındaki bağlantıları ve varsa uğranacak durakları bul.
+hint.d5-p5-048.2,Her kenarın maliyetini topla ve zorunlu durakları verilen sırayla geç.
+hint.d5-p5-048.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d5-p5-049.1,En yüksek katkıyı veren seçeneğin maliyetini kontrol et.
+hint.d5-p5-049.2,İki seçeneğin maliyet ve katkı toplamını ayrı ayrı hesapla.
+hint.d5-p5-049.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d5-p5-050.1,Hedefin yönünü bul. Engellere bakmadan komut ekleme.
+hint.d5-p5-050.2,Her komut bir kare ilerletir. Bir engelin çevresinden dolaşabilirsin.
+hint.d5-p5-050.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d6-p1-001.1,Hedef dizide bir yordamın ürettiği parçayı ara.
+hint.d6-p1-001.2,Aynı parça art arda geliyorsa varsa tekrar komutunu kullan.
+hint.d6-p1-001.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d6-p1-002.1,Başlangıç ile hedef arasındaki farkı bul.
+hint.d6-p1-002.2,Çarpma komutunu erken ve geç uygulayarak sonuçları karşılaştır.
+hint.d6-p1-002.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d6-p1-003.1,Işık dizisinin tekrar eden parçasını bul.
+hint.d6-p1-003.2,"Küçük parçayı baştan sona kur, sonra dizide yeniden başlat."
+hint.d6-p1-003.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d6-p1-004.1,"İlk adım veri okumak, gözlem yapmak ya da ölçmektir."
+hint.d6-p1-004.2,"Önce bilgi toplanır, sonra işlenir ve sonunda kontrol edilir."
+hint.d6-p1-004.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d6-p1-005.1,Başlangıç ve hedefi aynı konumdaki bitleri eşleştirerek oku.
+hint.d6-p1-005.2,Yalnızca hedefinden farklı olan bitleri değiştir.
+hint.d6-p1-005.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d6-p1-006.1,Hedef dizide bir yordamın ürettiği parçayı ara.
+hint.d6-p1-006.2,Aynı parça art arda geliyorsa varsa tekrar komutunu kullan.
+hint.d6-p1-006.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d6-p1-007.1,Başlangıç ile hedef arasındaki farkı bul.
+hint.d6-p1-007.2,Çarpma komutunu erken ve geç uygulayarak sonuçları karşılaştır.
+hint.d6-p1-007.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d6-p1-008.1,"İlk adım veri okumak, gözlem yapmak ya da ölçmektir."
+hint.d6-p1-008.2,"Önce bilgi toplanır, sonra işlenir ve sonunda kontrol edilir."
+hint.d6-p1-008.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d6-p1-009.1,Hedef dizide bir yordamın ürettiği parçayı ara.
+hint.d6-p1-009.2,Aynı parça art arda geliyorsa varsa tekrar komutunu kullan.
+hint.d6-p1-009.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d6-p1-010.1,Işık dizisinin tekrar eden parçasını bul.
+hint.d6-p1-010.2,"Küçük parçayı baştan sona kur, sonra dizide yeniden başlat."
+hint.d6-p1-010.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d6-p2-011.1,Işık dizisinin tekrar eden parçasını bul.
+hint.d6-p2-011.2,"Küçük parçayı baştan sona kur, sonra dizide yeniden başlat."
+hint.d6-p2-011.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d6-p2-012.1,"İlk adım veri okumak, gözlem yapmak ya da ölçmektir."
+hint.d6-p2-012.2,"Önce bilgi toplanır, sonra işlenir ve sonunda kontrol edilir."
+hint.d6-p2-012.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d6-p2-013.1,Başlangıç ve hedefi aynı konumdaki bitleri eşleştirerek oku.
+hint.d6-p2-013.2,Yalnızca hedefinden farklı olan bitleri değiştir.
+hint.d6-p2-013.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d6-p2-014.1,Hedef dizide bir yordamın ürettiği parçayı ara.
+hint.d6-p2-014.2,Aynı parça art arda geliyorsa varsa tekrar komutunu kullan.
+hint.d6-p2-014.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d6-p2-015.1,Başlangıç ile hedef arasındaki farkı bul.
+hint.d6-p2-015.2,Çarpma komutunu erken ve geç uygulayarak sonuçları karşılaştır.
+hint.d6-p2-015.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d6-p2-016.1,"İlk adım veri okumak, gözlem yapmak ya da ölçmektir."
+hint.d6-p2-016.2,"Önce bilgi toplanır, sonra işlenir ve sonunda kontrol edilir."
+hint.d6-p2-016.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d6-p2-017.1,Hedef dizide bir yordamın ürettiği parçayı ara.
+hint.d6-p2-017.2,Aynı parça art arda geliyorsa varsa tekrar komutunu kullan.
+hint.d6-p2-017.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d6-p2-018.1,Işık dizisinin tekrar eden parçasını bul.
+hint.d6-p2-018.2,"Küçük parçayı baştan sona kur, sonra dizide yeniden başlat."
+hint.d6-p2-018.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d6-p2-019.1,Hedef dizide bir yordamın ürettiği parçayı ara.
+hint.d6-p2-019.2,Aynı parça art arda geliyorsa varsa tekrar komutunu kullan.
+hint.d6-p2-019.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d6-p2-020.1,Başlangıç ile hedef arasındaki farkı bul.
+hint.d6-p2-020.2,Çarpma komutunu erken ve geç uygulayarak sonuçları karşılaştır.
+hint.d6-p2-020.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d6-p3-021.1,Başlangıç ve hedefi aynı konumdaki bitleri eşleştirerek oku.
+hint.d6-p3-021.2,Yalnızca hedefinden farklı olan bitleri değiştir.
+hint.d6-p3-021.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d6-p3-022.1,Hedef dizide bir yordamın ürettiği parçayı ara.
+hint.d6-p3-022.2,Aynı parça art arda geliyorsa varsa tekrar komutunu kullan.
+hint.d6-p3-022.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d6-p3-023.1,Başlangıç ile hedef arasındaki farkı bul.
+hint.d6-p3-023.2,Çarpma komutunu erken ve geç uygulayarak sonuçları karşılaştır.
+hint.d6-p3-023.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d6-p3-024.1,"İlk adım veri okumak, gözlem yapmak ya da ölçmektir."
+hint.d6-p3-024.2,"Önce bilgi toplanır, sonra işlenir ve sonunda kontrol edilir."
+hint.d6-p3-024.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d6-p3-025.1,Hedef dizide bir yordamın ürettiği parçayı ara.
+hint.d6-p3-025.2,Aynı parça art arda geliyorsa varsa tekrar komutunu kullan.
+hint.d6-p3-025.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d6-p3-026.1,Işık dizisinin tekrar eden parçasını bul.
+hint.d6-p3-026.2,"Küçük parçayı baştan sona kur, sonra dizide yeniden başlat."
+hint.d6-p3-026.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d6-p3-027.1,Hedef dizide bir yordamın ürettiği parçayı ara.
+hint.d6-p3-027.2,Aynı parça art arda geliyorsa varsa tekrar komutunu kullan.
+hint.d6-p3-027.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d6-p3-028.1,Başlangıç ile hedef arasındaki farkı bul.
+hint.d6-p3-028.2,Çarpma komutunu erken ve geç uygulayarak sonuçları karşılaştır.
+hint.d6-p3-028.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d6-p3-029.1,Işık dizisinin tekrar eden parçasını bul.
+hint.d6-p3-029.2,"Küçük parçayı baştan sona kur, sonra dizide yeniden başlat."
+hint.d6-p3-029.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d6-p3-030.1,"İlk adım veri okumak, gözlem yapmak ya da ölçmektir."
+hint.d6-p3-030.2,"Önce bilgi toplanır, sonra işlenir ve sonunda kontrol edilir."
+hint.d6-p3-030.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d6-p4-031.1,Başlangıç ile hedef arasındaki farkı bul.
+hint.d6-p4-031.2,Çarpma komutunu erken ve geç uygulayarak sonuçları karşılaştır.
+hint.d6-p4-031.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d6-p4-032.1,"İlk adım veri okumak, gözlem yapmak ya da ölçmektir."
+hint.d6-p4-032.2,"Önce bilgi toplanır, sonra işlenir ve sonunda kontrol edilir."
+hint.d6-p4-032.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d6-p4-033.1,Hedef dizide bir yordamın ürettiği parçayı ara.
+hint.d6-p4-033.2,Aynı parça art arda geliyorsa varsa tekrar komutunu kullan.
+hint.d6-p4-033.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d6-p4-034.1,Işık dizisinin tekrar eden parçasını bul.
+hint.d6-p4-034.2,"Küçük parçayı baştan sona kur, sonra dizide yeniden başlat."
+hint.d6-p4-034.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d6-p4-035.1,Hedef dizide bir yordamın ürettiği parçayı ara.
+hint.d6-p4-035.2,Aynı parça art arda geliyorsa varsa tekrar komutunu kullan.
+hint.d6-p4-035.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d6-p4-036.1,Başlangıç ile hedef arasındaki farkı bul.
+hint.d6-p4-036.2,Çarpma komutunu erken ve geç uygulayarak sonuçları karşılaştır.
+hint.d6-p4-036.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d6-p4-037.1,Işık dizisinin tekrar eden parçasını bul.
+hint.d6-p4-037.2,"Küçük parçayı baştan sona kur, sonra dizide yeniden başlat."
+hint.d6-p4-037.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d6-p4-038.1,"İlk adım veri okumak, gözlem yapmak ya da ölçmektir."
+hint.d6-p4-038.2,"Önce bilgi toplanır, sonra işlenir ve sonunda kontrol edilir."
+hint.d6-p4-038.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d6-p4-039.1,Başlangıç ve hedefi aynı konumdaki bitleri eşleştirerek oku.
+hint.d6-p4-039.2,Yalnızca hedefinden farklı olan bitleri değiştir.
+hint.d6-p4-039.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d6-p4-040.1,Hedef dizide bir yordamın ürettiği parçayı ara.
+hint.d6-p4-040.2,Aynı parça art arda geliyorsa varsa tekrar komutunu kullan.
+hint.d6-p4-040.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d6-p5-041.1,Hedef dizide bir yordamın ürettiği parçayı ara.
+hint.d6-p5-041.2,Aynı parça art arda geliyorsa varsa tekrar komutunu kullan.
+hint.d6-p5-041.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d6-p5-042.1,Işık dizisinin tekrar eden parçasını bul.
+hint.d6-p5-042.2,"Küçük parçayı baştan sona kur, sonra dizide yeniden başlat."
+hint.d6-p5-042.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d6-p5-043.1,Hedef dizide bir yordamın ürettiği parçayı ara.
+hint.d6-p5-043.2,Aynı parça art arda geliyorsa varsa tekrar komutunu kullan.
+hint.d6-p5-043.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d6-p5-044.1,Başlangıç ile hedef arasındaki farkı bul.
+hint.d6-p5-044.2,Çarpma komutunu erken ve geç uygulayarak sonuçları karşılaştır.
+hint.d6-p5-044.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d6-p5-045.1,Işık dizisinin tekrar eden parçasını bul.
+hint.d6-p5-045.2,"Küçük parçayı baştan sona kur, sonra dizide yeniden başlat."
+hint.d6-p5-045.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d6-p5-046.1,"İlk adım veri okumak, gözlem yapmak ya da ölçmektir."
+hint.d6-p5-046.2,"Önce bilgi toplanır, sonra işlenir ve sonunda kontrol edilir."
+hint.d6-p5-046.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d6-p5-047.1,Başlangıç ve hedefi aynı konumdaki bitleri eşleştirerek oku.
+hint.d6-p5-047.2,Yalnızca hedefinden farklı olan bitleri değiştir.
+hint.d6-p5-047.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d6-p5-048.1,Hedef dizide bir yordamın ürettiği parçayı ara.
+hint.d6-p5-048.2,Aynı parça art arda geliyorsa varsa tekrar komutunu kullan.
+hint.d6-p5-048.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d6-p5-049.1,Başlangıç ile hedef arasındaki farkı bul.
+hint.d6-p5-049.2,Çarpma komutunu erken ve geç uygulayarak sonuçları karşılaştır.
+hint.d6-p5-049.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d6-p5-050.1,"İlk adım veri okumak, gözlem yapmak ya da ölçmektir."
+hint.d6-p5-050.2,"Önce bilgi toplanır, sonra işlenir ve sonunda kontrol edilir."
+hint.d6-p5-050.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d7-p1-001.1,Robot hareket etmeden önce çevresini taramalı.
+hint.d7-p1-001.2,Taramadan sonra engellerin çevresinden geçecek bir yön sırası kur.
+hint.d7-p1-001.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d7-p1-002.1,Kapının adını ve istenen çıkışı birlikte oku.
+hint.d7-p1-002.2,Girişlerden birini değiştirip çıkışın nasıl değiştiğini incele.
+hint.d7-p1-002.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d7-p1-003.1,Hedefte 1 olan ölçümler için eşiği düşün.
+hint.d7-p1-003.2,Sensör eşikten küçük ölçümlere yanıt verir. Sonra AUTO komutuyla denetimi aç.
+hint.d7-p1-003.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d7-p1-004.1,"İlk adım veri okumak, gözlem yapmak ya da ölçmektir."
+hint.d7-p1-004.2,"Önce bilgi toplanır, sonra işlenir ve sonunda kontrol edilir."
+hint.d7-p1-004.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d7-p1-005.1,Başlangıç ile bitiş arasındaki bağlantıları ve varsa uğranacak durakları bul.
+hint.d7-p1-005.2,Her kenarın maliyetini topla ve zorunlu durakları verilen sırayla geç.
+hint.d7-p1-005.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d7-p1-006.1,Başlangıç durumunda hangi olayların mümkün olduğuna bak.
+hint.d7-p1-006.2,Her olaydan sonra yeni durumu bul. Bir saat adımı gerekiyorsa TICK kullan.
+hint.d7-p1-006.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d7-p1-007.1,En yüksek katkıyı veren seçeneğin maliyetini kontrol et.
+hint.d7-p1-007.2,İki seçeneğin maliyet ve katkı toplamını ayrı ayrı hesapla.
+hint.d7-p1-007.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d7-p1-008.1,Ölçümlerin sıra numarasını ve eşik değerini ayırt et.
+hint.d7-p1-008.2,Eşiğe eşit ölçümleri de seç.
+hint.d7-p1-008.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d7-p1-009.1,Robot hareket etmeden önce çevresini taramalı.
+hint.d7-p1-009.2,Taramadan sonra engellerin çevresinden geçecek bir yön sırası kur.
+hint.d7-p1-009.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d7-p1-010.1,Başlangıç ile bitiş arasındaki bağlantıları ve varsa uğranacak durakları bul.
+hint.d7-p1-010.2,Her kenarın maliyetini topla ve zorunlu durakları verilen sırayla geç.
+hint.d7-p1-010.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d7-p2-011.1,Hedefte 1 olan ölçümler için eşiği düşün.
+hint.d7-p2-011.2,Sensör eşikten küçük ölçümlere yanıt verir. Sonra AUTO komutuyla denetimi aç.
+hint.d7-p2-011.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d7-p2-012.1,"İlk adım veri okumak, gözlem yapmak ya da ölçmektir."
+hint.d7-p2-012.2,"Önce bilgi toplanır, sonra işlenir ve sonunda kontrol edilir."
+hint.d7-p2-012.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d7-p2-013.1,Başlangıç ile bitiş arasındaki bağlantıları ve varsa uğranacak durakları bul.
+hint.d7-p2-013.2,Her kenarın maliyetini topla ve zorunlu durakları verilen sırayla geç.
+hint.d7-p2-013.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d7-p2-014.1,Başlangıç durumunda hangi olayların mümkün olduğuna bak.
+hint.d7-p2-014.2,Her olaydan sonra yeni durumu bul. Bir saat adımı gerekiyorsa TICK kullan.
+hint.d7-p2-014.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d7-p2-015.1,En yüksek katkıyı veren seçeneğin maliyetini kontrol et.
+hint.d7-p2-015.2,İki seçeneğin maliyet ve katkı toplamını ayrı ayrı hesapla.
+hint.d7-p2-015.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d7-p2-016.1,Ölçümlerin sıra numarasını ve eşik değerini ayırt et.
+hint.d7-p2-016.2,Eşiğe eşit ölçümleri de seç.
+hint.d7-p2-016.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d7-p2-017.1,Robot hareket etmeden önce çevresini taramalı.
+hint.d7-p2-017.2,Taramadan sonra engellerin çevresinden geçecek bir yön sırası kur.
+hint.d7-p2-017.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d7-p2-018.1,Başlangıç ile bitiş arasındaki bağlantıları ve varsa uğranacak durakları bul.
+hint.d7-p2-018.2,Her kenarın maliyetini topla ve zorunlu durakları verilen sırayla geç.
+hint.d7-p2-018.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d7-p2-019.1,Robot hareket etmeden önce çevresini taramalı.
+hint.d7-p2-019.2,Taramadan sonra engellerin çevresinden geçecek bir yön sırası kur.
+hint.d7-p2-019.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d7-p2-020.1,Kapının adını ve istenen çıkışı birlikte oku.
+hint.d7-p2-020.2,Girişlerden birini değiştirip çıkışın nasıl değiştiğini incele.
+hint.d7-p2-020.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d7-p3-021.1,Başlangıç ile bitiş arasındaki bağlantıları ve varsa uğranacak durakları bul.
+hint.d7-p3-021.2,Her kenarın maliyetini topla ve zorunlu durakları verilen sırayla geç.
+hint.d7-p3-021.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d7-p3-022.1,Başlangıç durumunda hangi olayların mümkün olduğuna bak.
+hint.d7-p3-022.2,Her olaydan sonra yeni durumu bul. Bir saat adımı gerekiyorsa TICK kullan.
+hint.d7-p3-022.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d7-p3-023.1,En yüksek katkıyı veren seçeneğin maliyetini kontrol et.
+hint.d7-p3-023.2,İki seçeneğin maliyet ve katkı toplamını ayrı ayrı hesapla.
+hint.d7-p3-023.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d7-p3-024.1,Ölçümlerin sıra numarasını ve eşik değerini ayırt et.
+hint.d7-p3-024.2,Eşiğe eşit ölçümleri de seç.
+hint.d7-p3-024.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d7-p3-025.1,Robot hareket etmeden önce çevresini taramalı.
+hint.d7-p3-025.2,Taramadan sonra engellerin çevresinden geçecek bir yön sırası kur.
+hint.d7-p3-025.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d7-p3-026.1,Başlangıç ile bitiş arasındaki bağlantıları ve varsa uğranacak durakları bul.
+hint.d7-p3-026.2,Her kenarın maliyetini topla ve zorunlu durakları verilen sırayla geç.
+hint.d7-p3-026.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d7-p3-027.1,Robot hareket etmeden önce çevresini taramalı.
+hint.d7-p3-027.2,Taramadan sonra engellerin çevresinden geçecek bir yön sırası kur.
+hint.d7-p3-027.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d7-p3-028.1,Kapının adını ve istenen çıkışı birlikte oku.
+hint.d7-p3-028.2,Girişlerden birini değiştirip çıkışın nasıl değiştiğini incele.
+hint.d7-p3-028.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d7-p3-029.1,Hedefte 1 olan ölçümler için eşiği düşün.
+hint.d7-p3-029.2,Sensör eşikten küçük ölçümlere yanıt verir. Sonra AUTO komutuyla denetimi aç.
+hint.d7-p3-029.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d7-p3-030.1,"İlk adım veri okumak, gözlem yapmak ya da ölçmektir."
+hint.d7-p3-030.2,"Önce bilgi toplanır, sonra işlenir ve sonunda kontrol edilir."
+hint.d7-p3-030.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d7-p4-031.1,En yüksek katkıyı veren seçeneğin maliyetini kontrol et.
+hint.d7-p4-031.2,İki seçeneğin maliyet ve katkı toplamını ayrı ayrı hesapla.
+hint.d7-p4-031.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d7-p4-032.1,Ölçümlerin sıra numarasını ve eşik değerini ayırt et.
+hint.d7-p4-032.2,Eşiğe eşit ölçümleri de seç.
+hint.d7-p4-032.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d7-p4-033.1,Robot hareket etmeden önce çevresini taramalı.
+hint.d7-p4-033.2,Taramadan sonra engellerin çevresinden geçecek bir yön sırası kur.
+hint.d7-p4-033.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d7-p4-034.1,Başlangıç ile bitiş arasındaki bağlantıları ve varsa uğranacak durakları bul.
+hint.d7-p4-034.2,Her kenarın maliyetini topla ve zorunlu durakları verilen sırayla geç.
+hint.d7-p4-034.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d7-p4-035.1,Robot hareket etmeden önce çevresini taramalı.
+hint.d7-p4-035.2,Taramadan sonra engellerin çevresinden geçecek bir yön sırası kur.
+hint.d7-p4-035.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d7-p4-036.1,Kapının adını ve istenen çıkışı birlikte oku.
+hint.d7-p4-036.2,Girişlerden birini değiştirip çıkışın nasıl değiştiğini incele.
+hint.d7-p4-036.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d7-p4-037.1,Hedefte 1 olan ölçümler için eşiği düşün.
+hint.d7-p4-037.2,Sensör eşikten küçük ölçümlere yanıt verir. Sonra AUTO komutuyla denetimi aç.
+hint.d7-p4-037.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d7-p4-038.1,"İlk adım veri okumak, gözlem yapmak ya da ölçmektir."
+hint.d7-p4-038.2,"Önce bilgi toplanır, sonra işlenir ve sonunda kontrol edilir."
+hint.d7-p4-038.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d7-p4-039.1,Başlangıç ile bitiş arasındaki bağlantıları ve varsa uğranacak durakları bul.
+hint.d7-p4-039.2,Her kenarın maliyetini topla ve zorunlu durakları verilen sırayla geç.
+hint.d7-p4-039.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d7-p4-040.1,Başlangıç durumunda hangi olayların mümkün olduğuna bak.
+hint.d7-p4-040.2,Her olaydan sonra yeni durumu bul. Bir saat adımı gerekiyorsa TICK kullan.
+hint.d7-p4-040.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d7-p5-041.1,Robot hareket etmeden önce çevresini taramalı.
+hint.d7-p5-041.2,Taramadan sonra engellerin çevresinden geçecek bir yön sırası kur.
+hint.d7-p5-041.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d7-p5-042.1,Başlangıç ile bitiş arasındaki bağlantıları ve varsa uğranacak durakları bul.
+hint.d7-p5-042.2,Her kenarın maliyetini topla ve zorunlu durakları verilen sırayla geç.
+hint.d7-p5-042.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d7-p5-043.1,Robot hareket etmeden önce çevresini taramalı.
+hint.d7-p5-043.2,Taramadan sonra engellerin çevresinden geçecek bir yön sırası kur.
+hint.d7-p5-043.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d7-p5-044.1,Kapının adını ve istenen çıkışı birlikte oku.
+hint.d7-p5-044.2,Girişlerden birini değiştirip çıkışın nasıl değiştiğini incele.
+hint.d7-p5-044.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d7-p5-045.1,Hedefte 1 olan ölçümler için eşiği düşün.
+hint.d7-p5-045.2,Sensör eşikten küçük ölçümlere yanıt verir. Sonra AUTO komutuyla denetimi aç.
+hint.d7-p5-045.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d7-p5-046.1,"İlk adım veri okumak, gözlem yapmak ya da ölçmektir."
+hint.d7-p5-046.2,"Önce bilgi toplanır, sonra işlenir ve sonunda kontrol edilir."
+hint.d7-p5-046.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d7-p5-047.1,Başlangıç ile bitiş arasındaki bağlantıları ve varsa uğranacak durakları bul.
+hint.d7-p5-047.2,Her kenarın maliyetini topla ve zorunlu durakları verilen sırayla geç.
+hint.d7-p5-047.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d7-p5-048.1,Başlangıç durumunda hangi olayların mümkün olduğuna bak.
+hint.d7-p5-048.2,Her olaydan sonra yeni durumu bul. Bir saat adımı gerekiyorsa TICK kullan.
+hint.d7-p5-048.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d7-p5-049.1,En yüksek katkıyı veren seçeneğin maliyetini kontrol et.
+hint.d7-p5-049.2,İki seçeneğin maliyet ve katkı toplamını ayrı ayrı hesapla.
+hint.d7-p5-049.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+hint.d7-p5-050.1,Ölçümlerin sıra numarasını ve eşik değerini ayırt et.
+hint.d7-p5-050.2,Eşiğe eşit ölçümleri de seç.
+hint.d7-p5-050.3,Örnek programı adım adım izle. Sonra uygun gördüğün yerde başka bir yol dene.
+machine.event_check,Kontrol et
+machine.event_open,Aç
+machine.event_reset,Başa al
+machine.event_send,Gönder
+machine.event_start,Başlat
+machine.event_stop,Durdur
+machine.event_tick,Bir saat adımı ilerlet
+machine.state_active,Etkin
+machine.state_cooling,Soğuyor
+machine.state_done,Bitti
+machine.state_idle,Boşta
+machine.state_off,Kapalı
+machine.state_ready,Hazır
+machine.state_safe,Güvenli
+machine.state_waiting,Bekliyor
+machine.state_warming,Isınıyor
+mission.d1-p1-001,Deniz fenerine ilk işaret
+mission.d1-p1-002,Sisli iskele postası
+mission.d1-p1-003,Saklı geçit
+mission.d1-p1-004,Üçlü işaret
+mission.d1-p1-005,Konuşan paneller
+mission.d1-p1-006,İlk Işıklar: Gelgit
+mission.d1-p1-007,İlk Işıklar: Kule
+mission.d1-p1-008,İlk Işıklar: Harita
+mission.d1-p1-009,İlk Işıklar: Posta
+mission.d1-p1-010,İlk Işıklar: Çan
+mission.d1-p2-011,Ada Postası: İskele
+mission.d1-p2-012,Ada Postası: Kıyı
+mission.d1-p2-013,Ada Postası: Fener
+mission.d1-p2-014,Ada Postası: Şamandıra
+mission.d1-p2-015,Ada Postası: Koy
+mission.d1-p2-016,Ada Postası: Gelgit
+mission.d1-p2-017,Ada Postası: Kule
+mission.d1-p2-018,Ada Postası: Harita
+mission.d1-p2-019,Ada Postası: Posta
+mission.d1-p2-020,Ada Postası: Çan
+mission.d1-p3-021,Tekrarlanan Sinyaller: İskele
+mission.d1-p3-022,Tekrarlanan Sinyaller: Kıyı
+mission.d1-p3-023,Tekrarlanan Sinyaller: Fener
+mission.d1-p3-024,Tekrarlanan Sinyaller: Şamandıra
+mission.d1-p3-025,Tekrarlanan Sinyaller: Koy
+mission.d1-p3-026,Tekrarlanan Sinyaller: Gelgit
+mission.d1-p3-027,Tekrarlanan Sinyaller: Kule
+mission.d1-p3-028,Tekrarlanan Sinyaller: Harita
+mission.d1-p3-029,Tekrarlanan Sinyaller: Posta
+mission.d1-p3-030,Tekrarlanan Sinyaller: Çan
+mission.d1-p4-031,Sisli Rota: İskele
+mission.d1-p4-032,Sisli Rota: Kıyı
+mission.d1-p4-033,Sisli Rota: Fener
+mission.d1-p4-034,Sisli Rota: Şamandıra
+mission.d1-p4-035,Sisli Rota: Koy
+mission.d1-p4-036,Sisli Rota: Gelgit
+mission.d1-p4-037,Sisli Rota: Kule
+mission.d1-p4-038,Sisli Rota: Harita
+mission.d1-p4-039,Sisli Rota: Posta
+mission.d1-p4-040,Sisli Rota: Çan
+mission.d1-p5-041,Fenerler Birlikte: İskele
+mission.d1-p5-042,Fenerler Birlikte: Kıyı
+mission.d1-p5-043,Fenerler Birlikte: Fener
+mission.d1-p5-044,Fenerler Birlikte: Şamandıra
+mission.d1-p5-045,Fenerler Birlikte: Koy
+mission.d1-p5-046,Fenerler Birlikte: Gelgit
+mission.d1-p5-047,Fenerler Birlikte: Kule
+mission.d1-p5-048,Fenerler Birlikte: Harita
+mission.d1-p5-049,Fenerler Birlikte: Posta
+mission.d1-p5-050,Fenerler Birlikte: Çan
+mission.d2-p1-001,Düzenli Tik Tak: Çark
+mission.d2-p1-002,Düzenli Tik Tak: Vitrin
+mission.d2-p1-003,Düzenli Tik Tak: Zil
+mission.d2-p1-004,Düzenli Tik Tak: Mekik
+mission.d2-p1-005,Düzenli Tik Tak: Yay
+mission.d2-p1-006,Düzenli Tik Tak: Sarkaç
+mission.d2-p1-007,Düzenli Tik Tak: Pencere
+mission.d2-p1-008,Düzenli Tik Tak: Takvim
+mission.d2-p1-009,Düzenli Tik Tak: İbre
+mission.d2-p1-010,Düzenli Tik Tak: Atölye
+mission.d2-p2-011,İki Çark Bir İş: Çark
+mission.d2-p2-012,İki Çark Bir İş: Vitrin
+mission.d2-p2-013,İki Çark Bir İş: Zil
+mission.d2-p2-014,İki Çark Bir İş: Mekik
+mission.d2-p2-015,İki Çark Bir İş: Yay
+mission.d2-p2-016,İki Çark Bir İş: Sarkaç
+mission.d2-p2-017,İki Çark Bir İş: Pencere
+mission.d2-p2-018,İki Çark Bir İş: Takvim
+mission.d2-p2-019,İki Çark Bir İş: İbre
+mission.d2-p2-020,İki Çark Bir İş: Atölye
+mission.d2-p3-021,Kapı Ne Zaman Açılır: Çark
+mission.d2-p3-022,Kapı Ne Zaman Açılır: Vitrin
+mission.d2-p3-023,Kapı Ne Zaman Açılır: Zil
+mission.d2-p3-024,Kapı Ne Zaman Açılır: Mekik
+mission.d2-p3-025,Kapı Ne Zaman Açılır: Yay
+mission.d2-p3-026,Kapı Ne Zaman Açılır: Sarkaç
+mission.d2-p3-027,Kapı Ne Zaman Açılır: Pencere
+mission.d2-p3-028,Kapı Ne Zaman Açılır: Takvim
+mission.d2-p3-029,Kapı Ne Zaman Açılır: İbre
+mission.d2-p3-030,Kapı Ne Zaman Açılır: Atölye
+mission.d2-p4-031,Yanlış Takılan Diş: Çark
+mission.d2-p4-032,Yanlış Takılan Diş: Vitrin
+mission.d2-p4-033,Yanlış Takılan Diş: Zil
+mission.d2-p4-034,Yanlış Takılan Diş: Mekik
+mission.d2-p4-035,Yanlış Takılan Diş: Yay
+mission.d2-p4-036,Yanlış Takılan Diş: Sarkaç
+mission.d2-p4-037,Yanlış Takılan Diş: Pencere
+mission.d2-p4-038,Yanlış Takılan Diş: Takvim
+mission.d2-p4-039,Yanlış Takılan Diş: İbre
+mission.d2-p4-040,Yanlış Takılan Diş: Atölye
+mission.d2-p5-041,Sokak Orkestrası: Çark
+mission.d2-p5-042,Sokak Orkestrası: Vitrin
+mission.d2-p5-043,Sokak Orkestrası: Zil
+mission.d2-p5-044,Sokak Orkestrası: Mekik
+mission.d2-p5-045,Sokak Orkestrası: Yay
+mission.d2-p5-046,Sokak Orkestrası: Sarkaç
+mission.d2-p5-047,Sokak Orkestrası: Pencere
+mission.d2-p5-048,Sokak Orkestrası: Takvim
+mission.d2-p5-049,Sokak Orkestrası: İbre
+mission.d2-p5-050,Sokak Orkestrası: Atölye
+mission.d3-p1-001,İlk Fideler: Fide
+mission.d3-p1-002,İlk Fideler: Saksı
+mission.d3-p1-003,İlk Fideler: Kanal
+mission.d3-p1-004,İlk Fideler: Toprak
+mission.d3-p1-005,İlk Fideler: Sensör
+mission.d3-p1-006,İlk Fideler: Sera
+mission.d3-p1-007,İlk Fideler: Tohum
+mission.d3-p1-008,İlk Fideler: Yaprak
+mission.d3-p1-009,İlk Fideler: Nem
+mission.d3-p1-010,İlk Fideler: Kubbe
+mission.d3-p2-011,Ne Zaman Sulamalı: Fide
+mission.d3-p2-012,Ne Zaman Sulamalı: Saksı
+mission.d3-p2-013,Ne Zaman Sulamalı: Kanal
+mission.d3-p2-014,Ne Zaman Sulamalı: Toprak
+mission.d3-p2-015,Ne Zaman Sulamalı: Sensör
+mission.d3-p2-016,Ne Zaman Sulamalı: Sera
+mission.d3-p2-017,Ne Zaman Sulamalı: Tohum
+mission.d3-p2-018,Ne Zaman Sulamalı: Yaprak
+mission.d3-p2-019,Ne Zaman Sulamalı: Nem
+mission.d3-p2-020,Ne Zaman Sulamalı: Kubbe
+mission.d3-p3-021,Denge Defteri: Fide
+mission.d3-p3-022,Denge Defteri: Saksı
+mission.d3-p3-023,Denge Defteri: Kanal
+mission.d3-p3-024,Denge Defteri: Toprak
+mission.d3-p3-025,Denge Defteri: Sensör
+mission.d3-p3-026,Denge Defteri: Sera
+mission.d3-p3-027,Denge Defteri: Tohum
+mission.d3-p3-028,Denge Defteri: Yaprak
+mission.d3-p3-029,Denge Defteri: Nem
+mission.d3-p3-030,Denge Defteri: Kubbe
+mission.d3-p4-031,Bir Günlük Model: Fide
+mission.d3-p4-032,Bir Günlük Model: Saksı
+mission.d3-p4-033,Bir Günlük Model: Kanal
+mission.d3-p4-034,Bir Günlük Model: Toprak
+mission.d3-p4-035,Bir Günlük Model: Sensör
+mission.d3-p4-036,Bir Günlük Model: Sera
+mission.d3-p4-037,Bir Günlük Model: Tohum
+mission.d3-p4-038,Bir Günlük Model: Yaprak
+mission.d3-p4-039,Bir Günlük Model: Nem
+mission.d3-p4-040,Bir Günlük Model: Kubbe
+mission.d3-p5-041,İstasyonun Nabzı: Fide
+mission.d3-p5-042,İstasyonun Nabzı: Saksı
+mission.d3-p5-043,İstasyonun Nabzı: Kanal
+mission.d3-p5-044,İstasyonun Nabzı: Toprak
+mission.d3-p5-045,İstasyonun Nabzı: Sensör
+mission.d3-p5-046,İstasyonun Nabzı: Sera
+mission.d3-p5-047,İstasyonun Nabzı: Tohum
+mission.d3-p5-048,İstasyonun Nabzı: Yaprak
+mission.d3-p5-049,İstasyonun Nabzı: Nem
+mission.d3-p5-050,İstasyonun Nabzı: Kubbe
+mission.d4-p1-001,Kayıp Etiketler: Fiş
+mission.d4-p1-002,Kayıp Etiketler: Raf
+mission.d4-p1-003,Kayıp Etiketler: Kitap
+mission.d4-p1-004,Kayıp Etiketler: Sandık
+mission.d4-p1-005,Kayıp Etiketler: Kayıt
+mission.d4-p1-006,Kayıp Etiketler: Mühür
+mission.d4-p1-007,Kayıp Etiketler: Kart
+mission.d4-p1-008,Kayıp Etiketler: Dizin
+mission.d4-p1-009,Kayıp Etiketler: Anahtar
+mission.d4-p1-010,Kayıp Etiketler: Parşömen
+mission.d4-p2-011,Kodlu Kayıt: Fiş
+mission.d4-p2-012,Kodlu Kayıt: Raf
+mission.d4-p2-013,Kodlu Kayıt: Kitap
+mission.d4-p2-014,Kodlu Kayıt: Sandık
+mission.d4-p2-015,Kodlu Kayıt: Kayıt
+mission.d4-p2-016,Kodlu Kayıt: Mühür
+mission.d4-p2-017,Kodlu Kayıt: Kart
+mission.d4-p2-018,Kodlu Kayıt: Dizin
+mission.d4-p2-019,Kodlu Kayıt: Anahtar
+mission.d4-p2-020,Kodlu Kayıt: Parşömen
+mission.d4-p3-021,Dizinin Mantığı: Fiş
+mission.d4-p3-022,Dizinin Mantığı: Raf
+mission.d4-p3-023,Dizinin Mantığı: Kitap
+mission.d4-p3-024,Dizinin Mantığı: Sandık
+mission.d4-p3-025,Dizinin Mantığı: Kayıt
+mission.d4-p3-026,Dizinin Mantığı: Mühür
+mission.d4-p3-027,Dizinin Mantığı: Kart
+mission.d4-p3-028,Dizinin Mantığı: Dizin
+mission.d4-p3-029,Dizinin Mantığı: Anahtar
+mission.d4-p3-030,Dizinin Mantığı: Parşömen
+mission.d4-p4-031,Şifreli Çekmece: Fiş
+mission.d4-p4-032,Şifreli Çekmece: Raf
+mission.d4-p4-033,Şifreli Çekmece: Kitap
+mission.d4-p4-034,Şifreli Çekmece: Sandık
+mission.d4-p4-035,Şifreli Çekmece: Kayıt
+mission.d4-p4-036,Şifreli Çekmece: Mühür
+mission.d4-p4-037,Şifreli Çekmece: Kart
+mission.d4-p4-038,Şifreli Çekmece: Dizin
+mission.d4-p4-039,Şifreli Çekmece: Anahtar
+mission.d4-p4-040,Şifreli Çekmece: Parşömen
+mission.d4-p5-041,Arşiv Açılıyor: Fiş
+mission.d4-p5-042,Arşiv Açılıyor: Raf
+mission.d4-p5-043,Arşiv Açılıyor: Kitap
+mission.d4-p5-044,Arşiv Açılıyor: Sandık
+mission.d4-p5-045,Arşiv Açılıyor: Kayıt
+mission.d4-p5-046,Arşiv Açılıyor: Mühür
+mission.d4-p5-047,Arşiv Açılıyor: Kart
+mission.d4-p5-048,Arşiv Açılıyor: Dizin
+mission.d4-p5-049,Arşiv Açılıyor: Anahtar
+mission.d4-p5-050,Arşiv Açılıyor: Parşömen
+mission.d5-p1-001,Küçük Kavşaklar: Köprü
+mission.d5-p1-002,Küçük Kavşaklar: Yaya yolu
+mission.d5-p1-003,Küçük Kavşaklar: Tramvay
+mission.d5-p1-004,Küçük Kavşaklar: Tünel
+mission.d5-p1-005,Küçük Kavşaklar: Nehir
+mission.d5-p1-006,Küçük Kavşaklar: Durak
+mission.d5-p1-007,Küçük Kavşaklar: Kavşak
+mission.d5-p1-008,Küçük Kavşaklar: Patika
+mission.d5-p1-009,Küçük Kavşaklar: İstasyon
+mission.d5-p1-010,Küçük Kavşaklar: Vadi
+mission.d5-p2-011,Köprüler: Köprü
+mission.d5-p2-012,Köprüler: Yaya yolu
+mission.d5-p2-013,Köprüler: Tramvay
+mission.d5-p2-014,Köprüler: Tünel
+mission.d5-p2-015,Köprüler: Nehir
+mission.d5-p2-016,Köprüler: Durak
+mission.d5-p2-017,Köprüler: Kavşak
+mission.d5-p2-018,Köprüler: Patika
+mission.d5-p2-019,Köprüler: İstasyon
+mission.d5-p2-020,Köprüler: Vadi
+mission.d5-p3-021,Yolun Bedeli: Köprü
+mission.d5-p3-022,Yolun Bedeli: Yaya yolu
+mission.d5-p3-023,Yolun Bedeli: Tramvay
+mission.d5-p3-024,Yolun Bedeli: Tünel
+mission.d5-p3-025,Yolun Bedeli: Nehir
+mission.d5-p3-026,Yolun Bedeli: Durak
+mission.d5-p3-027,Yolun Bedeli: Kavşak
+mission.d5-p3-028,Yolun Bedeli: Patika
+mission.d5-p3-029,Yolun Bedeli: İstasyon
+mission.d5-p3-030,Yolun Bedeli: Vadi
+mission.d5-p4-031,İki Rota: Köprü
+mission.d5-p4-032,İki Rota: Yaya yolu
+mission.d5-p4-033,İki Rota: Tramvay
+mission.d5-p4-034,İki Rota: Tünel
+mission.d5-p4-035,İki Rota: Nehir
+mission.d5-p4-036,İki Rota: Durak
+mission.d5-p4-037,İki Rota: Kavşak
+mission.d5-p4-038,İki Rota: Patika
+mission.d5-p4-039,İki Rota: İstasyon
+mission.d5-p4-040,İki Rota: Vadi
+mission.d5-p5-041,Vadinin Haritası: Köprü
+mission.d5-p5-042,Vadinin Haritası: Yaya yolu
+mission.d5-p5-043,Vadinin Haritası: Tramvay
+mission.d5-p5-044,Vadinin Haritası: Tünel
+mission.d5-p5-045,Vadinin Haritası: Nehir
+mission.d5-p5-046,Vadinin Haritası: Durak
+mission.d5-p5-047,Vadinin Haritası: Kavşak
+mission.d5-p5-048,Vadinin Haritası: Patika
+mission.d5-p5-049,Vadinin Haritası: İstasyon
+mission.d5-p5-050,Vadinin Haritası: Vadi
+mission.d6-p1-001,İlk Desen: Ritim
+mission.d6-p1-002,İlk Desen: Davul
+mission.d6-p1-003,İlk Desen: Doku
+mission.d6-p1-004,İlk Desen: Karo
+mission.d6-p1-005,İlk Desen: Nota
+mission.d6-p1-006,İlk Desen: Baskı
+mission.d6-p1-007,İlk Desen: Sahne
+mission.d6-p1-008,İlk Desen: Çizgi
+mission.d6-p1-009,İlk Desen: Desen
+mission.d6-p1-010,İlk Desen: Dokuma
+mission.d6-p2-011,Düzenli Vuruş: Ritim
+mission.d6-p2-012,Düzenli Vuruş: Davul
+mission.d6-p2-013,Düzenli Vuruş: Doku
+mission.d6-p2-014,Düzenli Vuruş: Karo
+mission.d6-p2-015,Düzenli Vuruş: Nota
+mission.d6-p2-016,Düzenli Vuruş: Baskı
+mission.d6-p2-017,Düzenli Vuruş: Sahne
+mission.d6-p2-018,Düzenli Vuruş: Çizgi
+mission.d6-p2-019,Düzenli Vuruş: Desen
+mission.d6-p2-020,Düzenli Vuruş: Dokuma
+mission.d6-p3-021,Kısa Bir Fonksiyon: Ritim
+mission.d6-p3-022,Kısa Bir Fonksiyon: Davul
+mission.d6-p3-023,Kısa Bir Fonksiyon: Doku
+mission.d6-p3-024,Kısa Bir Fonksiyon: Karo
+mission.d6-p3-025,Kısa Bir Fonksiyon: Nota
+mission.d6-p3-026,Kısa Bir Fonksiyon: Baskı
+mission.d6-p3-027,Kısa Bir Fonksiyon: Sahne
+mission.d6-p3-028,Kısa Bir Fonksiyon: Çizgi
+mission.d6-p3-029,Kısa Bir Fonksiyon: Desen
+mission.d6-p3-030,Kısa Bir Fonksiyon: Dokuma
+mission.d6-p4-031,Büyük Kompozisyon: Ritim
+mission.d6-p4-032,Büyük Kompozisyon: Davul
+mission.d6-p4-033,Büyük Kompozisyon: Doku
+mission.d6-p4-034,Büyük Kompozisyon: Karo
+mission.d6-p4-035,Büyük Kompozisyon: Nota
+mission.d6-p4-036,Büyük Kompozisyon: Baskı
+mission.d6-p4-037,Büyük Kompozisyon: Sahne
+mission.d6-p4-038,Büyük Kompozisyon: Çizgi
+mission.d6-p4-039,Büyük Kompozisyon: Desen
+mission.d6-p4-040,Büyük Kompozisyon: Dokuma
+mission.d6-p5-041,Atölye Sergisi: Ritim
+mission.d6-p5-042,Atölye Sergisi: Davul
+mission.d6-p5-043,Atölye Sergisi: Doku
+mission.d6-p5-044,Atölye Sergisi: Karo
+mission.d6-p5-045,Atölye Sergisi: Nota
+mission.d6-p5-046,Atölye Sergisi: Baskı
+mission.d6-p5-047,Atölye Sergisi: Sahne
+mission.d6-p5-048,Atölye Sergisi: Çizgi
+mission.d6-p5-049,Atölye Sergisi: Desen
+mission.d6-p5-050,Atölye Sergisi: Dokuma
+mission.d7-p1-001,Taslak Plan: Meydan
+mission.d7-p1-002,Taslak Plan: Hat
+mission.d7-p1-003,Taslak Plan: Park
+mission.d7-p1-004,Taslak Plan: Aydınlatma
+mission.d7-p1-005,Taslak Plan: Kütüphane
+mission.d7-p1-006,Taslak Plan: Kavşak
+mission.d7-p1-007,Taslak Plan: Atölye
+mission.d7-p1-008,Taslak Plan: İstasyon
+mission.d7-p1-009,Taslak Plan: Meyve bahçesi
+mission.d7-p1-010,Taslak Plan: Okul
+mission.d7-p2-011,İlk Deneme: Meydan
+mission.d7-p2-012,İlk Deneme: Hat
+mission.d7-p2-013,İlk Deneme: Park
+mission.d7-p2-014,İlk Deneme: Aydınlatma
+mission.d7-p2-015,İlk Deneme: Kütüphane
+mission.d7-p2-016,İlk Deneme: Kavşak
+mission.d7-p2-017,İlk Deneme: Atölye
+mission.d7-p2-018,İlk Deneme: İstasyon
+mission.d7-p2-019,İlk Deneme: Meyve bahçesi
+mission.d7-p2-020,İlk Deneme: Okul
+mission.d7-p3-021,Birleşen Sistemler: Meydan
+mission.d7-p3-022,Birleşen Sistemler: Hat
+mission.d7-p3-023,Birleşen Sistemler: Park
+mission.d7-p3-024,Birleşen Sistemler: Aydınlatma
+mission.d7-p3-025,Birleşen Sistemler: Kütüphane
+mission.d7-p3-026,Birleşen Sistemler: Kavşak
+mission.d7-p3-027,Birleşen Sistemler: Atölye
+mission.d7-p3-028,Birleşen Sistemler: İstasyon
+mission.d7-p3-029,Birleşen Sistemler: Meyve bahçesi
+mission.d7-p3-030,Birleşen Sistemler: Okul
+mission.d7-p4-031,Test Alanı: Meydan
+mission.d7-p4-032,Test Alanı: Hat
+mission.d7-p4-033,Test Alanı: Park
+mission.d7-p4-034,Test Alanı: Aydınlatma
+mission.d7-p4-035,Test Alanı: Kütüphane
+mission.d7-p4-036,Test Alanı: Kavşak
+mission.d7-p4-037,Test Alanı: Atölye
+mission.d7-p4-038,Test Alanı: İstasyon
+mission.d7-p4-039,Test Alanı: Meyve bahçesi
+mission.d7-p4-040,Test Alanı: Okul
+mission.d7-p5-041,Yeni Gün: Meydan
+mission.d7-p5-042,Yeni Gün: Hat
+mission.d7-p5-043,Yeni Gün: Park
+mission.d7-p5-044,Yeni Gün: Aydınlatma
+mission.d7-p5-045,Yeni Gün: Kütüphane
+mission.d7-p5-046,Yeni Gün: Kavşak
+mission.d7-p5-047,Yeni Gün: Atölye
+mission.d7-p5-048,Yeni Gün: İstasyon
+mission.d7-p5-049,Yeni Gün: Meyve bahçesi
+mission.d7-p5-050,Yeni Gün: Okul
+mission.desc.d1-p1-001,Yön taşlarını sıraya koy; ışığı kıyıdaki fenerle buluştur.
+mission.desc.d1-p1-002,Posta kutusuna uzanan yolu kayalar kapatmış. Başka bir rota çiz.
+mission.desc.d1-p1-003,"Mina, kısa yolun her zaman düz olmadığını söylüyor. Deneyelim."
+mission.desc.d1-p1-004,Adaların ışık örüntüsünü yeniden kur: bir sonraki işaret ne?
+mission.desc.d1-p1-005,Bir anahtar bazen birden fazla lambayı etkiler. Panelleri hedef düzenine getir.
+mission.desc.d1-p1-006,İlk Işıklar · Gelgit. Akış adımlarını doğru bağlantı sırasıyla yerleştir.
+mission.desc.d1-p1-007,İlk Işıklar · Kule. Işıkların sırasını incele ve aynı diziyi yeniden kur.
+mission.desc.d1-p1-008,İlk Işıklar · Harita. Sayı makinesini uygun işlemlerle hedefe ulaştır.
+mission.desc.d1-p1-009,İlk Işıklar · Posta. İşaretçiyi hedefe götür; yönlerin sırası yolu belirler.
+mission.desc.d1-p1-010,İlk Işıklar · Çan. Anahtarların hangi lambaları etkilediğini keşfet ve hedef düzeni kur.
+mission.desc.d1-p2-011,Ada Postası · İskele. Işıkların sırasını incele ve aynı diziyi yeniden kur.
+mission.desc.d1-p2-012,Ada Postası · Kıyı. Anahtarların hangi lambaları etkilediğini keşfet ve hedef düzeni kur.
+mission.desc.d1-p2-013,Ada Postası · Fener. İşaretçiyi hedefe götür; yönlerin sırası yolu belirler.
+mission.desc.d1-p2-014,Ada Postası · Şamandıra. Akış adımlarını doğru bağlantı sırasıyla yerleştir.
+mission.desc.d1-p2-015,Ada Postası · Koy. Işıkların sırasını incele ve aynı diziyi yeniden kur.
+mission.desc.d1-p2-016,Ada Postası · Gelgit. Sayı makinesini uygun işlemlerle hedefe ulaştır.
+mission.desc.d1-p2-017,Ada Postası · Kule. İşaretçiyi hedefe götür; yönlerin sırası yolu belirler.
+mission.desc.d1-p2-018,Ada Postası · Harita. Anahtarların hangi lambaları etkilediğini keşfet ve hedef düzeni kur.
+mission.desc.d1-p2-019,Ada Postası · Posta. İşaretçiyi hedefe götür; yönlerin sırası yolu belirler.
+mission.desc.d1-p2-020,Ada Postası · Çan. İşaretçiyi hedefe götür; yönlerin sırası yolu belirler.
+mission.desc.d1-p3-021,Tekrarlanan Sinyaller · İskele. İşaretçiyi hedefe götür; yönlerin sırası yolu belirler.
+mission.desc.d1-p3-022,Tekrarlanan Sinyaller · Kıyı. Akış adımlarını doğru bağlantı sırasıyla yerleştir.
+mission.desc.d1-p3-023,Tekrarlanan Sinyaller · Fener. Işıkların sırasını incele ve aynı diziyi yeniden kur.
+mission.desc.d1-p3-024,Tekrarlanan Sinyaller · Şamandıra. Sayı makinesini uygun işlemlerle hedefe ulaştır.
+mission.desc.d1-p3-025,Tekrarlanan Sinyaller · Koy. İşaretçiyi hedefe götür; yönlerin sırası yolu belirler.
+mission.desc.d1-p3-026,Tekrarlanan Sinyaller · Gelgit. Anahtarların hangi lambaları etkilediğini keşfet ve hedef düzeni kur.
+mission.desc.d1-p3-027,Tekrarlanan Sinyaller · Kule. İşaretçiyi hedefe götür; yönlerin sırası yolu belirler.
+mission.desc.d1-p3-028,Tekrarlanan Sinyaller · Harita. İşaretçiyi hedefe götür; yönlerin sırası yolu belirler.
+mission.desc.d1-p3-029,Tekrarlanan Sinyaller · Posta. Işıkların sırasını incele ve aynı diziyi yeniden kur.
+mission.desc.d1-p3-030,Tekrarlanan Sinyaller · Çan. Anahtarların hangi lambaları etkilediğini keşfet ve hedef düzeni kur.
+mission.desc.d1-p4-031,Sisli Rota · İskele. Işıkların sırasını incele ve aynı diziyi yeniden kur.
+mission.desc.d1-p4-032,Sisli Rota · Kıyı. Sayı makinesini uygun işlemlerle hedefe ulaştır.
+mission.desc.d1-p4-033,Sisli Rota · Fener. İşaretçiyi hedefe götür; yönlerin sırası yolu belirler.
+mission.desc.d1-p4-034,Sisli Rota · Şamandıra. Anahtarların hangi lambaları etkilediğini keşfet ve hedef düzeni kur.
+mission.desc.d1-p4-035,Sisli Rota · Koy. İşaretçiyi hedefe götür; yönlerin sırası yolu belirler.
+mission.desc.d1-p4-036,Sisli Rota · Gelgit. İşaretçiyi hedefe götür; yönlerin sırası yolu belirler.
+mission.desc.d1-p4-037,Sisli Rota · Kule. Işıkların sırasını incele ve aynı diziyi yeniden kur.
+mission.desc.d1-p4-038,Sisli Rota · Harita. Anahtarların hangi lambaları etkilediğini keşfet ve hedef düzeni kur.
+mission.desc.d1-p4-039,Sisli Rota · Posta. İşaretçiyi hedefe götür; yönlerin sırası yolu belirler.
+mission.desc.d1-p4-040,Sisli Rota · Çan. Akış adımlarını doğru bağlantı sırasıyla yerleştir.
+mission.desc.d1-p5-041,Fenerler Birlikte · İskele. İşaretçiyi hedefe götür; yönlerin sırası yolu belirler.
+mission.desc.d1-p5-042,Fenerler Birlikte · Kıyı. Anahtarların hangi lambaları etkilediğini keşfet ve hedef düzeni kur.
+mission.desc.d1-p5-043,Fenerler Birlikte · Fener. İşaretçiyi hedefe götür; yönlerin sırası yolu belirler.
+mission.desc.d1-p5-044,Fenerler Birlikte · Şamandıra. İşaretçiyi hedefe götür; yönlerin sırası yolu belirler.
+mission.desc.d1-p5-045,Fenerler Birlikte · Koy. Işıkların sırasını incele ve aynı diziyi yeniden kur.
+mission.desc.d1-p5-046,Fenerler Birlikte · Gelgit. Anahtarların hangi lambaları etkilediğini keşfet ve hedef düzeni kur.
+mission.desc.d1-p5-047,Fenerler Birlikte · Kule. İşaretçiyi hedefe götür; yönlerin sırası yolu belirler.
+mission.desc.d1-p5-048,Fenerler Birlikte · Harita. Akış adımlarını doğru bağlantı sırasıyla yerleştir.
+mission.desc.d1-p5-049,Fenerler Birlikte · Posta. Işıkların sırasını incele ve aynı diziyi yeniden kur.
+mission.desc.d1-p5-050,Fenerler Birlikte · Çan. Sayı makinesini uygun işlemlerle hedefe ulaştır.
+mission.desc.d2-p1-001,Düzenli Tik Tak · Çark. Işıkların sırasını incele ve aynı diziyi yeniden kur.
+mission.desc.d2-p1-002,Düzenli Tik Tak · Vitrin. Hazır yordamları çağırarak uzun bir deseni kısa programla üret.
+mission.desc.d2-p1-003,Düzenli Tik Tak · Zil. Olayları doğru sırayla tetikleyerek sistemi hedef duruma getir.
+mission.desc.d2-p1-004,Düzenli Tik Tak · Mekik. Mantık kapısının girişlerini hedef çıkışı sağlayacak biçimde ayarla.
+mission.desc.d2-p1-005,Düzenli Tik Tak · Yay. Anahtarların hangi lambaları etkilediğini keşfet ve hedef düzeni kur.
+mission.desc.d2-p1-006,Düzenli Tik Tak · Sarkaç. Akış adımlarını doğru bağlantı sırasıyla yerleştir.
+mission.desc.d2-p1-007,Düzenli Tik Tak · Pencere. Hazır yordamları çağırarak uzun bir deseni kısa programla üret.
+mission.desc.d2-p1-008,Düzenli Tik Tak · Takvim. Mantık kapısının girişlerini hedef çıkışı sağlayacak biçimde ayarla.
+mission.desc.d2-p1-009,Düzenli Tik Tak · İbre. Olayları doğru sırayla tetikleyerek sistemi hedef duruma getir.
+mission.desc.d2-p1-010,Düzenli Tik Tak · Atölye. Işıkların sırasını incele ve aynı diziyi yeniden kur.
+mission.desc.d2-p2-011,İki Çark Bir İş · Çark. Olayları doğru sırayla tetikleyerek sistemi hedef duruma getir.
+mission.desc.d2-p2-012,İki Çark Bir İş · Vitrin. Mantık kapısının girişlerini hedef çıkışı sağlayacak biçimde ayarla.
+mission.desc.d2-p2-013,İki Çark Bir İş · Zil. Anahtarların hangi lambaları etkilediğini keşfet ve hedef düzeni kur.
+mission.desc.d2-p2-014,İki Çark Bir İş · Mekik. Akış adımlarını doğru bağlantı sırasıyla yerleştir.
+mission.desc.d2-p2-015,İki Çark Bir İş · Yay. Hazır yordamları çağırarak uzun bir deseni kısa programla üret.
+mission.desc.d2-p2-016,İki Çark Bir İş · Sarkaç. Mantık kapısının girişlerini hedef çıkışı sağlayacak biçimde ayarla.
+mission.desc.d2-p2-017,İki Çark Bir İş · Pencere. Olayları doğru sırayla tetikleyerek sistemi hedef duruma getir.
+mission.desc.d2-p2-018,İki Çark Bir İş · Takvim. Işıkların sırasını incele ve aynı diziyi yeniden kur.
+mission.desc.d2-p2-019,İki Çark Bir İş · İbre. Işıkların sırasını incele ve aynı diziyi yeniden kur.
+mission.desc.d2-p2-020,İki Çark Bir İş · Atölye. Hazır yordamları çağırarak uzun bir deseni kısa programla üret.
+mission.desc.d2-p3-021,Kapı Ne Zaman Açılır · Çark. Anahtarların hangi lambaları etkilediğini keşfet ve hedef düzeni kur.
+mission.desc.d2-p3-022,Kapı Ne Zaman Açılır · Vitrin. Akış adımlarını doğru bağlantı sırasıyla yerleştir.
+mission.desc.d2-p3-023,Kapı Ne Zaman Açılır · Zil. Hazır yordamları çağırarak uzun bir deseni kısa programla üret.
+mission.desc.d2-p3-024,Kapı Ne Zaman Açılır · Mekik. Mantık kapısının girişlerini hedef çıkışı sağlayacak biçimde ayarla.
+mission.desc.d2-p3-025,Kapı Ne Zaman Açılır · Yay. Olayları doğru sırayla tetikleyerek sistemi hedef duruma getir.
+mission.desc.d2-p3-026,Kapı Ne Zaman Açılır · Sarkaç. Işıkların sırasını incele ve aynı diziyi yeniden kur.
+mission.desc.d2-p3-027,Kapı Ne Zaman Açılır · Pencere. Işıkların sırasını incele ve aynı diziyi yeniden kur.
+mission.desc.d2-p3-028,Kapı Ne Zaman Açılır · Takvim. Hazır yordamları çağırarak uzun bir deseni kısa programla üret.
+mission.desc.d2-p3-029,Kapı Ne Zaman Açılır · İbre. Olayları doğru sırayla tetikleyerek sistemi hedef duruma getir.
+mission.desc.d2-p3-030,Kapı Ne Zaman Açılır · Atölye. Mantık kapısının girişlerini hedef çıkışı sağlayacak biçimde ayarla.
+mission.desc.d2-p4-031,Yanlış Takılan Diş · Çark. Hazır yordamları çağırarak uzun bir deseni kısa programla üret.
+mission.desc.d2-p4-032,Yanlış Takılan Diş · Vitrin. Mantık kapısının girişlerini hedef çıkışı sağlayacak biçimde ayarla.
+mission.desc.d2-p4-033,Yanlış Takılan Diş · Zil. Olayları doğru sırayla tetikleyerek sistemi hedef duruma getir.
+mission.desc.d2-p4-034,Yanlış Takılan Diş · Mekik. Işıkların sırasını incele ve aynı diziyi yeniden kur.
+mission.desc.d2-p4-035,Yanlış Takılan Diş · Yay. Işıkların sırasını incele ve aynı diziyi yeniden kur.
+mission.desc.d2-p4-036,Yanlış Takılan Diş · Sarkaç. Hazır yordamları çağırarak uzun bir deseni kısa programla üret.
+mission.desc.d2-p4-037,Yanlış Takılan Diş · Pencere. Olayları doğru sırayla tetikleyerek sistemi hedef duruma getir.
+mission.desc.d2-p4-038,Yanlış Takılan Diş · Takvim. Mantık kapısının girişlerini hedef çıkışı sağlayacak biçimde ayarla.
+mission.desc.d2-p4-039,Yanlış Takılan Diş · İbre. Anahtarların hangi lambaları etkilediğini keşfet ve hedef düzeni kur.
+mission.desc.d2-p4-040,Yanlış Takılan Diş · Atölye. Akış adımlarını doğru bağlantı sırasıyla yerleştir.
+mission.desc.d2-p5-041,Sokak Orkestrası · Çark. Olayları doğru sırayla tetikleyerek sistemi hedef duruma getir.
+mission.desc.d2-p5-042,Sokak Orkestrası · Vitrin. Işıkların sırasını incele ve aynı diziyi yeniden kur.
+mission.desc.d2-p5-043,Sokak Orkestrası · Zil. Işıkların sırasını incele ve aynı diziyi yeniden kur.
+mission.desc.d2-p5-044,Sokak Orkestrası · Mekik. Hazır yordamları çağırarak uzun bir deseni kısa programla üret.
+mission.desc.d2-p5-045,Sokak Orkestrası · Yay. Olayları doğru sırayla tetikleyerek sistemi hedef duruma getir.
+mission.desc.d2-p5-046,Sokak Orkestrası · Sarkaç. Mantık kapısının girişlerini hedef çıkışı sağlayacak biçimde ayarla.
+mission.desc.d2-p5-047,Sokak Orkestrası · Pencere. Anahtarların hangi lambaları etkilediğini keşfet ve hedef düzeni kur.
+mission.desc.d2-p5-048,Sokak Orkestrası · Takvim. Akış adımlarını doğru bağlantı sırasıyla yerleştir.
+mission.desc.d2-p5-049,Sokak Orkestrası · İbre. Hazır yordamları çağırarak uzun bir deseni kısa programla üret.
+mission.desc.d2-p5-050,Sokak Orkestrası · Atölye. Mantık kapısının girişlerini hedef çıkışı sağlayacak biçimde ayarla.
+mission.desc.d3-p1-001,İlk Fideler · Fide. Sensör eşiğini seç ve otomatik denetimi etkinleştir.
+mission.desc.d3-p1-002,İlk Fideler · Saksı. Malzemeleri seç; hem ihtiyacı karşıla hem de bütçeyi aşma.
+mission.desc.d3-p1-003,İlk Fideler · Kanal. Ölçümlerde belirtilen kurala uyan kayıtları seç.
+mission.desc.d3-p1-004,İlk Fideler · Toprak. Mantık kapısının girişlerini hedef çıkışı sağlayacak biçimde ayarla.
+mission.desc.d3-p1-005,İlk Fideler · Sensör. Sayı makinesini uygun işlemlerle hedefe ulaştır.
+mission.desc.d3-p1-006,"İlk Fideler · Sera. Önce çevreyi tara, sonra robotu güvenli rotadan geçir."
+mission.desc.d3-p1-007,İlk Fideler · Tohum. Sensör eşiğini seç ve otomatik denetimi etkinleştir.
+mission.desc.d3-p1-008,İlk Fideler · Yaprak. Ölçümlerde belirtilen kurala uyan kayıtları seç.
+mission.desc.d3-p1-009,İlk Fideler · Nem. Malzemeleri seç; hem ihtiyacı karşıla hem de bütçeyi aşma.
+mission.desc.d3-p1-010,"İlk Fideler · Kubbe. Önce çevreyi tara, sonra robotu güvenli rotadan geçir."
+mission.desc.d3-p2-011,Ne Zaman Sulamalı · Fide. Ölçümlerde belirtilen kurala uyan kayıtları seç.
+mission.desc.d3-p2-012,Ne Zaman Sulamalı · Saksı. Mantık kapısının girişlerini hedef çıkışı sağlayacak biçimde ayarla.
+mission.desc.d3-p2-013,Ne Zaman Sulamalı · Kanal. Sayı makinesini uygun işlemlerle hedefe ulaştır.
+mission.desc.d3-p2-014,"Ne Zaman Sulamalı · Toprak. Önce çevreyi tara, sonra robotu güvenli rotadan geçir."
+mission.desc.d3-p2-015,Ne Zaman Sulamalı · Sensör. Sensör eşiğini seç ve otomatik denetimi etkinleştir.
+mission.desc.d3-p2-016,Ne Zaman Sulamalı · Sera. Ölçümlerde belirtilen kurala uyan kayıtları seç.
+mission.desc.d3-p2-017,Ne Zaman Sulamalı · Tohum. Malzemeleri seç; hem ihtiyacı karşıla hem de bütçeyi aşma.
+mission.desc.d3-p2-018,"Ne Zaman Sulamalı · Yaprak. Önce çevreyi tara, sonra robotu güvenli rotadan geçir."
+mission.desc.d3-p2-019,Ne Zaman Sulamalı · Nem. Sensör eşiğini seç ve otomatik denetimi etkinleştir.
+mission.desc.d3-p2-020,Ne Zaman Sulamalı · Kubbe. Malzemeleri seç; hem ihtiyacı karşıla hem de bütçeyi aşma.
+mission.desc.d3-p3-021,Denge Defteri · Fide. Sayı makinesini uygun işlemlerle hedefe ulaştır.
+mission.desc.d3-p3-022,"Denge Defteri · Saksı. Önce çevreyi tara, sonra robotu güvenli rotadan geçir."
+mission.desc.d3-p3-023,Denge Defteri · Kanal. Sensör eşiğini seç ve otomatik denetimi etkinleştir.
+mission.desc.d3-p3-024,Denge Defteri · Toprak. Ölçümlerde belirtilen kurala uyan kayıtları seç.
+mission.desc.d3-p3-025,Denge Defteri · Sensör. Malzemeleri seç; hem ihtiyacı karşıla hem de bütçeyi aşma.
+mission.desc.d3-p3-026,"Denge Defteri · Sera. Önce çevreyi tara, sonra robotu güvenli rotadan geçir."
+mission.desc.d3-p3-027,Denge Defteri · Tohum. Sensör eşiğini seç ve otomatik denetimi etkinleştir.
+mission.desc.d3-p3-028,Denge Defteri · Yaprak. Malzemeleri seç; hem ihtiyacı karşıla hem de bütçeyi aşma.
+mission.desc.d3-p3-029,Denge Defteri · Nem. Ölçümlerde belirtilen kurala uyan kayıtları seç.
+mission.desc.d3-p3-030,Denge Defteri · Kubbe. Mantık kapısının girişlerini hedef çıkışı sağlayacak biçimde ayarla.
+mission.desc.d3-p4-031,Bir Günlük Model · Fide. Sensör eşiğini seç ve otomatik denetimi etkinleştir.
+mission.desc.d3-p4-032,Bir Günlük Model · Saksı. Ölçümlerde belirtilen kurala uyan kayıtları seç.
+mission.desc.d3-p4-033,Bir Günlük Model · Kanal. Malzemeleri seç; hem ihtiyacı karşıla hem de bütçeyi aşma.
+mission.desc.d3-p4-034,"Bir Günlük Model · Toprak. Önce çevreyi tara, sonra robotu güvenli rotadan geçir."
+mission.desc.d3-p4-035,Bir Günlük Model · Sensör. Sensör eşiğini seç ve otomatik denetimi etkinleştir.
+mission.desc.d3-p4-036,Bir Günlük Model · Sera. Malzemeleri seç; hem ihtiyacı karşıla hem de bütçeyi aşma.
+mission.desc.d3-p4-037,Bir Günlük Model · Tohum. Ölçümlerde belirtilen kurala uyan kayıtları seç.
+mission.desc.d3-p4-038,Bir Günlük Model · Yaprak. Mantık kapısının girişlerini hedef çıkışı sağlayacak biçimde ayarla.
+mission.desc.d3-p4-039,Bir Günlük Model · Nem. Sayı makinesini uygun işlemlerle hedefe ulaştır.
+mission.desc.d3-p4-040,"Bir Günlük Model · Kubbe. Önce çevreyi tara, sonra robotu güvenli rotadan geçir."
+mission.desc.d3-p5-041,İstasyonun Nabzı · Fide. Malzemeleri seç; hem ihtiyacı karşıla hem de bütçeyi aşma.
+mission.desc.d3-p5-042,"İstasyonun Nabzı · Saksı. Önce çevreyi tara, sonra robotu güvenli rotadan geçir."
+mission.desc.d3-p5-043,İstasyonun Nabzı · Kanal. Sensör eşiğini seç ve otomatik denetimi etkinleştir.
+mission.desc.d3-p5-044,İstasyonun Nabzı · Toprak. Malzemeleri seç; hem ihtiyacı karşıla hem de bütçeyi aşma.
+mission.desc.d3-p5-045,İstasyonun Nabzı · Sensör. Ölçümlerde belirtilen kurala uyan kayıtları seç.
+mission.desc.d3-p5-046,İstasyonun Nabzı · Sera. Mantık kapısının girişlerini hedef çıkışı sağlayacak biçimde ayarla.
+mission.desc.d3-p5-047,İstasyonun Nabzı · Tohum. Sayı makinesini uygun işlemlerle hedefe ulaştır.
+mission.desc.d3-p5-048,"İstasyonun Nabzı · Yaprak. Önce çevreyi tara, sonra robotu güvenli rotadan geçir."
+mission.desc.d3-p5-049,İstasyonun Nabzı · Nem. Sensör eşiğini seç ve otomatik denetimi etkinleştir.
+mission.desc.d3-p5-050,İstasyonun Nabzı · Kubbe. Ölçümlerde belirtilen kurala uyan kayıtları seç.
+mission.desc.d4-p1-001,Kayıp Etiketler · Fiş. İkili ışık panelinde gerekli bitleri açıp kapat.
+mission.desc.d4-p1-002,Kayıp Etiketler · Raf. Şifre çarkını döndürüp işaretlenen anahtar ayarını bul.
+mission.desc.d4-p1-003,Kayıp Etiketler · Kitap. Vagonların sırasını yalnızca komşu değişimleriyle düzenle.
+mission.desc.d4-p1-004,Kayıp Etiketler · Sandık. Ölçümlerde belirtilen kurala uyan kayıtları seç.
+mission.desc.d4-p1-005,Kayıp Etiketler · Kayıt. Akış adımlarını doğru bağlantı sırasıyla yerleştir.
+mission.desc.d4-p1-006,Kayıp Etiketler · Mühür. İkili ışık panelinde gerekli bitleri açıp kapat.
+mission.desc.d4-p1-007,Kayıp Etiketler · Kart. Vagonların sırasını yalnızca komşu değişimleriyle düzenle.
+mission.desc.d4-p1-008,Kayıp Etiketler · Dizin. Şifre çarkını döndürüp işaretlenen anahtar ayarını bul.
+mission.desc.d4-p1-009,Kayıp Etiketler · Anahtar. Ölçümlerde belirtilen kurala uyan kayıtları seç.
+mission.desc.d4-p1-010,Kayıp Etiketler · Parşömen. Akış adımlarını doğru bağlantı sırasıyla yerleştir.
+mission.desc.d4-p2-011,Kodlu Kayıt · Fiş. Vagonların sırasını yalnızca komşu değişimleriyle düzenle.
+mission.desc.d4-p2-012,Kodlu Kayıt · Raf. Ölçümlerde belirtilen kurala uyan kayıtları seç.
+mission.desc.d4-p2-013,Kodlu Kayıt · Kitap. Akış adımlarını doğru bağlantı sırasıyla yerleştir.
+mission.desc.d4-p2-014,Kodlu Kayıt · Sandık. İkili ışık panelinde gerekli bitleri açıp kapat.
+mission.desc.d4-p2-015,Kodlu Kayıt · Kayıt. Vagonların sırasını yalnızca komşu değişimleriyle düzenle.
+mission.desc.d4-p2-016,Kodlu Kayıt · Mühür. Şifre çarkını döndürüp işaretlenen anahtar ayarını bul.
+mission.desc.d4-p2-017,Kodlu Kayıt · Kart. Ölçümlerde belirtilen kurala uyan kayıtları seç.
+mission.desc.d4-p2-018,Kodlu Kayıt · Dizin. Akış adımlarını doğru bağlantı sırasıyla yerleştir.
+mission.desc.d4-p2-019,Kodlu Kayıt · Anahtar. İkili ışık panelinde gerekli bitleri açıp kapat.
+mission.desc.d4-p2-020,Kodlu Kayıt · Parşömen. Şifre çarkını döndürüp işaretlenen anahtar ayarını bul.
+mission.desc.d4-p3-021,Dizinin Mantığı · Fiş. Akış adımlarını doğru bağlantı sırasıyla yerleştir.
+mission.desc.d4-p3-022,Dizinin Mantığı · Raf. İkili ışık panelinde gerekli bitleri açıp kapat.
+mission.desc.d4-p3-023,Dizinin Mantığı · Kitap. Vagonların sırasını yalnızca komşu değişimleriyle düzenle.
+mission.desc.d4-p3-024,Dizinin Mantığı · Sandık. Şifre çarkını döndürüp işaretlenen anahtar ayarını bul.
+mission.desc.d4-p3-025,Dizinin Mantığı · Kayıt. Ölçümlerde belirtilen kurala uyan kayıtları seç.
+mission.desc.d4-p3-026,Dizinin Mantığı · Mühür. Akış adımlarını doğru bağlantı sırasıyla yerleştir.
+mission.desc.d4-p3-027,Dizinin Mantığı · Kart. İkili ışık panelinde gerekli bitleri açıp kapat.
+mission.desc.d4-p3-028,Dizinin Mantığı · Dizin. Şifre çarkını döndürüp işaretlenen anahtar ayarını bul.
+mission.desc.d4-p3-029,Dizinin Mantığı · Anahtar. Vagonların sırasını yalnızca komşu değişimleriyle düzenle.
+mission.desc.d4-p3-030,Dizinin Mantığı · Parşömen. Ölçümlerde belirtilen kurala uyan kayıtları seç.
+mission.desc.d4-p4-031,Şifreli Çekmece · Fiş. Vagonların sırasını yalnızca komşu değişimleriyle düzenle.
+mission.desc.d4-p4-032,Şifreli Çekmece · Raf. Şifre çarkını döndürüp işaretlenen anahtar ayarını bul.
+mission.desc.d4-p4-033,Şifreli Çekmece · Kitap. Ölçümlerde belirtilen kurala uyan kayıtları seç.
+mission.desc.d4-p4-034,Şifreli Çekmece · Sandık. Akış adımlarını doğru bağlantı sırasıyla yerleştir.
+mission.desc.d4-p4-035,Şifreli Çekmece · Kayıt. İkili ışık panelinde gerekli bitleri açıp kapat.
+mission.desc.d4-p4-036,Şifreli Çekmece · Mühür. Şifre çarkını döndürüp işaretlenen anahtar ayarını bul.
+mission.desc.d4-p4-037,Şifreli Çekmece · Kart. Vagonların sırasını yalnızca komşu değişimleriyle düzenle.
+mission.desc.d4-p4-038,Şifreli Çekmece · Dizin. Ölçümlerde belirtilen kurala uyan kayıtları seç.
+mission.desc.d4-p4-039,Şifreli Çekmece · Anahtar. Akış adımlarını doğru bağlantı sırasıyla yerleştir.
+mission.desc.d4-p4-040,Şifreli Çekmece · Parşömen. İkili ışık panelinde gerekli bitleri açıp kapat.
+mission.desc.d4-p5-041,Arşiv Açılıyor · Fiş. Ölçümlerde belirtilen kurala uyan kayıtları seç.
+mission.desc.d4-p5-042,Arşiv Açılıyor · Raf. Akış adımlarını doğru bağlantı sırasıyla yerleştir.
+mission.desc.d4-p5-043,Arşiv Açılıyor · Kitap. İkili ışık panelinde gerekli bitleri açıp kapat.
+mission.desc.d4-p5-044,Arşiv Açılıyor · Sandık. Şifre çarkını döndürüp işaretlenen anahtar ayarını bul.
+mission.desc.d4-p5-045,Arşiv Açılıyor · Kayıt. Vagonların sırasını yalnızca komşu değişimleriyle düzenle.
+mission.desc.d4-p5-046,Arşiv Açılıyor · Mühür. Ölçümlerde belirtilen kurala uyan kayıtları seç.
+mission.desc.d4-p5-047,Arşiv Açılıyor · Kart. Akış adımlarını doğru bağlantı sırasıyla yerleştir.
+mission.desc.d4-p5-048,Arşiv Açılıyor · Dizin. İkili ışık panelinde gerekli bitleri açıp kapat.
+mission.desc.d4-p5-049,Arşiv Açılıyor · Anahtar. Vagonların sırasını yalnızca komşu değişimleriyle düzenle.
+mission.desc.d4-p5-050,Arşiv Açılıyor · Parşömen. Şifre çarkını döndürüp işaretlenen anahtar ayarını bul.
+mission.desc.d5-p1-001,Küçük Kavşaklar · Köprü. Bağlantılı durakları izle; en uygun maliyetli rotayı keşfet.
+mission.desc.d5-p1-002,Küçük Kavşaklar · Yaya yolu. İşaretçiyi hedefe götür; yönlerin sırası yolu belirler.
+mission.desc.d5-p1-003,Küçük Kavşaklar · Tramvay. Malzemeleri seç; hem ihtiyacı karşıla hem de bütçeyi aşma.
+mission.desc.d5-p1-004,"Küçük Kavşaklar · Tünel. Önce çevreyi tara, sonra robotu güvenli rotadan geçir."
+mission.desc.d5-p1-005,Küçük Kavşaklar · Nehir. Vagonların sırasını yalnızca komşu değişimleriyle düzenle.
+mission.desc.d5-p1-006,Küçük Kavşaklar · Durak. Bağlantılı durakları izle; en uygun maliyetli rotayı keşfet.
+mission.desc.d5-p1-007,Küçük Kavşaklar · Kavşak. Malzemeleri seç; hem ihtiyacı karşıla hem de bütçeyi aşma.
+mission.desc.d5-p1-008,Küçük Kavşaklar · Patika. İşaretçiyi hedefe götür; yönlerin sırası yolu belirler.
+mission.desc.d5-p1-009,Küçük Kavşaklar · İstasyon. Bağlantılı durakları izle; en uygun maliyetli rotayı keşfet.
+mission.desc.d5-p1-010,"Küçük Kavşaklar · Vadi. Önce çevreyi tara, sonra robotu güvenli rotadan geçir."
+mission.desc.d5-p2-011,Köprüler · Köprü. Malzemeleri seç; hem ihtiyacı karşıla hem de bütçeyi aşma.
+mission.desc.d5-p2-012,"Köprüler · Yaya yolu. Önce çevreyi tara, sonra robotu güvenli rotadan geçir."
+mission.desc.d5-p2-013,Köprüler · Tramvay. Vagonların sırasını yalnızca komşu değişimleriyle düzenle.
+mission.desc.d5-p2-014,Köprüler · Tünel. Bağlantılı durakları izle; en uygun maliyetli rotayı keşfet.
+mission.desc.d5-p2-015,Köprüler · Nehir. Malzemeleri seç; hem ihtiyacı karşıla hem de bütçeyi aşma.
+mission.desc.d5-p2-016,Köprüler · Durak. İşaretçiyi hedefe götür; yönlerin sırası yolu belirler.
+mission.desc.d5-p2-017,Köprüler · Kavşak. Bağlantılı durakları izle; en uygun maliyetli rotayı keşfet.
+mission.desc.d5-p2-018,"Köprüler · Patika. Önce çevreyi tara, sonra robotu güvenli rotadan geçir."
+mission.desc.d5-p2-019,Köprüler · İstasyon. Bağlantılı durakları izle; en uygun maliyetli rotayı keşfet.
+mission.desc.d5-p2-020,Köprüler · Vadi. İşaretçiyi hedefe götür; yönlerin sırası yolu belirler.
+mission.desc.d5-p3-021,Yolun Bedeli · Köprü. Vagonların sırasını yalnızca komşu değişimleriyle düzenle.
+mission.desc.d5-p3-022,Yolun Bedeli · Yaya yolu. Bağlantılı durakları izle; en uygun maliyetli rotayı keşfet.
+mission.desc.d5-p3-023,Yolun Bedeli · Tramvay. Malzemeleri seç; hem ihtiyacı karşıla hem de bütçeyi aşma.
+mission.desc.d5-p3-024,Yolun Bedeli · Tünel. İşaretçiyi hedefe götür; yönlerin sırası yolu belirler.
+mission.desc.d5-p3-025,Yolun Bedeli · Nehir. Bağlantılı durakları izle; en uygun maliyetli rotayı keşfet.
+mission.desc.d5-p3-026,"Yolun Bedeli · Durak. Önce çevreyi tara, sonra robotu güvenli rotadan geçir."
+mission.desc.d5-p3-027,Yolun Bedeli · Kavşak. Bağlantılı durakları izle; en uygun maliyetli rotayı keşfet.
+mission.desc.d5-p3-028,Yolun Bedeli · Patika. İşaretçiyi hedefe götür; yönlerin sırası yolu belirler.
+mission.desc.d5-p3-029,Yolun Bedeli · İstasyon. Malzemeleri seç; hem ihtiyacı karşıla hem de bütçeyi aşma.
+mission.desc.d5-p3-030,"Yolun Bedeli · Vadi. Önce çevreyi tara, sonra robotu güvenli rotadan geçir."
+mission.desc.d5-p4-031,İki Rota · Köprü. Malzemeleri seç; hem ihtiyacı karşıla hem de bütçeyi aşma.
+mission.desc.d5-p4-032,İki Rota · Yaya yolu. İşaretçiyi hedefe götür; yönlerin sırası yolu belirler.
+mission.desc.d5-p4-033,İki Rota · Tramvay. Bağlantılı durakları izle; en uygun maliyetli rotayı keşfet.
+mission.desc.d5-p4-034,"İki Rota · Tünel. Önce çevreyi tara, sonra robotu güvenli rotadan geçir."
+mission.desc.d5-p4-035,İki Rota · Nehir. Bağlantılı durakları izle; en uygun maliyetli rotayı keşfet.
+mission.desc.d5-p4-036,İki Rota · Durak. İşaretçiyi hedefe götür; yönlerin sırası yolu belirler.
+mission.desc.d5-p4-037,İki Rota · Kavşak. Malzemeleri seç; hem ihtiyacı karşıla hem de bütçeyi aşma.
+mission.desc.d5-p4-038,"İki Rota · Patika. Önce çevreyi tara, sonra robotu güvenli rotadan geçir."
+mission.desc.d5-p4-039,İki Rota · İstasyon. Vagonların sırasını yalnızca komşu değişimleriyle düzenle.
+mission.desc.d5-p4-040,İki Rota · Vadi. Bağlantılı durakları izle; en uygun maliyetli rotayı keşfet.
+mission.desc.d5-p5-041,Vadinin Haritası · Köprü. Bağlantılı durakları izle; en uygun maliyetli rotayı keşfet.
+mission.desc.d5-p5-042,"Vadinin Haritası · Yaya yolu. Önce çevreyi tara, sonra robotu güvenli rotadan geçir."
+mission.desc.d5-p5-043,Vadinin Haritası · Tramvay. Bağlantılı durakları izle; en uygun maliyetli rotayı keşfet.
+mission.desc.d5-p5-044,Vadinin Haritası · Tünel. İşaretçiyi hedefe götür; yönlerin sırası yolu belirler.
+mission.desc.d5-p5-045,Vadinin Haritası · Nehir. Malzemeleri seç; hem ihtiyacı karşıla hem de bütçeyi aşma.
+mission.desc.d5-p5-046,"Vadinin Haritası · Durak. Önce çevreyi tara, sonra robotu güvenli rotadan geçir."
+mission.desc.d5-p5-047,Vadinin Haritası · Kavşak. Vagonların sırasını yalnızca komşu değişimleriyle düzenle.
+mission.desc.d5-p5-048,Vadinin Haritası · Patika. Bağlantılı durakları izle; en uygun maliyetli rotayı keşfet.
+mission.desc.d5-p5-049,Vadinin Haritası · İstasyon. Malzemeleri seç; hem ihtiyacı karşıla hem de bütçeyi aşma.
+mission.desc.d5-p5-050,Vadinin Haritası · Vadi. İşaretçiyi hedefe götür; yönlerin sırası yolu belirler.
+mission.desc.d6-p1-001,İlk Desen · Ritim. Hazır yordamları çağırarak uzun bir deseni kısa programla üret.
+mission.desc.d6-p1-002,İlk Desen · Davul. Sayı makinesini uygun işlemlerle hedefe ulaştır.
+mission.desc.d6-p1-003,İlk Desen · Doku. Işıkların sırasını incele ve aynı diziyi yeniden kur.
+mission.desc.d6-p1-004,İlk Desen · Karo. Akış adımlarını doğru bağlantı sırasıyla yerleştir.
+mission.desc.d6-p1-005,İlk Desen · Nota. İkili ışık panelinde gerekli bitleri açıp kapat.
+mission.desc.d6-p1-006,İlk Desen · Baskı. Hazır yordamları çağırarak uzun bir deseni kısa programla üret.
+mission.desc.d6-p1-007,İlk Desen · Sahne. Sayı makinesini uygun işlemlerle hedefe ulaştır.
+mission.desc.d6-p1-008,İlk Desen · Çizgi. Akış adımlarını doğru bağlantı sırasıyla yerleştir.
+mission.desc.d6-p1-009,İlk Desen · Desen. Hazır yordamları çağırarak uzun bir deseni kısa programla üret.
+mission.desc.d6-p1-010,İlk Desen · Dokuma. Işıkların sırasını incele ve aynı diziyi yeniden kur.
+mission.desc.d6-p2-011,Düzenli Vuruş · Ritim. Işıkların sırasını incele ve aynı diziyi yeniden kur.
+mission.desc.d6-p2-012,Düzenli Vuruş · Davul. Akış adımlarını doğru bağlantı sırasıyla yerleştir.
+mission.desc.d6-p2-013,Düzenli Vuruş · Doku. İkili ışık panelinde gerekli bitleri açıp kapat.
+mission.desc.d6-p2-014,Düzenli Vuruş · Karo. Hazır yordamları çağırarak uzun bir deseni kısa programla üret.
+mission.desc.d6-p2-015,Düzenli Vuruş · Nota. Sayı makinesini uygun işlemlerle hedefe ulaştır.
+mission.desc.d6-p2-016,Düzenli Vuruş · Baskı. Akış adımlarını doğru bağlantı sırasıyla yerleştir.
+mission.desc.d6-p2-017,Düzenli Vuruş · Sahne. Hazır yordamları çağırarak uzun bir deseni kısa programla üret.
+mission.desc.d6-p2-018,Düzenli Vuruş · Çizgi. Işıkların sırasını incele ve aynı diziyi yeniden kur.
+mission.desc.d6-p2-019,Düzenli Vuruş · Desen. Hazır yordamları çağırarak uzun bir deseni kısa programla üret.
+mission.desc.d6-p2-020,Düzenli Vuruş · Dokuma. Sayı makinesini uygun işlemlerle hedefe ulaştır.
+mission.desc.d6-p3-021,Kısa Bir Fonksiyon · Ritim. İkili ışık panelinde gerekli bitleri açıp kapat.
+mission.desc.d6-p3-022,Kısa Bir Fonksiyon · Davul. Hazır yordamları çağırarak uzun bir deseni kısa programla üret.
+mission.desc.d6-p3-023,Kısa Bir Fonksiyon · Doku. Sayı makinesini uygun işlemlerle hedefe ulaştır.
+mission.desc.d6-p3-024,Kısa Bir Fonksiyon · Karo. Akış adımlarını doğru bağlantı sırasıyla yerleştir.
+mission.desc.d6-p3-025,Kısa Bir Fonksiyon · Nota. Hazır yordamları çağırarak uzun bir deseni kısa programla üret.
+mission.desc.d6-p3-026,Kısa Bir Fonksiyon · Baskı. Işıkların sırasını incele ve aynı diziyi yeniden kur.
+mission.desc.d6-p3-027,Kısa Bir Fonksiyon · Sahne. Hazır yordamları çağırarak uzun bir deseni kısa programla üret.
+mission.desc.d6-p3-028,Kısa Bir Fonksiyon · Çizgi. Sayı makinesini uygun işlemlerle hedefe ulaştır.
+mission.desc.d6-p3-029,Kısa Bir Fonksiyon · Desen. Işıkların sırasını incele ve aynı diziyi yeniden kur.
+mission.desc.d6-p3-030,Kısa Bir Fonksiyon · Dokuma. Akış adımlarını doğru bağlantı sırasıyla yerleştir.
+mission.desc.d6-p4-031,Büyük Kompozisyon · Ritim. Sayı makinesini uygun işlemlerle hedefe ulaştır.
+mission.desc.d6-p4-032,Büyük Kompozisyon · Davul. Akış adımlarını doğru bağlantı sırasıyla yerleştir.
+mission.desc.d6-p4-033,Büyük Kompozisyon · Doku. Hazır yordamları çağırarak uzun bir deseni kısa programla üret.
+mission.desc.d6-p4-034,Büyük Kompozisyon · Karo. Işıkların sırasını incele ve aynı diziyi yeniden kur.
+mission.desc.d6-p4-035,Büyük Kompozisyon · Nota. Hazır yordamları çağırarak uzun bir deseni kısa programla üret.
+mission.desc.d6-p4-036,Büyük Kompozisyon · Baskı. Sayı makinesini uygun işlemlerle hedefe ulaştır.
+mission.desc.d6-p4-037,Büyük Kompozisyon · Sahne. Işıkların sırasını incele ve aynı diziyi yeniden kur.
+mission.desc.d6-p4-038,Büyük Kompozisyon · Çizgi. Akış adımlarını doğru bağlantı sırasıyla yerleştir.
+mission.desc.d6-p4-039,Büyük Kompozisyon · Desen. İkili ışık panelinde gerekli bitleri açıp kapat.
+mission.desc.d6-p4-040,Büyük Kompozisyon · Dokuma. Hazır yordamları çağırarak uzun bir deseni kısa programla üret.
+mission.desc.d6-p5-041,Atölye Sergisi · Ritim. Hazır yordamları çağırarak uzun bir deseni kısa programla üret.
+mission.desc.d6-p5-042,Atölye Sergisi · Davul. Işıkların sırasını incele ve aynı diziyi yeniden kur.
+mission.desc.d6-p5-043,Atölye Sergisi · Doku. Hazır yordamları çağırarak uzun bir deseni kısa programla üret.
+mission.desc.d6-p5-044,Atölye Sergisi · Karo. Sayı makinesini uygun işlemlerle hedefe ulaştır.
+mission.desc.d6-p5-045,Atölye Sergisi · Nota. Işıkların sırasını incele ve aynı diziyi yeniden kur.
+mission.desc.d6-p5-046,Atölye Sergisi · Baskı. Akış adımlarını doğru bağlantı sırasıyla yerleştir.
+mission.desc.d6-p5-047,Atölye Sergisi · Sahne. İkili ışık panelinde gerekli bitleri açıp kapat.
+mission.desc.d6-p5-048,Atölye Sergisi · Çizgi. Hazır yordamları çağırarak uzun bir deseni kısa programla üret.
+mission.desc.d6-p5-049,Atölye Sergisi · Desen. Sayı makinesini uygun işlemlerle hedefe ulaştır.
+mission.desc.d6-p5-050,Atölye Sergisi · Dokuma. Akış adımlarını doğru bağlantı sırasıyla yerleştir.
+mission.desc.d7-p1-001,"Taslak Plan · Meydan. Önce çevreyi tara, sonra robotu güvenli rotadan geçir."
+mission.desc.d7-p1-002,Taslak Plan · Hat. Mantık kapısının girişlerini hedef çıkışı sağlayacak biçimde ayarla.
+mission.desc.d7-p1-003,Taslak Plan · Park. Sensör eşiğini seç ve otomatik denetimi etkinleştir.
+mission.desc.d7-p1-004,Taslak Plan · Aydınlatma. Akış adımlarını doğru bağlantı sırasıyla yerleştir.
+mission.desc.d7-p1-005,Taslak Plan · Kütüphane. Bağlantılı durakları izle; en uygun maliyetli rotayı keşfet.
+mission.desc.d7-p1-006,Taslak Plan · Kavşak. Olayları doğru sırayla tetikleyerek sistemi hedef duruma getir.
+mission.desc.d7-p1-007,Taslak Plan · Atölye. Malzemeleri seç; hem ihtiyacı karşıla hem de bütçeyi aşma.
+mission.desc.d7-p1-008,Taslak Plan · İstasyon. Ölçümlerde belirtilen kurala uyan kayıtları seç.
+mission.desc.d7-p1-009,"Taslak Plan · Meyve bahçesi. Önce çevreyi tara, sonra robotu güvenli rotadan geçir."
+mission.desc.d7-p1-010,Taslak Plan · Okul. Bağlantılı durakları izle; en uygun maliyetli rotayı keşfet.
+mission.desc.d7-p2-011,İlk Deneme · Meydan. Sensör eşiğini seç ve otomatik denetimi etkinleştir.
+mission.desc.d7-p2-012,İlk Deneme · Hat. Akış adımlarını doğru bağlantı sırasıyla yerleştir.
+mission.desc.d7-p2-013,İlk Deneme · Park. Bağlantılı durakları izle; en uygun maliyetli rotayı keşfet.
+mission.desc.d7-p2-014,İlk Deneme · Aydınlatma. Olayları doğru sırayla tetikleyerek sistemi hedef duruma getir.
+mission.desc.d7-p2-015,İlk Deneme · Kütüphane. Malzemeleri seç; hem ihtiyacı karşıla hem de bütçeyi aşma.
+mission.desc.d7-p2-016,İlk Deneme · Kavşak. Ölçümlerde belirtilen kurala uyan kayıtları seç.
+mission.desc.d7-p2-017,"İlk Deneme · Atölye. Önce çevreyi tara, sonra robotu güvenli rotadan geçir."
+mission.desc.d7-p2-018,İlk Deneme · İstasyon. Bağlantılı durakları izle; en uygun maliyetli rotayı keşfet.
+mission.desc.d7-p2-019,"İlk Deneme · Meyve bahçesi. Önce çevreyi tara, sonra robotu güvenli rotadan geçir."
+mission.desc.d7-p2-020,İlk Deneme · Okul. Mantık kapısının girişlerini hedef çıkışı sağlayacak biçimde ayarla.
+mission.desc.d7-p3-021,Birleşen Sistemler · Meydan. Bağlantılı durakları izle; en uygun maliyetli rotayı keşfet.
+mission.desc.d7-p3-022,Birleşen Sistemler · Hat. Olayları doğru sırayla tetikleyerek sistemi hedef duruma getir.
+mission.desc.d7-p3-023,Birleşen Sistemler · Park. Malzemeleri seç; hem ihtiyacı karşıla hem de bütçeyi aşma.
+mission.desc.d7-p3-024,Birleşen Sistemler · Aydınlatma. Ölçümlerde belirtilen kurala uyan kayıtları seç.
+mission.desc.d7-p3-025,"Birleşen Sistemler · Kütüphane. Önce çevreyi tara, sonra robotu güvenli rotadan geçir."
+mission.desc.d7-p3-026,Birleşen Sistemler · Kavşak. Bağlantılı durakları izle; en uygun maliyetli rotayı keşfet.
+mission.desc.d7-p3-027,"Birleşen Sistemler · Atölye. Önce çevreyi tara, sonra robotu güvenli rotadan geçir."
+mission.desc.d7-p3-028,Birleşen Sistemler · İstasyon. Mantık kapısının girişlerini hedef çıkışı sağlayacak biçimde ayarla.
+mission.desc.d7-p3-029,Birleşen Sistemler · Meyve bahçesi. Sensör eşiğini seç ve otomatik denetimi etkinleştir.
+mission.desc.d7-p3-030,Birleşen Sistemler · Okul. Akış adımlarını doğru bağlantı sırasıyla yerleştir.
+mission.desc.d7-p4-031,Test Alanı · Meydan. Malzemeleri seç; hem ihtiyacı karşıla hem de bütçeyi aşma.
+mission.desc.d7-p4-032,Test Alanı · Hat. Ölçümlerde belirtilen kurala uyan kayıtları seç.
+mission.desc.d7-p4-033,"Test Alanı · Park. Önce çevreyi tara, sonra robotu güvenli rotadan geçir."
+mission.desc.d7-p4-034,Test Alanı · Aydınlatma. Bağlantılı durakları izle; en uygun maliyetli rotayı keşfet.
+mission.desc.d7-p4-035,"Test Alanı · Kütüphane. Önce çevreyi tara, sonra robotu güvenli rotadan geçir."
+mission.desc.d7-p4-036,Test Alanı · Kavşak. Mantık kapısının girişlerini hedef çıkışı sağlayacak biçimde ayarla.
+mission.desc.d7-p4-037,Test Alanı · Atölye. Sensör eşiğini seç ve otomatik denetimi etkinleştir.
+mission.desc.d7-p4-038,Test Alanı · İstasyon. Akış adımlarını doğru bağlantı sırasıyla yerleştir.
+mission.desc.d7-p4-039,Test Alanı · Meyve bahçesi. Bağlantılı durakları izle; en uygun maliyetli rotayı keşfet.
+mission.desc.d7-p4-040,Test Alanı · Okul. Olayları doğru sırayla tetikleyerek sistemi hedef duruma getir.
+mission.desc.d7-p5-041,"Yeni Gün · Meydan. Önce çevreyi tara, sonra robotu güvenli rotadan geçir."
+mission.desc.d7-p5-042,Yeni Gün · Hat. Bağlantılı durakları izle; en uygun maliyetli rotayı keşfet.
+mission.desc.d7-p5-043,"Yeni Gün · Park. Önce çevreyi tara, sonra robotu güvenli rotadan geçir."
+mission.desc.d7-p5-044,Yeni Gün · Aydınlatma. Mantık kapısının girişlerini hedef çıkışı sağlayacak biçimde ayarla.
+mission.desc.d7-p5-045,Yeni Gün · Kütüphane. Sensör eşiğini seç ve otomatik denetimi etkinleştir.
+mission.desc.d7-p5-046,Yeni Gün · Kavşak. Akış adımlarını doğru bağlantı sırasıyla yerleştir.
+mission.desc.d7-p5-047,Yeni Gün · Atölye. Bağlantılı durakları izle; en uygun maliyetli rotayı keşfet.
+mission.desc.d7-p5-048,Yeni Gün · İstasyon. Olayları doğru sırayla tetikleyerek sistemi hedef duruma getir.
+mission.desc.d7-p5-049,Yeni Gün · Meyve bahçesi. Malzemeleri seç; hem ihtiyacı karşıla hem de bütçeyi aşma.
+mission.desc.d7-p5-050,Yeni Gün · Okul. Ölçümlerde belirtilen kurala uyan kayıtları seç.
+result.d1-p1-001,"Mina: ""Fener yolu hatırladı. İlk ışık gönderildi."""
+result.d1-p1-002,İskele postası yola çıktı. Kayaların çevresinden dolanmak işe yaradı.
+result.d1-p1-003,Saklı geçit haritaya işlendi. Bazen doğru yol biraz dolaşır.
+result.d1-p1-004,Işık işaretleri yeniden konuşuyor. Komşu ada mesajı aldı.
+result.d1-p1-005,"Panel yeniden canlandı. Bir düğme, birden fazla ışığı değiştirebiliyor."
+result.d1-p1-006,Gelgit görevi tamamlandı. İlk Işıklar dosyasına yeni bir iz eklendi.
+result.d1-p1-007,Kule görevi tamamlandı. İlk Işıklar dosyasına yeni bir iz eklendi.
+result.d1-p1-008,Harita görevi tamamlandı. İlk Işıklar dosyasına yeni bir iz eklendi.
+result.d1-p1-009,Posta görevi tamamlandı. İlk Işıklar dosyasına yeni bir iz eklendi.
+result.d1-p1-010,Çan görevi tamamlandı. İlk Işıklar dosyasına yeni bir iz eklendi.
+result.d1-p2-011,İskele görevi tamamlandı. Ada Postası dosyasına yeni bir iz eklendi.
+result.d1-p2-012,Kıyı görevi tamamlandı. Ada Postası dosyasına yeni bir iz eklendi.
+result.d1-p2-013,Fener görevi tamamlandı. Ada Postası dosyasına yeni bir iz eklendi.
+result.d1-p2-014,Şamandıra görevi tamamlandı. Ada Postası dosyasına yeni bir iz eklendi.
+result.d1-p2-015,Koy görevi tamamlandı. Ada Postası dosyasına yeni bir iz eklendi.
+result.d1-p2-016,Gelgit görevi tamamlandı. Ada Postası dosyasına yeni bir iz eklendi.
+result.d1-p2-017,Kule görevi tamamlandı. Ada Postası dosyasına yeni bir iz eklendi.
+result.d1-p2-018,Harita görevi tamamlandı. Ada Postası dosyasına yeni bir iz eklendi.
+result.d1-p2-019,Posta görevi tamamlandı. Ada Postası dosyasına yeni bir iz eklendi.
+result.d1-p2-020,Çan görevi tamamlandı. Ada Postası dosyasına yeni bir iz eklendi.
+result.d1-p3-021,İskele görevi tamamlandı. Tekrarlanan Sinyaller dosyasına yeni bir iz eklendi.
+result.d1-p3-022,Kıyı görevi tamamlandı. Tekrarlanan Sinyaller dosyasına yeni bir iz eklendi.
+result.d1-p3-023,Fener görevi tamamlandı. Tekrarlanan Sinyaller dosyasına yeni bir iz eklendi.
+result.d1-p3-024,Şamandıra görevi tamamlandı. Tekrarlanan Sinyaller dosyasına yeni bir iz eklendi.
+result.d1-p3-025,Koy görevi tamamlandı. Tekrarlanan Sinyaller dosyasına yeni bir iz eklendi.
+result.d1-p3-026,Gelgit görevi tamamlandı. Tekrarlanan Sinyaller dosyasına yeni bir iz eklendi.
+result.d1-p3-027,Kule görevi tamamlandı. Tekrarlanan Sinyaller dosyasına yeni bir iz eklendi.
+result.d1-p3-028,Harita görevi tamamlandı. Tekrarlanan Sinyaller dosyasına yeni bir iz eklendi.
+result.d1-p3-029,Posta görevi tamamlandı. Tekrarlanan Sinyaller dosyasına yeni bir iz eklendi.
+result.d1-p3-030,Çan görevi tamamlandı. Tekrarlanan Sinyaller dosyasına yeni bir iz eklendi.
+result.d1-p4-031,İskele görevi tamamlandı. Sisli Rota dosyasına yeni bir iz eklendi.
+result.d1-p4-032,Kıyı görevi tamamlandı. Sisli Rota dosyasına yeni bir iz eklendi.
+result.d1-p4-033,Fener görevi tamamlandı. Sisli Rota dosyasına yeni bir iz eklendi.
+result.d1-p4-034,Şamandıra görevi tamamlandı. Sisli Rota dosyasına yeni bir iz eklendi.
+result.d1-p4-035,Koy görevi tamamlandı. Sisli Rota dosyasına yeni bir iz eklendi.
+result.d1-p4-036,Gelgit görevi tamamlandı. Sisli Rota dosyasına yeni bir iz eklendi.
+result.d1-p4-037,Kule görevi tamamlandı. Sisli Rota dosyasına yeni bir iz eklendi.
+result.d1-p4-038,Harita görevi tamamlandı. Sisli Rota dosyasına yeni bir iz eklendi.
+result.d1-p4-039,Posta görevi tamamlandı. Sisli Rota dosyasına yeni bir iz eklendi.
+result.d1-p4-040,Çan görevi tamamlandı. Sisli Rota dosyasına yeni bir iz eklendi.
+result.d1-p5-041,İskele görevi tamamlandı. Fenerler Birlikte dosyasına yeni bir iz eklendi.
+result.d1-p5-042,Kıyı görevi tamamlandı. Fenerler Birlikte dosyasına yeni bir iz eklendi.
+result.d1-p5-043,Fener görevi tamamlandı. Fenerler Birlikte dosyasına yeni bir iz eklendi.
+result.d1-p5-044,Şamandıra görevi tamamlandı. Fenerler Birlikte dosyasına yeni bir iz eklendi.
+result.d1-p5-045,Koy görevi tamamlandı. Fenerler Birlikte dosyasına yeni bir iz eklendi.
+result.d1-p5-046,Gelgit görevi tamamlandı. Fenerler Birlikte dosyasına yeni bir iz eklendi.
+result.d1-p5-047,Kule görevi tamamlandı. Fenerler Birlikte dosyasına yeni bir iz eklendi.
+result.d1-p5-048,Harita görevi tamamlandı. Fenerler Birlikte dosyasına yeni bir iz eklendi.
+result.d1-p5-049,Posta görevi tamamlandı. Fenerler Birlikte dosyasına yeni bir iz eklendi.
+result.d1-p5-050,Çan görevi tamamlandı. Fenerler Birlikte dosyasına yeni bir iz eklendi.
+result.d2-p1-001,Çark görevi tamamlandı. Düzenli Tik Tak dosyasına yeni bir iz eklendi.
+result.d2-p1-002,Vitrin görevi tamamlandı. Düzenli Tik Tak dosyasına yeni bir iz eklendi.
+result.d2-p1-003,Zil görevi tamamlandı. Düzenli Tik Tak dosyasına yeni bir iz eklendi.
+result.d2-p1-004,Mekik görevi tamamlandı. Düzenli Tik Tak dosyasına yeni bir iz eklendi.
+result.d2-p1-005,Yay görevi tamamlandı. Düzenli Tik Tak dosyasına yeni bir iz eklendi.
+result.d2-p1-006,Sarkaç görevi tamamlandı. Düzenli Tik Tak dosyasına yeni bir iz eklendi.
+result.d2-p1-007,Pencere görevi tamamlandı. Düzenli Tik Tak dosyasına yeni bir iz eklendi.
+result.d2-p1-008,Takvim görevi tamamlandı. Düzenli Tik Tak dosyasına yeni bir iz eklendi.
+result.d2-p1-009,İbre görevi tamamlandı. Düzenli Tik Tak dosyasına yeni bir iz eklendi.
+result.d2-p1-010,Atölye görevi tamamlandı. Düzenli Tik Tak dosyasına yeni bir iz eklendi.
+result.d2-p2-011,Çark görevi tamamlandı. İki Çark Bir İş dosyasına yeni bir iz eklendi.
+result.d2-p2-012,Vitrin görevi tamamlandı. İki Çark Bir İş dosyasına yeni bir iz eklendi.
+result.d2-p2-013,Zil görevi tamamlandı. İki Çark Bir İş dosyasına yeni bir iz eklendi.
+result.d2-p2-014,Mekik görevi tamamlandı. İki Çark Bir İş dosyasına yeni bir iz eklendi.
+result.d2-p2-015,Yay görevi tamamlandı. İki Çark Bir İş dosyasına yeni bir iz eklendi.
+result.d2-p2-016,Sarkaç görevi tamamlandı. İki Çark Bir İş dosyasına yeni bir iz eklendi.
+result.d2-p2-017,Pencere görevi tamamlandı. İki Çark Bir İş dosyasına yeni bir iz eklendi.
+result.d2-p2-018,Takvim görevi tamamlandı. İki Çark Bir İş dosyasına yeni bir iz eklendi.
+result.d2-p2-019,İbre görevi tamamlandı. İki Çark Bir İş dosyasına yeni bir iz eklendi.
+result.d2-p2-020,Atölye görevi tamamlandı. İki Çark Bir İş dosyasına yeni bir iz eklendi.
+result.d2-p3-021,Çark görevi tamamlandı. Kapı Ne Zaman Açılır dosyasına yeni bir iz eklendi.
+result.d2-p3-022,Vitrin görevi tamamlandı. Kapı Ne Zaman Açılır dosyasına yeni bir iz eklendi.
+result.d2-p3-023,Zil görevi tamamlandı. Kapı Ne Zaman Açılır dosyasına yeni bir iz eklendi.
+result.d2-p3-024,Mekik görevi tamamlandı. Kapı Ne Zaman Açılır dosyasına yeni bir iz eklendi.
+result.d2-p3-025,Yay görevi tamamlandı. Kapı Ne Zaman Açılır dosyasına yeni bir iz eklendi.
+result.d2-p3-026,Sarkaç görevi tamamlandı. Kapı Ne Zaman Açılır dosyasına yeni bir iz eklendi.
+result.d2-p3-027,Pencere görevi tamamlandı. Kapı Ne Zaman Açılır dosyasına yeni bir iz eklendi.
+result.d2-p3-028,Takvim görevi tamamlandı. Kapı Ne Zaman Açılır dosyasına yeni bir iz eklendi.
+result.d2-p3-029,İbre görevi tamamlandı. Kapı Ne Zaman Açılır dosyasına yeni bir iz eklendi.
+result.d2-p3-030,Atölye görevi tamamlandı. Kapı Ne Zaman Açılır dosyasına yeni bir iz eklendi.
+result.d2-p4-031,Çark görevi tamamlandı. Yanlış Takılan Diş dosyasına yeni bir iz eklendi.
+result.d2-p4-032,Vitrin görevi tamamlandı. Yanlış Takılan Diş dosyasına yeni bir iz eklendi.
+result.d2-p4-033,Zil görevi tamamlandı. Yanlış Takılan Diş dosyasına yeni bir iz eklendi.
+result.d2-p4-034,Mekik görevi tamamlandı. Yanlış Takılan Diş dosyasına yeni bir iz eklendi.
+result.d2-p4-035,Yay görevi tamamlandı. Yanlış Takılan Diş dosyasına yeni bir iz eklendi.
+result.d2-p4-036,Sarkaç görevi tamamlandı. Yanlış Takılan Diş dosyasına yeni bir iz eklendi.
+result.d2-p4-037,Pencere görevi tamamlandı. Yanlış Takılan Diş dosyasına yeni bir iz eklendi.
+result.d2-p4-038,Takvim görevi tamamlandı. Yanlış Takılan Diş dosyasına yeni bir iz eklendi.
+result.d2-p4-039,İbre görevi tamamlandı. Yanlış Takılan Diş dosyasına yeni bir iz eklendi.
+result.d2-p4-040,Atölye görevi tamamlandı. Yanlış Takılan Diş dosyasına yeni bir iz eklendi.
+result.d2-p5-041,Çark görevi tamamlandı. Sokak Orkestrası dosyasına yeni bir iz eklendi.
+result.d2-p5-042,Vitrin görevi tamamlandı. Sokak Orkestrası dosyasına yeni bir iz eklendi.
+result.d2-p5-043,Zil görevi tamamlandı. Sokak Orkestrası dosyasına yeni bir iz eklendi.
+result.d2-p5-044,Mekik görevi tamamlandı. Sokak Orkestrası dosyasına yeni bir iz eklendi.
+result.d2-p5-045,Yay görevi tamamlandı. Sokak Orkestrası dosyasına yeni bir iz eklendi.
+result.d2-p5-046,Sarkaç görevi tamamlandı. Sokak Orkestrası dosyasına yeni bir iz eklendi.
+result.d2-p5-047,Pencere görevi tamamlandı. Sokak Orkestrası dosyasına yeni bir iz eklendi.
+result.d2-p5-048,Takvim görevi tamamlandı. Sokak Orkestrası dosyasına yeni bir iz eklendi.
+result.d2-p5-049,İbre görevi tamamlandı. Sokak Orkestrası dosyasına yeni bir iz eklendi.
+result.d2-p5-050,Atölye görevi tamamlandı. Sokak Orkestrası dosyasına yeni bir iz eklendi.
+result.d3-p1-001,Fide görevi tamamlandı. İlk Fideler dosyasına yeni bir iz eklendi.
+result.d3-p1-002,Saksı görevi tamamlandı. İlk Fideler dosyasına yeni bir iz eklendi.
+result.d3-p1-003,Kanal görevi tamamlandı. İlk Fideler dosyasına yeni bir iz eklendi.
+result.d3-p1-004,Toprak görevi tamamlandı. İlk Fideler dosyasına yeni bir iz eklendi.
+result.d3-p1-005,Sensör görevi tamamlandı. İlk Fideler dosyasına yeni bir iz eklendi.
+result.d3-p1-006,Sera görevi tamamlandı. İlk Fideler dosyasına yeni bir iz eklendi.
+result.d3-p1-007,Tohum görevi tamamlandı. İlk Fideler dosyasına yeni bir iz eklendi.
+result.d3-p1-008,Yaprak görevi tamamlandı. İlk Fideler dosyasına yeni bir iz eklendi.
+result.d3-p1-009,Nem görevi tamamlandı. İlk Fideler dosyasına yeni bir iz eklendi.
+result.d3-p1-010,Kubbe görevi tamamlandı. İlk Fideler dosyasına yeni bir iz eklendi.
+result.d3-p2-011,Fide görevi tamamlandı. Ne Zaman Sulamalı dosyasına yeni bir iz eklendi.
+result.d3-p2-012,Saksı görevi tamamlandı. Ne Zaman Sulamalı dosyasına yeni bir iz eklendi.
+result.d3-p2-013,Kanal görevi tamamlandı. Ne Zaman Sulamalı dosyasına yeni bir iz eklendi.
+result.d3-p2-014,Toprak görevi tamamlandı. Ne Zaman Sulamalı dosyasına yeni bir iz eklendi.
+result.d3-p2-015,Sensör görevi tamamlandı. Ne Zaman Sulamalı dosyasına yeni bir iz eklendi.
+result.d3-p2-016,Sera görevi tamamlandı. Ne Zaman Sulamalı dosyasına yeni bir iz eklendi.
+result.d3-p2-017,Tohum görevi tamamlandı. Ne Zaman Sulamalı dosyasına yeni bir iz eklendi.
+result.d3-p2-018,Yaprak görevi tamamlandı. Ne Zaman Sulamalı dosyasına yeni bir iz eklendi.
+result.d3-p2-019,Nem görevi tamamlandı. Ne Zaman Sulamalı dosyasına yeni bir iz eklendi.
+result.d3-p2-020,Kubbe görevi tamamlandı. Ne Zaman Sulamalı dosyasına yeni bir iz eklendi.
+result.d3-p3-021,Fide görevi tamamlandı. Denge Defteri dosyasına yeni bir iz eklendi.
+result.d3-p3-022,Saksı görevi tamamlandı. Denge Defteri dosyasına yeni bir iz eklendi.
+result.d3-p3-023,Kanal görevi tamamlandı. Denge Defteri dosyasına yeni bir iz eklendi.
+result.d3-p3-024,Toprak görevi tamamlandı. Denge Defteri dosyasına yeni bir iz eklendi.
+result.d3-p3-025,Sensör görevi tamamlandı. Denge Defteri dosyasına yeni bir iz eklendi.
+result.d3-p3-026,Sera görevi tamamlandı. Denge Defteri dosyasına yeni bir iz eklendi.
+result.d3-p3-027,Tohum görevi tamamlandı. Denge Defteri dosyasına yeni bir iz eklendi.
+result.d3-p3-028,Yaprak görevi tamamlandı. Denge Defteri dosyasına yeni bir iz eklendi.
+result.d3-p3-029,Nem görevi tamamlandı. Denge Defteri dosyasına yeni bir iz eklendi.
+result.d3-p3-030,Kubbe görevi tamamlandı. Denge Defteri dosyasına yeni bir iz eklendi.
+result.d3-p4-031,Fide görevi tamamlandı. Bir Günlük Model dosyasına yeni bir iz eklendi.
+result.d3-p4-032,Saksı görevi tamamlandı. Bir Günlük Model dosyasına yeni bir iz eklendi.
+result.d3-p4-033,Kanal görevi tamamlandı. Bir Günlük Model dosyasına yeni bir iz eklendi.
+result.d3-p4-034,Toprak görevi tamamlandı. Bir Günlük Model dosyasına yeni bir iz eklendi.
+result.d3-p4-035,Sensör görevi tamamlandı. Bir Günlük Model dosyasına yeni bir iz eklendi.
+result.d3-p4-036,Sera görevi tamamlandı. Bir Günlük Model dosyasına yeni bir iz eklendi.
+result.d3-p4-037,Tohum görevi tamamlandı. Bir Günlük Model dosyasına yeni bir iz eklendi.
+result.d3-p4-038,Yaprak görevi tamamlandı. Bir Günlük Model dosyasına yeni bir iz eklendi.
+result.d3-p4-039,Nem görevi tamamlandı. Bir Günlük Model dosyasına yeni bir iz eklendi.
+result.d3-p4-040,Kubbe görevi tamamlandı. Bir Günlük Model dosyasına yeni bir iz eklendi.
+result.d3-p5-041,Fide görevi tamamlandı. İstasyonun Nabzı dosyasına yeni bir iz eklendi.
+result.d3-p5-042,Saksı görevi tamamlandı. İstasyonun Nabzı dosyasına yeni bir iz eklendi.
+result.d3-p5-043,Kanal görevi tamamlandı. İstasyonun Nabzı dosyasına yeni bir iz eklendi.
+result.d3-p5-044,Toprak görevi tamamlandı. İstasyonun Nabzı dosyasına yeni bir iz eklendi.
+result.d3-p5-045,Sensör görevi tamamlandı. İstasyonun Nabzı dosyasına yeni bir iz eklendi.
+result.d3-p5-046,Sera görevi tamamlandı. İstasyonun Nabzı dosyasına yeni bir iz eklendi.
+result.d3-p5-047,Tohum görevi tamamlandı. İstasyonun Nabzı dosyasına yeni bir iz eklendi.
+result.d3-p5-048,Yaprak görevi tamamlandı. İstasyonun Nabzı dosyasına yeni bir iz eklendi.
+result.d3-p5-049,Nem görevi tamamlandı. İstasyonun Nabzı dosyasına yeni bir iz eklendi.
+result.d3-p5-050,Kubbe görevi tamamlandı. İstasyonun Nabzı dosyasına yeni bir iz eklendi.
+result.d4-p1-001,Fiş görevi tamamlandı. Kayıp Etiketler dosyasına yeni bir iz eklendi.
+result.d4-p1-002,Raf görevi tamamlandı. Kayıp Etiketler dosyasına yeni bir iz eklendi.
+result.d4-p1-003,Kitap görevi tamamlandı. Kayıp Etiketler dosyasına yeni bir iz eklendi.
+result.d4-p1-004,Sandık görevi tamamlandı. Kayıp Etiketler dosyasına yeni bir iz eklendi.
+result.d4-p1-005,Kayıt görevi tamamlandı. Kayıp Etiketler dosyasına yeni bir iz eklendi.
+result.d4-p1-006,Mühür görevi tamamlandı. Kayıp Etiketler dosyasına yeni bir iz eklendi.
+result.d4-p1-007,Kart görevi tamamlandı. Kayıp Etiketler dosyasına yeni bir iz eklendi.
+result.d4-p1-008,Dizin görevi tamamlandı. Kayıp Etiketler dosyasına yeni bir iz eklendi.
+result.d4-p1-009,Anahtar görevi tamamlandı. Kayıp Etiketler dosyasına yeni bir iz eklendi.
+result.d4-p1-010,Parşömen görevi tamamlandı. Kayıp Etiketler dosyasına yeni bir iz eklendi.
+result.d4-p2-011,Fiş görevi tamamlandı. Kodlu Kayıt dosyasına yeni bir iz eklendi.
+result.d4-p2-012,Raf görevi tamamlandı. Kodlu Kayıt dosyasına yeni bir iz eklendi.
+result.d4-p2-013,Kitap görevi tamamlandı. Kodlu Kayıt dosyasına yeni bir iz eklendi.
+result.d4-p2-014,Sandık görevi tamamlandı. Kodlu Kayıt dosyasına yeni bir iz eklendi.
+result.d4-p2-015,Kayıt görevi tamamlandı. Kodlu Kayıt dosyasına yeni bir iz eklendi.
+result.d4-p2-016,Mühür görevi tamamlandı. Kodlu Kayıt dosyasına yeni bir iz eklendi.
+result.d4-p2-017,Kart görevi tamamlandı. Kodlu Kayıt dosyasına yeni bir iz eklendi.
+result.d4-p2-018,Dizin görevi tamamlandı. Kodlu Kayıt dosyasına yeni bir iz eklendi.
+result.d4-p2-019,Anahtar görevi tamamlandı. Kodlu Kayıt dosyasına yeni bir iz eklendi.
+result.d4-p2-020,Parşömen görevi tamamlandı. Kodlu Kayıt dosyasına yeni bir iz eklendi.
+result.d4-p3-021,Fiş görevi tamamlandı. Dizinin Mantığı dosyasına yeni bir iz eklendi.
+result.d4-p3-022,Raf görevi tamamlandı. Dizinin Mantığı dosyasına yeni bir iz eklendi.
+result.d4-p3-023,Kitap görevi tamamlandı. Dizinin Mantığı dosyasına yeni bir iz eklendi.
+result.d4-p3-024,Sandık görevi tamamlandı. Dizinin Mantığı dosyasına yeni bir iz eklendi.
+result.d4-p3-025,Kayıt görevi tamamlandı. Dizinin Mantığı dosyasına yeni bir iz eklendi.
+result.d4-p3-026,Mühür görevi tamamlandı. Dizinin Mantığı dosyasına yeni bir iz eklendi.
+result.d4-p3-027,Kart görevi tamamlandı. Dizinin Mantığı dosyasına yeni bir iz eklendi.
+result.d4-p3-028,Dizin görevi tamamlandı. Dizinin Mantığı dosyasına yeni bir iz eklendi.
+result.d4-p3-029,Anahtar görevi tamamlandı. Dizinin Mantığı dosyasına yeni bir iz eklendi.
+result.d4-p3-030,Parşömen görevi tamamlandı. Dizinin Mantığı dosyasına yeni bir iz eklendi.
+result.d4-p4-031,Fiş görevi tamamlandı. Şifreli Çekmece dosyasına yeni bir iz eklendi.
+result.d4-p4-032,Raf görevi tamamlandı. Şifreli Çekmece dosyasına yeni bir iz eklendi.
+result.d4-p4-033,Kitap görevi tamamlandı. Şifreli Çekmece dosyasına yeni bir iz eklendi.
+result.d4-p4-034,Sandık görevi tamamlandı. Şifreli Çekmece dosyasına yeni bir iz eklendi.
+result.d4-p4-035,Kayıt görevi tamamlandı. Şifreli Çekmece dosyasına yeni bir iz eklendi.
+result.d4-p4-036,Mühür görevi tamamlandı. Şifreli Çekmece dosyasına yeni bir iz eklendi.
+result.d4-p4-037,Kart görevi tamamlandı. Şifreli Çekmece dosyasına yeni bir iz eklendi.
+result.d4-p4-038,Dizin görevi tamamlandı. Şifreli Çekmece dosyasına yeni bir iz eklendi.
+result.d4-p4-039,Anahtar görevi tamamlandı. Şifreli Çekmece dosyasına yeni bir iz eklendi.
+result.d4-p4-040,Parşömen görevi tamamlandı. Şifreli Çekmece dosyasına yeni bir iz eklendi.
+result.d4-p5-041,Fiş görevi tamamlandı. Arşiv Açılıyor dosyasına yeni bir iz eklendi.
+result.d4-p5-042,Raf görevi tamamlandı. Arşiv Açılıyor dosyasına yeni bir iz eklendi.
+result.d4-p5-043,Kitap görevi tamamlandı. Arşiv Açılıyor dosyasına yeni bir iz eklendi.
+result.d4-p5-044,Sandık görevi tamamlandı. Arşiv Açılıyor dosyasına yeni bir iz eklendi.
+result.d4-p5-045,Kayıt görevi tamamlandı. Arşiv Açılıyor dosyasına yeni bir iz eklendi.
+result.d4-p5-046,Mühür görevi tamamlandı. Arşiv Açılıyor dosyasına yeni bir iz eklendi.
+result.d4-p5-047,Kart görevi tamamlandı. Arşiv Açılıyor dosyasına yeni bir iz eklendi.
+result.d4-p5-048,Dizin görevi tamamlandı. Arşiv Açılıyor dosyasına yeni bir iz eklendi.
+result.d4-p5-049,Anahtar görevi tamamlandı. Arşiv Açılıyor dosyasına yeni bir iz eklendi.
+result.d4-p5-050,Parşömen görevi tamamlandı. Arşiv Açılıyor dosyasına yeni bir iz eklendi.
+result.d5-p1-001,Köprü görevi tamamlandı. Küçük Kavşaklar dosyasına yeni bir iz eklendi.
+result.d5-p1-002,Yaya yolu görevi tamamlandı. Küçük Kavşaklar dosyasına yeni bir iz eklendi.
+result.d5-p1-003,Tramvay görevi tamamlandı. Küçük Kavşaklar dosyasına yeni bir iz eklendi.
+result.d5-p1-004,Tünel görevi tamamlandı. Küçük Kavşaklar dosyasına yeni bir iz eklendi.
+result.d5-p1-005,Nehir görevi tamamlandı. Küçük Kavşaklar dosyasına yeni bir iz eklendi.
+result.d5-p1-006,Durak görevi tamamlandı. Küçük Kavşaklar dosyasına yeni bir iz eklendi.
+result.d5-p1-007,Kavşak görevi tamamlandı. Küçük Kavşaklar dosyasına yeni bir iz eklendi.
+result.d5-p1-008,Patika görevi tamamlandı. Küçük Kavşaklar dosyasına yeni bir iz eklendi.
+result.d5-p1-009,İstasyon görevi tamamlandı. Küçük Kavşaklar dosyasına yeni bir iz eklendi.
+result.d5-p1-010,Vadi görevi tamamlandı. Küçük Kavşaklar dosyasına yeni bir iz eklendi.
+result.d5-p2-011,Köprü görevi tamamlandı. Köprüler dosyasına yeni bir iz eklendi.
+result.d5-p2-012,Yaya yolu görevi tamamlandı. Köprüler dosyasına yeni bir iz eklendi.
+result.d5-p2-013,Tramvay görevi tamamlandı. Köprüler dosyasına yeni bir iz eklendi.
+result.d5-p2-014,Tünel görevi tamamlandı. Köprüler dosyasına yeni bir iz eklendi.
+result.d5-p2-015,Nehir görevi tamamlandı. Köprüler dosyasına yeni bir iz eklendi.
+result.d5-p2-016,Durak görevi tamamlandı. Köprüler dosyasına yeni bir iz eklendi.
+result.d5-p2-017,Kavşak görevi tamamlandı. Köprüler dosyasına yeni bir iz eklendi.
+result.d5-p2-018,Patika görevi tamamlandı. Köprüler dosyasına yeni bir iz eklendi.
+result.d5-p2-019,İstasyon görevi tamamlandı. Köprüler dosyasına yeni bir iz eklendi.
+result.d5-p2-020,Vadi görevi tamamlandı. Köprüler dosyasına yeni bir iz eklendi.
+result.d5-p3-021,Köprü görevi tamamlandı. Yolun Bedeli dosyasına yeni bir iz eklendi.
+result.d5-p3-022,Yaya yolu görevi tamamlandı. Yolun Bedeli dosyasına yeni bir iz eklendi.
+result.d5-p3-023,Tramvay görevi tamamlandı. Yolun Bedeli dosyasına yeni bir iz eklendi.
+result.d5-p3-024,Tünel görevi tamamlandı. Yolun Bedeli dosyasına yeni bir iz eklendi.
+result.d5-p3-025,Nehir görevi tamamlandı. Yolun Bedeli dosyasına yeni bir iz eklendi.
+result.d5-p3-026,Durak görevi tamamlandı. Yolun Bedeli dosyasına yeni bir iz eklendi.
+result.d5-p3-027,Kavşak görevi tamamlandı. Yolun Bedeli dosyasına yeni bir iz eklendi.
+result.d5-p3-028,Patika görevi tamamlandı. Yolun Bedeli dosyasına yeni bir iz eklendi.
+result.d5-p3-029,İstasyon görevi tamamlandı. Yolun Bedeli dosyasına yeni bir iz eklendi.
+result.d5-p3-030,Vadi görevi tamamlandı. Yolun Bedeli dosyasına yeni bir iz eklendi.
+result.d5-p4-031,Köprü görevi tamamlandı. İki Rota dosyasına yeni bir iz eklendi.
+result.d5-p4-032,Yaya yolu görevi tamamlandı. İki Rota dosyasına yeni bir iz eklendi.
+result.d5-p4-033,Tramvay görevi tamamlandı. İki Rota dosyasına yeni bir iz eklendi.
+result.d5-p4-034,Tünel görevi tamamlandı. İki Rota dosyasına yeni bir iz eklendi.
+result.d5-p4-035,Nehir görevi tamamlandı. İki Rota dosyasına yeni bir iz eklendi.
+result.d5-p4-036,Durak görevi tamamlandı. İki Rota dosyasına yeni bir iz eklendi.
+result.d5-p4-037,Kavşak görevi tamamlandı. İki Rota dosyasına yeni bir iz eklendi.
+result.d5-p4-038,Patika görevi tamamlandı. İki Rota dosyasına yeni bir iz eklendi.
+result.d5-p4-039,İstasyon görevi tamamlandı. İki Rota dosyasına yeni bir iz eklendi.
+result.d5-p4-040,Vadi görevi tamamlandı. İki Rota dosyasına yeni bir iz eklendi.
+result.d5-p5-041,Köprü görevi tamamlandı. Vadinin Haritası dosyasına yeni bir iz eklendi.
+result.d5-p5-042,Yaya yolu görevi tamamlandı. Vadinin Haritası dosyasına yeni bir iz eklendi.
+result.d5-p5-043,Tramvay görevi tamamlandı. Vadinin Haritası dosyasına yeni bir iz eklendi.
+result.d5-p5-044,Tünel görevi tamamlandı. Vadinin Haritası dosyasına yeni bir iz eklendi.
+result.d5-p5-045,Nehir görevi tamamlandı. Vadinin Haritası dosyasına yeni bir iz eklendi.
+result.d5-p5-046,Durak görevi tamamlandı. Vadinin Haritası dosyasına yeni bir iz eklendi.
+result.d5-p5-047,Kavşak görevi tamamlandı. Vadinin Haritası dosyasına yeni bir iz eklendi.
+result.d5-p5-048,Patika görevi tamamlandı. Vadinin Haritası dosyasına yeni bir iz eklendi.
+result.d5-p5-049,İstasyon görevi tamamlandı. Vadinin Haritası dosyasına yeni bir iz eklendi.
+result.d5-p5-050,Vadi görevi tamamlandı. Vadinin Haritası dosyasına yeni bir iz eklendi.
+result.d6-p1-001,Ritim görevi tamamlandı. İlk Desen dosyasına yeni bir iz eklendi.
+result.d6-p1-002,Davul görevi tamamlandı. İlk Desen dosyasına yeni bir iz eklendi.
+result.d6-p1-003,Doku görevi tamamlandı. İlk Desen dosyasına yeni bir iz eklendi.
+result.d6-p1-004,Karo görevi tamamlandı. İlk Desen dosyasına yeni bir iz eklendi.
+result.d6-p1-005,Nota görevi tamamlandı. İlk Desen dosyasına yeni bir iz eklendi.
+result.d6-p1-006,Baskı görevi tamamlandı. İlk Desen dosyasına yeni bir iz eklendi.
+result.d6-p1-007,Sahne görevi tamamlandı. İlk Desen dosyasına yeni bir iz eklendi.
+result.d6-p1-008,Çizgi görevi tamamlandı. İlk Desen dosyasına yeni bir iz eklendi.
+result.d6-p1-009,Desen görevi tamamlandı. İlk Desen dosyasına yeni bir iz eklendi.
+result.d6-p1-010,Dokuma görevi tamamlandı. İlk Desen dosyasına yeni bir iz eklendi.
+result.d6-p2-011,Ritim görevi tamamlandı. Düzenli Vuruş dosyasına yeni bir iz eklendi.
+result.d6-p2-012,Davul görevi tamamlandı. Düzenli Vuruş dosyasına yeni bir iz eklendi.
+result.d6-p2-013,Doku görevi tamamlandı. Düzenli Vuruş dosyasına yeni bir iz eklendi.
+result.d6-p2-014,Karo görevi tamamlandı. Düzenli Vuruş dosyasına yeni bir iz eklendi.
+result.d6-p2-015,Nota görevi tamamlandı. Düzenli Vuruş dosyasına yeni bir iz eklendi.
+result.d6-p2-016,Baskı görevi tamamlandı. Düzenli Vuruş dosyasına yeni bir iz eklendi.
+result.d6-p2-017,Sahne görevi tamamlandı. Düzenli Vuruş dosyasına yeni bir iz eklendi.
+result.d6-p2-018,Çizgi görevi tamamlandı. Düzenli Vuruş dosyasına yeni bir iz eklendi.
+result.d6-p2-019,Desen görevi tamamlandı. Düzenli Vuruş dosyasına yeni bir iz eklendi.
+result.d6-p2-020,Dokuma görevi tamamlandı. Düzenli Vuruş dosyasına yeni bir iz eklendi.
+result.d6-p3-021,Ritim görevi tamamlandı. Kısa Bir Fonksiyon dosyasına yeni bir iz eklendi.
+result.d6-p3-022,Davul görevi tamamlandı. Kısa Bir Fonksiyon dosyasına yeni bir iz eklendi.
+result.d6-p3-023,Doku görevi tamamlandı. Kısa Bir Fonksiyon dosyasına yeni bir iz eklendi.
+result.d6-p3-024,Karo görevi tamamlandı. Kısa Bir Fonksiyon dosyasına yeni bir iz eklendi.
+result.d6-p3-025,Nota görevi tamamlandı. Kısa Bir Fonksiyon dosyasına yeni bir iz eklendi.
+result.d6-p3-026,Baskı görevi tamamlandı. Kısa Bir Fonksiyon dosyasına yeni bir iz eklendi.
+result.d6-p3-027,Sahne görevi tamamlandı. Kısa Bir Fonksiyon dosyasına yeni bir iz eklendi.
+result.d6-p3-028,Çizgi görevi tamamlandı. Kısa Bir Fonksiyon dosyasına yeni bir iz eklendi.
+result.d6-p3-029,Desen görevi tamamlandı. Kısa Bir Fonksiyon dosyasına yeni bir iz eklendi.
+result.d6-p3-030,Dokuma görevi tamamlandı. Kısa Bir Fonksiyon dosyasına yeni bir iz eklendi.
+result.d6-p4-031,Ritim görevi tamamlandı. Büyük Kompozisyon dosyasına yeni bir iz eklendi.
+result.d6-p4-032,Davul görevi tamamlandı. Büyük Kompozisyon dosyasına yeni bir iz eklendi.
+result.d6-p4-033,Doku görevi tamamlandı. Büyük Kompozisyon dosyasına yeni bir iz eklendi.
+result.d6-p4-034,Karo görevi tamamlandı. Büyük Kompozisyon dosyasına yeni bir iz eklendi.
+result.d6-p4-035,Nota görevi tamamlandı. Büyük Kompozisyon dosyasına yeni bir iz eklendi.
+result.d6-p4-036,Baskı görevi tamamlandı. Büyük Kompozisyon dosyasına yeni bir iz eklendi.
+result.d6-p4-037,Sahne görevi tamamlandı. Büyük Kompozisyon dosyasına yeni bir iz eklendi.
+result.d6-p4-038,Çizgi görevi tamamlandı. Büyük Kompozisyon dosyasına yeni bir iz eklendi.
+result.d6-p4-039,Desen görevi tamamlandı. Büyük Kompozisyon dosyasına yeni bir iz eklendi.
+result.d6-p4-040,Dokuma görevi tamamlandı. Büyük Kompozisyon dosyasına yeni bir iz eklendi.
+result.d6-p5-041,Ritim görevi tamamlandı. Atölye Sergisi dosyasına yeni bir iz eklendi.
+result.d6-p5-042,Davul görevi tamamlandı. Atölye Sergisi dosyasına yeni bir iz eklendi.
+result.d6-p5-043,Doku görevi tamamlandı. Atölye Sergisi dosyasına yeni bir iz eklendi.
+result.d6-p5-044,Karo görevi tamamlandı. Atölye Sergisi dosyasına yeni bir iz eklendi.
+result.d6-p5-045,Nota görevi tamamlandı. Atölye Sergisi dosyasına yeni bir iz eklendi.
+result.d6-p5-046,Baskı görevi tamamlandı. Atölye Sergisi dosyasına yeni bir iz eklendi.
+result.d6-p5-047,Sahne görevi tamamlandı. Atölye Sergisi dosyasına yeni bir iz eklendi.
+result.d6-p5-048,Çizgi görevi tamamlandı. Atölye Sergisi dosyasına yeni bir iz eklendi.
+result.d6-p5-049,Desen görevi tamamlandı. Atölye Sergisi dosyasına yeni bir iz eklendi.
+result.d6-p5-050,Dokuma görevi tamamlandı. Atölye Sergisi dosyasına yeni bir iz eklendi.
+result.d7-p1-001,Meydan görevi tamamlandı. Taslak Plan dosyasına yeni bir iz eklendi.
+result.d7-p1-002,Hat görevi tamamlandı. Taslak Plan dosyasına yeni bir iz eklendi.
+result.d7-p1-003,Park görevi tamamlandı. Taslak Plan dosyasına yeni bir iz eklendi.
+result.d7-p1-004,Aydınlatma görevi tamamlandı. Taslak Plan dosyasına yeni bir iz eklendi.
+result.d7-p1-005,Kütüphane görevi tamamlandı. Taslak Plan dosyasına yeni bir iz eklendi.
+result.d7-p1-006,Kavşak görevi tamamlandı. Taslak Plan dosyasına yeni bir iz eklendi.
+result.d7-p1-007,Atölye görevi tamamlandı. Taslak Plan dosyasına yeni bir iz eklendi.
+result.d7-p1-008,İstasyon görevi tamamlandı. Taslak Plan dosyasına yeni bir iz eklendi.
+result.d7-p1-009,Meyve bahçesi görevi tamamlandı. Taslak Plan dosyasına yeni bir iz eklendi.
+result.d7-p1-010,Okul görevi tamamlandı. Taslak Plan dosyasına yeni bir iz eklendi.
+result.d7-p2-011,Meydan görevi tamamlandı. İlk Deneme dosyasına yeni bir iz eklendi.
+result.d7-p2-012,Hat görevi tamamlandı. İlk Deneme dosyasına yeni bir iz eklendi.
+result.d7-p2-013,Park görevi tamamlandı. İlk Deneme dosyasına yeni bir iz eklendi.
+result.d7-p2-014,Aydınlatma görevi tamamlandı. İlk Deneme dosyasına yeni bir iz eklendi.
+result.d7-p2-015,Kütüphane görevi tamamlandı. İlk Deneme dosyasına yeni bir iz eklendi.
+result.d7-p2-016,Kavşak görevi tamamlandı. İlk Deneme dosyasına yeni bir iz eklendi.
+result.d7-p2-017,Atölye görevi tamamlandı. İlk Deneme dosyasına yeni bir iz eklendi.
+result.d7-p2-018,İstasyon görevi tamamlandı. İlk Deneme dosyasına yeni bir iz eklendi.
+result.d7-p2-019,Meyve bahçesi görevi tamamlandı. İlk Deneme dosyasına yeni bir iz eklendi.
+result.d7-p2-020,Okul görevi tamamlandı. İlk Deneme dosyasına yeni bir iz eklendi.
+result.d7-p3-021,Meydan görevi tamamlandı. Birleşen Sistemler dosyasına yeni bir iz eklendi.
+result.d7-p3-022,Hat görevi tamamlandı. Birleşen Sistemler dosyasına yeni bir iz eklendi.
+result.d7-p3-023,Park görevi tamamlandı. Birleşen Sistemler dosyasına yeni bir iz eklendi.
+result.d7-p3-024,Aydınlatma görevi tamamlandı. Birleşen Sistemler dosyasına yeni bir iz eklendi.
+result.d7-p3-025,Kütüphane görevi tamamlandı. Birleşen Sistemler dosyasına yeni bir iz eklendi.
+result.d7-p3-026,Kavşak görevi tamamlandı. Birleşen Sistemler dosyasına yeni bir iz eklendi.
+result.d7-p3-027,Atölye görevi tamamlandı. Birleşen Sistemler dosyasına yeni bir iz eklendi.
+result.d7-p3-028,İstasyon görevi tamamlandı. Birleşen Sistemler dosyasına yeni bir iz eklendi.
+result.d7-p3-029,Meyve bahçesi görevi tamamlandı. Birleşen Sistemler dosyasına yeni bir iz eklendi.
+result.d7-p3-030,Okul görevi tamamlandı. Birleşen Sistemler dosyasına yeni bir iz eklendi.
+result.d7-p4-031,Meydan görevi tamamlandı. Test Alanı dosyasına yeni bir iz eklendi.
+result.d7-p4-032,Hat görevi tamamlandı. Test Alanı dosyasına yeni bir iz eklendi.
+result.d7-p4-033,Park görevi tamamlandı. Test Alanı dosyasına yeni bir iz eklendi.
+result.d7-p4-034,Aydınlatma görevi tamamlandı. Test Alanı dosyasına yeni bir iz eklendi.
+result.d7-p4-035,Kütüphane görevi tamamlandı. Test Alanı dosyasına yeni bir iz eklendi.
+result.d7-p4-036,Kavşak görevi tamamlandı. Test Alanı dosyasına yeni bir iz eklendi.
+result.d7-p4-037,Atölye görevi tamamlandı. Test Alanı dosyasına yeni bir iz eklendi.
+result.d7-p4-038,İstasyon görevi tamamlandı. Test Alanı dosyasına yeni bir iz eklendi.
+result.d7-p4-039,Meyve bahçesi görevi tamamlandı. Test Alanı dosyasına yeni bir iz eklendi.
+result.d7-p4-040,Okul görevi tamamlandı. Test Alanı dosyasına yeni bir iz eklendi.
+result.d7-p5-041,Meydan görevi tamamlandı. Yeni Gün dosyasına yeni bir iz eklendi.
+result.d7-p5-042,Hat görevi tamamlandı. Yeni Gün dosyasına yeni bir iz eklendi.
+result.d7-p5-043,Park görevi tamamlandı. Yeni Gün dosyasına yeni bir iz eklendi.
+result.d7-p5-044,Aydınlatma görevi tamamlandı. Yeni Gün dosyasına yeni bir iz eklendi.
+result.d7-p5-045,Kütüphane görevi tamamlandı. Yeni Gün dosyasına yeni bir iz eklendi.
+result.d7-p5-046,Kavşak görevi tamamlandı. Yeni Gün dosyasına yeni bir iz eklendi.
+result.d7-p5-047,Atölye görevi tamamlandı. Yeni Gün dosyasına yeni bir iz eklendi.
+result.d7-p5-048,İstasyon görevi tamamlandı. Yeni Gün dosyasına yeni bir iz eklendi.
+result.d7-p5-049,Meyve bahçesi görevi tamamlandı. Yeni Gün dosyasına yeni bir iz eklendi.
+result.d7-p5-050,Okul görevi tamamlandı. Yeni Gün dosyasına yeni bir iz eklendi.
+ui.act,Perde
+ui.active,Etkin
+ui.add_command,KOMUT MASASI
+ui.agent,AJAN DOSYASI
+ui.app,İzden Koda
+ui.archive,Dosyayı kaydet
+ui.atlas,Dünya Atlası
+ui.back,Göreve dön
+ui.backup_failed,Yedek dosyası okunamadı.
+ui.backup_restored,Kazanımlar korunarak birleştirildi.
+ui.backup_success,Yedek dosyası kaydedildi.
+ui.block_bench,Komut tezgâhı
+ui.block_left,Sola taşı
+ui.block_right,Sağa taşı
+ui.blocked,Rota burada kapanıyor. Başka yola bakalım.
+ui.blocks,Bloklarla düşün
+ui.choose,Seç
+ui.clear,Temizle
+ui.code_edit,Komutları boşlukla ya da yeni satırla ayır.
+ui.code_invalid,Gösterilen komutları kullan. En çok 40 komut yazabilirsin.
+ui.code_notebook,Kod not defteri
+ui.collection,Koleksiyon
+ui.collection_note,Kazanılan tüm izler burada saklanır. Hiçbiri geri alınmaz.
+ui.color_blind_mode,Renk dostu işaretler
+ui.completed,Bu adanın ışığı geri döndü.
+ui.concrete,Keşfet
+ui.cost,Maliyet
+ui.daily,Günlük keşif
+ui.daily_note,Bugünün keşif dosyası
+ui.data,Ölçümler
+ui.export,Yedeği dışa aktar
+ui.flow_end,BİTİŞ
+ui.flow_start,BAŞLANGIÇ
+ui.gate,Bağlantı görevi
+ui.gate_and,VE (AND)
+ui.gate_nand,VE DEĞİL (NAND)
+ui.gate_nor,VEYA DEĞİL (NOR)
+ui.gate_not,DEĞİL (NOT)
+ui.gate_or,VEYA (OR)
+ui.gate_output,Çıkış %d · Hedef %d
+ui.gate_xor,ÖZEL VEYA (XOR)
+ui.goal_number,Hedef değer
+ui.high_contrast,Yüksek kontrast
+ui.hint,Mina’dan ipucu
+ui.home,Atlas
+ui.import,Yedek içe aktar
+ui.incomplete,Sinyal henüz yerine ulaşmadı. Bir daha deneyelim.
+ui.journey,Yolculuğum
+ui.lamp_off,Sönük
+ui.lamp_on,Yanıyor
+ui.language,Dil
+ui.large_text,Büyük yazı
+ui.layer,Keşif biçimi
+ui.levels,Görevler
+ui.limit,Daha kısa bir yol deneyebiliriz.
+ui.machine_state,Durum %s · Hedef %s
+ui.mission_list,Görev dosyaları
+ui.mode,Mod
+ui.move_down,↓ AŞAĞI
+ui.move_left,← SOL
+ui.move_right,→ SAĞ
+ui.move_up,↑ YUKARI
+ui.music_volume,Müzik seviyesi
+ui.new_profile,Yeni oyuncu
+ui.next,Sonraki görev
+ui.next_world,Sonraki dünya
+ui.no_command,Henüz komut yok. Taşlara dokunarak başla.
+ui.no_profile,Oyuncu bulunamadı
+ui.no_results,Henüz yeni bir iz yok
+ui.off,KAPALI
+ui.offline,ÇEVRİMDIŞI · REKLAMSIZ
+ui.on,AÇIK
+ui.panel,Fener anahtarları
+ui.performance,Performans modu
+ui.play_again,Yeniden dene
+ui.practice_note,Dilersen kendi temponda çöz. Süre tutmak zorunda değilsin.
+ui.preview,Önizleme · henüz keşif sırası değil
+ui.preview_d1,Kayıp Fenerin Sırrı
+ui.preview_d2,Saatçilerin Gizli Sokağı
+ui.preview_d3,Yaşayan İstasyon
+ui.preview_d4,Sessiz Arşiv
+ui.preview_d5,Kesişen Yollar Vadisi
+ui.preview_d6,Ritim ve Desen Atölyesi
+ui.preview_d7,Yeni Gün Kenti
+ui.preview_route,Bir önceki dünyanın 40. görevini tamamlayarak buradaki görevlere ulaşabilirsin.
+ui.preview_title,Yeni görev dosyaları seni bekliyor
+ui.profiles,Oyuncular
+ui.progress,Tamamlanan
+ui.prologue,"Mina: ""Fener yolu biliyor. Yalnızca sırayı unutmuş."""
+ui.readable_font,Yazı tipi
+ui.ready,Hazır
+ui.recovery_heading,KAYIT KORUMASI
+ui.recovery_warning,Kayda ulaşılamadı. Var olan veriler üzerine yazılmadı. Yedeğinizi koruyun.
+ui.reduced_motion,Azaltılmış hareket
+ui.retry,Yeniden dene
+ui.route,Kıyı haritası
+ui.run,Başlat
+ui.sandbox,Serbest laboratuvar
+ui.sandbox_explore,Robot yolun bu noktasında durdu. Yeni bir rota denemek serbest.
+ui.sandbox_instruction,Haritadaki kayalara dokunarak yolu değiştir. Komutları dene; istediğin kadar yeniden başla.
+ui.sandbox_note,Dilediğin görevi tekrar dene. Bütün denemeler ücretsiz.
+ui.sandbox_reached,Fener ışığına ulaştın. Başka bir rota deneyebilirsin.
+ui.sandbox_terrain,Kaya yerleştir / kaldır
+ui.scan,Tara
+ui.sensor_scanned,Algılayıcı çevreyi taradı.
+ui.sensor_waiting,Hareketten önce alanı tara.
+ui.sequence,GÖNDERİLECEK SIRA
+ui.settings,Ayarlar
+ui.sfx_volume,Efekt seviyesi
+ui.signal,Işık örüntüsü
+ui.simulation,Yarışma provası
+ui.skills,Yeteneklerim
+ui.skills_note,Burada rekabet veya sıralama yok; keşfettiğin kavramları görürsün.
+ui.start,Başla
+ui.start_number,Başlangıç
+ui.step,Adım adım
+ui.success,Fener artık işaret veriyor. Sıradaki ada hazır!
+ui.system,Sistem kur
+ui.target,Hedef
+ui.text_size,Yazı boyutu
+ui.text_size_0,Normal
+ui.text_size_1,Büyük
+ui.text_size_2,Çok büyük
+ui.timer,İsteğe bağlı süre
+ui.trace,%d. adıma kadar çalıştırıldı.
+ui.undo,Son komutu al
+ui.unknown,Birlikte bir daha bakalım mı?
+ui.unsupported,Bu görev için bir kontrol henüz hazır değil
+ui.witness,Örnek düzen
+ui.workshop,Proje atölyesi
+ui.workshop_choice_1_1,Toprağın nemini ölç
+ui.workshop_choice_1_2,Günlük ışık miktarını ölç
+ui.workshop_choice_2_1,Nem azsa sulama gerekli olabilir
+ui.workshop_choice_2_2,Her zaman aynı miktarda su verilmeli
+ui.workshop_choice_3_1,Nem sensörü + otomatik vana
+ui.workshop_choice_3_2,Sabit saatli bir sulama çizelgesi
+ui.workshop_choice_4_1,Üç farklı nem değerini dene
+ui.workshop_choice_4_2,Yalnızca tek bir değer dene
+ui.workshop_choice_5_1,Su tüketimi ile büyümeyi karşılaştır
+ui.workshop_choice_5_2,Sadece sistemin açılıp açılmadığını kontrol et
+ui.workshop_criterion_controlled_test,Farklı koşullarda test
+ui.workshop_criterion_hypothesis,Ölçülebilir tahmin
+ui.workshop_criterion_reflection,Veriyle yorumlama
+ui.workshop_discover,Bu yaklaşımı sonraki deneyinde de inceleyebilirsin.
+ui.workshop_found,Bu yaklaşımı denedin.
+ui.workshop_note,"Bir problemi tanımla, tahmin üret, tasarla, dene ve gözlemle."
+ui.workshop_phase_1,1 · Problemi tanımla
+ui.workshop_phase_2,2 · Tahmin oluştur
+ui.workshop_phase_3,3 · Tasarla
+ui.workshop_phase_4,4 · Deney yap
+ui.workshop_phase_5,5 · Sonucu yorumla
+ui.workshop_question_1,Seradaki bitkiler farklı hızlarda büyüyor. Önce neyi araştırırsın?
+ui.workshop_question_2,Toprak nemi azaldığında ne olabileceğini öngör.
+ui.workshop_question_3,Hangi sistemi tasarlamak istersin?
+ui.workshop_question_4,Tahminini nasıl sınayacaksın?
+ui.workshop_question_5,Sonuçları nasıl yorumlayacaksın?
+ui.workshop_result,Deney defterine yeni bir kayıt eklendi. Aynı modeli farklı seçimlerle yeniden deneyebilirsin.
+ui.world,Dünya
+ui.world_locked,Önizleme açık · Görevler henüz açılmadı
+ui.world_open,Dünyayı keşfet
+ui.program_step,Adım %d/%d · %s
+ui.route_blocked,Yol kaya veya harita sınırında durdu. Son yönü değiştir.
+ui.route_budget,Komutlar %d / %d
+ui.route_limit,Komut hakkı doldu. Daha kısa bir rota çiz.
+ui.sensor_status,Eşik %d · Otomatik %s
