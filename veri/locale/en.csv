@@ -1,0 +1,100 @@
+key,value
+ui.app,ALGORITHM GAME
+ui.world,THE LOST LIGHTHOUSE
+ui.agent,AGENT FILE  /  01
+ui.start,Start
+ui.atlas,World Atlas
+ui.settings,Settings
+ui.profiles,Players
+ui.next,Next mission
+ui.retry,Try another way
+ui.run,Send the signal
+ui.undo,Undo last
+ui.clear,Clear
+ui.hint,Hint from Mina
+ui.language,Language
+ui.layer,Challenge style
+ui.concrete,Explore
+ui.blocks,Think in blocks
+ui.system,Build systems
+ui.high_contrast,High contrast
+ui.large_text,Large text
+ui.reduced_motion,Reduced motion
+ui.performance,Performance mode
+ui.back,Back to mission
+ui.archive,Save file
+ui.export,Export backup
+ui.import,Import backup
+ui.new_profile,New player
+ui.no_profile,No player available
+ui.add_command,COMMAND DESK
+ui.sequence,SIGNAL ORDER
+ui.route,Coast map
+ui.signal,Light pattern
+ui.panel,Beacon switches
+ui.witness,Example order
+ui.preview,Preview · not yet unlocked
+ui.preview_title,More agent files await
+ui.unknown,Shall we look again?
+ui.blocked,This route stops here. Let’s find another.
+ui.limit,We can try a shorter route.
+ui.incomplete,The signal has not arrived yet. Let’s try again.
+ui.success,The beacon is shining. The next island is ready!
+ui.completed,The island light is back.
+ui.prologue,"Mina: ""The lighthouse remembers the way. Just not the order."""
+ui.lamp_off,Off
+ui.lamp_on,On
+ui.target,Target
+ui.move_up,UP
+ui.move_down,DOWN
+ui.move_left,LEFT
+ui.move_right,RIGHT
+ui.no_command,No commands yet. Tap the stones to begin.
+ui.preview_d1,D1 · Lost Lighthouse
+ui.preview_d2,D2 · Clockmakers’ Lane
+ui.preview_d3,D3 · Living Station
+ui.preview_d4,D4 · Silent Archive
+ui.preview_d5,D5 · Crossroads Valley
+ui.preview_d6,D6 · Rhythm & Pattern Studio
+ui.preview_d7,D7 · City of Tomorrow
+ui.backup_success,Backup saved.
+ui.backup_failed,Could not read the backup.
+ui.backup_restored,Achievements merged safely.
+ui.offline,OFFLINE · NO ADS
+mission.d1-p1-001,The first light
+mission.desc.d1-p1-001,Arrange the direction stones and guide the light to the shore beacon.
+hint.d1-p1-001.1,Start from the square holding the light.
+hint.d1-p1-001.2,"When rocks appear, go around them."
+hint.d1-p1-001.3,Try the stones in order from start to destination.
+mission.d1-p1-002,Misty quay mail
+mission.desc.d1-p1-002,Rocks block the mailbox. Draw a different route.
+hint.d1-p1-002.1,You may need to turn before the quay.
+hint.d1-p1-002.2,Is there a clear line beside the rock?
+hint.d1-p1-002.3,Move up from the coast before heading to the mailbox.
+mission.d1-p1-003,The hidden crossing
+mission.desc.d1-p1-003,Mina says the shortest path is not always straight. Let’s test that.
+hint.d1-p1-003.1,Look around the long wall.
+hint.d1-p1-003.2,A route goes below the barrier.
+hint.d1-p1-003.3,"Go to the end of the wall, then cross."
+mission.d1-p1-004,Three-signal code
+mission.desc.d1-p1-004,Rebuild the islands’ light pattern: which signal comes next?
+hint.d1-p1-004.1,Study the target pattern above.
+hint.d1-p1-004.2,Read the repeating sequence of lights.
+hint.d1-p1-004.3,Start with the first light in the target pattern.
+mission.d1-p1-005,The talking panels
+mission.desc.d1-p1-005,One switch may affect more than one lamp. Match the target layout.
+hint.d1-p1-005.1,Pressing one switch changes other lamps too.
+hint.d1-p1-005.2,Observe which lights each switch controls.
+hint.d1-p1-005.3,Try switches one at a time and compare with the target.
+ui.recovery_heading,SAVE PROTECTION
+ui.recovery_warning,The save could not be read. Existing data was not overwritten. Keep your backup.
+ui.color_blind_mode,Color-safe markers
+ui.music_volume,Music volume
+ui.sfx_volume,Effects volume
+ui.on,ON
+ui.off,OFF
+result.d1-p1-001,"Mina: ""The beacon remembers the route. First light sent."""
+result.d1-p1-002,Quay mail is on its way. Going around the rocks worked.
+result.d1-p1-003,The hidden crossing is on the map. Sometimes the right path bends.
+result.d1-p1-004,The light signals speak again. The next island got the message.
+result.d1-p1-005,The panel came alive. One switch can change several lights.

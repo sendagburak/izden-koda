@@ -1,0 +1,36 @@
+﻿taslak_gorev_id,dunya_id,ornek_gorev,oyun_ici_beceri,taslak_sinif_araligi,ilgili_tymm_ders,oneri_eslesme_aciklamasi,resmi_ogrenme_ciktisi_kodu,kod_dogrulama_durumu,ders_ve_sinif_kapsami_kesin_mi,kaynak_url
+D1-01,D1,Fener rotası,"Sıralı komut, yön, adım",2-3,İlkokul Matematik,Yön ve konum temalı bağlantı,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+D1-02,D1,Ada postası,"Sıralama, güvenli rota",2-3,Hayat Bilgisi,Gündelik işlerde planlama,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+D1-03,D1,Fener mesajı,İşaretlerin sıralanması,2-4,İlkokul Türkçe,Mesajı düzenleme ve anlamlandırma,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+D1-04,D1,İki dilli işaret,Temel yönergeler,2-5,İngilizce,Yaşa uygun kısa yönergeler,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+D1-05,D1,Sinyal deseni,"Örüntü, tekrar",2-4,İlkokul Matematik,Örüntü kurma ve genişletme,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+D2-01,D2,Saat örüntüsü,Tekrar ve düzen,3-5,Müzik,Ritimde tekrar ve sıralama,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+D2-02,D2,Çark dizisi,Döngü ve hata ayıklama,5-6,Bilişim Teknolojileri ve Yazılım,Blok tabanlı algoritma ve test,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+D2-03,D2,Kapı koşulu,Koşul ve mantıksal bağ,5-6,Bilişim Teknolojileri ve Yazılım,Koşullu çözüm geliştirme,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+D2-04,D2,Zaman çizelgesi,"Sıra, aralık ve olay",4-6,Matematik,"Zaman, sıra ve ilişki",,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+D2-05,D2,Olay zinciri,Olay tabanlı süreç,5-6,Bilişim Teknolojileri ve Yazılım,Etkinleşme ve tepki tasarımı,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+D3-01,D3,Nem sensörü,Algılayıcı-eyleyici,5-8,Robotik Kodlama,Algılayıcı verisiyle karar,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+D3-02,D3,Sera dengesi,Sistem modeli ve gözlem,3-8,Fen Bilimleri,Canlıların çevre gereksinimleri,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+D3-03,D3,Sıcaklık grafiği,Veri toplama ve yorumlama,3-8,Matematik,Veriyi toplama ve görselleştirme,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+D3-04,D3,Su kullanımı,Kaynak kullanımı ve model,3-8,Fen Bilimleri,Sistem değişkenlerini karşılaştırma,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+D3-05,D3,Saksı gözlemi,Gözlem sırası ve kayıt,2-3,Hayat Bilgisi,Çevre gözlemi ve planlama,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+D4-01,D4,Arşiv rafı,Liste ve düzen,5-6,Bilişim Teknolojileri ve Yazılım,Dijital veri temsiliyle ilişki,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+D4-02,D4,Mesaj dizisi,Anlamlı sıralama,2-8,Türkçe,Metin parçalarını mantıklı sıraya koyma,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+D4-03,D4,İkili panel,İkili sistem sezgisi,5-8,Matematik,Sayı temsiline temel bağlantı,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+D4-04,D4,Arama dizini,Sıralama ve arama stratejisi,5-6,Bilişim Teknolojileri ve Yazılım,Sistematik arama ve sıralama,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+D4-05,D4,Kısa mesaj,İki dilde yönerge ve anlam,2-8,İngilizce,Görsel destekli metni yorumlama,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+D5-01,D5,Yol kavşağı,Graf ve yol seçme,4-8,Matematik,Farklı rotaları karşılaştırma,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+D5-02,D5,Köprü haritası,Harita ve konum,4-7,Sosyal Bilgiler,Mekânsal ilişki ve yön bulma,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+D5-03,D5,Kısa aktarma,Verimlilik ve planlama,5-8,Matematik,Çoklu ölçüt karşılaştırma,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+D5-04,D5,Hat planı,Teknolojik sistem tasarımı,5-8,Teknoloji ve Tasarım,Kısıtlarla çözüm tasarımı,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+D5-05,D5,Güzergâh deneyi,Deney ve sonuç kıyaslama,5-8,Proje Tasarımı ve Uygulamaları,Çözümleri test etme,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+D6-01,D6,Ritim döngüsü,Örüntü ve tekrar,2-8,Müzik,Ritim örüntüsü düzenleme,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+D6-02,D6,Piksel damga,Desen ve tekrar birimi,2-8,Görsel Sanatlar,Tekrarlı görsel anlatım,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+D6-03,D6,Parametreli desen,Fonksiyon ve parametre,5-6,Bilişim Teknolojileri ve Yazılım,Tekrar kullanılabilir komutlar,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+D6-04,D6,Dallanan motif,Ağaç ve sezgisel özyineleme,5-8,Matematik,Desen dönüşümü ve bağlantılar,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+D6-05,D6,Kendi üretimin,Kullanıcı odaklı tasarım,5-8,Teknoloji ve Tasarım,Tasarım alternatiflerini deneme,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+D7-01,D7,Şema masası,Akış diyagramı,5-6,Bilişim Teknolojileri ve Yazılım,Algoritmayı temsil etme,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+D7-02,D7,Robot parkuru,"Sensör, koşul ve tekrar",5-8,Robotik Kodlama,Robotik kontrol kurgusu,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+D7-03,D7,Kent simülasyonu,Sistem modeli ve sonuç,3-8,Fen Bilimleri,Değişkenlerin etkilerini izleme,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+D7-04,D7,Proje atölyesi,Problem-hipotez-test-yorum,5-8,Proje Tasarımı ve Uygulamaları,Proje döngüsü,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx
+D7-05,D7,Kaynak planı,Kısıtlar ve optimizasyon,4-8,Matematik,Birden fazla koşulla çözüm,,DOĞRULANACAK,HAYIR,https://mufredat.meb.gov.tr/programlar.aspx

@@ -1,0 +1,100 @@
+key,value
+ui.app,ALGORİTMA OYUNU
+ui.world,KAYIP FENERİN SIRRI
+ui.agent,AJAN DOSYASI  /  01
+ui.start,Başla
+ui.atlas,Dünya Atlası
+ui.settings,Ayarlar
+ui.profiles,Oyuncular
+ui.next,Sonraki görev
+ui.retry,Yeniden dene
+ui.run,Işıkları gönder
+ui.undo,Son komutu al
+ui.clear,Temizle
+ui.hint,Mina’dan ipucu
+ui.language,Dil
+ui.layer,Keşif biçimi
+ui.concrete,Keşfet
+ui.blocks,Bloklarla düşün
+ui.system,Sistem kur
+ui.high_contrast,Yüksek kontrast
+ui.large_text,Büyük yazı
+ui.reduced_motion,Azaltılmış hareket
+ui.performance,Performans modu
+ui.back,Göreve dön
+ui.archive,Dosyayı kaydet
+ui.export,Yedeği dışa aktar
+ui.import,Yedek içe aktar
+ui.new_profile,Yeni oyuncu
+ui.no_profile,Oyuncu bulunamadı
+ui.add_command,KOMUT MASASI
+ui.sequence,GÖNDERİLECEK SIRA
+ui.route,Kıyı haritası
+ui.signal,Işık örüntüsü
+ui.panel,Fener anahtarları
+ui.witness,Örnek düzen
+ui.preview,Önizleme · henüz keşif sırası değil
+ui.preview_title,Yeni görev dosyaları seni bekliyor
+ui.unknown,Birlikte bir daha bakalım mı?
+ui.blocked,Rota burada kapanıyor. Başka yola bakalım.
+ui.limit,Daha kısa bir yol deneyebiliriz.
+ui.incomplete,Sinyal henüz yerine ulaşmadı. Bir daha deneyelim.
+ui.success,Fener artık işaret veriyor. Sıradaki ada hazır!
+ui.completed,Bu adanın ışığı geri döndü.
+ui.prologue,"Mina: ""Fener yolu biliyor. Yalnızca sırayı unutmuş."""
+ui.lamp_off,Sönük
+ui.lamp_on,Yanıyor
+ui.target,Hedef
+ui.move_up,YUKARI
+ui.move_down,AŞAĞI
+ui.move_left,SOL
+ui.move_right,SAĞ
+ui.no_command,Henüz komut yok. Taşlara dokunarak başla.
+ui.preview_d1,D1 · Kayıp Fenerin Sırrı
+ui.preview_d2,D2 · Saatçilerin Gizli Sokağı
+ui.preview_d3,D3 · Yaşayan İstasyon
+ui.preview_d4,D4 · Sessiz Arşiv
+ui.preview_d5,D5 · Kesişen Yollar Vadisi
+ui.preview_d6,D6 · Ritim ve Desen Atölyesi
+ui.preview_d7,D7 · Yeni Gün Kenti
+ui.backup_success,Yedek dosyası kaydedildi.
+ui.backup_failed,Yedek dosyası okunamadı.
+ui.backup_restored,Kazanımlar korunarak birleştirildi.
+ui.offline,ÇEVRİMDIŞI · REKLAMSIZ
+mission.d1-p1-001,Deniz fenerine ilk işaret
+mission.desc.d1-p1-001,Yön taşlarını sıraya koy; ışığı kıyıdaki fenerle buluştur.
+hint.d1-p1-001.1,Işığın başladığı kareden ilerle.
+hint.d1-p1-001.2,"Kayalar varsa, üstlerinden değil yanlarından dolaş."
+hint.d1-p1-001.3,Haritada başlangıçtan hedefe giden taşları sırayla dene.
+mission.d1-p1-002,Sisli iskele postası
+mission.desc.d1-p1-002,Posta kutusuna uzanan yolu kayalar kapatmış. Başka bir rota çiz.
+hint.d1-p1-002.1,İskeleye varmadan önce yön değiştirmek gerekebilir.
+hint.d1-p1-002.2,Kayanın yanında boş bir hat var mı?
+hint.d1-p1-002.3,"Önce kıyıdan yukarı çık, sonra postaya yaklaş."
+mission.d1-p1-003,Saklı geçit
+mission.desc.d1-p1-003,"Mina, kısa yolun her zaman düz olmadığını söylüyor. Deneyelim."
+hint.d1-p1-003.1,Uzun duvarın çevresini incele.
+hint.d1-p1-003.2,Geçidin altından dolaşan bir rota var.
+hint.d1-p1-003.3,"Önce duvarın bittiği noktaya in, sonra ilerle."
+mission.d1-p1-004,Üçlü işaret
+mission.desc.d1-p1-004,Adaların ışık örüntüsünü yeniden kur: bir sonraki işaret ne?
+hint.d1-p1-004.1,Yukarıdaki örüntüye dikkat et.
+hint.d1-p1-004.2,Işıkların tekrarlanan sırasını oku.
+hint.d1-p1-004.3,Hedef örüntünün ilk işaretinden başla.
+mission.d1-p1-005,Konuşan paneller
+mission.desc.d1-p1-005,Bir anahtar bazen birden fazla lambayı etkiler. Panelleri hedef düzenine getir.
+hint.d1-p1-005.1,Bastığın düğme başka lambaları da değiştirir.
+hint.d1-p1-005.2,Her anahtarın bağlı olduğu ışıkları gözle.
+hint.d1-p1-005.3,Düğmeleri birer birer dene; hedefle karşılaştır.
+ui.recovery_heading,KAYIT KORUMASI
+ui.recovery_warning,Kayda ulaşılamadı. Var olan veriler üzerine yazılmadı. Yedeğinizi koruyun.
+ui.color_blind_mode,Renk dostu işaretler
+ui.music_volume,Müzik seviyesi
+ui.sfx_volume,Efekt seviyesi
+ui.on,AÇIK
+ui.off,KAPALI
+result.d1-p1-001,"Mina: ""Fener yolu hatırladı. İlk ışık gönderildi."""
+result.d1-p1-002,İskele postası yola çıktı. Kayaların çevresinden dolanmak işe yaradı.
+result.d1-p1-003,Saklı geçit haritaya işlendi. Bazen doğru yol biraz dolaşır.
+result.d1-p1-004,Işık işaretleri yeniden konuşuyor. Komşu ada mesajı aldı.
+result.d1-p1-005,"Panel yeniden canlandı. Bir düğme, birden fazla ışığı değiştirebiliyor."

@@ -1,0 +1,6 @@
+.godot/
+.superpowers/
+*.tmp
+build/
+local_test_output/
+*.log

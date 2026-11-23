@@ -1,0 +1,8 @@
+Package: algoritma-oyunu
+Version: 0.1.0
+Section: games
+Priority: optional
+Architecture: amd64
+Maintainer: Algoritma Oyunu <local@invalid.example>
+Description: Cevrimdisi algoritmik dusunme egitim oyunu (Godot).
+ D1 ilk bes gorevlik erken test surumu.
